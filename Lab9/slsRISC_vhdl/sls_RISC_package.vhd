@@ -25,11 +25,11 @@ package sls_RISC_package is
 			Reset, Clock : in std_logic;  
 			IW : in std_logic_vector(7 downto 0);
 			SR_CNVZ : in std_logic_vector(3 downto 0);
-			MARout : in std_logic_vector(9 downto 0);
+			MAR_din, MARout : in std_logic_vector(9 downto 0);
 			RST_PC, LD_PC, CNT_PC, LD_IR, LD_R0, LD_R1, LD_R2, LD_R3,
-			LD_TXR, LD_TYR, LD_TK, LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel, 
+			LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel, 
 			LD_IPDR, LD_OPDR, push, pop, ipstksel : out std_logic;
-			RF_OS, WB_SEL : out std_logic_vector(1 downto 0); 
+			RF_SD_OS, RF_S_OS, WB_SEL : out std_logic_vector(1 downto 0); 
 			ALU_FS : out std_logic_vector(3 downto 0);
 			crtMCis : out std_logic_vector(2 downto 0));
 	end component;
@@ -39,7 +39,7 @@ package sls_RISC_package is
 			(
 				Reset, Clock, PB1,  
 				RST_PC, LD_PC, CNT_PC, LD_IR, LD_R0, LD_R1, LD_R2, LD_R3,
-				LD_TXR, LD_TYR, LD_TK, LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel,
+				LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel,
 				LD_IPDR, LD_OPDR, push, pop, ipstksel : in std_logic;
 				RF_SD_OS, RF_S_OS, wb_sel 					: in std_logic_vector(1 downto 0);
 				SW, ALU_FS 										: in std_logic_vector(3 downto 0);

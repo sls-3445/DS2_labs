@@ -14,7 +14,7 @@ entity dxpRISC_vNMMIOP_CU_vhdl is
 	port (Reset, Clock : in std_logic;  
 	IW : in std_logic_vector(7 downto 0);
 	SR_CNVZ : in std_logic_vector(3 downto 0);
-	MARout : in std_logic_vector(9 downto 0);
+	MARout, MAR_din : in std_logic_vector(9 downto 0);
 	RST_PC, LD_PC, CNT_PC, LD_IR, LD_R0, LD_R1, LD_R2, LD_R3,
 	LD_TXR, LD_TYR, LD_TK, LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel, 
 	LD_IPDR, LD_OPDR, push, pop, ipstksel : out std_logic;

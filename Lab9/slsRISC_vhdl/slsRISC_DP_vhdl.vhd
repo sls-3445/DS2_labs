@@ -1,16 +1,14 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_signed.all;
-library sls_package;
-use sls_package.sls_package.all;
+use work.sls_package.all;
 use work.sls_RISC_package.all;
-library sls_alu_package;
-use sls_alu_package.sls_alu_package.all;
+use work.sls_alu_package.all;
 
 entity slsRISC_DP_vhdl is
 	port (Reset, Clock, PB1,  
 	RST_PC, LD_PC, CNT_PC, LD_IR, LD_R0, LD_R1, LD_R2, LD_R3,
-	LD_TXR, LD_TYR, LD_TK, LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel,
+	LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel,
 	LD_IPDR, LD_OPDR, push, pop, ipstksel : in std_logic;
 	RF_SD_OS, RF_S_OS, wb_sel 					: in std_logic_vector(1 downto 0);
 	SW, ALU_FS 										: in std_logic_vector(3 downto 0);
@@ -26,9 +24,11 @@ signal MAR_out, PC_out, MABR_in, MAXR_in, MABR_out, MAXR_out, intMAR_out,
 signal sd_bus, s_bus, wb_bus, r0out, r1out, r2out, r3out, ALU_result, 
 			IPDR_in, IPDR_out, OPDR_in, MM_out, IR_out, 
 			TOS_out, IPSTK_out, intLEDs: std_logic_vector(7 downto 0);
-signal ALU_CNVZ, SR_out: std_logic_vector(3 downto 0);		 
+signal ALU_CNVZ, SR_out: std_logic_vector(3 downto 0);
+signal notClock : std_logic;		 
 
 begin
+	notClock <= not Clock;
 	-- MUX controlling writeback bus
 	wbBusMux: sls_nbit_mux4to1_vhdl generic map (8)
 		port map (d3 => IPSTK_out, d2 => MM_out, d1 => ALU_Result, d0 => (others => '0'), s => wb_sel, f => wb_bus);
@@ -49,7 +49,7 @@ begin
 	
 	-- ALU
 	ALU : sls_8bit_alu_struc_vhdl
-				port map (Operand_X => sd_bus, Operand_Y => s_bus, Const_K => sd_bus (1 downto 0), Func_Sel => ALU_FS,
+				port map (Operand_X => sd_bus, Operand_Y => s_bus, Const_K => IR_out(1 downto 0), Func_Sel => ALU_FS,
 						Cin => '0', ALU_Result => ALU_result, ALU_CNVZ => ALU_CNVZ);
 	SR  : sls_nbit_reg_vhdl generic map (4)
 				port map (d => ALU_CNVZ, ld => LD_SR, reset => Reset, clock => Clock, q => SR_out);
@@ -74,7 +74,7 @@ begin
 	MAR	: sls_nbit_reg_vhdl generic map (10)
 				port map (d => MAR_in, ld => LD_MAR, reset => Reset, clock => Clock, q => MAR_out);
 	MMA_in <= MAR_out when (MMASel = '1') else PC_out;
-	MM		: sls_MM_vhdl port map (address => MMA_in, data => sd_bus, clock => not Clock, wren => RW, q => MM_out);
+	MM		: sls_MM_vhdl port map (address => MMA_in, data => sd_bus, clock => notClock, wren => RW, q => MM_out);
 	
 	-- Peripherals
 	IPDR_in <= ("000" & PB1 & SW);
@@ -89,4 +89,4 @@ begin
 				clock => Clock, din => sd_bus, dout => TOS_out);
 	stack_mux : sls_nbit_mux2to1_vhdl generic map (8)
 				port map (d1 => TOS_out, d0 => IPDR_out, s => ipstksel, f => IPSTK_out);
-end ;slsRisc_DP_struc;
+end slsRisc_DP_struc;

@@ -7,11 +7,11 @@ entity slsRISC_CU_vhdl is
 	port (Reset, Clock : in std_logic;  
 	IW : in std_logic_vector(7 downto 0);
 	SR_CNVZ : in std_logic_vector(3 downto 0);
-	MARout : in std_logic_vector(9 downto 0);
+	MAR_din, MARout : in std_logic_vector(9 downto 0);
 	RST_PC, LD_PC, CNT_PC, LD_IR, LD_R0, LD_R1, LD_R2, LD_R3,
 	LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel, 
 	LD_IPDR, LD_OPDR, push, pop, ipstksel : out std_logic;
-	RF_SD_OS, RF_S_OS, WB_SEL : out std_logic_vector(1 downto 0); 
+	RF_SD_OS, RF_S_OS, WB_SEL : out std_logic_vector(1 downto 0);
 	ALU_FS : out std_logic_vector(3 downto 0);
 	crtMCis : out std_logic_vector(2 downto 0));
 end slsRISC_CU_vhdl;
@@ -22,6 +22,16 @@ signal Rsd, Rs2 : std_logic_vector(1 downto 0);
 signal MC : std_logic_vector(2 downto 0);
 signal opCode, IW_CNVZ : std_logic_vector(3 downto 0);
 signal carry, negative, overflow, zero : std_logic;
+
+procedure rf_select (signal Rsd_in : in std_logic_vector(1 downto 0);
+								signal R0, R1, R2, R3 : out std_logic) is
+begin
+	if      (Rsd_in = "00")    then R0 <= '1'; R1 <= '0'; R2 <= '0'; R3 <= '0';
+	elsif   (Rsd_in = "01")    then R0 <= '0'; R1 <= '1'; R2 <= '0'; R3 <= '0';
+	elsif   (Rsd_in = "10")    then R0 <= '0'; R1 <= '0'; R2 <= '1'; R3 <= '0';
+	elsif   (Rsd_in = "11")    then R0 <= '0'; R1 <= '0'; R2 <= '0'; R3 <= '1';
+	end if;
+end procedure;
 
 constant MC0	: STD_LOGIC_VECTOR(2 DOWNTO 0) := "000"; 
 constant MC1	: STD_LOGIC_VECTOR(2 DOWNTO 0) := "001"; 
@@ -75,19 +85,16 @@ else
 	crtMCis <= MC1; MC <= MC2;
 	
 	elsif (MC = MC2) then
-		if (opCode = ADD_IC | SUB_IC | INC_IC | DEC_IC | XOR_IC | AND_IC |
-                     CPY_IC | SHRA_IC | SHRL_IC | RLC_IC) then
-            if      (Rsd = "00")    then LD_R0 = '1'; LD_R1 = '0' LD_R2 = '0'; LD_R3 = '0';
-            elsif   (Rsd = "01")    then LD_R0 = '0'; LD_R1 = '1' LD_R2 = '0'; LD_R3 = '0';
-            elsif   (Rsd = "10")    then LD_R0 = '0'; LD_R1 = '0' LD_R2 = '1'; LD_R3 = '0';
-            elsif   (Rsd = "11")    then LD_R0 = '0'; LD_R1 = '0' LD_R2 = '0'; LD_R3 = '1';
-            else                    then LD_R0 = '0'; LD_R1 = '0' LD_R2 = '0'; LD_R3 = '0';
-            end if
+		if (opCode = ADD_IC or opCode = SUB_IC or opCode = DEC_IC or opCode = XOR_IC or 
+				opCode = AND_IC or opCode = CPY_IC or opCode = SHRA_IC or opCode = SHRL_IC or opCode = RLC_IC) then
+				
+				rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
+				if (Rsd = "10") then LD_R2 <= '1'; end if;
 
             LD_SR <= '1'; ALU_FS <= opCode; WB_SEL <= "01";
             crtMCis <= MC2; MC <= MC0;
 
-        elsif (opCode = LD_IC | ST_IC) then
+        elsif (opCode = LD_IC or opCode = ST_IC) then
             LD_MABR <= '1'; CNT_PC <= '1'; LD_MAXR <= '1';
             crtMCis <= MC2; MC <= MC3;
 
@@ -96,13 +103,8 @@ else
             crtMCis <= MC2; MC <= MC3;
 
         elsif (opCode = POP_IC) then
-            if      (Rsd = "00")    then LD_R0 = '1'; LD_R1 = '0' LD_R2 = '0'; LD_R3 = '0';
-            elsif   (Rsd = "01")    then LD_R0 = '0'; LD_R1 = '1' LD_R2 = '0'; LD_R3 = '0';
-            elsif   (Rsd = "10")    then LD_R0 = '0'; LD_R1 = '0' LD_R2 = '1'; LD_R3 = '0';
-            elsif   (Rsd = "11")    then LD_R0 = '0'; LD_R1 = '0' LD_R2 = '0'; LD_R3 = '1';
-            else                         LD_R0 = '0'; LD_R1 = '0' LD_R2 = '0'; LD_R3 = '0';
-            end if;
-            push <= '1'; ipstksel <= '1'; WB_SEL = "11";
+            rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
+            push <= '1'; ipstksel <= '1'; WB_SEL <= "11";
             crtMCis <= MC2; MC <= MC0;
 
         elsif (opCode = PUSH_IC) then
@@ -116,7 +118,7 @@ else
         LD_SR <= '0'; ALU_FS <= "0000"; LD_MABR <= '0'; LD_MAXR <= '0';
         CNT_PC <= '0'; push <= '0'; pop <= '0';
         -- Load Main Memory Address
-        LD_MAR = '1';
+        LD_MAR <= '1';
         crtMCis <= MC3; MC <= MC4;
 
         if (opCode = LD_IC) then
@@ -128,17 +130,12 @@ else
     elsif (MC = MC4) then
         -- Reset
         LD_MAR <= '0'; LD_OPDR <= '0';
-        if      (Rsd = "00")    then LD_R0 = '1'; LD_R1 = '0' LD_R2 = '0'; LD_R3 = '0';
-        elsif   (Rsd = "01")    then LD_R0 = '0'; LD_R1 = '1' LD_R2 = '0'; LD_R3 = '0';
-        elsif   (Rsd = "10")    then LD_R0 = '0'; LD_R1 = '0' LD_R2 = '1'; LD_R3 = '0';
-        elsif   (Rsd = "11")    then LD_R0 = '0'; LD_R1 = '0' LD_R2 = '0'; LD_R3 = '1';
-        else                         LD_R0 = '0'; LD_R1 = '0' LD_R2 = '0'; LD_R3 = '0';
-        end if;
+        rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
 
         if (opCode = LD_IC) then
             if (MARout > x"3FD") then 
                 ipstksel <= '0';
-                WB_SEL <= "11"';
+                WB_SEL <= "11";
             else
                 MMASel <= '1';
                 WB_SEL <= "10";
@@ -152,15 +149,12 @@ else
             end if;
 
         elsif (opCode = JUMP_IC) then
-            if      ((IW_CNVZ = "0001") and (SR_CNVZ(0) = '1')) then LD_PC <= '1';
-            elsif   ((IW_CNVZ = "0010") and (SR_CNVZ(1) = '1')) then LD_PC <= '1';    
-            elsif   ((IW_CNVZ = "0100") and (SR_CNVZ(2) = '1')) then LD_PC <= '1';    
-            elsif   ((IW_CNVZ = "1000") and (SR_CNVZ(3) = '1')) then LD_PC <= '1';    
-            elsif   (IW_CNVZ = "0000") then LD_PC <= '1';    
-            else LD_PC <= '0';
+            rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
         end if;
-        crMCis <= MC4; MC <= MC0;
-
+        crtMCis <= MC4; MC <= MC0;
+		end if;
+	end if;
+end if;
 end process;
 end slsRISC_CU_beh;
 

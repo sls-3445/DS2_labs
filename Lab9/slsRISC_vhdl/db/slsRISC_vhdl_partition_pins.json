@@ -4,51 +4,263 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "IW[0]",
+					"name" : "ICis[0]",
 					"strict" : false
 				},
 				{
-					"name" : "IW[1]",
+					"name" : "ICis[1]",
 					"strict" : false
 				},
 				{
-					"name" : "IW[2]",
+					"name" : "ICis[3]",
 					"strict" : false
 				},
 				{
-					"name" : "IW[3]",
+					"name" : "ICis[4]",
 					"strict" : false
 				},
 				{
-					"name" : "IW[4]",
+					"name" : "ICis[8]",
 					"strict" : false
 				},
 				{
-					"name" : "IW[5]",
+					"name" : "ICis[9]",
 					"strict" : false
 				},
 				{
-					"name" : "IW[6]",
+					"name" : "ICis[12]",
 					"strict" : false
 				},
 				{
-					"name" : "IW[7]",
+					"name" : "ICis[13]",
 					"strict" : false
 				},
 				{
-					"name" : "SR_CNVZ[0]",
+					"name" : "ICis[14]",
 					"strict" : false
 				},
 				{
-					"name" : "SR_CNVZ[1]",
+					"name" : "ICis[16]",
 					"strict" : false
 				},
 				{
-					"name" : "SR_CNVZ[2]",
+					"name" : "ICis[17]",
 					"strict" : false
 				},
 				{
-					"name" : "SR_CNVZ[3]",
+					"name" : "ICis[18]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[19]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[20]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[21]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[22]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[24]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[25]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[26]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[27]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[28]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[29]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[30]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[34]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[35]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[40]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[41]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[42]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[44]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[46]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[48]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[49]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[51]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[52]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[53]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[54]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[57]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[60]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[61]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[62]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[64]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[67]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[68]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[69]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[70]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[72]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[73]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[74]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[75]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[76]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[77]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[78]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[80]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[81]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[82]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[83]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[84]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[85]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[88]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[89]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[90]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[91]",
+					"strict" : false
+				},
+				{
+					"name" : "ICis[92]",
+					"strict" : false
+				},
+				{
+					"name" : "crtMCis[0]",
+					"strict" : false
+				},
+				{
+					"name" : "crtMCis[1]",
 					"strict" : false
 				},
 				{
@@ -57,134 +269,6 @@
 				},
 				{
 					"name" : "Clock",
-					"strict" : false
-				},
-				{
-					"name" : "LD_IR",
-					"strict" : false
-				},
-				{
-					"name" : "RF_S_OS[0]",
-					"strict" : false
-				},
-				{
-					"name" : "RF_S_OS[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_FS[1]",
-					"strict" : false
-				},
-				{
-					"name" : "RF_SD_OS[0]",
-					"strict" : false
-				},
-				{
-					"name" : "RF_SD_OS[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_FS[0]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_FS[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_FS[2]",
-					"strict" : false
-				},
-				{
-					"name" : "LD_SR",
-					"strict" : false
-				},
-				{
-					"name" : "RW",
-					"strict" : false
-				},
-				{
-					"name" : "MMASel",
-					"strict" : false
-				},
-				{
-					"name" : "ipstksel",
-					"strict" : false
-				},
-				{
-					"name" : "wb_sel[0]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_sel[1]",
-					"strict" : false
-				},
-				{
-					"name" : "LD_R1",
-					"strict" : false
-				},
-				{
-					"name" : "LD_R2",
-					"strict" : false
-				},
-				{
-					"name" : "LD_R0",
-					"strict" : false
-				},
-				{
-					"name" : "LD_R3",
-					"strict" : false
-				},
-				{
-					"name" : "LD_MAR",
-					"strict" : false
-				},
-				{
-					"name" : "LD_PC",
-					"strict" : false
-				},
-				{
-					"name" : "CNT_PC",
-					"strict" : false
-				},
-				{
-					"name" : "push",
-					"strict" : false
-				},
-				{
-					"name" : "SW[0]",
-					"strict" : false
-				},
-				{
-					"name" : "LD_IPDR",
-					"strict" : false
-				},
-				{
-					"name" : "PB1",
-					"strict" : false
-				},
-				{
-					"name" : "SW[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[2]",
-					"strict" : false
-				},
-				{
-					"name" : "LD_MAXR",
-					"strict" : false
-				},
-				{
-					"name" : "LD_MABR",
-					"strict" : false
-				},
-				{
-					"name" : "pop",
 					"strict" : false
 				}
 			]

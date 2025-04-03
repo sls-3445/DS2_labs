@@ -1,14 +1,14 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
-ENTITY dxpRISC_vNMMIOP_vhdl_tb IS
-END dxpRISC_vNMMIOP_vhdl_tb;
+ENTITY slsRISC_vhdl_tb IS
+END slsRISC_vhdl_tb;
 
-ARCHITECTURE run_free OF dxpRISC_vNMMIOP_vhdl_tb IS
+ARCHITECTURE run_free OF slsRISC_vhdl_tb IS
 ------------------------------------------------------------------------------
 -- Declare the cuv component
 ------------------------------------------------------------------------------
-	COMPONENT dxpRISC_vNMMIOP_vhdl -- my dxpRISC
+	COMPONENT slsRISC_vhdl
 	PORT (Reset, Clock, PB1 : in std_logic;
 			SW : in std_logic_vector(3 downto 0);
 			LEDs : out std_logic_vector(7 downto 0);
@@ -30,7 +30,7 @@ ARCHITECTURE run_free OF dxpRISC_vNMMIOP_vhdl_tb IS
 -- The port mapping of the CUV.
 ------------------------------------------------------------------------------
 BEGIN
-	CUV	:	dxpRISC_vNMMIOP_vhdl
+	CUV	:	slsRISC_vhdl
 		PORT MAP( Reset => Reset_tb, Clock => Clock_tb, PB1 => PB1_tb,
 			SW => SW_tb, LEDs => LEDs_tb, ICis => ICis_tb, crtMCis => crtMCis_tb);
 ------------------------------------------------------------------------------

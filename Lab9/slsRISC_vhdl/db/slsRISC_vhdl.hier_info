@@ -1,4 +1,125 @@
-|slsRISC_DP_vhdl
+|slsRISC_vhdl
+Reset => slsRISC_DP_vhdl:DP.Reset
+Reset => slsRISC_CU_vhdl:CU.Reset
+Reset => sls_IW2ASCII_vhdl:ICdecode.Reset
+Clock => slsRISC_DP_vhdl:DP.Clock
+Clock => slsRISC_CU_vhdl:CU.Clock
+Clock => sls_IW2ASCII_vhdl:ICdecode.Clock
+PB1 => slsRISC_DP_vhdl:DP.PB1
+SW[0] => slsRISC_DP_vhdl:DP.SW[0]
+SW[1] => slsRISC_DP_vhdl:DP.SW[1]
+SW[2] => slsRISC_DP_vhdl:DP.SW[2]
+SW[3] => slsRISC_DP_vhdl:DP.SW[3]
+LEDs[0] << slsRISC_DP_vhdl:DP.LEDs[0]
+LEDs[1] << slsRISC_DP_vhdl:DP.LEDs[1]
+LEDs[2] << slsRISC_DP_vhdl:DP.LEDs[2]
+LEDs[3] << slsRISC_DP_vhdl:DP.LEDs[3]
+LEDs[4] << slsRISC_DP_vhdl:DP.LEDs[4]
+LEDs[5] << slsRISC_DP_vhdl:DP.LEDs[5]
+LEDs[6] << slsRISC_DP_vhdl:DP.LEDs[6]
+LEDs[7] << slsRISC_DP_vhdl:DP.LEDs[7]
+ICis[0] << sls_IW2ASCII_vhdl:ICdecode.ICis[0]
+ICis[1] << sls_IW2ASCII_vhdl:ICdecode.ICis[1]
+ICis[2] << sls_IW2ASCII_vhdl:ICdecode.ICis[2]
+ICis[3] << sls_IW2ASCII_vhdl:ICdecode.ICis[3]
+ICis[4] << sls_IW2ASCII_vhdl:ICdecode.ICis[4]
+ICis[5] << sls_IW2ASCII_vhdl:ICdecode.ICis[5]
+ICis[6] << sls_IW2ASCII_vhdl:ICdecode.ICis[6]
+ICis[7] << sls_IW2ASCII_vhdl:ICdecode.ICis[7]
+ICis[8] << sls_IW2ASCII_vhdl:ICdecode.ICis[8]
+ICis[9] << sls_IW2ASCII_vhdl:ICdecode.ICis[9]
+ICis[10] << sls_IW2ASCII_vhdl:ICdecode.ICis[10]
+ICis[11] << sls_IW2ASCII_vhdl:ICdecode.ICis[11]
+ICis[12] << sls_IW2ASCII_vhdl:ICdecode.ICis[12]
+ICis[13] << sls_IW2ASCII_vhdl:ICdecode.ICis[13]
+ICis[14] << sls_IW2ASCII_vhdl:ICdecode.ICis[14]
+ICis[15] << sls_IW2ASCII_vhdl:ICdecode.ICis[15]
+ICis[16] << sls_IW2ASCII_vhdl:ICdecode.ICis[16]
+ICis[17] << sls_IW2ASCII_vhdl:ICdecode.ICis[17]
+ICis[18] << sls_IW2ASCII_vhdl:ICdecode.ICis[18]
+ICis[19] << sls_IW2ASCII_vhdl:ICdecode.ICis[19]
+ICis[20] << sls_IW2ASCII_vhdl:ICdecode.ICis[20]
+ICis[21] << sls_IW2ASCII_vhdl:ICdecode.ICis[21]
+ICis[22] << sls_IW2ASCII_vhdl:ICdecode.ICis[22]
+ICis[23] << sls_IW2ASCII_vhdl:ICdecode.ICis[23]
+ICis[24] << sls_IW2ASCII_vhdl:ICdecode.ICis[24]
+ICis[25] << sls_IW2ASCII_vhdl:ICdecode.ICis[25]
+ICis[26] << sls_IW2ASCII_vhdl:ICdecode.ICis[26]
+ICis[27] << sls_IW2ASCII_vhdl:ICdecode.ICis[27]
+ICis[28] << sls_IW2ASCII_vhdl:ICdecode.ICis[28]
+ICis[29] << sls_IW2ASCII_vhdl:ICdecode.ICis[29]
+ICis[30] << sls_IW2ASCII_vhdl:ICdecode.ICis[30]
+ICis[31] << sls_IW2ASCII_vhdl:ICdecode.ICis[31]
+ICis[32] << sls_IW2ASCII_vhdl:ICdecode.ICis[32]
+ICis[33] << sls_IW2ASCII_vhdl:ICdecode.ICis[33]
+ICis[34] << sls_IW2ASCII_vhdl:ICdecode.ICis[34]
+ICis[35] << sls_IW2ASCII_vhdl:ICdecode.ICis[35]
+ICis[36] << sls_IW2ASCII_vhdl:ICdecode.ICis[36]
+ICis[37] << sls_IW2ASCII_vhdl:ICdecode.ICis[37]
+ICis[38] << sls_IW2ASCII_vhdl:ICdecode.ICis[38]
+ICis[39] << sls_IW2ASCII_vhdl:ICdecode.ICis[39]
+ICis[40] << sls_IW2ASCII_vhdl:ICdecode.ICis[40]
+ICis[41] << sls_IW2ASCII_vhdl:ICdecode.ICis[41]
+ICis[42] << sls_IW2ASCII_vhdl:ICdecode.ICis[42]
+ICis[43] << sls_IW2ASCII_vhdl:ICdecode.ICis[43]
+ICis[44] << sls_IW2ASCII_vhdl:ICdecode.ICis[44]
+ICis[45] << sls_IW2ASCII_vhdl:ICdecode.ICis[45]
+ICis[46] << sls_IW2ASCII_vhdl:ICdecode.ICis[46]
+ICis[47] << sls_IW2ASCII_vhdl:ICdecode.ICis[47]
+ICis[48] << sls_IW2ASCII_vhdl:ICdecode.ICis[48]
+ICis[49] << sls_IW2ASCII_vhdl:ICdecode.ICis[49]
+ICis[50] << sls_IW2ASCII_vhdl:ICdecode.ICis[50]
+ICis[51] << sls_IW2ASCII_vhdl:ICdecode.ICis[51]
+ICis[52] << sls_IW2ASCII_vhdl:ICdecode.ICis[52]
+ICis[53] << sls_IW2ASCII_vhdl:ICdecode.ICis[53]
+ICis[54] << sls_IW2ASCII_vhdl:ICdecode.ICis[54]
+ICis[55] << sls_IW2ASCII_vhdl:ICdecode.ICis[55]
+ICis[56] << sls_IW2ASCII_vhdl:ICdecode.ICis[56]
+ICis[57] << sls_IW2ASCII_vhdl:ICdecode.ICis[57]
+ICis[58] << sls_IW2ASCII_vhdl:ICdecode.ICis[58]
+ICis[59] << sls_IW2ASCII_vhdl:ICdecode.ICis[59]
+ICis[60] << sls_IW2ASCII_vhdl:ICdecode.ICis[60]
+ICis[61] << sls_IW2ASCII_vhdl:ICdecode.ICis[61]
+ICis[62] << sls_IW2ASCII_vhdl:ICdecode.ICis[62]
+ICis[63] << sls_IW2ASCII_vhdl:ICdecode.ICis[63]
+ICis[64] << sls_IW2ASCII_vhdl:ICdecode.ICis[64]
+ICis[65] << sls_IW2ASCII_vhdl:ICdecode.ICis[65]
+ICis[66] << sls_IW2ASCII_vhdl:ICdecode.ICis[66]
+ICis[67] << sls_IW2ASCII_vhdl:ICdecode.ICis[67]
+ICis[68] << sls_IW2ASCII_vhdl:ICdecode.ICis[68]
+ICis[69] << sls_IW2ASCII_vhdl:ICdecode.ICis[69]
+ICis[70] << sls_IW2ASCII_vhdl:ICdecode.ICis[70]
+ICis[71] << sls_IW2ASCII_vhdl:ICdecode.ICis[71]
+ICis[72] << sls_IW2ASCII_vhdl:ICdecode.ICis[72]
+ICis[73] << sls_IW2ASCII_vhdl:ICdecode.ICis[73]
+ICis[74] << sls_IW2ASCII_vhdl:ICdecode.ICis[74]
+ICis[75] << sls_IW2ASCII_vhdl:ICdecode.ICis[75]
+ICis[76] << sls_IW2ASCII_vhdl:ICdecode.ICis[76]
+ICis[77] << sls_IW2ASCII_vhdl:ICdecode.ICis[77]
+ICis[78] << sls_IW2ASCII_vhdl:ICdecode.ICis[78]
+ICis[79] << sls_IW2ASCII_vhdl:ICdecode.ICis[79]
+ICis[80] << sls_IW2ASCII_vhdl:ICdecode.ICis[80]
+ICis[81] << sls_IW2ASCII_vhdl:ICdecode.ICis[81]
+ICis[82] << sls_IW2ASCII_vhdl:ICdecode.ICis[82]
+ICis[83] << sls_IW2ASCII_vhdl:ICdecode.ICis[83]
+ICis[84] << sls_IW2ASCII_vhdl:ICdecode.ICis[84]
+ICis[85] << sls_IW2ASCII_vhdl:ICdecode.ICis[85]
+ICis[86] << sls_IW2ASCII_vhdl:ICdecode.ICis[86]
+ICis[87] << sls_IW2ASCII_vhdl:ICdecode.ICis[87]
+ICis[88] << sls_IW2ASCII_vhdl:ICdecode.ICis[88]
+ICis[89] << sls_IW2ASCII_vhdl:ICdecode.ICis[89]
+ICis[90] << sls_IW2ASCII_vhdl:ICdecode.ICis[90]
+ICis[91] << sls_IW2ASCII_vhdl:ICdecode.ICis[91]
+ICis[92] << sls_IW2ASCII_vhdl:ICdecode.ICis[92]
+ICis[93] << sls_IW2ASCII_vhdl:ICdecode.ICis[93]
+ICis[94] << sls_IW2ASCII_vhdl:ICdecode.ICis[94]
+ICis[95] << sls_IW2ASCII_vhdl:ICdecode.ICis[95]
+crtMCis[0] << slsRISC_CU_vhdl:CU.crtMCis[0]
+crtMCis[1] << slsRISC_CU_vhdl:CU.crtMCis[1]
+crtMCis[2] << slsRISC_CU_vhdl:CU.crtMCis[2]
+
+
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP
 Reset => sls_nbit_reg_vhdl:r0.reset
 Reset => sls_nbit_reg_vhdl:r1.reset
 Reset => sls_nbit_reg_vhdl:r2.reset
@@ -35,9 +156,6 @@ LD_R0 => sls_nbit_reg_vhdl:r0.ld
 LD_R1 => sls_nbit_reg_vhdl:r1.ld
 LD_R2 => sls_nbit_reg_vhdl:r2.ld
 LD_R3 => sls_nbit_reg_vhdl:r3.ld
-LD_TXR => ~NO_FANOUT~
-LD_TYR => ~NO_FANOUT~
-LD_TK => ~NO_FANOUT~
 LD_SR => sls_nbit_reg_vhdl:SR.ld
 LD_MABR => sls_nbit_reg_vhdl:MABR.ld
 LD_MAXR => sls_nbit_reg_vhdl:MAXR.ld
@@ -92,6 +210,16 @@ SR_CNVZ[0] <= sls_nbit_reg_vhdl:SR.q[0]
 SR_CNVZ[1] <= sls_nbit_reg_vhdl:SR.q[1]
 SR_CNVZ[2] <= sls_nbit_reg_vhdl:SR.q[2]
 SR_CNVZ[3] <= sls_nbit_reg_vhdl:SR.q[3]
+MAR_din[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+MAR_din[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+MAR_din[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+MAR_din[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+MAR_din[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+MAR_din[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+MAR_din[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+MAR_din[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+MAR_din[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+MAR_din[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 MARout[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
 MARout[1] <= MARout[1].DB_MAX_OUTPUT_PORT_TYPE
 MARout[2] <= MARout[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -104,7 +232,7 @@ MARout[8] <= MARout[8].DB_MAX_OUTPUT_PORT_TYPE
 MARout[9] <= MARout[9].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:wbBusMux
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:wbBusMux
 d3[0] => sls_nbit_mux2to1_vhdl:upper_bits.d1[0]
 d3[1] => sls_nbit_mux2to1_vhdl:upper_bits.d1[1]
 d3[2] => sls_nbit_mux2to1_vhdl:upper_bits.d1[2]
@@ -150,7 +278,7 @@ f[6] <= sls_nbit_mux2to1_vhdl:combined.f[6]
 f[7] <= sls_nbit_mux2to1_vhdl:combined.f[7]
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:wbBusMux|sls_nbit_mux2to1_vhdl:upper_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:wbBusMux|sls_nbit_mux2to1_vhdl:upper_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -193,7 +321,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:wbBusMux|sls_nbit_mux2to1_vhdl:lower_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:wbBusMux|sls_nbit_mux2to1_vhdl:lower_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -236,7 +364,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:wbBusMux|sls_nbit_mux2to1_vhdl:combined
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:wbBusMux|sls_nbit_mux2to1_vhdl:combined
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -279,7 +407,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:r0
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r0
 d[0] => q.DATAB
 d[1] => q.DATAB
 d[2] => q.DATAB
@@ -322,7 +450,7 @@ q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:r1
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r1
 d[0] => q.DATAB
 d[1] => q.DATAB
 d[2] => q.DATAB
@@ -365,7 +493,7 @@ q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:r2
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r2
 d[0] => q.DATAB
 d[1] => q.DATAB
 d[2] => q.DATAB
@@ -408,7 +536,7 @@ q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:r3
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r3
 d[0] => q.DATAB
 d[1] => q.DATAB
 d[2] => q.DATAB
@@ -451,7 +579,7 @@ q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:rfout_sd_mux
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux
 d3[0] => sls_nbit_mux2to1_vhdl:upper_bits.d1[0]
 d3[1] => sls_nbit_mux2to1_vhdl:upper_bits.d1[1]
 d3[2] => sls_nbit_mux2to1_vhdl:upper_bits.d1[2]
@@ -497,7 +625,7 @@ f[6] <= sls_nbit_mux2to1_vhdl:combined.f[6]
 f[7] <= sls_nbit_mux2to1_vhdl:combined.f[7]
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:upper_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:upper_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -540,7 +668,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:lower_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:lower_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -583,7 +711,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:combined
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:combined
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -626,7 +754,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:rfout_s_mux
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_s_mux
 d3[0] => sls_nbit_mux2to1_vhdl:upper_bits.d1[0]
 d3[1] => sls_nbit_mux2to1_vhdl:upper_bits.d1[1]
 d3[2] => sls_nbit_mux2to1_vhdl:upper_bits.d1[2]
@@ -672,7 +800,7 @@ f[6] <= sls_nbit_mux2to1_vhdl:combined.f[6]
 f[7] <= sls_nbit_mux2to1_vhdl:combined.f[7]
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:rfout_s_mux|sls_nbit_mux2to1_vhdl:upper_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_s_mux|sls_nbit_mux2to1_vhdl:upper_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -715,7 +843,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:rfout_s_mux|sls_nbit_mux2to1_vhdl:lower_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_s_mux|sls_nbit_mux2to1_vhdl:lower_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -758,7 +886,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux4to1_vhdl:rfout_s_mux|sls_nbit_mux2to1_vhdl:combined
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_s_mux|sls_nbit_mux2to1_vhdl:combined
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -801,7 +929,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU
 Func_Sel[0] => sls_8bit_arith_unit_vhdl:arith_unit.Func_Sel[0]
 Func_Sel[0] => sls_8bit_logic_unit_vhdl:logic_unit.Func_Sel[0]
 Func_Sel[0] => sls_8bit_sr_unit_vhdl:sr_unit.Func_Sel[0]
@@ -883,7 +1011,7 @@ ALU_CNVZ[2] <= sls_nbit_mux4to1_vhdl:cnvz_mux.f[2]
 ALU_CNVZ[3] <= sls_nbit_mux4to1_vhdl:cnvz_mux.f[3]
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux
 d3[0] => sls_nbit_mux2to1_vhdl:upper_bits.d1[0]
 d3[1] => sls_nbit_mux2to1_vhdl:upper_bits.d1[1]
 d3[2] => sls_nbit_mux2to1_vhdl:upper_bits.d1[2]
@@ -929,7 +1057,7 @@ f[6] <= sls_nbit_mux2to1_vhdl:combined.f[6]
 f[7] <= sls_nbit_mux2to1_vhdl:combined.f[7]
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:upper_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:upper_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -972,7 +1100,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:lower_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:lower_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1015,7 +1143,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:combined
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:combined
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1058,7 +1186,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:cnvz_mux
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:cnvz_mux
 d3[0] => sls_nbit_mux2to1_vhdl:upper_bits.d1[0]
 d3[1] => sls_nbit_mux2to1_vhdl:upper_bits.d1[1]
 d3[2] => sls_nbit_mux2to1_vhdl:upper_bits.d1[2]
@@ -1084,7 +1212,7 @@ f[2] <= sls_nbit_mux2to1_vhdl:combined.f[2]
 f[3] <= sls_nbit_mux2to1_vhdl:combined.f[3]
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:cnvz_mux|sls_nbit_mux2to1_vhdl:upper_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:cnvz_mux|sls_nbit_mux2to1_vhdl:upper_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1107,7 +1235,7 @@ f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:cnvz_mux|sls_nbit_mux2to1_vhdl:lower_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:cnvz_mux|sls_nbit_mux2to1_vhdl:lower_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1130,7 +1258,7 @@ f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:cnvz_mux|sls_nbit_mux2to1_vhdl:combined
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:cnvz_mux|sls_nbit_mux2to1_vhdl:combined
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1153,7 +1281,7 @@ f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit
 Func_Sel[0] => sls_8bit_add_sub_vhdl:adder.cin
 Func_Sel[1] => sls_nbit_mux2to1_vhdl:yselect_mux.s
 Operand_X[0] => sls_8bit_add_sub_vhdl:adder.x[0]
@@ -1188,7 +1316,7 @@ Arith_CNVZ[2] <= sls_8bit_add_sub_vhdl:adder.sum[7]
 Arith_CNVZ[3] <= sls_8bit_add_sub_vhdl:adder.cout
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit|sls_8bit_add_sub_vhdl:adder
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit|sls_8bit_add_sub_vhdl:adder
 x[0] => sum.IN1
 x[0] => c.IN1
 x[0] => c.IN0
@@ -1244,7 +1372,7 @@ cout <= c.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit|sls_nbit_mux2to1_vhdl:yselect_mux
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit|sls_nbit_mux2to1_vhdl:yselect_mux
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1287,7 +1415,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit
 Func_Sel[0] => sls_nbit_mux4to1_vhdl:logic_mux.s[0]
 Func_Sel[1] => sls_nbit_mux4to1_vhdl:logic_mux.s[1]
 Operand_X[0] => xor_result[0].IN0
@@ -1362,7 +1490,7 @@ Logic_CNVZ[2] <= sls_nbit_mux4to1_vhdl:logic_mux.f[7]
 Logic_CNVZ[3] <= <GND>
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux
 d3[0] => sls_nbit_mux2to1_vhdl:upper_bits.d1[0]
 d3[1] => sls_nbit_mux2to1_vhdl:upper_bits.d1[1]
 d3[2] => sls_nbit_mux2to1_vhdl:upper_bits.d1[2]
@@ -1408,7 +1536,7 @@ f[6] <= sls_nbit_mux2to1_vhdl:combined.f[6]
 f[7] <= sls_nbit_mux2to1_vhdl:combined.f[7]
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux|sls_nbit_mux2to1_vhdl:upper_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux|sls_nbit_mux2to1_vhdl:upper_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1451,7 +1579,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux|sls_nbit_mux2to1_vhdl:lower_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux|sls_nbit_mux2to1_vhdl:lower_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1494,7 +1622,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux|sls_nbit_mux2to1_vhdl:combined
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux|sls_nbit_mux2to1_vhdl:combined
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1537,7 +1665,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit
 Func_Sel[0] => Mux23.IN4
 Func_Sel[0] => sls_nbit_mux4to1_vhdl:sr_mux.s[0]
 Func_Sel[1] => Mux23.IN3
@@ -1704,7 +1832,7 @@ SR_CNVZ[2] <= sls_nbit_mux4to1_vhdl:sr_mux.f[7]
 SR_CNVZ[3] <= Mux23.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux
 d3[0] => sls_nbit_mux2to1_vhdl:upper_bits.d1[0]
 d3[1] => sls_nbit_mux2to1_vhdl:upper_bits.d1[1]
 d3[2] => sls_nbit_mux2to1_vhdl:upper_bits.d1[2]
@@ -1750,7 +1878,7 @@ f[6] <= sls_nbit_mux2to1_vhdl:combined.f[6]
 f[7] <= sls_nbit_mux2to1_vhdl:combined.f[7]
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux|sls_nbit_mux2to1_vhdl:upper_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux|sls_nbit_mux2to1_vhdl:upper_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1793,7 +1921,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux|sls_nbit_mux2to1_vhdl:lower_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux|sls_nbit_mux2to1_vhdl:lower_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1836,7 +1964,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux|sls_nbit_mux2to1_vhdl:combined
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux|sls_nbit_mux2to1_vhdl:combined
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1879,7 +2007,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_const_unit_vhdl:const_unit
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_const_unit_vhdl:const_unit
 Func_Sel[0] => sls_nbit_mux4to1_vhdl:const_mux.s[0]
 Func_Sel[1] => sls_nbit_mux4to1_vhdl:const_mux.s[1]
 Const_Result[0] <= sls_nbit_mux4to1_vhdl:const_mux.f[0]
@@ -1896,7 +2024,7 @@ Const_CNVZ[2] <= sls_nbit_mux4to1_vhdl:const_mux.f[7]
 Const_CNVZ[3] <= <GND>
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_const_unit_vhdl:const_unit|sls_nbit_mux4to1_vhdl:const_mux
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_const_unit_vhdl:const_unit|sls_nbit_mux4to1_vhdl:const_mux
 d3[0] => sls_nbit_mux2to1_vhdl:upper_bits.d1[0]
 d3[1] => sls_nbit_mux2to1_vhdl:upper_bits.d1[1]
 d3[2] => sls_nbit_mux2to1_vhdl:upper_bits.d1[2]
@@ -1942,7 +2070,7 @@ f[6] <= sls_nbit_mux2to1_vhdl:combined.f[6]
 f[7] <= sls_nbit_mux2to1_vhdl:combined.f[7]
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_const_unit_vhdl:const_unit|sls_nbit_mux4to1_vhdl:const_mux|sls_nbit_mux2to1_vhdl:upper_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_const_unit_vhdl:const_unit|sls_nbit_mux4to1_vhdl:const_mux|sls_nbit_mux2to1_vhdl:upper_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -1985,7 +2113,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_const_unit_vhdl:const_unit|sls_nbit_mux4to1_vhdl:const_mux|sls_nbit_mux2to1_vhdl:lower_bits
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_const_unit_vhdl:const_unit|sls_nbit_mux4to1_vhdl:const_mux|sls_nbit_mux2to1_vhdl:lower_bits
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -2028,7 +2156,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_const_unit_vhdl:const_unit|sls_nbit_mux4to1_vhdl:const_mux|sls_nbit_mux2to1_vhdl:combined
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_const_unit_vhdl:const_unit|sls_nbit_mux4to1_vhdl:const_mux|sls_nbit_mux2to1_vhdl:combined
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -2071,7 +2199,7 @@ f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:SR
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:SR
 d[0] => q.DATAB
 d[1] => q.DATAB
 d[2] => q.DATAB
@@ -2094,7 +2222,7 @@ q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_upcnt_vhdl:PC
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_upcnt_vhdl:PC
 D[0] => Count.DATAB
 D[1] => Count.DATAB
 D[2] => Count.DATAB
@@ -2141,7 +2269,7 @@ Q[8] <= Count[8].DB_MAX_OUTPUT_PORT_TYPE
 Q[9] <= Count[9].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:IR
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IR
 d[0] => q.DATAB
 d[1] => q.DATAB
 d[2] => q.DATAB
@@ -2184,60 +2312,7 @@ q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:MABR
-d[0] => q.DATAB
-d[1] => q.DATAB
-d[2] => q.DATAB
-d[3] => q.DATAB
-d[4] => q.DATAB
-d[5] => q.DATAB
-d[6] => q.DATAB
-d[7] => q.DATAB
-d[8] => q.DATAB
-d[9] => q.DATAB
-ld => q.OUTPUTSELECT
-ld => q.OUTPUTSELECT
-ld => q.OUTPUTSELECT
-ld => q.OUTPUTSELECT
-ld => q.OUTPUTSELECT
-ld => q.OUTPUTSELECT
-ld => q.OUTPUTSELECT
-ld => q.OUTPUTSELECT
-ld => q.OUTPUTSELECT
-ld => q.OUTPUTSELECT
-reset => q.OUTPUTSELECT
-reset => q.OUTPUTSELECT
-reset => q.OUTPUTSELECT
-reset => q.OUTPUTSELECT
-reset => q.OUTPUTSELECT
-reset => q.OUTPUTSELECT
-reset => q.OUTPUTSELECT
-reset => q.OUTPUTSELECT
-reset => q.OUTPUTSELECT
-reset => q.OUTPUTSELECT
-clock => q[0]~reg0.CLK
-clock => q[1]~reg0.CLK
-clock => q[2]~reg0.CLK
-clock => q[3]~reg0.CLK
-clock => q[4]~reg0.CLK
-clock => q[5]~reg0.CLK
-clock => q[6]~reg0.CLK
-clock => q[7]~reg0.CLK
-clock => q[8]~reg0.CLK
-clock => q[9]~reg0.CLK
-q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:MAXR
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MABR
 d[0] => q.DATAB
 d[1] => q.DATAB
 d[2] => q.DATAB
@@ -2290,7 +2365,7 @@ q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:MAR
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR
 d[0] => q.DATAB
 d[1] => q.DATAB
 d[2] => q.DATAB
@@ -2343,7 +2418,60 @@ q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_MM_vhdl:MM
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR
+d[0] => q.DATAB
+d[1] => q.DATAB
+d[2] => q.DATAB
+d[3] => q.DATAB
+d[4] => q.DATAB
+d[5] => q.DATAB
+d[6] => q.DATAB
+d[7] => q.DATAB
+d[8] => q.DATAB
+d[9] => q.DATAB
+ld => q.OUTPUTSELECT
+ld => q.OUTPUTSELECT
+ld => q.OUTPUTSELECT
+ld => q.OUTPUTSELECT
+ld => q.OUTPUTSELECT
+ld => q.OUTPUTSELECT
+ld => q.OUTPUTSELECT
+ld => q.OUTPUTSELECT
+ld => q.OUTPUTSELECT
+ld => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+reset => q.OUTPUTSELECT
+clock => q[0]~reg0.CLK
+clock => q[1]~reg0.CLK
+clock => q[2]~reg0.CLK
+clock => q[3]~reg0.CLK
+clock => q[4]~reg0.CLK
+clock => q[5]~reg0.CLK
+clock => q[6]~reg0.CLK
+clock => q[7]~reg0.CLK
+clock => q[8]~reg0.CLK
+clock => q[9]~reg0.CLK
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -2374,7 +2502,7 @@ q[6] <= altsyncram:altsyncram_component.q_a[6]
 q[7] <= altsyncram:altsyncram_component.q_a[7]
 
 
-|slsRISC_DP_vhdl|sls_MM_vhdl:MM|altsyncram:altsyncram_component
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component
 wren_a => altsyncram_s3s3:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -2425,7 +2553,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|slsRISC_DP_vhdl|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_s3s3:auto_generated
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_s3s3:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -2540,7 +2668,7 @@ wren_a => ram_block1a6.PORTAWE
 wren_a => ram_block1a7.PORTAWE
 
 
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:IPDR
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR
 d[0] => q.DATAB
 d[1] => q.DATAB
 d[2] => q.DATAB
@@ -2583,7 +2711,7 @@ q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_reg_vhdl:OPDR
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:OPDR
 d[0] => q.DATAB
 d[1] => q.DATAB
 d[2] => q.DATAB
@@ -2626,7 +2754,7 @@ q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_8bit_4loc_stack_vhdl:stack
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack
 push => tos.OUTPUTSELECT
 push => tos.OUTPUTSELECT
 push => tos.OUTPUTSELECT
@@ -2805,7 +2933,7 @@ dout[6] <= dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dout[7] <= dout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|slsRISC_DP_vhdl|sls_nbit_mux2to1_vhdl:stack_mux
+|slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux2to1_vhdl:stack_mux
 d1[0] => f.IN0
 d1[1] => f.IN0
 d1[2] => f.IN0
@@ -2846,5 +2974,676 @@ f[4] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
 f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|slsRISC_vhdl|slsRISC_CU_vhdl:CU
+Reset => CNT_PC.OUTPUTSELECT
+Reset => LD_IR.OUTPUTSELECT
+Reset => LD_R0.OUTPUTSELECT
+Reset => LD_R1.OUTPUTSELECT
+Reset => LD_R2.OUTPUTSELECT
+Reset => LD_R3.OUTPUTSELECT
+Reset => LD_SR.OUTPUTSELECT
+Reset => ALU_FS.OUTPUTSELECT
+Reset => ALU_FS.OUTPUTSELECT
+Reset => ALU_FS.OUTPUTSELECT
+Reset => ALU_FS.OUTPUTSELECT
+Reset => LD_MABR.OUTPUTSELECT
+Reset => LD_MAXR.OUTPUTSELECT
+Reset => LD_MAR.OUTPUTSELECT
+Reset => RW.OUTPUTSELECT
+Reset => MMASel.OUTPUTSELECT
+Reset => LD_OPDR.OUTPUTSELECT
+Reset => RF_SD_OS.OUTPUTSELECT
+Reset => RF_SD_OS.OUTPUTSELECT
+Reset => WB_SEL.OUTPUTSELECT
+Reset => WB_SEL.OUTPUTSELECT
+Reset => crtMCis.OUTPUTSELECT
+Reset => crtMCis.OUTPUTSELECT
+Reset => crtMCis.OUTPUTSELECT
+Reset => MC.OUTPUTSELECT
+Reset => MC.OUTPUTSELECT
+Reset => MC.OUTPUTSELECT
+Reset => push~reg0.ENA
+Reset => ipstksel~reg0.ENA
+Reset => pop~reg0.ENA
+Reset => RF_S_OS[0]~reg0.ENA
+Reset => RF_S_OS[1]~reg0.ENA
+Reset => LD_IPDR~reg0.ENA
+Reset => LD_PC~reg0.ENA
+Reset => RST_PC~reg0.ENA
+Clock => pop~reg0.CLK
+Clock => ipstksel~reg0.CLK
+Clock => push~reg0.CLK
+Clock => MC[0].CLK
+Clock => MC[1].CLK
+Clock => MC[2].CLK
+Clock => crtMCis[0]~reg0.CLK
+Clock => crtMCis[1]~reg0.CLK
+Clock => crtMCis[2]~reg0.CLK
+Clock => WB_SEL[0]~reg0.CLK
+Clock => WB_SEL[1]~reg0.CLK
+Clock => RF_S_OS[0]~reg0.CLK
+Clock => RF_S_OS[1]~reg0.CLK
+Clock => RF_SD_OS[0]~reg0.CLK
+Clock => RF_SD_OS[1]~reg0.CLK
+Clock => LD_OPDR~reg0.CLK
+Clock => LD_IPDR~reg0.CLK
+Clock => MMASel~reg0.CLK
+Clock => RW~reg0.CLK
+Clock => LD_MAR~reg0.CLK
+Clock => LD_MAXR~reg0.CLK
+Clock => LD_MABR~reg0.CLK
+Clock => ALU_FS[0]~reg0.CLK
+Clock => ALU_FS[1]~reg0.CLK
+Clock => ALU_FS[2]~reg0.CLK
+Clock => ALU_FS[3]~reg0.CLK
+Clock => LD_SR~reg0.CLK
+Clock => LD_R3~reg0.CLK
+Clock => LD_R2~reg0.CLK
+Clock => LD_R1~reg0.CLK
+Clock => LD_R0~reg0.CLK
+Clock => LD_IR~reg0.CLK
+Clock => CNT_PC~reg0.CLK
+Clock => LD_PC~reg0.CLK
+Clock => RST_PC~reg0.CLK
+Clock => Rsd[0].CLK
+Clock => Rsd[1].CLK
+Clock => opCode[0].CLK
+Clock => opCode[1].CLK
+Clock => opCode[2].CLK
+Clock => opCode[3].CLK
+IW[0] => ~NO_FANOUT~
+IW[1] => ~NO_FANOUT~
+IW[2] => Rsd[0].DATAIN
+IW[3] => Rsd[1].DATAIN
+IW[4] => opCode[0].DATAIN
+IW[5] => opCode[1].DATAIN
+IW[6] => opCode[2].DATAIN
+IW[7] => opCode[3].DATAIN
+SR_CNVZ[0] => ~NO_FANOUT~
+SR_CNVZ[1] => ~NO_FANOUT~
+SR_CNVZ[2] => ~NO_FANOUT~
+SR_CNVZ[3] => ~NO_FANOUT~
+MAR_din[0] => ~NO_FANOUT~
+MAR_din[1] => ~NO_FANOUT~
+MAR_din[2] => ~NO_FANOUT~
+MAR_din[3] => ~NO_FANOUT~
+MAR_din[4] => ~NO_FANOUT~
+MAR_din[5] => ~NO_FANOUT~
+MAR_din[6] => ~NO_FANOUT~
+MAR_din[7] => ~NO_FANOUT~
+MAR_din[8] => ~NO_FANOUT~
+MAR_din[9] => ~NO_FANOUT~
+MARout[0] => LessThan0.IN24
+MARout[1] => LessThan0.IN23
+MARout[2] => LessThan0.IN22
+MARout[3] => LessThan0.IN21
+MARout[4] => LessThan0.IN20
+MARout[5] => LessThan0.IN19
+MARout[6] => LessThan0.IN18
+MARout[7] => LessThan0.IN17
+MARout[8] => LessThan0.IN16
+MARout[9] => LessThan0.IN13
+MARout[9] => LessThan0.IN14
+MARout[9] => LessThan0.IN15
+RST_PC <= RST_PC~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_PC <= LD_PC~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNT_PC <= CNT_PC~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_IR <= LD_IR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_R0 <= LD_R0~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_R1 <= LD_R1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_R2 <= LD_R2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_R3 <= LD_R3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_SR <= LD_SR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_MABR <= LD_MABR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_MAXR <= LD_MAXR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_MAR <= LD_MAR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RW <= RW~reg0.DB_MAX_OUTPUT_PORT_TYPE
+MMASel <= MMASel~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_IPDR <= LD_IPDR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LD_OPDR <= LD_OPDR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+push <= push~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pop <= pop~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ipstksel <= ipstksel~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RF_SD_OS[0] <= RF_SD_OS[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RF_SD_OS[1] <= RF_SD_OS[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RF_S_OS[0] <= RF_S_OS[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RF_S_OS[1] <= RF_S_OS[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WB_SEL[0] <= WB_SEL[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WB_SEL[1] <= WB_SEL[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ALU_FS[0] <= ALU_FS[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ALU_FS[1] <= ALU_FS[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ALU_FS[2] <= ALU_FS[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ALU_FS[3] <= ALU_FS[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+crtMCis[0] <= crtMCis[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+crtMCis[1] <= crtMCis[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+crtMCis[2] <= crtMCis[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|slsRISC_vhdl|sls_IW2ASCII_vhdl:ICdecode
+IW[0] => Mux50.IN9
+IW[0] => Mux50.IN10
+IW[0] => Mux50.IN11
+IW[0] => Mux50.IN12
+IW[0] => Mux50.IN13
+IW[0] => Mux50.IN14
+IW[0] => Mux50.IN15
+IW[0] => Mux50.IN16
+IW[0] => Mux50.IN17
+IW[0] => Mux50.IN18
+IW[0] => Mux50.IN19
+IW[0] => Equal0.IN7
+IW[0] => Equal1.IN7
+IW[0] => Equal2.IN7
+IW[0] => Equal3.IN7
+IW[0] => Equal4.IN7
+IW[1] => Mux49.IN9
+IW[1] => Mux49.IN10
+IW[1] => Mux49.IN11
+IW[1] => Mux49.IN12
+IW[1] => Mux49.IN13
+IW[1] => Mux49.IN14
+IW[1] => Mux49.IN15
+IW[1] => Mux49.IN16
+IW[1] => Mux49.IN17
+IW[1] => Mux49.IN18
+IW[1] => Mux49.IN19
+IW[1] => Equal0.IN6
+IW[1] => Equal1.IN6
+IW[1] => Equal2.IN6
+IW[1] => Equal3.IN6
+IW[1] => Equal4.IN6
+IW[2] => Mux28.IN19
+IW[2] => Mux31.IN6
+IW[2] => Mux31.IN7
+IW[2] => Mux31.IN8
+IW[2] => Mux31.IN9
+IW[2] => Mux31.IN10
+IW[2] => Mux31.IN11
+IW[2] => Mux31.IN12
+IW[2] => Mux31.IN13
+IW[2] => Mux31.IN14
+IW[2] => Mux31.IN15
+IW[2] => Mux31.IN16
+IW[2] => Mux31.IN17
+IW[2] => Mux31.IN18
+IW[2] => Mux31.IN19
+IW[2] => Equal0.IN5
+IW[2] => Equal1.IN5
+IW[2] => Equal2.IN5
+IW[2] => Equal3.IN5
+IW[2] => Equal4.IN5
+IW[3] => Mux27.IN19
+IW[3] => Mux30.IN6
+IW[3] => Mux30.IN7
+IW[3] => Mux30.IN8
+IW[3] => Mux30.IN9
+IW[3] => Mux30.IN10
+IW[3] => Mux30.IN11
+IW[3] => Mux30.IN12
+IW[3] => Mux30.IN13
+IW[3] => Mux30.IN14
+IW[3] => Mux30.IN15
+IW[3] => Mux30.IN16
+IW[3] => Mux30.IN17
+IW[3] => Mux30.IN18
+IW[3] => Mux30.IN19
+IW[3] => Equal0.IN4
+IW[3] => Equal1.IN4
+IW[3] => Equal2.IN4
+IW[3] => Equal3.IN4
+IW[3] => Equal4.IN4
+IW[4] => Mux0.IN19
+IW[4] => Mux1.IN19
+IW[4] => Mux2.IN19
+IW[4] => Mux3.IN19
+IW[4] => Mux4.IN19
+IW[4] => Mux5.IN19
+IW[4] => Mux6.IN19
+IW[4] => Mux7.IN19
+IW[4] => Mux8.IN19
+IW[4] => Mux9.IN19
+IW[4] => Mux10.IN19
+IW[4] => Mux11.IN19
+IW[4] => Mux12.IN19
+IW[4] => Mux13.IN19
+IW[4] => Mux14.IN19
+IW[4] => Mux15.IN19
+IW[4] => Mux16.IN19
+IW[4] => Mux17.IN19
+IW[4] => Mux18.IN19
+IW[4] => Mux19.IN19
+IW[4] => Mux20.IN19
+IW[4] => Mux21.IN19
+IW[4] => Mux22.IN19
+IW[4] => Mux23.IN19
+IW[4] => Mux24.IN19
+IW[4] => Mux25.IN19
+IW[4] => Mux26.IN19
+IW[4] => Mux27.IN18
+IW[4] => Mux28.IN18
+IW[4] => Mux29.IN19
+IW[4] => Mux30.IN5
+IW[4] => Mux31.IN5
+IW[4] => Mux32.IN19
+IW[4] => Mux33.IN18
+IW[4] => Mux34.IN18
+IW[4] => Mux35.IN18
+IW[4] => Mux36.IN18
+IW[4] => Mux37.IN18
+IW[4] => Mux38.IN18
+IW[4] => Mux39.IN18
+IW[4] => Mux40.IN19
+IW[4] => Mux41.IN19
+IW[4] => Mux42.IN19
+IW[4] => Mux43.IN19
+IW[4] => Mux44.IN19
+IW[4] => Mux46.IN19
+IW[4] => Mux47.IN19
+IW[4] => Mux48.IN19
+IW[4] => Mux49.IN8
+IW[4] => Mux50.IN8
+IW[5] => Mux0.IN18
+IW[5] => Mux1.IN18
+IW[5] => Mux2.IN18
+IW[5] => Mux3.IN18
+IW[5] => Mux4.IN18
+IW[5] => Mux5.IN18
+IW[5] => Mux6.IN18
+IW[5] => Mux7.IN18
+IW[5] => Mux8.IN18
+IW[5] => Mux9.IN18
+IW[5] => Mux10.IN18
+IW[5] => Mux11.IN18
+IW[5] => Mux12.IN18
+IW[5] => Mux13.IN18
+IW[5] => Mux14.IN18
+IW[5] => Mux15.IN18
+IW[5] => Mux16.IN18
+IW[5] => Mux17.IN18
+IW[5] => Mux18.IN18
+IW[5] => Mux19.IN18
+IW[5] => Mux20.IN18
+IW[5] => Mux21.IN18
+IW[5] => Mux22.IN18
+IW[5] => Mux23.IN18
+IW[5] => Mux24.IN18
+IW[5] => Mux25.IN18
+IW[5] => Mux26.IN18
+IW[5] => Mux27.IN17
+IW[5] => Mux28.IN17
+IW[5] => Mux29.IN18
+IW[5] => Mux30.IN4
+IW[5] => Mux31.IN4
+IW[5] => Mux32.IN18
+IW[5] => Mux33.IN17
+IW[5] => Mux34.IN17
+IW[5] => Mux35.IN17
+IW[5] => Mux36.IN17
+IW[5] => Mux37.IN17
+IW[5] => Mux38.IN17
+IW[5] => Mux39.IN17
+IW[5] => Mux40.IN18
+IW[5] => Mux41.IN18
+IW[5] => Mux42.IN18
+IW[5] => Mux43.IN18
+IW[5] => Mux44.IN18
+IW[5] => Mux45.IN10
+IW[5] => Mux46.IN18
+IW[5] => Mux47.IN18
+IW[5] => Mux48.IN18
+IW[5] => Mux49.IN7
+IW[5] => Mux50.IN7
+IW[5] => Mux51.IN10
+IW[6] => Mux0.IN17
+IW[6] => Mux1.IN17
+IW[6] => Mux2.IN17
+IW[6] => Mux3.IN17
+IW[6] => Mux4.IN17
+IW[6] => Mux5.IN17
+IW[6] => Mux6.IN17
+IW[6] => Mux7.IN17
+IW[6] => Mux8.IN17
+IW[6] => Mux9.IN17
+IW[6] => Mux10.IN17
+IW[6] => Mux11.IN17
+IW[6] => Mux12.IN17
+IW[6] => Mux13.IN17
+IW[6] => Mux14.IN17
+IW[6] => Mux15.IN17
+IW[6] => Mux16.IN17
+IW[6] => Mux17.IN17
+IW[6] => Mux18.IN17
+IW[6] => Mux19.IN17
+IW[6] => Mux20.IN17
+IW[6] => Mux21.IN17
+IW[6] => Mux22.IN17
+IW[6] => Mux23.IN17
+IW[6] => Mux24.IN17
+IW[6] => Mux25.IN17
+IW[6] => Mux26.IN17
+IW[6] => Mux27.IN16
+IW[6] => Mux28.IN16
+IW[6] => Mux29.IN17
+IW[6] => Mux30.IN3
+IW[6] => Mux31.IN3
+IW[6] => Mux32.IN17
+IW[6] => Mux33.IN16
+IW[6] => Mux34.IN16
+IW[6] => Mux35.IN16
+IW[6] => Mux36.IN16
+IW[6] => Mux37.IN16
+IW[6] => Mux38.IN16
+IW[6] => Mux39.IN16
+IW[6] => Mux40.IN17
+IW[6] => Mux41.IN17
+IW[6] => Mux42.IN17
+IW[6] => Mux43.IN17
+IW[6] => Mux44.IN17
+IW[6] => Mux45.IN9
+IW[6] => Mux46.IN17
+IW[6] => Mux47.IN17
+IW[6] => Mux48.IN17
+IW[6] => Mux49.IN6
+IW[6] => Mux50.IN6
+IW[6] => Mux51.IN9
+IW[7] => Mux0.IN16
+IW[7] => Mux1.IN16
+IW[7] => Mux2.IN16
+IW[7] => Mux3.IN16
+IW[7] => Mux4.IN16
+IW[7] => Mux5.IN16
+IW[7] => Mux6.IN16
+IW[7] => Mux7.IN16
+IW[7] => Mux8.IN16
+IW[7] => Mux9.IN16
+IW[7] => Mux10.IN16
+IW[7] => Mux11.IN16
+IW[7] => Mux12.IN16
+IW[7] => Mux13.IN16
+IW[7] => Mux14.IN16
+IW[7] => Mux15.IN16
+IW[7] => Mux16.IN16
+IW[7] => Mux17.IN16
+IW[7] => Mux18.IN16
+IW[7] => Mux19.IN16
+IW[7] => Mux20.IN16
+IW[7] => Mux21.IN16
+IW[7] => Mux22.IN16
+IW[7] => Mux23.IN16
+IW[7] => Mux24.IN16
+IW[7] => Mux25.IN16
+IW[7] => Mux26.IN16
+IW[7] => Mux27.IN15
+IW[7] => Mux28.IN15
+IW[7] => Mux29.IN16
+IW[7] => Mux30.IN2
+IW[7] => Mux31.IN2
+IW[7] => Mux32.IN16
+IW[7] => Mux33.IN15
+IW[7] => Mux34.IN15
+IW[7] => Mux35.IN15
+IW[7] => Mux36.IN15
+IW[7] => Mux37.IN15
+IW[7] => Mux38.IN15
+IW[7] => Mux39.IN15
+IW[7] => Mux40.IN16
+IW[7] => Mux41.IN16
+IW[7] => Mux42.IN16
+IW[7] => Mux43.IN16
+IW[7] => Mux44.IN16
+IW[7] => Mux45.IN8
+IW[7] => Mux46.IN16
+IW[7] => Mux47.IN16
+IW[7] => Mux48.IN16
+IW[7] => Mux49.IN5
+IW[7] => Mux50.IN5
+IW[7] => Mux51.IN8
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Reset => ICis.OUTPUTSELECT
+Clock => ICis[0]~reg0.CLK
+Clock => ICis[1]~reg0.CLK
+Clock => ICis[2]~reg0.CLK
+Clock => ICis[3]~reg0.CLK
+Clock => ICis[4]~reg0.CLK
+Clock => ICis[5]~reg0.CLK
+Clock => ICis[6]~reg0.CLK
+Clock => ICis[7]~reg0.CLK
+Clock => ICis[8]~reg0.CLK
+Clock => ICis[9]~reg0.CLK
+Clock => ICis[10]~reg0.CLK
+Clock => ICis[11]~reg0.CLK
+Clock => ICis[12]~reg0.CLK
+Clock => ICis[13]~reg0.CLK
+Clock => ICis[14]~reg0.CLK
+Clock => ICis[15]~reg0.CLK
+Clock => ICis[16]~reg0.CLK
+Clock => ICis[17]~reg0.CLK
+Clock => ICis[18]~reg0.CLK
+Clock => ICis[19]~reg0.CLK
+Clock => ICis[20]~reg0.CLK
+Clock => ICis[21]~reg0.CLK
+Clock => ICis[22]~reg0.CLK
+Clock => ICis[23]~reg0.CLK
+Clock => ICis[24]~reg0.CLK
+Clock => ICis[25]~reg0.CLK
+Clock => ICis[26]~reg0.CLK
+Clock => ICis[27]~reg0.CLK
+Clock => ICis[28]~reg0.CLK
+Clock => ICis[29]~reg0.CLK
+Clock => ICis[30]~reg0.CLK
+Clock => ICis[31]~reg0.CLK
+Clock => ICis[32]~reg0.CLK
+Clock => ICis[33]~reg0.CLK
+Clock => ICis[34]~reg0.CLK
+Clock => ICis[35]~reg0.CLK
+Clock => ICis[36]~reg0.CLK
+Clock => ICis[37]~reg0.CLK
+Clock => ICis[38]~reg0.CLK
+Clock => ICis[39]~reg0.CLK
+Clock => ICis[40]~reg0.CLK
+Clock => ICis[41]~reg0.CLK
+Clock => ICis[42]~reg0.CLK
+Clock => ICis[43]~reg0.CLK
+Clock => ICis[44]~reg0.CLK
+Clock => ICis[45]~reg0.CLK
+Clock => ICis[46]~reg0.CLK
+Clock => ICis[47]~reg0.CLK
+Clock => ICis[48]~reg0.CLK
+Clock => ICis[49]~reg0.CLK
+Clock => ICis[50]~reg0.CLK
+Clock => ICis[51]~reg0.CLK
+Clock => ICis[52]~reg0.CLK
+Clock => ICis[53]~reg0.CLK
+Clock => ICis[54]~reg0.CLK
+Clock => ICis[55]~reg0.CLK
+Clock => ICis[56]~reg0.CLK
+Clock => ICis[57]~reg0.CLK
+Clock => ICis[58]~reg0.CLK
+Clock => ICis[59]~reg0.CLK
+Clock => ICis[60]~reg0.CLK
+Clock => ICis[61]~reg0.CLK
+Clock => ICis[62]~reg0.CLK
+Clock => ICis[63]~reg0.CLK
+Clock => ICis[64]~reg0.CLK
+Clock => ICis[65]~reg0.CLK
+Clock => ICis[66]~reg0.CLK
+Clock => ICis[67]~reg0.CLK
+Clock => ICis[68]~reg0.CLK
+Clock => ICis[69]~reg0.CLK
+Clock => ICis[70]~reg0.CLK
+Clock => ICis[71]~reg0.CLK
+Clock => ICis[72]~reg0.CLK
+Clock => ICis[73]~reg0.CLK
+Clock => ICis[74]~reg0.CLK
+Clock => ICis[75]~reg0.CLK
+Clock => ICis[76]~reg0.CLK
+Clock => ICis[77]~reg0.CLK
+Clock => ICis[78]~reg0.CLK
+Clock => ICis[79]~reg0.CLK
+Clock => ICis[80]~reg0.CLK
+Clock => ICis[81]~reg0.CLK
+Clock => ICis[82]~reg0.CLK
+Clock => ICis[83]~reg0.CLK
+Clock => ICis[84]~reg0.CLK
+Clock => ICis[85]~reg0.CLK
+Clock => ICis[86]~reg0.CLK
+Clock => ICis[87]~reg0.CLK
+Clock => ICis[88]~reg0.CLK
+Clock => ICis[89]~reg0.CLK
+Clock => ICis[90]~reg0.CLK
+Clock => ICis[91]~reg0.CLK
+Clock => ICis[92]~reg0.CLK
+Clock => ICis[93]~reg0.CLK
+Clock => ICis[94]~reg0.CLK
+Clock => ICis[95]~reg0.CLK
+ICis[0] <= ICis[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[1] <= ICis[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[2] <= ICis[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[3] <= ICis[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[4] <= ICis[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[5] <= ICis[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[6] <= ICis[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[7] <= ICis[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[8] <= ICis[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[9] <= ICis[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[10] <= ICis[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[11] <= ICis[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[12] <= ICis[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[13] <= ICis[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[14] <= ICis[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[15] <= ICis[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[16] <= ICis[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[17] <= ICis[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[18] <= ICis[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[19] <= ICis[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[20] <= ICis[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[21] <= ICis[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[22] <= ICis[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[23] <= ICis[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[24] <= ICis[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[25] <= ICis[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[26] <= ICis[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[27] <= ICis[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[28] <= ICis[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[29] <= ICis[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[30] <= ICis[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[31] <= ICis[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[32] <= ICis[32]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[33] <= ICis[33]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[34] <= ICis[34]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[35] <= ICis[35]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[36] <= ICis[36]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[37] <= ICis[37]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[38] <= ICis[38]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[39] <= ICis[39]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[40] <= ICis[40]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[41] <= ICis[41]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[42] <= ICis[42]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[43] <= ICis[43]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[44] <= ICis[44]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[45] <= ICis[45]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[46] <= ICis[46]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[47] <= ICis[47]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[48] <= ICis[48]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[49] <= ICis[49]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[50] <= ICis[50]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[51] <= ICis[51]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[52] <= ICis[52]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[53] <= ICis[53]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[54] <= ICis[54]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[55] <= ICis[55]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[56] <= ICis[56]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[57] <= ICis[57]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[58] <= ICis[58]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[59] <= ICis[59]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[60] <= ICis[60]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[61] <= ICis[61]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[62] <= ICis[62]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[63] <= ICis[63]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[64] <= ICis[64]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[65] <= ICis[65]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[66] <= ICis[66]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[67] <= ICis[67]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[68] <= ICis[68]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[69] <= ICis[69]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[70] <= ICis[70]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[71] <= ICis[71]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[72] <= ICis[72]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[73] <= ICis[73]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[74] <= ICis[74]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[75] <= ICis[75]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[76] <= ICis[76]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[77] <= ICis[77]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[78] <= ICis[78]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[79] <= ICis[79]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[80] <= ICis[80]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[81] <= ICis[81]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[82] <= ICis[82]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[83] <= ICis[83]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[84] <= ICis[84]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[85] <= ICis[85]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[86] <= ICis[86]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[87] <= ICis[87]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[88] <= ICis[88]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[89] <= ICis[89]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[90] <= ICis[90]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[91] <= ICis[91]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[92] <= ICis[92]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[93] <= ICis[93]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[94] <= ICis[94]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ICis[95] <= ICis[95]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
