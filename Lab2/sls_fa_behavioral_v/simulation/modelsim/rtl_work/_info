@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/simulation/modelsim
+vsls_fa_behavioral_v
+Z1 !s110 1737751368
+!i10b 1
+!s100 O:Lofckh<dkV[@D2iG7I22
+Im72FC]9KURTKgzWmn>Ra]2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1737751108
+8C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1737751368.000000
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v|C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v
+Z7 tCvgOpt 0
+vsls_fa_behavioral_v_tb
+R1
+!i10b 1
+!s100 C0^0f@R7ce@_CX@h6OZ;_2
+IldUdfH=kcb[B^GnbF0gnE1
+R2
+R0
+w1737751272
+8C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v_tb.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v|C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v_tb.v|
+!i113 1
+R5
+R6
+R7

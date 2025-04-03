@@ -1,0 +1,18 @@
+Quartus Prime Archive log --	C:/Users/sls3445/Documents/DS2_Labs/Lab5/sls_4bit_alu_beh_v_new/sls_4bit_alu_beh_v.qarlog
+
+Archive:	C:/Users/sls3445/Documents/DS2_Labs/Lab5/sls_4bit_alu_beh_v_new/sls_4bit_alu_beh_v.qar
+Date:		Fri Feb 21 16:31:57 2025
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/sls3445/Documents/DS2_Labs/Lab5/sls_4bit_alu_beh_v_new/assignment_defaults.qdf
+C:/Users/sls3445/Documents/DS2_Labs/Lab5/sls_4bit_alu_beh_v_new/sls_4bit_alu_beh_v.qpf
+C:/Users/sls3445/Documents/DS2_Labs/Lab5/sls_4bit_alu_beh_v_new/sls_4bit_alu_beh_v.qsf
+C:/Users/sls3445/Documents/DS2_Labs/Lab5/sls_4bit_alu_beh_v_new/sls_4bit_alu_beh_v.v
+C:/Users/sls3445/Documents/DS2_Labs/Lab5/sls_4bit_alu_beh_v_new/sls_4bit_alu_beh_v_tb.v
+C:/Users/sls3445/Documents/DS2_Labs/Lab5/sls_4bit_alu_beh_v_new/sls_alu_fpga_emulation.v
+C:/Users/sls3445/Documents/DS2_Labs/Lab5/super_8bit_alu_v_tb.v
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

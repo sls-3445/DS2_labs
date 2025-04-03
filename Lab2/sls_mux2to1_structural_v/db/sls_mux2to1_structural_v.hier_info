@@ -1,0 +1,8 @@
+|sls_mux2to1_structural_v
+x1 => h.IN0
+x0 => g.IN0
+s => h.IN1
+s => g.IN1
+f << comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

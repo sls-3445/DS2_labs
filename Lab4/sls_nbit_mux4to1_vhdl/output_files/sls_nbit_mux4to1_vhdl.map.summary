@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Feb 07 17:11:36 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : sls_nbit_mux4to1_vhdl
+Top-level Entity Name : sls_nbit_mux4to1_vhdl
+Family : Cyclone IV E
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 22
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

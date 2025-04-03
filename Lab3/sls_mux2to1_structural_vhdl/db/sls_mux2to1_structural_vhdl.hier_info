@@ -1,0 +1,31 @@
+|sls_mux2to1_structural_vhdl
+x1 => sls_and2:stage2.x0
+x0 => sls_and2:stage1.x0
+s => sls_not:stage0.x
+s => sls_and2:stage2.x1
+f << sls_or2:stage3.f
+
+
+|sls_mux2to1_structural_vhdl|sls_not:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_mux2to1_structural_vhdl|sls_and2:stage1
+x1 => f.IN0
+x0 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_mux2to1_structural_vhdl|sls_and2:stage2
+x1 => f.IN0
+x0 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_mux2to1_structural_vhdl|sls_or2:stage3
+x1 => f.IN0
+x0 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

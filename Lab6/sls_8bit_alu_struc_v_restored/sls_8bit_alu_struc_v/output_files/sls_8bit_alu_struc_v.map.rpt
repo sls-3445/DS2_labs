@@ -1,0 +1,739 @@
+Analysis & Synthesis report for sls_8bit_alu_struc_v
+Fri Mar 07 16:04:14 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux
+ 11. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:lower_bits_mux
+ 12. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:upper_bits_mux
+ 13. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:final_mux
+ 14. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_arith_unit_v:arith_unit|sls_nbit_add_sub_v:addersub
+ 15. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_arith_unit_v:arith_unit|sls_nbit_mux2to1_v:yselect_mux
+ 16. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_logic_unit_v:logic_unit|sls_nbit_mux4to1_v:logic_mux
+ 17. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_logic_unit_v:logic_unit|sls_nbit_mux4to1_v:logic_mux|sls_nbit_mux2to1_v:lower_bits_mux
+ 18. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_logic_unit_v:logic_unit|sls_nbit_mux4to1_v:logic_mux|sls_nbit_mux2to1_v:upper_bits_mux
+ 19. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_logic_unit_v:logic_unit|sls_nbit_mux4to1_v:logic_mux|sls_nbit_mux2to1_v:final_mux
+ 20. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shra_mux
+ 21. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shra_mux|sls_nbit_mux2to1_v:lower_bits_mux
+ 22. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shra_mux|sls_nbit_mux2to1_v:upper_bits_mux
+ 23. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shra_mux|sls_nbit_mux2to1_v:final_mux
+ 24. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shrl_mux
+ 25. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shrl_mux|sls_nbit_mux2to1_v:lower_bits_mux
+ 26. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shrl_mux|sls_nbit_mux2to1_v:upper_bits_mux
+ 27. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shrl_mux|sls_nbit_mux2to1_v:final_mux
+ 28. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:rlc_mux
+ 29. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:rlc_mux|sls_nbit_mux2to1_v:lower_bits_mux
+ 30. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:rlc_mux|sls_nbit_mux2to1_v:upper_bits_mux
+ 31. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:rlc_mux|sls_nbit_mux2to1_v:final_mux
+ 32. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:result_mux
+ 33. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:lower_bits_mux
+ 34. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:upper_bits_mux
+ 35. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:final_mux
+ 36. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit|sls_nbit_mux4to1_v:const_mux
+ 37. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit|sls_nbit_mux4to1_v:const_mux|sls_nbit_mux2to1_v:lower_bits_mux
+ 38. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit|sls_nbit_mux4to1_v:const_mux|sls_nbit_mux2to1_v:upper_bits_mux
+ 39. Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit|sls_nbit_mux4to1_v:const_mux|sls_nbit_mux2to1_v:final_mux
+ 40. Port Connectivity Checks: "sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit|sls_nbit_mux4to1_v:const_mux"
+ 41. Port Connectivity Checks: "sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:rlc_mux"
+ 42. Port Connectivity Checks: "sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shrl_mux"
+ 43. Port Connectivity Checks: "sls_8bit_alu_struc_v:mut|sls_8bit_arith_unit_v:arith_unit|sls_nbit_mux2to1_v:yselect_mux"
+ 44. Port Connectivity Checks: "sls_8bit_alu_struc_v:mut"
+ 45. Post-Synthesis Netlist Statistics for Top Partition
+ 46. Elapsed Time Per Partition
+ 47. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Mar 07 16:04:14 2025       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; sls_8bit_alu_struc_v                        ;
+; Top-level Entity Name              ; sls_alu_fpga_emulation                      ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 25                                          ;
+;     Total combinational functions  ; 25                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 14                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                    ;
++------------------------------------------------------------------+------------------------+----------------------+
+; Option                                                           ; Setting                ; Default Value        ;
++------------------------------------------------------------------+------------------------+----------------------+
+; Device                                                           ; EP4CE22F17C6           ;                      ;
+; Top-level entity name                                            ; sls_alu_fpga_emulation ; sls_8bit_alu_struc_v ;
+; Family name                                                      ; Cyclone IV E           ; Cyclone V            ;
+; Use smart compilation                                            ; Off                    ; Off                  ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                     ; On                   ;
+; Enable compact report table                                      ; Off                    ; Off                  ;
+; Restructure Multiplexers                                         ; Auto                   ; Auto                 ;
+; Create Debugging Nodes for IP Cores                              ; Off                    ; Off                  ;
+; Preserve fewer node names                                        ; On                     ; On                   ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable                 ; Enable               ;
+; Verilog Version                                                  ; Verilog_2001           ; Verilog_2001         ;
+; VHDL Version                                                     ; VHDL_1993              ; VHDL_1993            ;
+; State Machine Processing                                         ; Auto                   ; Auto                 ;
+; Safe State Machine                                               ; Off                    ; Off                  ;
+; Extract Verilog State Machines                                   ; On                     ; On                   ;
+; Extract VHDL State Machines                                      ; On                     ; On                   ;
+; Ignore Verilog initial constructs                                ; Off                    ; Off                  ;
+; Iteration limit for constant Verilog loops                       ; 5000                   ; 5000                 ;
+; Iteration limit for non-constant Verilog loops                   ; 250                    ; 250                  ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                     ; On                   ;
+; Infer RAMs from Raw Logic                                        ; On                     ; On                   ;
+; Parallel Synthesis                                               ; On                     ; On                   ;
+; DSP Block Balancing                                              ; Auto                   ; Auto                 ;
+; NOT Gate Push-Back                                               ; On                     ; On                   ;
+; Power-Up Don't Care                                              ; On                     ; On                   ;
+; Remove Redundant Logic Cells                                     ; Off                    ; Off                  ;
+; Remove Duplicate Registers                                       ; On                     ; On                   ;
+; Ignore CARRY Buffers                                             ; Off                    ; Off                  ;
+; Ignore CASCADE Buffers                                           ; Off                    ; Off                  ;
+; Ignore GLOBAL Buffers                                            ; Off                    ; Off                  ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                    ; Off                  ;
+; Ignore LCELL Buffers                                             ; Off                    ; Off                  ;
+; Ignore SOFT Buffers                                              ; On                     ; On                   ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                    ; Off                  ;
+; Optimization Technique                                           ; Balanced               ; Balanced             ;
+; Carry Chain Length                                               ; 70                     ; 70                   ;
+; Auto Carry Chains                                                ; On                     ; On                   ;
+; Auto Open-Drain Pins                                             ; On                     ; On                   ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                    ; Off                  ;
+; Auto ROM Replacement                                             ; On                     ; On                   ;
+; Auto RAM Replacement                                             ; On                     ; On                   ;
+; Auto DSP Block Replacement                                       ; On                     ; On                   ;
+; Auto Shift Register Replacement                                  ; Auto                   ; Auto                 ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto                   ; Auto                 ;
+; Auto Clock Enable Replacement                                    ; On                     ; On                   ;
+; Strict RAM Replacement                                           ; Off                    ; Off                  ;
+; Allow Synchronous Control Signals                                ; On                     ; On                   ;
+; Force Use of Synchronous Clear Signals                           ; Off                    ; Off                  ;
+; Auto RAM Block Balancing                                         ; On                     ; On                   ;
+; Auto RAM to Logic Cell Conversion                                ; Off                    ; Off                  ;
+; Auto Resource Sharing                                            ; Off                    ; Off                  ;
+; Allow Any RAM Size For Recognition                               ; Off                    ; Off                  ;
+; Allow Any ROM Size For Recognition                               ; Off                    ; Off                  ;
+; Allow Any Shift Register Size For Recognition                    ; Off                    ; Off                  ;
+; Use LogicLock Constraints during Resource Balancing              ; On                     ; On                   ;
+; Ignore translate_off and synthesis_off directives                ; Off                    ; Off                  ;
+; Timing-Driven Synthesis                                          ; On                     ; On                   ;
+; Report Parameter Settings                                        ; On                     ; On                   ;
+; Report Source Assignments                                        ; On                     ; On                   ;
+; Report Connectivity Checks                                       ; On                     ; On                   ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                    ; Off                  ;
+; Synchronization Register Chain Length                            ; 2                      ; 2                    ;
+; Power Optimization During Synthesis                              ; Normal compilation     ; Normal compilation   ;
+; HDL message level                                                ; Level2                 ; Level2               ;
+; Suppress Register Optimization Related Messages                  ; Off                    ; Off                  ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000                   ; 5000                 ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000                   ; 5000                 ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                    ; 100                  ;
+; Clock MUX Protection                                             ; On                     ; On                   ;
+; Auto Gated Clock Conversion                                      ; Off                    ; Off                  ;
+; Block Design Naming                                              ; Auto                   ; Auto                 ;
+; SDC constraint protection                                        ; Off                    ; Off                  ;
+; Synthesis Effort                                                 ; Auto                   ; Auto                 ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                     ; On                   ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                    ; Off                  ;
+; Analysis & Synthesis Message Level                               ; Medium                 ; Medium               ;
+; Disable Register Merging Across Hierarchies                      ; Auto                   ; Auto                 ;
+; Resource Aware Inference For Block RAM                           ; On                     ; On                   ;
++------------------------------------------------------------------+------------------------+----------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                         ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+; sls_8bit_alu_struc_v.v           ; yes             ; User Verilog HDL File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_alu_struc_v.v   ;         ;
+; sls_nbit_mux2to1_v.v             ; yes             ; User Verilog HDL File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_nbit_mux2to1_v.v     ;         ;
+; sls_nbit_mux4to1_v.v             ; yes             ; User Verilog HDL File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_nbit_mux4to1_v.v     ;         ;
+; sls_nbit_add_sub_v.v             ; yes             ; User Verilog HDL File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_nbit_add_sub_v.v     ;         ;
+; sls_8bit_arith_unit_v.v          ; yes             ; User Verilog HDL File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_arith_unit_v.v  ;         ;
+; sls_8bit_logic_unit_v.v          ; yes             ; User Verilog HDL File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_logic_unit_v.v  ;         ;
+; sls_8bit_sr_unit_v.v             ; yes             ; User Verilog HDL File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_sr_unit_v.v     ;         ;
+; sls_8bit_const_unit_v.v          ; yes             ; User Verilog HDL File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_const_unit_v.v  ;         ;
+; sls_alu_fpga_emulation.v         ; yes             ; User Verilog HDL File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_alu_fpga_emulation.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 25          ;
+;                                             ;             ;
+; Total combinational functions               ; 25          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 23          ;
+;     -- 3 input functions                    ; 2           ;
+;     -- <=2 input functions                  ; 0           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 25          ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 14          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; sw[3]~input ;
+; Maximum fan-out                             ; 16          ;
+; Total fan-out                               ; 120         ;
+; Average fan-out                             ; 2.26        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                         ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                           ; Entity Name            ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; |sls_alu_fpga_emulation                  ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |sls_alu_fpga_emulation                                                                                       ; sls_alu_fpga_emulation ; work         ;
+;    |sls_8bit_alu_struc_v:mut|            ; 25 (7)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_alu_fpga_emulation|sls_8bit_alu_struc_v:mut                                                              ; sls_8bit_alu_struc_v   ; work         ;
+;       |sls_8bit_arith_unit_v:arith_unit| ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_alu_fpga_emulation|sls_8bit_alu_struc_v:mut|sls_8bit_arith_unit_v:arith_unit                             ; sls_8bit_arith_unit_v  ; work         ;
+;          |sls_nbit_add_sub_v:addersub|   ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_alu_fpga_emulation|sls_8bit_alu_struc_v:mut|sls_8bit_arith_unit_v:arith_unit|sls_nbit_add_sub_v:addersub ; sls_nbit_add_sub_v     ; work         ;
+;       |sls_nbit_mux4to1_v:result_mux|    ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_alu_fpga_emulation|sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux                                ; sls_nbit_mux4to1_v     ; work         ;
+;          |sls_nbit_mux2to1_v:final_mux|  ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_alu_fpga_emulation|sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:final_mux   ; sls_nbit_mux2to1_v     ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |sls_alu_fpga_emulation|sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:final_mux|f[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:lower_bits_mux ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:upper_bits_mux ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:final_mux ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_arith_unit_v:arith_unit|sls_nbit_add_sub_v:addersub ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_arith_unit_v:arith_unit|sls_nbit_mux2to1_v:yselect_mux ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_logic_unit_v:logic_unit|sls_nbit_mux4to1_v:logic_mux ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_logic_unit_v:logic_unit|sls_nbit_mux4to1_v:logic_mux|sls_nbit_mux2to1_v:lower_bits_mux ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_logic_unit_v:logic_unit|sls_nbit_mux4to1_v:logic_mux|sls_nbit_mux2to1_v:upper_bits_mux ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_logic_unit_v:logic_unit|sls_nbit_mux4to1_v:logic_mux|sls_nbit_mux2to1_v:final_mux ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shra_mux ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shra_mux|sls_nbit_mux2to1_v:lower_bits_mux ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shra_mux|sls_nbit_mux2to1_v:upper_bits_mux ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shra_mux|sls_nbit_mux2to1_v:final_mux ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shrl_mux ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shrl_mux|sls_nbit_mux2to1_v:lower_bits_mux ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shrl_mux|sls_nbit_mux2to1_v:upper_bits_mux ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shrl_mux|sls_nbit_mux2to1_v:final_mux ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:rlc_mux ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:rlc_mux|sls_nbit_mux2to1_v:lower_bits_mux ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:rlc_mux|sls_nbit_mux2to1_v:upper_bits_mux ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:rlc_mux|sls_nbit_mux2to1_v:final_mux ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:result_mux ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:lower_bits_mux ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:upper_bits_mux ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:final_mux ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit|sls_nbit_mux4to1_v:const_mux ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit|sls_nbit_mux4to1_v:const_mux|sls_nbit_mux2to1_v:lower_bits_mux ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit|sls_nbit_mux4to1_v:const_mux|sls_nbit_mux2to1_v:upper_bits_mux ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit|sls_nbit_mux4to1_v:const_mux|sls_nbit_mux2to1_v:final_mux ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit|sls_nbit_mux4to1_v:const_mux" ;
++-------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                 ;
++-------+-------+----------+-----------------------------------------------------------------------------------------+
+; d3    ; Input ; Info     ; Stuck at VCC                                                                            ;
+; d2[7] ; Input ; Info     ; Stuck at VCC                                                                            ;
+; d2[6] ; Input ; Info     ; Stuck at GND                                                                            ;
+; d2[5] ; Input ; Info     ; Stuck at VCC                                                                            ;
+; d2[4] ; Input ; Info     ; Stuck at GND                                                                            ;
+; d2[3] ; Input ; Info     ; Stuck at VCC                                                                            ;
+; d2[2] ; Input ; Info     ; Stuck at GND                                                                            ;
+; d2[1] ; Input ; Info     ; Stuck at VCC                                                                            ;
+; d2[0] ; Input ; Info     ; Stuck at GND                                                                            ;
+; d1[7] ; Input ; Info     ; Stuck at GND                                                                            ;
+; d1[6] ; Input ; Info     ; Stuck at VCC                                                                            ;
+; d1[5] ; Input ; Info     ; Stuck at GND                                                                            ;
+; d1[4] ; Input ; Info     ; Stuck at VCC                                                                            ;
+; d1[3] ; Input ; Info     ; Stuck at GND                                                                            ;
+; d1[2] ; Input ; Info     ; Stuck at VCC                                                                            ;
+; d1[1] ; Input ; Info     ; Stuck at GND                                                                            ;
+; d1[0] ; Input ; Info     ; Stuck at VCC                                                                            ;
+; d0    ; Input ; Info     ; Stuck at GND                                                                            ;
++-------+-------+----------+-----------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:rlc_mux"                                                           ;
++------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                    ;
++------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; d3   ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "d3[7..1]" will be connected to GND. ;
++------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit|sls_nbit_mux4to1_v:shrl_mux" ;
++----------+-------+----------+-------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                       ;
++----------+-------+----------+-------------------------------------------------------------------------------+
+; d3[7..5] ; Input ; Info     ; Stuck at GND                                                                  ;
+; d2[7..6] ; Input ; Info     ; Stuck at GND                                                                  ;
+; d1[7]    ; Input ; Info     ; Stuck at GND                                                                  ;
++----------+-------+----------+-------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_8bit_alu_struc_v:mut|sls_8bit_arith_unit_v:arith_unit|sls_nbit_mux2to1_v:yselect_mux" ;
++----------+-------+----------+----------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                ;
++----------+-------+----------+----------------------------------------------------------------------------------------+
+; d1[7..2] ; Input ; Info     ; Stuck at GND                                                                           ;
++----------+-------+----------+----------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_8bit_alu_struc_v:mut"                                                                                                                              ;
++------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                                                          ;
++------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Func_Sel   ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "Func_Sel[7..4]" will be connected to GND. ;
+; Const_K[1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                     ;
+; Const_K[0] ; Input  ; Info     ; Stuck at GND                                                                                                                                     ;
+; ALU_Result ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (4 bits) it drives; bit(s) "ALU_Result[7..4]" have no fanouts                    ;
+; Cin        ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.     ;
++------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 14                          ;
+; cycloneiii_lcell_comb ; 26                          ;
+;     normal            ; 26                          ;
+;         1 data inputs ; 1                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 23                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.59                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Mar 07 16:04:05 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sls_8bit_alu_struc_v -c sls_8bit_alu_struc_v
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file sls_8bit_alu_struc_v.v
+    Info (12023): Found entity 1: sls_8bit_alu_struc_v File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_alu_struc_v.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sls_nbit_mux2to1_v.v
+    Info (12023): Found entity 1: sls_nbit_mux2to1_v File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_nbit_mux2to1_v.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sls_nbit_mux4to1_v.v
+    Info (12023): Found entity 1: sls_nbit_mux4to1_v File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_nbit_mux4to1_v.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sls_nbit_add_sub_v.v
+    Info (12023): Found entity 1: sls_nbit_add_sub_v File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_nbit_add_sub_v.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sls_8bit_arith_unit_v.v
+    Info (12023): Found entity 1: sls_8bit_arith_unit_v File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_arith_unit_v.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sls_8bit_logic_unit_v.v
+    Info (12023): Found entity 1: sls_8bit_logic_unit_v File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_logic_unit_v.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sls_8bit_sr_unit_v.v
+    Info (12023): Found entity 1: sls_8bit_sr_unit_v File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_sr_unit_v.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sls_8bit_const_unit_v.v
+    Info (12023): Found entity 1: sls_8bit_const_unit_v File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_const_unit_v.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sls_8bit_alu_struc_v_tb.v
+    Info (12023): Found entity 1: sls_8bit_alu_struc_v_tb File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_alu_struc_v_tb.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sls_alu_fpga_emulation.v
+    Info (12023): Found entity 1: sls_alu_fpga_emulation File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_alu_fpga_emulation.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at sls_8bit_sr_unit_v.v(24): created implicit net for "rlc3" File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_sr_unit_v.v Line: 24
+Info (12127): Elaborating entity "sls_alu_fpga_emulation" for the top level hierarchy
+Info (12128): Elaborating entity "sls_8bit_alu_struc_v" for hierarchy "sls_8bit_alu_struc_v:mut" File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_alu_fpga_emulation.v Line: 29
+Info (12128): Elaborating entity "sls_nbit_mux4to1_v" for hierarchy "sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux" File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_alu_struc_v.v Line: 20
+Info (12128): Elaborating entity "sls_nbit_mux2to1_v" for hierarchy "sls_8bit_alu_struc_v:mut|sls_nbit_mux4to1_v:result_mux|sls_nbit_mux2to1_v:lower_bits_mux" File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_nbit_mux4to1_v.v Line: 8
+Info (12128): Elaborating entity "sls_8bit_arith_unit_v" for hierarchy "sls_8bit_alu_struc_v:mut|sls_8bit_arith_unit_v:arith_unit" File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_alu_struc_v.v Line: 27
+Info (12128): Elaborating entity "sls_nbit_add_sub_v" for hierarchy "sls_8bit_alu_struc_v:mut|sls_8bit_arith_unit_v:arith_unit|sls_nbit_add_sub_v:addersub" File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_arith_unit_v.v Line: 21
+Info (12128): Elaborating entity "sls_8bit_logic_unit_v" for hierarchy "sls_8bit_alu_struc_v:mut|sls_8bit_logic_unit_v:logic_unit" File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_alu_struc_v.v Line: 32
+Info (12128): Elaborating entity "sls_8bit_sr_unit_v" for hierarchy "sls_8bit_alu_struc_v:mut|sls_8bit_sr_unit_v:sr_unit" File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_alu_struc_v.v Line: 38
+Warning (10230): Verilog HDL assignment warning at sls_8bit_sr_unit_v.v(20): truncated value with size 9 to match size of target (8) File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_sr_unit_v.v Line: 20
+Warning (10230): Verilog HDL assignment warning at sls_8bit_sr_unit_v.v(21): truncated value with size 10 to match size of target (8) File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_sr_unit_v.v Line: 21
+Warning (10230): Verilog HDL assignment warning at sls_8bit_sr_unit_v.v(25): truncated value with size 8 to match size of target (1) File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_sr_unit_v.v Line: 25
+Info (12128): Elaborating entity "sls_8bit_const_unit_v" for hierarchy "sls_8bit_alu_struc_v:mut|sls_8bit_const_unit_v:const_unit" File: C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_v_restored/sls_8bit_alu_struc_v/sls_8bit_alu_struc_v.v Line: 42
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 25 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Fri Mar 07 16:04:14 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:06
+
+

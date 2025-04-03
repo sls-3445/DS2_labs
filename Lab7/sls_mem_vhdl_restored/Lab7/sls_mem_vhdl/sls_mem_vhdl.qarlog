@@ -1,0 +1,25 @@
+Quartus Prime Archive log --	C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl.qarlog
+
+Archive:	C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl.qar
+Date:		Fri Mar 07 14:18:58 2025
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_4bit_reg_vhdl/sls_4bit_reg_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_8bit_upcnt_vhdl/sls_8bit_upcnt_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/assignment_defaults.qdf
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_cu_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_fpga_emulation_vhdl.sdc
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_fpga_emulation_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl.qpf
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl.qsf
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl_tb.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_ram_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_rom_vhdl.mif
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_rom_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/sls_package.vhd
+	======= Total: 14 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

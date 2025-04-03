@@ -1,0 +1,373 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/simulation/modelsim
+Esls_4bit_reg_vhdl
+Z1 w1741062915
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_4bit_reg_vhdl/sls_4bit_reg_vhdl.vhd
+Z5 FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_4bit_reg_vhdl/sls_4bit_reg_vhdl.vhd
+l0
+L4
+VJagK8TV_dD1j7Q^4o=iLI0
+!s100 A93JJB80Pob34QJBc@D580
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1741301471
+!i10b 1
+Z8 !s108 1741301471.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_4bit_reg_vhdl/sls_4bit_reg_vhdl.vhd|
+Z10 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_4bit_reg_vhdl/sls_4bit_reg_vhdl.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+DEx4 work 17 sls_4bit_reg_vhdl 0 22 JagK8TV_dD1j7Q^4o=iLI0
+l12
+L10
+V9kaS5CZnM1kH4W`2^5ToC2
+!s100 H8Z^DDPi94Anh6cZ1P_Ub3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esls_8bit_upcnt_vhdl
+Z13 w1741099446
+Z14 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+R0
+Z16 8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_8bit_upcnt_vhdl/sls_8bit_upcnt_vhdl.vhd
+Z17 FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_8bit_upcnt_vhdl/sls_8bit_upcnt_vhdl.vhd
+l0
+L5
+VZIJZ1[jmnZWTO[i>G5d3U2
+!s100 zg9P>UQbh=STYh[HJZAKP3
+R6
+31
+R7
+!i10b 1
+R8
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_8bit_upcnt_vhdl/sls_8bit_upcnt_vhdl.vhd|
+Z19 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_8bit_upcnt_vhdl/sls_8bit_upcnt_vhdl.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R14
+R15
+R2
+R3
+DEx4 work 19 sls_8bit_upcnt_vhdl 0 22 ZIJZ1[jmnZWTO[i>G5d3U2
+l14
+L12
+VjV2W4;eGjIBczSA@EWL670
+!s100 BXJYT6R<BYFWA6ZOXl1`32
+R6
+31
+R7
+!i10b 1
+R8
+R18
+R19
+!i113 1
+R11
+R12
+Esls_mem_cu_vhdl
+Z20 w1741299241
+Z21 DPx4 work 11 sls_package 0 22 EXZj8H=68F_Pii?3W7;jC1
+R14
+R15
+R2
+R3
+R0
+Z22 8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_cu_vhdl.vhd
+Z23 FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_cu_vhdl.vhd
+l0
+L6
+Ve;:V>22Fn0JkPK6ebJKF93
+!s100 ;oDhokfHaDDoEYAFC;^z<2
+R6
+31
+R7
+!i10b 1
+R8
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_cu_vhdl.vhd|
+Z25 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_cu_vhdl.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R21
+R14
+R15
+R2
+R3
+DEx4 work 15 sls_mem_cu_vhdl 0 22 e;:V>22Fn0JkPK6ebJKF93
+l18
+L13
+VMWm9XZbz8JJ5PYHS;eBO[0
+!s100 jm911Y6ej]K=lXC[FGY_P2
+R6
+31
+R7
+!i10b 1
+R8
+R24
+R25
+!i113 1
+R11
+R12
+Esls_mem_fpga_emulation_vhdl
+R20
+R21
+Z26 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R14
+R15
+R2
+R3
+R0
+Z27 8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_fpga_emulation_vhdl.vhd
+Z28 FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_fpga_emulation_vhdl.vhd
+l0
+L7
+VR0ZWL;g2^VdzhU]:KmmS31
+!s100 aiXf[XL>WcCX96RDnlIRR0
+R6
+31
+R7
+!i10b 1
+R8
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_fpga_emulation_vhdl.vhd|
+Z30 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_fpga_emulation_vhdl.vhd|
+!i113 1
+R11
+R12
+Aemulation
+R21
+R26
+R14
+R15
+R2
+R3
+DEx4 work 27 sls_mem_fpga_emulation_vhdl 0 22 R0ZWL;g2^VdzhU]:KmmS31
+l18
+L12
+VHnfB2zofk`@6e0DS=<T5n0
+!s100 OF>hUG`kf:[V:lmJ`6@1g3
+R6
+31
+R7
+!i10b 1
+R8
+R29
+R30
+!i113 1
+R11
+R12
+Esls_mem_vhdl
+Z31 w1741099582
+R21
+R14
+R15
+R2
+R3
+R0
+Z32 8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl.vhd
+Z33 FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl.vhd
+l0
+L6
+V<35P46UG`T7[9Qzc2BDoh3
+!s100 >?a?PajPFl6i0Bi6Y@^Bz2
+R6
+31
+R7
+!i10b 1
+R8
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl.vhd|
+Z35 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl.vhd|
+!i113 1
+R11
+R12
+Astruc
+R21
+R14
+R15
+R2
+R3
+DEx4 work 12 sls_mem_vhdl 0 22 <35P46UG`T7[9Qzc2BDoh3
+l16
+L13
+VQc2=9hDmRb_E2aQEPm@;M0
+!s100 1FZRT;1mLD60RkMa@Ri;^0
+R6
+31
+R7
+!i10b 1
+R8
+R34
+R35
+!i113 1
+R11
+R12
+Esls_mem_vhdl_tb
+Z36 w1741294948
+R26
+R2
+R3
+R0
+Z37 8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl_tb.vhd
+Z38 FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl_tb.vhd
+l0
+L5
+V7VORYeGX[D?MeHRFNOH<33
+!s100 H^EgL]LGWzeVTSjN[`<9o1
+R6
+31
+R7
+!i10b 1
+R8
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl_tb.vhd|
+Z40 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_mem_vhdl_tb.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R26
+R2
+R3
+DEx4 work 15 sls_mem_vhdl_tb 0 22 7VORYeGX[D?MeHRFNOH<33
+l24
+L8
+VM<N5bjkJh_Jlm<khD1^oE2
+!s100 TW7N=UeJBWeg7<XSaCPb40
+R6
+31
+R7
+!i10b 1
+R8
+R39
+R40
+!i113 1
+R11
+R12
+Psls_package
+R2
+R3
+w1741299486
+R0
+8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/sls_package.vhd
+FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/sls_package.vhd
+l0
+L4
+VEXZj8H=68F_Pii?3W7;jC1
+!s100 T^j;W=M4^QI06H@ImER2N3
+R6
+31
+Z41 !s110 1741301470
+!i10b 1
+Z42 !s108 1741301470.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/sls_package.vhd|
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/sls_package.vhd|
+!i113 1
+R11
+R12
+Esls_ram_vhdl
+Z43 w1741284419
+Z44 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+R2
+R3
+R0
+Z45 8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_ram_vhdl.vhd
+Z46 FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_ram_vhdl.vhd
+l0
+L42
+V3JD2O>9hXR57TWTC2RELW3
+!s100 0T0eWKZ@LGaUD9JYob0iT0
+R6
+31
+R41
+!i10b 1
+R42
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_ram_vhdl.vhd|
+Z48 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_ram_vhdl.vhd|
+!i113 1
+R11
+R12
+Asyn
+R44
+R2
+R3
+DEx4 work 12 sls_ram_vhdl 0 22 3JD2O>9hXR57TWTC2RELW3
+l58
+L54
+V03G>MkHaB]WK4QX?E3zUN2
+!s100 lZm@mJYXJzlmmZLD0Meh;1
+R6
+31
+R41
+!i10b 1
+R42
+R47
+R48
+!i113 1
+R11
+R12
+Esls_rom_vhdl
+Z49 w1741061430
+R44
+R2
+R3
+R0
+Z50 8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_rom_vhdl.vhd
+Z51 FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_rom_vhdl.vhd
+l0
+L42
+V=00c8]i24O;KKPB_>m?lb3
+!s100 m?L5d2S=f15R4bV7AHV8@3
+R6
+31
+R7
+!i10b 1
+R8
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_rom_vhdl.vhd|
+Z53 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_vhdl_restored/Lab7/sls_mem_vhdl/sls_rom_vhdl.vhd|
+!i113 1
+R11
+R12
+Asyn
+R44
+R2
+R3
+DEx4 work 12 sls_rom_vhdl 0 22 =00c8]i24O;KKPB_>m?lb3
+l56
+L52
+VnNINC[[6n><R05OKd1jM=3
+!s100 KgF?<^>6Fa9AnXMcE^7jY2
+R6
+31
+R7
+!i10b 1
+R8
+R52
+R53
+!i113 1
+R11
+R12

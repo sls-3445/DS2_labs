@@ -1,0 +1,14 @@
+module sls_fpga_emulation(pb, sw, leds);
+
+input [1:0] pb;
+input [3:0] sw;
+output [7:0] leds;
+wire cout;
+
+sls_nbit_add_sub_v #(8) mut
+	(.cin(pb[0]),
+	.x({sw[3:2], sw[3:2], sw[3:2], sw[3:2]}),
+	.y({sw[1:0], sw[1:0], sw[1:0], sw[1:0]}),
+	.sum(leds[7:0]), .cout(cout));
+	
+endmodule

@@ -1,0 +1,34 @@
+Quartus Prime Archive log --	C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/__slsRISC_vhdl.auto.qarlog
+
+Archive:	C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/__slsRISC_vhdl.auto.qar
+Date:		Thu Mar 27 19:01:15 2025
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/sls3445/Documents/DS2_Labs/Lab6/sls_8bit_alu_struc_vhdl_restored/sls_8bit_alu_struc_vhdl/sls_alu_package.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/db/altsyncram_r6t3.tdf
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/db/altsyncram_s3s3.tdf
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/db/slsRISC_vhdl.cbx.xml
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/db/slsRISC_vhdl.qpf
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/output_files/slsRISC_vhdl.done
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/output_files/slsRISC_vhdl.flow.rpt
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/output_files/slsRISC_vhdl.map.rpt
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/output_files/slsRISC_vhdl.map.summary
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/slsRISC_DP_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/sls_8bit_4loc_stack_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/sls_IW2ASCII_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/sls_MM_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/sls_RISC_package.vhd
+C:/Users/sls3445/Documents/DS2_Labs/sls_package/sls_package.vhd
+__slsRISC_vhdl.auto.qarlog
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+slsRISC_vhdl.archive.rpt
+slsRISC_vhdl.qarlog
+slsRISC_vhdl.qsf
+slsRISC_vhdl_tb.vhd
+	======= Total: 23 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

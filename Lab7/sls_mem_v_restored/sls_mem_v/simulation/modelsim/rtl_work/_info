@@ -1,0 +1,186 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/simulation/modelsim
+vsls_4bit_reg_v
+Z1 !s110 1741374919
+!i10b 1
+!s100 Yhh@_n_92ET8_?bFeQiZP2
+I;7LUY[BO5NWR>lSFbMXdO2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1741057977
+8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_4bit_reg_v/sls_4bit_reg_v.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_4bit_reg_v/sls_4bit_reg_v.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1741374919.000000
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_4bit_reg_v/sls_4bit_reg_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_4bit_reg_v|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_4bit_reg_v/sls_4bit_reg_v.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_4bit_reg_v
+Z6 tCvgOpt 0
+vsls_8bit_upcnt_v
+R1
+!i10b 1
+!s100 okgNYO3VTK6a^ki>1HiPG2
+I13e`gMY=aW5HX1bf;D^_J1
+R2
+R0
+w1741058151
+8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_8bit_upcnt_v/sls_8bit_upcnt_v.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_8bit_upcnt_v/sls_8bit_upcnt_v.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_8bit_upcnt_v/sls_8bit_upcnt_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_8bit_upcnt_v|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_8bit_upcnt_v/sls_8bit_upcnt_v.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_8bit_upcnt_v
+R6
+vsls_mem_cu_v
+R1
+!i10b 1
+!s100 gzbjKj8m1YHRlXI[gZQQf3
+I>Ic:IG_Um`QA0UESEKe>L0
+R2
+R0
+w1741298864
+8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_cu_v.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_cu_v.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_cu_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_cu_v.v|
+!i113 1
+R5
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v
+R6
+vsls_mem_fpga_emulation
+R1
+!i10b 1
+!s100 Q`=1O=lS[dLcl6jo6G5AQ1
+I>]`@fFmoXGd5[l3gI@;0<3
+R2
+R0
+w1741298891
+8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_fpga_emulation.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_fpga_emulation.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_fpga_emulation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_fpga_emulation.v|
+!i113 1
+R5
+R7
+R6
+vsls_mem_v
+R1
+!i10b 1
+!s100 @mHWAQ:I_2WhzFSH6lV]?1
+ILaeCC`Bn@21figXADZ[dS1
+R2
+R0
+w1741297758
+8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_v.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_v.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_v.v|
+!i113 1
+R5
+R7
+R6
+vsls_mem_v_tb
+R1
+!i10b 1
+!s100 PdDa2l3IOM0HT?SZ2>gz_3
+I85e^>Jc@?V@BX;7hL2o`O3
+R2
+R0
+w1741297706
+8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_v_tb.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_v_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_v_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_mem_v_tb.v|
+!i113 1
+R5
+R7
+R6
+vsls_ram_v
+R1
+!i10b 1
+!s100 ^<DLX1e_>_VTE^LZZ3<gb1
+I2C]GgLdX3W==::W3Hmi:<1
+R2
+R0
+w1741285860
+8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_ram_v.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_ram_v.v
+Z8 L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_ram_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_ram_v.v|
+!i113 1
+R5
+R7
+R6
+vsls_rom_v
+R1
+!i10b 1
+!s100 >BYI=aE]o3aRC@AnNiH660
+ICPbLX2ize;Yl7]^DB60U70
+R2
+R0
+w1741285781
+8C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_rom_v.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_rom_v.v
+R8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_rom_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v|C:/Users/sls3445/Documents/DS2_Labs/Lab7/sls_mem_v_restored/sls_mem_v/sls_rom_v.v|
+!i113 1
+R5
+R7
+R6

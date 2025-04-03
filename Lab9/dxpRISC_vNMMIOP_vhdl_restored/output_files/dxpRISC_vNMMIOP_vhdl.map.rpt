@@ -1,0 +1,878 @@
+Analysis & Synthesis report for dxpRISC_vNMMIOP_vhdl
+Thu Mar 27 16:28:42 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component|altsyncram_r6t3:auto_generated
+ 14. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux4to1_vhdl:IntBusMUX
+ 15. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R0
+ 16. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R1
+ 17. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R2
+ 18. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R3
+ 19. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux4to1_vhdl:RFoutMUX
+ 20. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TXR
+ 21. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TYR
+ 22. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TKR
+ 23. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:SR
+ 24. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_cntup_vhdl:PC
+ 25. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IR
+ 26. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MABR
+ 27. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MAXR
+ 28. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MAR
+ 29. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component
+ 30. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR
+ 31. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:OPDR
+ 32. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux2to1_vhdl:ipstkmux
+ 33. altsyncram Parameter Settings by Entity Instance
+ 34. Port Connectivity Checks: "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR"
+ 35. Post-Synthesis Netlist Statistics for Top Partition
+ 36. Elapsed Time Per Partition
+ 37. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Mar 27 16:28:42 2025       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; dxpRISC_vNMMIOP_vhdl                        ;
+; Top-level Entity Name              ; dxpRISC_vNMMIOP_vhdl                        ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 584                                         ;
+;     Total combinational functions  ; 513                                         ;
+;     Dedicated logic registers      ; 264                                         ;
+; Total registers                    ; 264                                         ;
+; Total pins                         ; 114                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 8,192                                       ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                  ;
++------------------------------------------------------------------+----------------------+----------------------+
+; Option                                                           ; Setting              ; Default Value        ;
++------------------------------------------------------------------+----------------------+----------------------+
+; Device                                                           ; EP4CE6E22A7          ;                      ;
+; Top-level entity name                                            ; dxpRISC_vNMMIOP_vhdl ; dxpRISC_vNMMIOP_vhdl ;
+; Family name                                                      ; Cyclone IV E         ; Cyclone V            ;
+; Use smart compilation                                            ; Off                  ; Off                  ;
+; Maximum processors allowed for parallel compilation              ; All                  ; All                  ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                   ; On                   ;
+; Enable compact report table                                      ; Off                  ; Off                  ;
+; Restructure Multiplexers                                         ; Auto                 ; Auto                 ;
+; Create Debugging Nodes for IP Cores                              ; Off                  ; Off                  ;
+; Preserve fewer node names                                        ; On                   ; On                   ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable               ; Enable               ;
+; Verilog Version                                                  ; Verilog_2001         ; Verilog_2001         ;
+; VHDL Version                                                     ; VHDL_1993            ; VHDL_1993            ;
+; State Machine Processing                                         ; Auto                 ; Auto                 ;
+; Safe State Machine                                               ; Off                  ; Off                  ;
+; Extract Verilog State Machines                                   ; On                   ; On                   ;
+; Extract VHDL State Machines                                      ; On                   ; On                   ;
+; Ignore Verilog initial constructs                                ; Off                  ; Off                  ;
+; Iteration limit for constant Verilog loops                       ; 5000                 ; 5000                 ;
+; Iteration limit for non-constant Verilog loops                   ; 250                  ; 250                  ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                   ; On                   ;
+; Infer RAMs from Raw Logic                                        ; On                   ; On                   ;
+; Parallel Synthesis                                               ; On                   ; On                   ;
+; DSP Block Balancing                                              ; Auto                 ; Auto                 ;
+; NOT Gate Push-Back                                               ; On                   ; On                   ;
+; Power-Up Don't Care                                              ; On                   ; On                   ;
+; Remove Redundant Logic Cells                                     ; Off                  ; Off                  ;
+; Remove Duplicate Registers                                       ; On                   ; On                   ;
+; Ignore CARRY Buffers                                             ; Off                  ; Off                  ;
+; Ignore CASCADE Buffers                                           ; Off                  ; Off                  ;
+; Ignore GLOBAL Buffers                                            ; Off                  ; Off                  ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                  ; Off                  ;
+; Ignore LCELL Buffers                                             ; Off                  ; Off                  ;
+; Ignore SOFT Buffers                                              ; On                   ; On                   ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                  ; Off                  ;
+; Optimization Technique                                           ; Balanced             ; Balanced             ;
+; Carry Chain Length                                               ; 70                   ; 70                   ;
+; Auto Carry Chains                                                ; On                   ; On                   ;
+; Auto Open-Drain Pins                                             ; On                   ; On                   ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                  ; Off                  ;
+; Auto ROM Replacement                                             ; On                   ; On                   ;
+; Auto RAM Replacement                                             ; On                   ; On                   ;
+; Auto DSP Block Replacement                                       ; On                   ; On                   ;
+; Auto Shift Register Replacement                                  ; Auto                 ; Auto                 ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto                 ; Auto                 ;
+; Auto Clock Enable Replacement                                    ; On                   ; On                   ;
+; Strict RAM Replacement                                           ; Off                  ; Off                  ;
+; Allow Synchronous Control Signals                                ; On                   ; On                   ;
+; Force Use of Synchronous Clear Signals                           ; Off                  ; Off                  ;
+; Auto RAM Block Balancing                                         ; On                   ; On                   ;
+; Auto RAM to Logic Cell Conversion                                ; Off                  ; Off                  ;
+; Auto Resource Sharing                                            ; Off                  ; Off                  ;
+; Allow Any RAM Size For Recognition                               ; Off                  ; Off                  ;
+; Allow Any ROM Size For Recognition                               ; Off                  ; Off                  ;
+; Allow Any Shift Register Size For Recognition                    ; Off                  ; Off                  ;
+; Use LogicLock Constraints during Resource Balancing              ; On                   ; On                   ;
+; Ignore translate_off and synthesis_off directives                ; Off                  ; Off                  ;
+; Timing-Driven Synthesis                                          ; On                   ; On                   ;
+; Report Parameter Settings                                        ; On                   ; On                   ;
+; Report Source Assignments                                        ; On                   ; On                   ;
+; Report Connectivity Checks                                       ; On                   ; On                   ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                  ; Off                  ;
+; Synchronization Register Chain Length                            ; 2                    ; 2                    ;
+; Power Optimization During Synthesis                              ; Normal compilation   ; Normal compilation   ;
+; HDL message level                                                ; Level2               ; Level2               ;
+; Suppress Register Optimization Related Messages                  ; Off                  ; Off                  ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000                 ; 5000                 ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000                 ; 5000                 ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                  ; 100                  ;
+; Clock MUX Protection                                             ; On                   ; On                   ;
+; Auto Gated Clock Conversion                                      ; Off                  ; Off                  ;
+; Block Design Naming                                              ; Auto                 ; Auto                 ;
+; SDC constraint protection                                        ; Off                  ; Off                  ;
+; Synthesis Effort                                                 ; Auto                 ; Auto                 ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                   ; On                   ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                  ; Off                  ;
+; Analysis & Synthesis Message Level                               ; Medium               ; Medium               ;
+; Disable Register Merging Across Hierarchies                      ; Auto                 ; Auto                 ;
+; Resource Aware Inference For Block RAM                           ; On                   ; On                   ;
++------------------------------------------------------------------+----------------------+----------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                        ; Library ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; dxp_IW2ASCII_vhdl.vhd            ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd        ;         ;
+; dxp_MM_vNMMIOP_P1.mif            ; yes             ; User Memory Initialization File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_P1.mif        ;         ;
+; dxpRISC_vNMMIOP_vhdl.vhd         ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd     ;         ;
+; dxpRISC_vNMMIOP_DP_vhdl.vhd      ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd  ;         ;
+; dxpRISC_vNMMIOP_CU_vhdl.vhd      ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd  ;         ;
+; dxp_package.vhd                  ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_package.vhd              ;         ;
+; dxp_nbit_reg_vhdl.vhd            ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd        ;         ;
+; dxp_nbit_mux4to1_vhdl.vhd        ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd    ;         ;
+; dxp_nbit_mux2to1_vhdl.vhd        ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd    ;         ;
+; dxp_nbit_cntup_vhdl.vhd          ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd      ;         ;
+; dxp_8bit_alu_beh_vhdl.vhd        ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd    ;         ;
+; dxp_8bit_4loc_stack_vhdl.vhd     ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd ;         ;
+; dxp_MM_vNMMIOP_vhdl.vhd          ; yes             ; User Wizard-Generated File       ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd      ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                               ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                        ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                  ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                               ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                               ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                   ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                   ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                 ;         ;
+; db/altsyncram_r6t3.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/db/altsyncram_r6t3.tdf       ;         ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 584         ;
+;                                             ;             ;
+; Total combinational functions               ; 513         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 248         ;
+;     -- 3 input functions                    ; 162         ;
+;     -- <=2 input functions                  ; 103         ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 456         ;
+;     -- arithmetic mode                      ; 57          ;
+;                                             ;             ;
+; Total registers                             ; 264         ;
+;     -- Dedicated logic registers            ; 264         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 114         ;
+; Total memory bits                           ; 8192        ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Clock~input ;
+; Maximum fan-out                             ; 272         ;
+; Total fan-out                               ; 2759        ;
+; Average fan-out                             ; 2.72        ;
++---------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                        ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Entity Name              ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
+; |dxpRISC_vNMMIOP_vhdl                        ; 513 (0)             ; 264 (0)                   ; 8192        ; 0            ; 0       ; 0         ; 114  ; 0            ; |dxpRISC_vNMMIOP_vhdl                                                                                                                  ; dxpRISC_vNMMIOP_vhdl     ; work         ;
+;    |dxpRISC_vNMMIOP_CU_vhdl:CU|              ; 86 (86)             ; 46 (46)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_CU_vhdl:CU                                                                                       ; dxpRISC_vNMMIOP_CU_vhdl  ; work         ;
+;    |dxpRISC_vNMMIOP_DP_vhdl:DP|              ; 353 (10)            ; 155 (0)                   ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP                                                                                       ; dxpRISC_vNMMIOP_DP_vhdl  ; work         ;
+;       |dxp_8bit_4loc_stack_vhdl:hwstack|     ; 41 (41)             ; 40 (40)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_4loc_stack_vhdl:hwstack                                                      ; dxp_8bit_4loc_stack_vhdl ; work         ;
+;       |dxp_8bit_alu_beh_vhdl:ALU|            ; 120 (120)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_alu_beh_vhdl:ALU                                                             ; dxp_8bit_alu_beh_vhdl    ; work         ;
+;       |dxp_MM_vNMMIOP_vhdl:MM|               ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM                                                                ; dxp_MM_vNMMIOP_vhdl      ; work         ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component                                ; altsyncram               ; work         ;
+;             |altsyncram_r6t3:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component|altsyncram_r6t3:auto_generated ; altsyncram_r6t3          ; work         ;
+;       |dxp_nbit_cntup_vhdl:PC|               ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_cntup_vhdl:PC                                                                ; dxp_nbit_cntup_vhdl      ; work         ;
+;       |dxp_nbit_mux4to1_vhdl:IntBusMUX|      ; 77 (77)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux4to1_vhdl:IntBusMUX                                                       ; dxp_nbit_mux4to1_vhdl    ; work         ;
+;       |dxp_nbit_reg_vhdl:IPDR|               ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR                                                                ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:IR|                 ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IR                                                                  ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:MABR|               ; 11 (11)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MABR                                                                ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:MAR|                ; 11 (11)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MAR                                                                 ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:MAXR|               ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MAXR                                                                ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:OPDR|               ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:OPDR                                                                ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:R0|                 ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R0                                                                  ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:R1|                 ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R1                                                                  ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:R2|                 ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R2                                                                  ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:R3|                 ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R3                                                                  ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:SR|                 ; 30 (30)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:SR                                                                  ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:TKR|                ; 3 (3)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TKR                                                                 ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:TXR|                ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TXR                                                                 ; dxp_nbit_reg_vhdl        ; work         ;
+;       |dxp_nbit_reg_vhdl:TYR|                ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TYR                                                                 ; dxp_nbit_reg_vhdl        ; work         ;
+;    |dxp_IW2ASCII_vhdl:ICdecode|              ; 74 (74)             ; 63 (63)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxpRISC_vNMMIOP_vhdl|dxp_IW2ASCII_vhdl:ICdecode                                                                                       ; dxp_IW2ASCII_vhdl        ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                            ;
++-----------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-----------------------+
+; Name                                                                                                                        ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                   ;
++-----------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-----------------------+
+; dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component|altsyncram_r6t3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 1024         ; 8            ; --           ; --           ; 8192 ; dxp_MM_vNMMIOP_P1.mif ;
++-----------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                             ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------+-------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                         ; IP Include File         ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------+-------------------------+
+; Altera ; RAM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM ; dxp_MM_vNMMIOP_vhdl.vhd ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------+-------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                     ;
++-------------------------------------------------------------------+--------------------------------------------------------------------+
+; Register name                                                     ; Reason for Removal                                                 ;
++-------------------------------------------------------------------+--------------------------------------------------------------------+
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[2]                                ; Stuck at GND due to stuck port data_in                             ;
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[5]                                ; Stuck at VCC due to stuck port data_in                             ;
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[6,7,10,11,15,23,31..33,36]        ; Stuck at GND due to stuck port data_in                             ;
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[37]                               ; Stuck at VCC due to stuck port data_in                             ;
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[38,39,43]                         ; Stuck at GND due to stuck port data_in                             ;
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[45]                               ; Stuck at VCC due to stuck port data_in                             ;
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[47,50,55,56,58,59,63,65,66,71,79] ; Stuck at GND due to stuck port data_in                             ;
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[86]                               ; Stuck at VCC due to stuck port data_in                             ;
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[87,93]                            ; Stuck at GND due to stuck port data_in                             ;
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[94]                               ; Stuck at VCC due to stuck port data_in                             ;
+; dxp_IW2ASCII_vhdl:ICdecode|ICis[95]                               ; Stuck at GND due to stuck port data_in                             ;
+; dxpRISC_vNMMIOP_CU_vhdl:CU|Rs2[0]                                 ; Merged with dxpRISC_vNMMIOP_CU_vhdl:CU|IW_CNVZ[0]                  ;
+; dxpRISC_vNMMIOP_CU_vhdl:CU|Rs2[1]                                 ; Merged with dxpRISC_vNMMIOP_CU_vhdl:CU|IW_CNVZ[1]                  ;
+; dxpRISC_vNMMIOP_CU_vhdl:CU|Rsd[0]                                 ; Merged with dxpRISC_vNMMIOP_CU_vhdl:CU|IW_CNVZ[2]                  ;
+; dxpRISC_vNMMIOP_CU_vhdl:CU|Rsd[1]                                 ; Merged with dxpRISC_vNMMIOP_CU_vhdl:CU|IW_CNVZ[3]                  ;
+; dxpRISC_vNMMIOP_CU_vhdl:CU|pop                                    ; Merged with dxpRISC_vNMMIOP_CU_vhdl:CU|ipstksel                    ;
+; dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR|q[6,7]          ; Merged with dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR|q[5] ;
+; dxpRISC_vNMMIOP_CU_vhdl:CU|LD_MAXR                                ; Merged with dxpRISC_vNMMIOP_CU_vhdl:CU|LD_MABR                     ;
+; dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR|q[5]            ; Stuck at GND due to stuck port data_in                             ;
+; Total Number of Removed Registers = 42                            ;                                                                    ;
++-------------------------------------------------------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 264   ;
+; Number of registers using Synchronous Clear  ; 95    ;
+; Number of registers using Synchronous Load   ; 19    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 146   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:OPDR|q[0]              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R0|q[5]                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R1|q[3]                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R2|q[5]                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R3|q[0]                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TYR|q[3]               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TXR|q[7]               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TKR|q[0]               ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR|q[1]              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IR|q[6]                ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MAR|q[0]               ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_cntup_vhdl:PC|q[5]              ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxp_IW2ASCII_vhdl:ICdecode|ICis[30]                                 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_CU_vhdl:CU|LD_TXR                                   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_CU_vhdl:CU|LD_TYR                                   ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_4loc_stack_vhdl:hwstack|tos3[7] ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_4loc_stack_vhdl:hwstack|tos[1]  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MAXR|q[8]              ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MABR|q[4]              ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxp_IW2ASCII_vhdl:ICdecode|ICis[49]                                 ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxp_IW2ASCII_vhdl:ICdecode|ICis[28]                                 ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_CU_vhdl:CU|ALU_FS[2]                                ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxp_IW2ASCII_vhdl:ICdecode|ICis[41]                                 ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:SR|q[3]                ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:SR|q[2]                ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 8 LEs                ; 44 LEs                 ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_CU_vhdl:CU|LD_R0                                    ;
+; 26:1               ; 2 bits    ; 34 LEs        ; 6 LEs                ; 28 LEs                 ; Yes        ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_CU_vhdl:CU|RF_OS[1]                                 ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_alu_beh_vhdl:ALU|ALU_Result[0]  ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 8 LEs                ; 6 LEs                  ; No         ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_alu_beh_vhdl:ALU|ALU_Result     ;
+; 14:1               ; 4 bits    ; 36 LEs        ; 28 LEs               ; 8 LEs                  ; No         ; |dxpRISC_vNMMIOP_vhdl|dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_alu_beh_vhdl:ALU|ALU_Result     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component|altsyncram_r6t3:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                        ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                         ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux4to1_vhdl:IntBusMUX ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R0 ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R1 ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R2 ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R3 ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux4to1_vhdl:RFoutMUX ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TXR ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TYR ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TKR ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; n              ; 2     ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:SR ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_cntup_vhdl:PC ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IR ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MABR ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MAXR ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MAR ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component ;
++------------------------------------+-----------------------+-------------------------------------------------------------------+
+; Parameter Name                     ; Value                 ; Type                                                              ;
++------------------------------------+-----------------------+-------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                     ; Untyped                                                           ;
+; AUTO_CARRY_CHAINS                  ; ON                    ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS               ; OFF                   ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS                ; ON                    ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                   ; IGNORE_CASCADE                                                    ;
+; WIDTH_BYTEENA                      ; 1                     ; Untyped                                                           ;
+; OPERATION_MODE                     ; SINGLE_PORT           ; Untyped                                                           ;
+; WIDTH_A                            ; 8                     ; Signed Integer                                                    ;
+; WIDTHAD_A                          ; 10                    ; Signed Integer                                                    ;
+; NUMWORDS_A                         ; 1024                  ; Signed Integer                                                    ;
+; OUTDATA_REG_A                      ; UNREGISTERED          ; Untyped                                                           ;
+; ADDRESS_ACLR_A                     ; NONE                  ; Untyped                                                           ;
+; OUTDATA_ACLR_A                     ; NONE                  ; Untyped                                                           ;
+; WRCONTROL_ACLR_A                   ; NONE                  ; Untyped                                                           ;
+; INDATA_ACLR_A                      ; NONE                  ; Untyped                                                           ;
+; BYTEENA_ACLR_A                     ; NONE                  ; Untyped                                                           ;
+; WIDTH_B                            ; 1                     ; Signed Integer                                                    ;
+; WIDTHAD_B                          ; 1                     ; Signed Integer                                                    ;
+; NUMWORDS_B                         ; 0                     ; Signed Integer                                                    ;
+; INDATA_REG_B                       ; CLOCK1                ; Untyped                                                           ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                ; Untyped                                                           ;
+; RDCONTROL_REG_B                    ; CLOCK1                ; Untyped                                                           ;
+; ADDRESS_REG_B                      ; CLOCK1                ; Untyped                                                           ;
+; OUTDATA_REG_B                      ; UNREGISTERED          ; Untyped                                                           ;
+; BYTEENA_REG_B                      ; CLOCK1                ; Untyped                                                           ;
+; INDATA_ACLR_B                      ; NONE                  ; Untyped                                                           ;
+; WRCONTROL_ACLR_B                   ; NONE                  ; Untyped                                                           ;
+; ADDRESS_ACLR_B                     ; NONE                  ; Untyped                                                           ;
+; OUTDATA_ACLR_B                     ; NONE                  ; Untyped                                                           ;
+; RDCONTROL_ACLR_B                   ; NONE                  ; Untyped                                                           ;
+; BYTEENA_ACLR_B                     ; NONE                  ; Untyped                                                           ;
+; WIDTH_BYTEENA_A                    ; 1                     ; Signed Integer                                                    ;
+; WIDTH_BYTEENA_B                    ; 1                     ; Signed Integer                                                    ;
+; RAM_BLOCK_TYPE                     ; AUTO                  ; Untyped                                                           ;
+; BYTE_SIZE                          ; 8                     ; Signed Integer                                                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE             ; Untyped                                                           ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ  ; Untyped                                                           ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ  ; Untyped                                                           ;
+; INIT_FILE                          ; dxp_MM_vNMMIOP_P1.mif ; Untyped                                                           ;
+; INIT_FILE_LAYOUT                   ; PORT_A                ; Untyped                                                           ;
+; MAXIMUM_DEPTH                      ; 0                     ; Signed Integer                                                    ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                ; Untyped                                                           ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                ; Untyped                                                           ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                ; Untyped                                                           ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                ; Untyped                                                           ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN       ; Untyped                                                           ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN       ; Untyped                                                           ;
+; ENABLE_ECC                         ; FALSE                 ; Untyped                                                           ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                 ; Untyped                                                           ;
+; WIDTH_ECCSTATUS                    ; 3                     ; Signed Integer                                                    ;
+; DEVICE_FAMILY                      ; Cyclone IV E          ; Untyped                                                           ;
+; CBXI_PARAMETER                     ; altsyncram_r6t3       ; Untyped                                                           ;
++------------------------------------+-----------------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:OPDR ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux2to1_vhdl:ipstkmux ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                              ;
++-------------------------------------------+-----------------------------------------------------------------------------------+
+; Name                                      ; Value                                                                             ;
++-------------------------------------------+-----------------------------------------------------------------------------------+
+; Number of entity instances                ; 1                                                                                 ;
+; Entity Instance                           ; dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                       ;
+;     -- WIDTH_A                            ; 8                                                                                 ;
+;     -- NUMWORDS_A                         ; 1024                                                                              ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                      ;
+;     -- WIDTH_B                            ; 1                                                                                 ;
+;     -- NUMWORDS_B                         ; 0                                                                                 ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                            ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                              ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                         ;
++-------------------------------------------+-----------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR" ;
++---------+-------+----------+--------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                          ;
++---------+-------+----------+--------------------------------------------------+
+; d[7..5] ; Input ; Info     ; Stuck at GND                                     ;
++---------+-------+----------+--------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 114                         ;
+; cycloneiii_ff         ; 264                         ;
+;     ENA               ; 93                          ;
+;     ENA SCLR          ; 53                          ;
+;     SCLR              ; 32                          ;
+;     SCLR SLD          ; 10                          ;
+;     SLD               ; 9                           ;
+;     plain             ; 67                          ;
+; cycloneiii_lcell_comb ; 515                         ;
+;     arith             ; 57                          ;
+;         2 data inputs ; 21                          ;
+;         3 data inputs ; 36                          ;
+;     normal            ; 458                         ;
+;         0 data inputs ; 6                           ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 71                          ;
+;         3 data inputs ; 126                         ;
+;         4 data inputs ; 248                         ;
+; cycloneiii_ram_block  ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 3.69                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Mar 27 16:28:31 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dxpRISC_vNMMIOP_vhdl -c dxpRISC_vNMMIOP_vhdl
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file dxp_iw2ascii_vhdl.vhd
+    Info (12022): Found design unit 1: dxp_IW2ASCII_vhdl-disassemble File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd Line: 24
+    Info (12023): Found entity 1: dxp_IW2ASCII_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd Line: 16
+Info (12021): Found 2 design units, including 1 entities, in source file dxprisc_vnmmiop_vhdl_tb.vhd
+    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_vhdl_tb-run_free File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl_tb.vhd Line: 7
+    Info (12023): Found entity 1: dxpRISC_vNMMIOP_vhdl_tb File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl_tb.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file dxprisc_vnmmiop_vhdl.vhd
+    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_vhdl-dxpRISC_struc File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 23
+    Info (12023): Found entity 1: dxpRISC_vNMMIOP_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file dxprisc_vnmmiop_dp_vhdl.vhd
+    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_DP_vhdl-dxpRISC_DP_struc File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 27
+    Info (12023): Found entity 1: dxpRISC_vNMMIOP_DP_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file dxprisc_vnmmiop_cu_vhdl.vhd
+    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_CU_vhdl-dxpRISC_CU_beh File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd Line: 28
+    Info (12023): Found entity 1: dxpRISC_vNMMIOP_CU_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd Line: 13
+Info (12021): Found 1 design units, including 0 entities, in source file dxp_package.vhd
+    Info (12022): Found design unit 1: dxp_package File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_package.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file dxp_nbit_reg_vhdl.vhd
+    Info (12022): Found design unit 1: dxp_nbit_reg_vhdl-dxp_nbit_reg_beh File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd Line: 13
+    Info (12023): Found entity 1: dxp_nbit_reg_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file dxp_nbit_mux4to1_vhdl.vhd
+    Info (12022): Found design unit 1: dxp_nbit_mux4to1_vhdl-dxp_nbit_mux4to1 File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd Line: 13
+    Info (12023): Found entity 1: dxp_nbit_mux4to1_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file dxp_nbit_mux2to1_vhdl.vhd
+    Info (12022): Found design unit 1: dxp_nbit_mux2to1_vhdl-dxp_nbit_mux2to1 File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd Line: 13
+    Info (12023): Found entity 1: dxp_nbit_mux2to1_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file dxp_nbit_cntup_vhdl.vhd
+    Info (12022): Found design unit 1: dxp_nbit_cntup_vhdl-dxp_nbit_cntup_beh File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd Line: 13
+    Info (12023): Found entity 1: dxp_nbit_cntup_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file dxp_8bit_alu_beh_vhdl.vhd
+    Info (12022): Found design unit 1: dxp_8bit_alu_beh_vhdl-dxp_beh File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd Line: 28
+    Info (12023): Found entity 1: dxp_8bit_alu_beh_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd Line: 15
+Info (12021): Found 2 design units, including 1 entities, in source file dxp_8bit_4loc_stack_vhdl.vhd
+    Info (12022): Found design unit 1: dxp_8bit_4loc_stack_vhdl-dxp_stack File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd Line: 21
+    Info (12023): Found entity 1: dxp_8bit_4loc_stack_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file dxp_mm_vnmmiop_vhdl.vhd
+    Info (12022): Found design unit 1: dxp_mm_vnmmiop_vhdl-SYN File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 54
+    Info (12023): Found entity 1: dxp_MM_vNMMIOP_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 42
+Info (12127): Elaborating entity "dxpRISC_vNMMIOP_vhdl" for the top level hierarchy
+Info (12128): Elaborating entity "dxpRISC_vNMMIOP_DP_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 38
+Info (12128): Elaborating entity "dxp_nbit_mux4to1_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux4to1_vhdl:IntBusMUX" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 41
+Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R0" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 46
+Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TKR" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 63
+Info (12128): Elaborating entity "dxp_8bit_alu_beh_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_alu_beh_vhdl:ALU" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 65
+Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:SR" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 67
+Info (12128): Elaborating entity "dxp_nbit_cntup_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_cntup_vhdl:PC" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 74
+Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MABR" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 81
+Info (12128): Elaborating entity "dxp_MM_vNMMIOP_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 90
+Info (12128): Elaborating entity "altsyncram" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 61
+Info (12130): Elaborated megafunction instantiation "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 61
+Info (12133): Instantiated megafunction "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 61
+    Info (12134): Parameter "address_aclr_a" = "UNUSED"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "dxp_MM_vNMMIOP_P1.mif"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "1024"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "10"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_r6t3.tdf
+    Info (12023): Found entity 1: altsyncram_r6t3 File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/db/altsyncram_r6t3.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_r6t3" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component|altsyncram_r6t3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "dxp_8bit_4loc_stack_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_4loc_stack_vhdl:hwstack" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 104
+Info (12128): Elaborating entity "dxp_nbit_mux2to1_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux2to1_vhdl:ipstkmux" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 105
+Info (12128): Elaborating entity "dxpRISC_vNMMIOP_CU_vhdl" for hierarchy "dxpRISC_vNMMIOP_CU_vhdl:CU" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 46
+Info (12128): Elaborating entity "dxp_IW2ASCII_vhdl" for hierarchy "dxp_IW2ASCII_vhdl:ICdecode" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 57
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ICis[2]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[5]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[6]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[7]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[10]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[11]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[15]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[23]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[31]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[32]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[33]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[36]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[37]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[38]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[39]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[43]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[45]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[47]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[50]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[55]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[56]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[58]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[59]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[63]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[65]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[66]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[71]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[79]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[86]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[87]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[93]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[94]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[95]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 724 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 107 output pins
+    Info (21061): Implemented 602 logic cells
+    Info (21064): Implemented 8 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4852 megabytes
+    Info: Processing ended: Thu Mar 27 16:28:42 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:08
+
+

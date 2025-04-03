@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 27 16:28:42 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : dxpRISC_vNMMIOP_vhdl
+Top-level Entity Name : dxpRISC_vNMMIOP_vhdl
+Family : Cyclone IV E
+Total logic elements : 584
+    Total combinational functions : 513
+    Dedicated logic registers : 264
+Total registers : 264
+Total pins : 114
+Total virtual pins : 0
+Total memory bits : 8,192
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

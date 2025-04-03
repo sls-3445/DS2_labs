@@ -1,0 +1,8 @@
+|sls_fa_behavioral_v
+cin => Decoder0.IN0
+x => Decoder0.IN1
+y => Decoder0.IN2
+sum << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+cout << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+
+

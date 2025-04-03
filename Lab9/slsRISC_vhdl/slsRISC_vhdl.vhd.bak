@@ -1,0 +1,59 @@
+--=============================================================================
+-- This is the structural top-level module for the dxpRISC_HMMIOP.
+-- Specifications: one internal bus, von Neumann, memory mapped I/O-Ps.
+-- (C) Dorin Patru March 2021.
+--=============================================================================
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+use work.dxp_package.all;
+--=============================================================================
+-- Entity, and input and output ports declarations
+--=============================================================================
+entity dxpRISC_vNMMIOP_vhdl is
+	port (Reset, Clock, PB1 : in std_logic;
+			SW : in std_logic_vector(3 downto 0);
+			LEDs : out std_logic_vector(7 downto 0);
+			ICis : out std_logic_vector(95 downto 0);
+			crtMCis : out std_logic_vector(2 downto 0));
+end dxpRISC_vNMMIOP_vhdl;
+--=============================================================================
+-- The Architecture
+--=============================================================================
+architecture dxpRISC_struc of dxpRISC_vNMMIOP_vhdl is
+--=============================================================================
+-- Internal signals declarations
+--=============================================================================
+signal IW : std_logic_vector(7 downto 0);
+signal MARout : std_logic_vector(9 downto 0);
+signal SR_CNVZ, ALU_FS : std_logic_vector(3 downto 0);
+signal RST_PC, LD_PC, CNT_PC, LD_IR, LD_R0, LD_R1, LD_R2, LD_R3,
+	LD_TXR, LD_TYR, LD_TK, LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel,  
+	LD_IPDR, LD_OPDR, push, pop, ipstksel : std_logic;
+signal RF_OS, IB_SEL : std_logic_vector(1 downto 0);
+begin
+--=============================================================================
+-- The DP instance - described structuraly at the lower hierarchical level.
+--=============================================================================
+DP : dxpRISC_vNMMIOP_DP_vhdl port map 
+	(Reset, Clock, PB1,  
+	RST_PC, LD_PC, CNT_PC, LD_IR, LD_R0, LD_R1, LD_R2, LD_R3,
+	LD_TXR, LD_TYR, LD_TK, LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel, 
+	LD_IPDR, LD_OPDR, push, pop, ipstksel, RF_OS, IB_SEL, SW, ALU_FS, LEDs, IW, SR_CNVZ, MARout);
+--=============================================================================
+-- The CU instance - described behavioraly at the lower hierarchical level.
+--=============================================================================
+CU : dxpRISC_vNMMIOP_CU_vhdl port map 
+	(Reset, Clock, IW, SR_CNVZ, MARout, 
+	RST_PC, LD_PC, CNT_PC, LD_IR, LD_R0, LD_R1, LD_R2, LD_R3,
+	LD_TXR, LD_TYR, LD_TK, LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel, 
+	LD_IPDR, LD_OPDR, push, pop, ipstksel, RF_OS, IB_SEL, ALU_FS, crtMCis);
+--=============================================================================
+-- This instance is converting the IW information into a string of ASCII 
+-- characters. This is ONLY needed for debugging purposes. It should be 
+-- commented out or eliminated when compiling/ synthesizing for FPGA 
+-- implementation. It is described behaviorally at the lower hierarchical level.
+--=============================================================================	
+ICdecode : dxp_IW2ASCII_vhdl port map (IW, Reset, Clock, ICis);
+
+end dxpRISC_struc;

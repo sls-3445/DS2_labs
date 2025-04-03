@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Mar 07 15:15:55 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : sls_mem_vhdl
+Top-level Entity Name : sls_mem_fpga_emulation_vhdl
+Family : Cyclone IV E
+Total logic elements : 82
+    Total combinational functions : 78
+    Dedicated logic registers : 61
+Total registers : 61
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

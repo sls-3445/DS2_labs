@@ -1,0 +1,57 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do sls_mux2to1_functional_vhdl_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_mux2to1_functional_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:26:46 on Jan 31,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_mux2to1_functional_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_mux2to1_functional_vhdl
+# -- Compiling architecture sls_functional of sls_mux2to1_functional_vhdl
+# End time: 14:26:46 on Jan 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_mux2to1_functional_vhdl_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:26:46 on Jan 31,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_mux2to1_functional_vhdl_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_mux2to1_functional_vhdl_tb
+# -- Compiling architecture sls_functional_tb of sls_mux2to1_functional_vhdl_tb
+# End time: 14:26:46 on Jan 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  sls_mux2to1_functional_vhdl_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" sls_mux2to1_functional_vhdl_tb 
+# Start time: 14:26:46 on Jan 31,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sls_mux2to1_functional_vhdl_tb(sls_functional_tb)
+# Loading work.sls_mux2to1_functional_vhdl(sls_functional)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# WARNING: No extended dataflow license exists
+# End time: 14:28:22 on Jan 31,2025, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 1

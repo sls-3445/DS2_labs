@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ALU_Result[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_CNVZ[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_CNVZ[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_CNVZ[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_CNVZ[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_Y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_X[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Func_Sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Func_Sel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Func_Sel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Func_Sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Const_K[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_X[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_X[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_X[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Const_K[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_Y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_X[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_Y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_X[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_Y[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_X[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_Y[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_X[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_Y[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_Y[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Operand_Y[7]",
+					"strict" : false
+				},
+				{
+					"name" : "C_in",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

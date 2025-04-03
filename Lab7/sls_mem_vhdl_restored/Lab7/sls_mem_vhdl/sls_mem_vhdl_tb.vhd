@@ -1,0 +1,112 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY sls_mem_vhdl_tb IS
+END sls_mem_vhdl_tb;
+
+ARCHITECTURE behavior OF sls_mem_vhdl_tb IS
+	COMPONENT sls_mem_vhdl
+	PORT (Din_upcnt		:	IN		STD_LOGIC_VECTOR(7 DOWNTO 0);
+			Reset, Clock, Cnt_EN	:	IN STD_LOGIC;
+			LD_EN_upcnt, LD_EN_H		:	IN STD_LOGIC;
+			LD_EN_L, LD_EN_M, WR_EN	:	IN	STD_LOGIC;
+			Q_out				:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0)) ;
+	END COMPONENT ;
+
+-- Declare signals to assign values to stimuli and to observe
+	SIGNAL Din_upcnt_tb	:	STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL Reset_tb, Clock_tb, Cnt_EN_tb	:	STD_LOGIC;
+	SIGNAL LD_EN_upcnt_tb, LD_EN_H_tb	:	STD_LOGIC;
+	SIGNAL LD_EN_L_tb, LD_EN_M_tb, WR_EN_tb	:	STD_LOGIC;
+	SIGNAL Q_out_tb	:	STD_LOGIC_VECTOR(7 DOWNTO 0);
+
+BEGIN
+
+-- Create an instance of the circuit to be verified
+uut: sls_mem_vhdl PORT MAP (Din_upcnt => Din_upcnt_tb, 
+			Reset => Reset_tb, Clock => Clock_tb, 
+			Cnt_EN => Cnt_EN_tb, LD_EN_upcnt => LD_EN_upcnt_tb, 
+			LD_EN_H => LD_EN_H_tb, LD_EN_L => LD_EN_L_tb, 
+			LD_EN_M => LD_EN_M_tb, WR_EN => WR_EN_tb, 
+			Q_out => Q_out_tb);
+
+-- Define a process to apply input stimulus and test outputs
+tb : PROCESS
+	CONSTANT period : time := 20 ns;
+	CONSTANT n	:	integer	:= 70;
+	BEGIN
+		Din_upcnt_tb <= std_logic_vector(to_unsigned(0, 8));
+		Reset_tb <= '1';
+		Clock_tb <= '0';
+		Cnt_EN_tb <= '0';
+		LD_EN_upcnt_tb <= '0';
+		LD_EN_H_tb <= '0';
+		LD_EN_L_tb <= '0';
+		LD_EN_M_tb <= '0';
+		WAIT FOR period;
+		Reset_tb <= '1';
+		Clock_tb <= '1';
+		WAIT FOR period;
+		Reset_tb <= '0';
+-- Load FF so that the first count value is 0
+		LD_EN_upcnt_tb <= '1';
+		Din_upcnt_tb <= std_logic_vector(to_unsigned(255, 8));
+		Clock_tb <= '0';
+		WAIT FOR period;
+		Clock_tb <= '1';
+		WAIT FOR period;
+		LD_EN_upcnt_tb <= '0';
+		Clock_tb <= '0';
+		WAIT FOR period;
+		Clock_tb <= '1';
+		WAIT FOR period;
+-- Read from the ROM into the RAM via register M		
+		Cnt_EN_tb <= '1';
+		LD_EN_M_tb <= '1';
+		WR_EN_tb <= '1';
+		FOR i IN 0 TO n loop
+			Clock_tb <= '0';
+			WAIT FOR period;
+			Clock_tb <= '1';
+			WAIT FOR period;
+		END LOOP;
+		Cnt_EN_tb <= '0';
+		LD_EN_M_tb <= '0';
+		WR_EN_tb <= '0';
+-- Load FF so that the first count value is 0
+		LD_EN_upcnt_tb <= '1';
+		Din_upcnt_tb <= std_logic_vector(to_unsigned(255, 8));
+		Clock_tb <= '0';
+		WAIT FOR period;
+		Clock_tb <= '1';
+		WAIT FOR period;
+		LD_EN_upcnt_tb <= '0';
+		Clock_tb <= '0';
+		WAIT FOR period;
+		Clock_tb <= '1';
+		WAIT FOR period;
+-- Read from the RAM via registers H and L		
+		Cnt_EN_tb <= '1';
+		FOR i IN 0 TO n loop
+			LD_EN_H_tb <= '1';
+			LD_EN_L_tb <= '0';
+			Clock_tb <= '0';
+			WAIT FOR period;
+			Clock_tb <= '1';
+			WAIT FOR period;
+			LD_EN_H_tb <= '0';
+			LD_EN_L_tb <= '1';
+			Clock_tb <= '0';
+			WAIT FOR period;
+			Clock_tb <= '1';
+			WAIT FOR period;
+		END LOOP;
+		Cnt_EN_tb <= '0';
+		LD_EN_H_tb <= '0';
+		LD_EN_L_tb <= '0';
+		WAIT FOR period;
+
+		WAIT; -- indefinitely suspend the process
+	END PROCESS;
+END;

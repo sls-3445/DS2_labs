@@ -1,0 +1,193 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "IW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "IW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_CNVZ[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_CNVZ[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_CNVZ[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_CNVZ[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "LD_IR",
+					"strict" : false
+				},
+				{
+					"name" : "RF_S_OS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RF_S_OS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_FS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RF_SD_OS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RF_SD_OS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_FS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_FS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_FS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_SR",
+					"strict" : false
+				},
+				{
+					"name" : "RW",
+					"strict" : false
+				},
+				{
+					"name" : "MMASel",
+					"strict" : false
+				},
+				{
+					"name" : "ipstksel",
+					"strict" : false
+				},
+				{
+					"name" : "wb_sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wb_sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_R1",
+					"strict" : false
+				},
+				{
+					"name" : "LD_R2",
+					"strict" : false
+				},
+				{
+					"name" : "LD_R0",
+					"strict" : false
+				},
+				{
+					"name" : "LD_R3",
+					"strict" : false
+				},
+				{
+					"name" : "LD_MAR",
+					"strict" : false
+				},
+				{
+					"name" : "LD_PC",
+					"strict" : false
+				},
+				{
+					"name" : "CNT_PC",
+					"strict" : false
+				},
+				{
+					"name" : "push",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_IPDR",
+					"strict" : false
+				},
+				{
+					"name" : "PB1",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_MAXR",
+					"strict" : false
+				},
+				{
+					"name" : "LD_MABR",
+					"strict" : false
+				},
+				{
+					"name" : "pop",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

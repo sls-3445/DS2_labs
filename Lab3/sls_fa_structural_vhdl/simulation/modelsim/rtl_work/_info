@@ -1,0 +1,205 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/simulation/modelsim
+Esls_and2
+Z1 w1738355481
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_and2.vhd
+Z5 FC:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_and2.vhd
+l0
+L4
+V@V5=O=c9hNN8a[`H7^8672
+!s100 M:ID5<6>IY6HWhF`38WgK0
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1738355811
+!i10b 1
+Z8 !s108 1738355811.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_and2.vhd|
+Z10 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_and2.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Asls_functional
+R2
+R3
+DEx4 work 8 sls_and2 0 22 @V5=O=c9hNN8a[`H7^8672
+l10
+L9
+V0GoV3bB;1IGI[0C[:dg5R2
+!s100 LgXAl0IFEZHaGaR=8``@E0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esls_fa_structural_vhdl
+Z13 w1738355657
+R2
+R3
+R0
+Z14 8C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl.vhd
+Z15 FC:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl.vhd
+l0
+L4
+V_Q@7<dK>JISEf74ON?=kl2
+!s100 AS6941Zc`m8PBZV>[7[lM2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl.vhd|
+Z17 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl.vhd|
+!i113 1
+R11
+R12
+Asls_structural
+R2
+R3
+DEx4 work 22 sls_fa_structural_vhdl 0 22 _Q@7<dK>JISEf74ON?=kl2
+l33
+L9
+Vh0K:WA2l9;=6aR:dn=kzN0
+!s100 5ic;4AJh]eSM:??<PXi7S2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Esls_fa_structural_vhdl_tb
+Z18 w1738355737
+R2
+R3
+R0
+Z19 8C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl_tb.vhd
+Z20 FC:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl_tb.vhd
+l0
+L4
+VElm^m@f2h[FjJj:1V:aB]1
+!s100 l1A=HT`Z1:2WV`fkj9P@a1
+R6
+31
+Z21 !s110 1738355813
+!i10b 1
+Z22 !s108 1738355813.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl_tb.vhd|
+Z24 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl_tb.vhd|
+!i113 1
+R11
+R12
+Asls_behavioral_tb
+R2
+R3
+DEx4 work 25 sls_fa_structural_vhdl_tb 0 22 Elm^m@f2h[FjJj:1V:aB]1
+l14
+L7
+VfRY0nBm6cBDkG8bI=>o1a0
+!s100 n[1D[hz<fmaXCegH90WJ93
+R6
+31
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12
+Esls_or3
+Z25 w1738355572
+R2
+R3
+R0
+Z26 8C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_or3.vhd
+Z27 FC:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_or3.vhd
+l0
+L4
+VQn5<?MIh]i6IgC=>9kHgX2
+!s100 ]MoT@eNCJRo1J8e:e6=Yj2
+R6
+31
+R7
+!i10b 1
+R8
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_or3.vhd|
+Z29 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_or3.vhd|
+!i113 1
+R11
+R12
+Asls_functional
+R2
+R3
+DEx4 work 7 sls_or3 0 22 Qn5<?MIh]i6IgC=>9kHgX2
+l10
+L9
+Ve6;f5<gH=>[0Gd_]nz[_N0
+!s100 KgjZj1ZN:D3[==6;JBQMF1
+R6
+31
+R7
+!i10b 1
+R8
+R28
+R29
+!i113 1
+R11
+R12
+Esls_xor3
+Z30 w1738355628
+R2
+R3
+R0
+Z31 8C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_xor3.vhd
+Z32 FC:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_xor3.vhd
+l0
+L4
+VhKZPDgoEh9^7NT<5fTfLa1
+!s100 `D^X10aZ9f37CH0JE^[?A2
+R6
+31
+R21
+!i10b 1
+R22
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_xor3.vhd|
+Z34 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_xor3.vhd|
+!i113 1
+R11
+R12
+Asls_functional
+R2
+R3
+DEx4 work 8 sls_xor3 0 22 hKZPDgoEh9^7NT<5fTfLa1
+l10
+L9
+VX<nel4HT@`mYiS5l2>DMZ1
+!s100 MJe7nEV6l5;d^9;Y1iiFj1
+R6
+31
+R21
+!i10b 1
+R22
+R33
+R34
+!i113 1
+R11
+R12

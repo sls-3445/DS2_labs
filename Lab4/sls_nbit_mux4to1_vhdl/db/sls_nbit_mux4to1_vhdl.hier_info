@@ -1,0 +1,31 @@
+|sls_nbit_mux4to1_vhdl
+d3[0] => f.IN1
+d3[1] => f.IN1
+d3[2] => f.IN1
+d3[3] => f.IN1
+d2[0] => f.IN1
+d2[1] => f.IN1
+d2[2] => f.IN1
+d2[3] => f.IN1
+d1[0] => f.IN1
+d1[1] => f.IN1
+d1[2] => f.IN1
+d1[3] => f.IN1
+d0[0] => f.IN1
+d0[1] => f.IN1
+d0[2] => f.IN1
+d0[3] => f.IN1
+s1 => f.IN0
+s1 => f.IN0
+s1 => f.IN0
+s1 => f.IN0
+s0 => f.IN1
+s0 => f.IN1
+s0 => f.IN1
+s0 => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

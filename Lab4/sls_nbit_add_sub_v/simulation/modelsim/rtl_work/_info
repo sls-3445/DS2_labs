@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v/simulation/modelsim
+vsls_nbit_add_sub_v
+Z1 !s110 1738962661
+!i10b 1
+!s100 jYHa[J<R]AFa5QYBbIlB]3
+I5ChRV_c4]6<UbPf:;7?3o2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1738962624
+8C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v/sls_nbit_add_sub_v.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v/sls_nbit_add_sub_v.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1738962661.000000
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v/sls_nbit_add_sub_v.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v|C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v/sls_nbit_add_sub_v.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v
+Z7 tCvgOpt 0
+vsls_nbit_add_sub_v_tb
+R1
+!i10b 1
+!s100 o3C>QQOf>:l_eVO^UU9J61
+Ik@47fRH1zM64I2Nlb_BKR2
+R2
+R0
+w1738962631
+8C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v/sls_nbit_add_sub_v_tb.v
+FC:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v/sls_nbit_add_sub_v_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v/sls_nbit_add_sub_v_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v|C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_add_sub_v/sls_nbit_add_sub_v_tb.v|
+!i113 1
+R5
+R6
+R7

@@ -1,0 +1,108 @@
+--=============================================================================
+-- This is the structural data path (DP) module for the dxpRISC_HMMIOP.
+-- Specifications: one internal bus, von Neumann, memory mapped I/O-Ps.
+-- (C) Dorin Patru March 2021.
+--=============================================================================
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+use work.dxp_package.all;
+--=============================================================================
+-- Entity, and input and output ports declarations
+--=============================================================================
+entity dxpRISC_vNMMIOP_DP_vhdl is
+	port (Reset, Clock, PB1,  
+	RST_PC, LD_PC, CNT_PC, LD_IR, LD_R0, LD_R1, LD_R2, LD_R3,
+	LD_TXR, LD_TYR, LD_TK, LD_SR, LD_MABR, LD_MAXR, LD_MAR, RW, MMASel,
+	LD_IPDR, LD_OPDR, push, pop, ipstksel : in std_logic;
+	RF_OS, IB_SEL : in std_logic_vector(1 downto 0);
+	SW, ALU_FS : in std_logic_vector(3 downto 0);
+	LEDs, IW : out std_logic_vector(7 downto 0);
+	SR_CNVZ : out std_logic_vector(3 downto 0);
+	MARout : out std_logic_vector(9 downto 0));
+end dxpRISC_vNMMIOP_DP_vhdl;
+--=============================================================================
+-- The Architecture
+--=============================================================================
+architecture dxpRISC_DP_struc of dxpRISC_vNMMIOP_DP_vhdl is
+--=============================================================================
+-- Internal signals declarations
+--=============================================================================
+signal IB, R0out, R1out, R2out, R3out, RFout, IRout, IPDRout, ipstkmuxout, 
+	MMout, ALU_Result, TXRout, TYRout, IPDRin, intLEDs, STKout : std_logic_vector(7 downto 0);
+signal TKout : std_logic_vector(1 downto 0);
+signal PCout, MABRin, MAXRin, MABRout, MAXRout, intMARout, MMAin, 
+										MARin : std_logic_vector(9 downto 0);
+signal ALU_CNVZ, SRout : std_logic_vector(3 downto 0);
+signal notClock : std_logic;
+begin
+notClock <= not Clock;
+--==========IntBusMux==========================================================
+IntBusMUX : dxp_nbit_mux4to1_vhdl generic map (8)
+		port map (ipstkmuxout, MMout, ALU_Result, RFout, IB_SEL, IB);
+--==========RF=================================================================
+-- These are the 4x8-bit registers of the register file
+--==========RF=================================================================
+R0 : dxp_nbit_reg_vhdl generic map (8)
+		port map (IB, LD_R0, Reset, Clock, R0out);
+R1 : dxp_nbit_reg_vhdl generic map (8)
+		port map (IB, LD_R1, Reset, Clock, R1out);
+R2 : dxp_nbit_reg_vhdl generic map (8)
+		port map (IB, LD_R2, Reset, Clock, R2out);
+R3 : dxp_nbit_reg_vhdl generic map (8)
+		port map (IB, LD_R3, Reset, Clock, R3out);
+RFoutMUX : dxp_nbit_mux4to1_vhdl generic map (8)
+		port map (R3out, R2out, R1out, R0out, RF_OS, RFout);
+--==========ALUext=============================================================
+-- TXR, TYR, SR, and the ALU form the extended ALU
+--==========ALUext=============================================================
+TXR : dxp_nbit_reg_vhdl generic map (8)
+		port map (IB, LD_TXR, Reset, Clock, TXRout);
+TYR : dxp_nbit_reg_vhdl generic map (8)
+		port map (IB, LD_TYR, Reset, Clock, TYRout);
+TKR : dxp_nbit_reg_vhdl generic map (2)
+		port map (IRout(1 downto 0), LD_TK, Reset, Clock, TKout);
+ALU : dxp_8bit_alu_beh_vhdl  port map (ALU_FS, TXRout, TYRout, TKout, 
+				ALU_Result, ALU_CNVZ);
+SR : dxp_nbit_reg_vhdl generic map (4)
+		port map (ALU_CNVZ, LD_SR, Reset, Clock, SRout);
+SR_CNVZ <= SRout;
+--==========MM-Interface=======================================================
+-- PC, IR, ddress arithmetic, and MM;
+-- MM is driven by ~Clock to register the address, din, and rw and save a cycle.
+--==========MM-Interface=======================================================
+PC : dxp_nbit_cntup_vhdl generic map (10)
+		port map (intMARout, LD_PC, RST_PC, CNT_PC, Clock, PCout);
+IR : dxp_nbit_reg_vhdl generic map (8)
+		port map (MMout, LD_IR, Reset, Clock, IRout);
+IW <= IRout;
+MABRin <= (MMout(7) & MMout(7) & MMout) when (IRout(7 downto 4) = "1101") else (MMout & "00");
+MAXRin <= PCout when (IRout(7 downto 4) = "1101") else ("00" & IB);
+MABR : dxp_nbit_reg_vhdl generic map (10)
+		port map (MABRin, LD_MABR, Reset, Clock, MABRout);
+MAXR : dxp_nbit_reg_vhdl generic map (10)
+		port map (MAXRin, LD_MAXR, Reset, Clock, MAXRout);
+MARin <= MABRout + MAXRout;
+MAR : dxp_nbit_reg_vhdl generic map (10)
+		port map (MARin, LD_MAR, Reset, Clock, intMARout);
+MMAin <= intMARout when (MMASel = '1') else PCout;
+MARout <= intMARout;
+MM : dxp_MM_vNMMIOP_vhdl  port map (MMAin, notClock, IB, RW, MMout);
+--==========I/O-Ps-Interface===================================================
+-- Input and output data registers
+--==========I/O-Ps-Interface===================================================
+IPDRin <= ("000" & PB1 & SW);
+IPDR : dxp_nbit_reg_vhdl generic map (8)
+		port map (IPDRin, LD_IPDR, Reset, Clock, IPDRout);
+OPDR : dxp_nbit_reg_vhdl generic map (8)
+		port map (IB, LD_OPDR, Reset, Clock, intLEDs);
+LEDs <= intLEDs;
+--==========HW-Stack===========================================================
+-- The HW-Stack and IP-Stack outputs mux; need this mux because there are now 
+-- 5 sources the IB;
+--==========HW-Stack===========================================================
+hwstack : dxp_8bit_4loc_stack_vhdl port map(push, pop, Reset, Clock, IB, STKout);
+ipstkmux : dxp_nbit_mux2to1_vhdl generic map (8)
+		port map (STKout, IPDRout, ipstksel, ipstkmuxout);
+--=============================================================================
+end dxpRISC_DP_struc;

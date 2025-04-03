@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v.qarlog
+
+Archive:	C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v.qar
+Date:		Fri Jan 24 15:45:28 2025
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v.qpf
+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v.qsf
+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v.v
+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_fa_behavioral_v/sls_fa_behavioral_v_tb.v
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

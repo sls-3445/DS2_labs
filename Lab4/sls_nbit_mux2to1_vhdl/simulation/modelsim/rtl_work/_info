@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_mux2to1_vhdl/simulation/modelsim
+Esls_nbit_mux2to1_vhdl
+Z1 w1738964019
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_mux2to1_vhdl/sls_nbit_mux2to1_vhdl.vhd
+Z5 FC:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_mux2to1_vhdl/sls_nbit_mux2to1_vhdl.vhd
+l0
+L4
+V7Od8ii6MUV[ZeC33H^3WP2
+!s100 UO9>27VYzWBAAgOR<Yj^H0
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1738964898
+!i10b 1
+Z8 !s108 1738964898.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_mux2to1_vhdl/sls_nbit_mux2to1_vhdl.vhd|
+Z10 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_mux2to1_vhdl/sls_nbit_mux2to1_vhdl.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Asls_nbit_mux2to1_func
+R2
+R3
+DEx4 work 21 sls_nbit_mux2to1_vhdl 0 22 7Od8ii6MUV[ZeC33H^3WP2
+l12
+L11
+V04:_6]Vg[YZULJ1BfRZb=1
+!s100 M_;SmnPbk>ogJ>7RTa?`b1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esls_nbit_mux2to1_vhdl_tb
+Z13 w1738964879
+R2
+R3
+R0
+Z14 8C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_mux2to1_vhdl/sls_nbit_mux2to1_vhdl_tb.vhd
+Z15 FC:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_mux2to1_vhdl/sls_nbit_mux2to1_vhdl_tb.vhd
+l0
+L4
+VLJbL_9n?o`0c2Z3]LeIBf2
+!s100 i_:Sl[]l2T9jA;Z]D?N=Z0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_mux2to1_vhdl/sls_nbit_mux2to1_vhdl_tb.vhd|
+Z17 !s107 C:/Users/sls3445/Documents/DS2_Labs/Lab4/sls_nbit_mux2to1_vhdl/sls_nbit_mux2to1_vhdl_tb.vhd|
+!i113 1
+R11
+R12
+Asls_behavioral_tb
+R2
+R3
+DEx4 work 24 sls_nbit_mux2to1_vhdl_tb 0 22 LJbL_9n?o`0c2Z3]LeIBf2
+l16
+L6
+VV5hnzEbj:c9N_ZczKz`X30
+!s100 mm5VLeM925YMALfB=9]Gz0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

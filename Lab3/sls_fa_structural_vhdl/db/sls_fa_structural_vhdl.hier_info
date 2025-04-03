@@ -1,0 +1,46 @@
+|sls_fa_structural_vhdl
+cin => sls_xor3:stage0.x2
+cin => sls_and2:stage1.x1
+cin => sls_and2:stage2.x1
+x => sls_xor3:stage0.x1
+x => sls_and2:stage1.x0
+x => sls_and2:stage3.x1
+y => sls_xor3:stage0.x0
+y => sls_and2:stage2.x0
+y => sls_and2:stage3.x0
+sum << sls_xor3:stage0.f
+cout << sls_or3:stage4.f
+
+
+|sls_fa_structural_vhdl|sls_xor3:stage0
+x2 => f.IN1
+x1 => f.IN0
+x0 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_fa_structural_vhdl|sls_and2:stage1
+x1 => f.IN0
+x0 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_fa_structural_vhdl|sls_and2:stage2
+x1 => f.IN0
+x0 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_fa_structural_vhdl|sls_and2:stage3
+x1 => f.IN0
+x0 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_fa_structural_vhdl|sls_or3:stage4
+x2 => f.IN1
+x1 => f.IN0
+x0 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

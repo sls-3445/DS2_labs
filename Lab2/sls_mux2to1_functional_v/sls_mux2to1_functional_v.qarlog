@@ -1,0 +1,17 @@
+Quartus Prime Archive log --	C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_mux2to1_functional_v/sls_mux2to1_functional_v.qarlog
+
+Archive:	C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_mux2to1_functional_v/sls_mux2to1_functional_v.qar
+Date:		Fri Jan 24 14:27:33 2025
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_mux2to1_functional_v/sls_2to1mux_functional_v_tb.v
+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_mux2to1_functional_v/sls_mux2to1_functional_v.qpf
+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_mux2to1_functional_v/sls_mux2to1_functional_v.qsf
+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_mux2to1_functional_v/sls_mux2to1_functional_v.v
+C:/Users/sls3445/Documents/DS2_Labs/Lab2/sls_mux2to1_functional_v/sls_mux2to1_functional_v_tb.v
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

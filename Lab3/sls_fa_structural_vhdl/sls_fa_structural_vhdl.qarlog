@@ -1,0 +1,20 @@
+Quartus Prime Archive log --	C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl.qarlog
+
+Archive:	C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl.qar
+Date:		Fri Jan 31 16:04:52 2025
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_and2.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl.qpf
+C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl.qsf
+C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_fa_structural_vhdl_tb.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_not.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_or3.vhd
+C:/Users/sls3445/Documents/DS2_Labs/Lab3/sls_fa_structural_vhdl/sls_xor3.vhd
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 9 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

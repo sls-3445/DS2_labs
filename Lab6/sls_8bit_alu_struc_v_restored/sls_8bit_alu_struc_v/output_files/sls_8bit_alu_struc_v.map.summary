@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Mar 07 16:04:14 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : sls_8bit_alu_struc_v
+Top-level Entity Name : sls_alu_fpga_emulation
+Family : Cyclone IV E
+Total logic elements : 25
+    Total combinational functions : 25
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

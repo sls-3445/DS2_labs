@@ -1,0 +1,7 @@
+|sls_mux2to1_behavioral_v
+x1 => f.DATAB
+x0 => f.DATAA
+s => f.OUTPUTSELECT
+f << f.DB_MAX_OUTPUT_PORT_TYPE
+
+
