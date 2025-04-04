@@ -66,33 +66,41 @@ opCode  <= IW(7 downto 4); Rsd  <= IW(3 downto 2); Rs2  <= IW(1 downto 0);
 IW_CNVZ  <= IW(3 downto 0); carry  <= SR_CNVZ(3); negative  <= SR_CNVZ(2); 
 overflow  <= SR_CNVZ(1); zero  <= SR_CNVZ(0);
 
-if (Reset = '1') then 
-	RST_PC  <= '1'; LD_PC  <= '0'; CNT_PC  <= '0'; LD_IR  <= '0'; 
+	RST_PC  <= '0'; LD_PC  <= '0'; CNT_PC  <= '0'; LD_IR  <= '0';
 	LD_R0  <= '0'; LD_R1  <= '0'; LD_R2  <= '0'; LD_R3  <= '0';
-	LD_SR  <= '0'; ALU_FS  <= "0000";
+	LD_SR  <= '0'; ALU_FS  <= opCode;
 	LD_MABR  <= '0'; LD_MAXR  <= '0'; LD_MAR  <= '0'; RW  <= '0'; MMASel <= '0';
 	LD_IPDR  <= '0'; LD_OPDR  <= '0';
-	RF_SD_OS  <= "00"; RF_S_OS <= "00"; WB_SEL  <= "00";
-	crtMCis  <= MC0; MC  <= MC0;
+	RF_SD_OS  <= Rsd; RF_S_OS <= Rs2; WB_SEL  <= "00";
+	crtMCis  <= MC0;
+
+if (Reset = '1') then MC <= MC0; RST_PC <= '1';
 else 
 
 	if 	(MC = MC0) then
-	CNT_PC <= '1'; LD_IR <= '1';
-	crtMCis <= MC0; MC <= MC1;
+		CNT_PC <= '1'; LD_IR <= '1';
+		crtMCis <= MC0; MC <= MC1;
 	
 	elsif (MC = MC1) then
-	CNT_PC <= '0'; LD_IR <= '0'; 
-	crtMCis <= MC1; MC <= MC2;
+	
+		crtMCis <= MC1; MC <= MC2;
 	
 	elsif (MC = MC2) then
-		if (opCode = ADD_IC or opCode = SUB_IC or opCode = DEC_IC or opCode = XOR_IC or 
+		if (opCode = ADD_IC or opCode = SUB_IC or opCode = INC_IC or opCode = DEC_IC or opCode = XOR_IC or 
 				opCode = AND_IC or opCode = CPY_IC or opCode = SHRA_IC or opCode = SHRL_IC or opCode = RLC_IC) then
 				
-				rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
-				if (Rsd = "10") then LD_R2 <= '1'; end if;
-
-            LD_SR <= '1'; ALU_FS <= opCode; WB_SEL <= "01";
-            crtMCis <= MC2; MC <= MC0;
+				if (opCode = CPY_IC) then
+					RF_SD_OS <= Rs2;
+				else
+					RF_SD_OS <= Rsd;
+					RF_S_OS <= Rs2;
+				end if;
+				
+				rf_select(IW(3 downto 2), LD_R0, LD_R1, LD_R2, LD_R3);
+				ALU_FS  <= IW(7 downto 4);
+            LD_SR <= '1';
+				WB_SEL <= "01";
+				crtMCis <= MC2; MC <= MC0;
 
         elsif (opCode = LD_IC or opCode = ST_IC) then
             LD_MABR <= '1'; CNT_PC <= '1'; LD_MAXR <= '1';
@@ -114,9 +122,6 @@ else
         end if;
 
     elsif (MC = MC3) then
-        -- Reset
-        LD_SR <= '0'; ALU_FS <= "0000"; LD_MABR <= '0'; LD_MAXR <= '0';
-        CNT_PC <= '0'; push <= '0'; pop <= '0';
         -- Load Main Memory Address
         LD_MAR <= '1';
         crtMCis <= MC3; MC <= MC4;
@@ -129,7 +134,6 @@ else
 
     elsif (MC = MC4) then
         -- Reset
-        LD_MAR <= '0'; LD_OPDR <= '0';
         rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
 
         if (opCode = LD_IC) then

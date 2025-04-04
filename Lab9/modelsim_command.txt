@@ -1,0 +1,19 @@
+do slsRISC_vhdl_run_msim_rtl_vhdl.do
+add wave -position insertpoint  \
+sim:/slsrisc_vhdl_tb/CUV/DP/LD_R0 \
+sim:/slsrisc_vhdl_tb/CUV/DP/LD_R1 \
+sim:/slsrisc_vhdl_tb/CUV/DP/LD_R2 \
+sim:/slsrisc_vhdl_tb/CUV/DP/LD_R3 \
+sim:/slsrisc_vhdl_tb/CUV/DP/IW \
+sim:/slsrisc_vhdl_tb/CUV/DP/wb_bus \
+sim:/slsrisc_vhdl_tb/CUV/DP/r0out \
+sim:/slsrisc_vhdl_tb/CUV/DP/r1out \
+sim:/slsrisc_vhdl_tb/CUV/DP/r2out \
+sim:/slsrisc_vhdl_tb/CUV/DP/r3out \
+sim:/slsrisc_vhdl_tb/CUV/DP/ALU_result \
+sim:/slsrisc_vhdl_tb/CUV/DP/ALU_FS \
+sim:/slsrisc_vhdl_tb/CUV/DP/PC_OUT \
+sim:/slsrisc_vhdl_tb/CUV/DP/RF_SD_OS \
+sim:/slsrisc_vhdl_tb/CUV/DP/RF_S_OS 
+restart -f
+run -all

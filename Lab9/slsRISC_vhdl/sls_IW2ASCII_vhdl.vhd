@@ -28,7 +28,7 @@ architecture disassemble of sls_IW2ASCII_vhdl is
 signal iw32, iw10, sbit : std_logic_vector(7 downto 0);
 --=============================================================================
 begin
-process (IW) begin
+process (IW, Reset, Clock) begin
 --=============================================================================
 -- Converting register numbers to ASCII digit character numbers
 --=============================================================================

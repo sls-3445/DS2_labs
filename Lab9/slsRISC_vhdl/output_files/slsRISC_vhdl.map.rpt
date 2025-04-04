@@ -1,5 +1,5 @@
 Analysis & Synthesis report for slsRISC_vhdl
-Thu Apr 03 19:39:18 2025
+Fri Apr 04 17:48:54 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -101,15 +101,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 03 19:39:18 2025       ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 04 17:48:54 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; slsRISC_vhdl                                ;
 ; Top-level Entity Name              ; slsRISC_vhdl                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 366                                         ;
-;     Total combinational functions  ; 328                                         ;
-;     Dedicated logic registers      ; 180                                         ;
-; Total registers                    ; 180                                         ;
+; Total logic elements               ; 326                                         ;
+;     Total combinational functions  ; 282                                         ;
+;     Dedicated logic registers      ; 150                                         ;
+; Total registers                    ; 150                                         ;
 ; Total pins                         ; 114                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192                                       ;
@@ -264,20 +264,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 366         ;
+; Estimated Total logic elements              ; 326         ;
 ;                                             ;             ;
-; Total combinational functions               ; 328         ;
+; Total combinational functions               ; 282         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 176         ;
-;     -- 3 input functions                    ; 94          ;
-;     -- <=2 input functions                  ; 58          ;
+;     -- 4 input functions                    ; 197         ;
+;     -- 3 input functions                    ; 28          ;
+;     -- <=2 input functions                  ; 57          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 319         ;
+;     -- normal mode                          ; 273         ;
 ;     -- arithmetic mode                      ; 9           ;
 ;                                             ;             ;
-; Total registers                             ; 180         ;
-;     -- Dedicated logic registers            ; 180         ;
+; Total registers                             ; 150         ;
+;     -- Dedicated logic registers            ; 150         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 114         ;
@@ -286,9 +286,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; Clock~input ;
-; Maximum fan-out                             ; 188         ;
-; Total fan-out                               ; 1904        ;
-; Average fan-out                             ; 2.56        ;
+; Maximum fan-out                             ; 158         ;
+; Total fan-out                               ; 1642        ;
+; Average fan-out                             ; 2.46        ;
 +---------------------------------------------+-------------+
 
 
@@ -297,36 +297,36 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                             ; Entity Name              ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
-; |slsRISC_vhdl                                   ; 328 (0)             ; 180 (0)                   ; 8192        ; 0            ; 0       ; 0         ; 114  ; 0            ; |slsRISC_vhdl                                                                                                                                                   ; slsRISC_vhdl             ; work         ;
-;    |slsRISC_CU_vhdl:CU|                         ; 51 (51)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU                                                                                                                                ; slsRISC_CU_vhdl          ; work         ;
-;    |slsRISC_DP_vhdl:DP|                         ; 205 (0)             ; 90 (0)                    ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP                                                                                                                                ; slsRISC_DP_vhdl          ; work         ;
-;       |sls_8bit_4loc_stack_vhdl:stack|          ; 41 (41)             ; 40 (40)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack                                                                                                 ; sls_8bit_4loc_stack_vhdl ; work         ;
-;       |sls_8bit_alu_struc_vhdl:ALU|             ; 92 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU                                                                                                    ; sls_8bit_alu_struc_vhdl  ; work         ;
-;          |sls_8bit_arith_unit_vhdl:arith_unit|  ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit                                                                ; sls_8bit_arith_unit_vhdl ; work         ;
-;             |sls_8bit_add_sub_vhdl:adder|       ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit|sls_8bit_add_sub_vhdl:adder                                    ; sls_8bit_add_sub_vhdl    ; work         ;
+; |slsRISC_vhdl                                   ; 282 (0)             ; 150 (0)                   ; 8192        ; 0            ; 0       ; 0         ; 114  ; 0            ; |slsRISC_vhdl                                                                                                                                                   ; slsRISC_vhdl             ; work         ;
+;    |slsRISC_CU_vhdl:CU|                         ; 35 (35)             ; 29 (29)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU                                                                                                                                ; slsRISC_CU_vhdl          ; work         ;
+;    |slsRISC_DP_vhdl:DP|                         ; 174 (0)             ; 58 (0)                    ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP                                                                                                                                ; slsRISC_DP_vhdl          ; work         ;
+;       |sls_8bit_4loc_stack_vhdl:stack|          ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack                                                                                                 ; sls_8bit_4loc_stack_vhdl ; work         ;
+;       |sls_8bit_alu_struc_vhdl:ALU|             ; 85 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU                                                                                                    ; sls_8bit_alu_struc_vhdl  ; work         ;
+;          |sls_8bit_arith_unit_vhdl:arith_unit|  ; 21 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit                                                                ; sls_8bit_arith_unit_vhdl ; work         ;
+;             |sls_8bit_add_sub_vhdl:adder|       ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit|sls_8bit_add_sub_vhdl:adder                                    ; sls_8bit_add_sub_vhdl    ; work         ;
 ;             |sls_nbit_mux2to1_vhdl:yselect_mux| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_arith_unit_vhdl:arith_unit|sls_nbit_mux2to1_vhdl:yselect_mux                              ; sls_nbit_mux2to1_vhdl    ; work         ;
-;          |sls_8bit_logic_unit_vhdl:logic_unit|  ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit                                                                ; sls_8bit_logic_unit_vhdl ; work         ;
-;             |sls_nbit_mux4to1_vhdl:logic_mux|   ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux                                ; sls_nbit_mux4to1_vhdl    ; work         ;
-;                |sls_nbit_mux2to1_vhdl:combined| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux|sls_nbit_mux2to1_vhdl:combined ; sls_nbit_mux2to1_vhdl    ; work         ;
-;          |sls_8bit_sr_unit_vhdl:sr_unit|        ; 29 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit                                                                      ; sls_8bit_sr_unit_vhdl    ; work         ;
-;             |sls_nbit_mux4to1_vhdl:sr_mux|      ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux                                         ; sls_nbit_mux4to1_vhdl    ; work         ;
-;                |sls_nbit_mux2to1_vhdl:combined| ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux|sls_nbit_mux2to1_vhdl:combined          ; sls_nbit_mux2to1_vhdl    ; work         ;
-;          |sls_nbit_mux4to1_vhdl:result_mux|     ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux                                                                   ; sls_nbit_mux4to1_vhdl    ; work         ;
-;             |sls_nbit_mux2to1_vhdl:combined|    ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:combined                                    ; sls_nbit_mux2to1_vhdl    ; work         ;
+;          |sls_8bit_logic_unit_vhdl:logic_unit|  ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit                                                                ; sls_8bit_logic_unit_vhdl ; work         ;
+;             |sls_nbit_mux4to1_vhdl:logic_mux|   ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux                                ; sls_nbit_mux4to1_vhdl    ; work         ;
+;                |sls_nbit_mux2to1_vhdl:combined| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_logic_unit_vhdl:logic_unit|sls_nbit_mux4to1_vhdl:logic_mux|sls_nbit_mux2to1_vhdl:combined ; sls_nbit_mux2to1_vhdl    ; work         ;
+;          |sls_8bit_sr_unit_vhdl:sr_unit|        ; 31 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit                                                                      ; sls_8bit_sr_unit_vhdl    ; work         ;
+;             |sls_nbit_mux4to1_vhdl:sr_mux|      ; 21 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux                                         ; sls_nbit_mux4to1_vhdl    ; work         ;
+;                |sls_nbit_mux2to1_vhdl:combined| ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_8bit_sr_unit_vhdl:sr_unit|sls_nbit_mux4to1_vhdl:sr_mux|sls_nbit_mux2to1_vhdl:combined          ; sls_nbit_mux2to1_vhdl    ; work         ;
+;          |sls_nbit_mux4to1_vhdl:result_mux|     ; 29 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux                                                                   ; sls_nbit_mux4to1_vhdl    ; work         ;
+;             |sls_nbit_mux2to1_vhdl:combined|    ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:combined                                    ; sls_nbit_mux2to1_vhdl    ; work         ;
 ;       |sls_MM_vhdl:MM|                          ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM                                                                                                                 ; sls_MM_vhdl              ; work         ;
 ;          |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component                                                                                 ; altsyncram               ; work         ;
 ;             |altsyncram_s3s3:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_s3s3:auto_generated                                                  ; altsyncram_s3s3          ; work         ;
-;       |sls_nbit_mux4to1_vhdl:rfout_sd_mux|      ; 26 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux                                                                                             ; sls_nbit_mux4to1_vhdl    ; work         ;
-;          |sls_nbit_mux2to1_vhdl:combined|       ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:combined                                                              ; sls_nbit_mux2to1_vhdl    ; work         ;
-;          |sls_nbit_mux2to1_vhdl:lower_bits|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:lower_bits                                                            ; sls_nbit_mux2to1_vhdl    ; work         ;
-;          |sls_nbit_mux2to1_vhdl:upper_bits|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:upper_bits                                                            ; sls_nbit_mux2to1_vhdl    ; work         ;
+;       |sls_nbit_mux4to1_vhdl:rfout_s_mux|       ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_s_mux                                                                                              ; sls_nbit_mux4to1_vhdl    ; work         ;
+;          |sls_nbit_mux2to1_vhdl:combined|       ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_s_mux|sls_nbit_mux2to1_vhdl:combined                                                               ; sls_nbit_mux2to1_vhdl    ; work         ;
+;       |sls_nbit_mux4to1_vhdl:rfout_sd_mux|      ; 22 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux                                                                                             ; sls_nbit_mux4to1_vhdl    ; work         ;
+;          |sls_nbit_mux2to1_vhdl:combined|       ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:combined                                                              ; sls_nbit_mux2to1_vhdl    ; work         ;
 ;       |sls_nbit_reg_vhdl:IR|                    ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IR                                                                                                           ; sls_nbit_reg_vhdl        ; work         ;
-;       |sls_nbit_reg_vhdl:r0|                    ; 24 (24)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r0                                                                                                           ; sls_nbit_reg_vhdl        ; work         ;
+;       |sls_nbit_reg_vhdl:r0|                    ; 29 (29)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r0                                                                                                           ; sls_nbit_reg_vhdl        ; work         ;
 ;       |sls_nbit_reg_vhdl:r1|                    ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r1                                                                                                           ; sls_nbit_reg_vhdl        ; work         ;
 ;       |sls_nbit_reg_vhdl:r2|                    ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r2                                                                                                           ; sls_nbit_reg_vhdl        ; work         ;
 ;       |sls_nbit_reg_vhdl:r3|                    ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r3                                                                                                           ; sls_nbit_reg_vhdl        ; work         ;
 ;       |sls_nbit_upcnt_vhdl:PC|                  ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_upcnt_vhdl:PC                                                                                                         ; sls_nbit_upcnt_vhdl      ; work         ;
-;    |sls_IW2ASCII_vhdl:ICdecode|                 ; 72 (72)             ; 63 (63)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|sls_IW2ASCII_vhdl:ICdecode                                                                                                                        ; sls_IW2ASCII_vhdl        ; work         ;
+;    |sls_IW2ASCII_vhdl:ICdecode|                 ; 73 (73)             ; 63 (63)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|sls_IW2ASCII_vhdl:ICdecode                                                                                                                        ; sls_IW2ASCII_vhdl        ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -356,57 +356,116 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; sls_IW2ASCII_vhdl:ICdecode|ICis[87,93]                            ; Stuck at GND due to stuck port data_in ;
 ; sls_IW2ASCII_vhdl:ICdecode|ICis[94]                               ; Stuck at VCC due to stuck port data_in ;
 ; sls_IW2ASCII_vhdl:ICdecode|ICis[95]                               ; Stuck at GND due to stuck port data_in ;
-; slsRISC_CU_vhdl:CU|RF_S_OS[0,1]                                   ; Stuck at GND due to stuck port data_in ;
 ; slsRISC_CU_vhdl:CU|LD_IPDR                                        ; Stuck at GND due to stuck port data_in ;
 ; slsRISC_CU_vhdl:CU|LD_PC                                          ; Stuck at GND due to stuck port data_in ;
+; slsRISC_CU_vhdl:CU|push                                           ; Stuck at VCC due to stuck port data_in ;
+; slsRISC_CU_vhdl:CU|pop                                            ; Stuck at VCC due to stuck port data_in ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[7]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[7]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[7]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[6]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[6]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[6]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[5]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[5]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[5]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[4]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[4]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[4]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[3]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[3]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[3]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[2]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[2]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[2]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[1]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[1]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[1]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[0]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[0]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[0]         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos[0..7]       ; Lost fanout                            ;
 ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[0..7]                 ; Stuck at GND due to stuck port data_in ;
 ; slsRISC_CU_vhdl:CU|LD_MAXR                                        ; Merged with slsRISC_CU_vhdl:CU|LD_MABR ;
 ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:OPDR|q[0..7]                 ; Stuck at GND due to stuck port data_in ;
-; slsRISC_CU_vhdl:CU|LD_OPDR                                        ; Lost fanout                            ;
 ; slsRISC_CU_vhdl:CU|RW                                             ; Stuck at GND due to stuck port data_in ;
 ; slsRISC_CU_vhdl:CU|MMASel                                         ; Stuck at GND due to stuck port data_in ;
 ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[0..9]                  ; Lost fanout                            ;
 ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[0..9]                 ; Lost fanout                            ;
-; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MABR|q[0..9]                 ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MABR|q[0..8]                 ; Lost fanout                            ;
 ; slsRISC_CU_vhdl:CU|LD_MAR                                         ; Lost fanout                            ;
+; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MABR|q[9]                    ; Lost fanout                            ;
 ; slsRISC_CU_vhdl:CU|LD_MABR                                        ; Lost fanout                            ;
-; slsRISC_CU_vhdl:CU|ipstksel                                       ; Stuck at VCC due to stuck port data_in ;
 ; slsRISC_CU_vhdl:CU|crtMCis[2]                                     ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 91                            ;                                        ;
+; slsRISC_CU_vhdl:CU|ipstksel                                       ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 122                           ;                                        ;
 +-------------------------------------------------------------------+----------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                        ;
-+----------------------------+---------------------------+---------------------------------------------------------------------------+
-; Register name              ; Reason for Removal        ; Registers Removed due to This Register                                    ;
-+----------------------------+---------------------------+---------------------------------------------------------------------------+
-; slsRISC_CU_vhdl:CU|LD_PC   ; Stuck at GND              ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[0],                            ;
-;                            ; due to stuck port data_in ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[1],                            ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[2],                            ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[3],                            ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[4],                            ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[5],                            ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[6],                            ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[7],                            ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[8],                            ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[9],                            ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[9],                           ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[8],                           ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[7],                           ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[6],                           ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[5], slsRISC_CU_vhdl:CU|LD_MAR ;
-; slsRISC_CU_vhdl:CU|LD_IPDR ; Stuck at GND              ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[0],                           ;
-;                            ; due to stuck port data_in ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[1],                           ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[2],                           ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[3],                           ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[4],                           ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[5],                           ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[6],                           ;
-;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[7]                            ;
-; slsRISC_CU_vhdl:CU|RW      ; Stuck at GND              ; slsRISC_CU_vhdl:CU|LD_MABR                                                ;
-;                            ; due to stuck port data_in ;                                                                           ;
-+----------------------------+---------------------------+---------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                         ;
++----------------------------+---------------------------+----------------------------------------------------------------------------+
+; Register name              ; Reason for Removal        ; Registers Removed due to This Register                                     ;
++----------------------------+---------------------------+----------------------------------------------------------------------------+
+; slsRISC_CU_vhdl:CU|push    ; Stuck at VCC              ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[7],                 ;
+;                            ; due to stuck port data_in ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[7],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[7],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[6],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[6],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[6],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[5],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[5],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[5],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[4],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[4],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[4],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[3],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[3],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[3],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[2],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[2],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[2],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[1],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[1],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[1],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[0],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[0],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos1[0],                 ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos[7],                  ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos[6],                  ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos[5],                  ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos[4],                  ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos[3],                  ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos[2],                  ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos[1],                  ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos[0]                   ;
+; slsRISC_CU_vhdl:CU|LD_PC   ; Stuck at GND              ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[0],                             ;
+;                            ; due to stuck port data_in ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[1],                             ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[2],                             ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[3],                             ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[4],                             ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[5],                             ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[6],                             ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[7],                             ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[8],                             ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[9],                             ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[9],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[8],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[7],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[6],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[5],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[4],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[3], slsRISC_CU_vhdl:CU|LD_MAR, ;
+;                            ;                           ; slsRISC_CU_vhdl:CU|LD_MABR                                                 ;
+; slsRISC_CU_vhdl:CU|LD_IPDR ; Stuck at GND              ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[0],                            ;
+;                            ; due to stuck port data_in ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[1],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[2],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[3],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[4],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[5],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[6],                            ;
+;                            ;                           ; slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IPDR|q[7]                             ;
++----------------------------+---------------------------+----------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -414,12 +473,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 180   ;
-; Number of registers using Synchronous Clear  ; 63    ;
-; Number of registers using Synchronous Load   ; 15    ;
+; Total registers                              ; 150   ;
+; Number of registers using Synchronous Clear  ; 32    ;
+; Number of registers using Synchronous Load   ; 9     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 92    ;
+; Number of registers using Clock Enable       ; 48    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -429,26 +488,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU|LD_MABR                                                                                          ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:IR|q[4]                                                                        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU|RF_SD_OS[1]                                                                                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r0|q[0]                                                                        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r1|q[7]                                                                        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r2|q[6]                                                                        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r3|q[3]                                                                        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |slsRISC_vhdl|sls_IW2ASCII_vhdl:ICdecode|ICis[30]                                                                                 ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU|ALU_FS[1]                                                                                        ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos3[1]                                                           ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack|tos2[1]                                                           ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |slsRISC_vhdl|sls_IW2ASCII_vhdl:ICdecode|ICis[48]                                                                                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r0|q[7]                                                                        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r1|q[1]                                                                        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r2|q[1]                                                                        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:r3|q[2]                                                                        ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAR|q[6]                                                                       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |slsRISC_vhdl|sls_IW2ASCII_vhdl:ICdecode|ICis[25]                                                                                 ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MABR|q[1]                                                                      ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_reg_vhdl:MAXR|q[6]                                                                      ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |slsRISC_vhdl|sls_IW2ASCII_vhdl:ICdecode|ICis[49]                                                                                 ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |slsRISC_vhdl|sls_IW2ASCII_vhdl:ICdecode|ICis[24]                                                                                 ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |slsRISC_vhdl|sls_IW2ASCII_vhdl:ICdecode|ICis[41]                                                                                 ;
 ; 17:1               ; 2 bits    ; 22 LEs        ; 6 LEs                ; 16 LEs                 ; Yes        ; |slsRISC_vhdl|sls_IW2ASCII_vhdl:ICdecode|ICis[9]                                                                                  ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU|WB_SEL[1]                                                                                        ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU|WB_SEL[1]                                                                                        ;
 ; 14:1               ; 2 bits    ; 18 LEs        ; 16 LEs               ; 2 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU|MC[1]                                                                                            ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU|LD_R3                                                                                            ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 12 LEs               ; 9 LEs                  ; Yes        ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU|LD_R2                                                                                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU|WB_SEL                                                                                           ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux|sls_nbit_mux2to1_vhdl:combined|f[7]                           ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:wbBusMux|sls_nbit_mux2to1_vhdl:combined|f[7]                               ;
-; 11:1               ; 4 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:combined|f[4] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:wbBusMux|sls_nbit_mux2to1_vhdl:combined|f[5]                               ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_s_mux|sls_nbit_mux2to1_vhdl:combined|f[7]                            ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |slsRISC_vhdl|slsRISC_CU_vhdl:CU|LD_R3                                                                                            ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:combined|f[3] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1080,27 +1142,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 114                         ;
-; cycloneiii_ff         ; 180                         ;
-;     ENA               ; 58                          ;
-;     ENA SCLR          ; 28                          ;
-;     ENA SLD           ; 6                           ;
-;     SCLR              ; 35                          ;
+; cycloneiii_ff         ; 150                         ;
+;     ENA               ; 48                          ;
+;     SCLR              ; 32                          ;
 ;     SLD               ; 9                           ;
-;     plain             ; 44                          ;
-; cycloneiii_lcell_comb ; 330                         ;
+;     plain             ; 61                          ;
+; cycloneiii_lcell_comb ; 284                         ;
 ;     arith             ; 9                           ;
 ;         2 data inputs ; 8                           ;
 ;         3 data inputs ; 1                           ;
-;     normal            ; 321                         ;
+;     normal            ; 275                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 9                           ;
+;         1 data inputs ; 8                           ;
 ;         2 data inputs ; 41                          ;
-;         3 data inputs ; 93                          ;
-;         4 data inputs ; 176                         ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 197                         ;
 ; cycloneiii_ram_block  ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 12.00                       ;
-; Average LUT depth     ; 4.21                        ;
+; Max LUT depth         ; 13.00                       ;
+; Average LUT depth     ; 4.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1119,7 +1179,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr 03 19:39:08 2025
+    Info: Processing started: Fri Apr 04 17:48:44 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off slsRISC_vhdl -c slsRISC_vhdl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -1260,7 +1320,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_s3s3" for hierarchy "slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_s3s3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "sls_8bit_4loc_stack_vhdl" for hierarchy "slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_DP_vhdl.vhd Line: 88
 Info (12128): Elaborating entity "slsRISC_CU_vhdl" for hierarchy "slsRISC_CU_vhdl:CU" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd Line: 43
-Warning (10036): Verilog HDL or VHDL warning at slsRISC_CU_vhdl.vhd(21): object "Rs2" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd Line: 21
 Warning (10036): Verilog HDL or VHDL warning at slsRISC_CU_vhdl.vhd(23): object "IW_CNVZ" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd Line: 23
 Warning (10036): Verilog HDL or VHDL warning at slsRISC_CU_vhdl.vhd(24): object "carry" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd Line: 24
 Warning (10036): Verilog HDL or VHDL warning at slsRISC_CU_vhdl.vhd(24): object "negative" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd Line: 24
@@ -1311,7 +1370,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "ICis[95]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd Line: 12
     Warning (13410): Pin "crtMCis[2]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 33 registers lost all their fanouts during netlist optimizations.
+Info (17049): 64 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 5 input pin(s) that do not drive logic
@@ -1320,14 +1379,14 @@ Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd Line: 10
     Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd Line: 10
     Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd Line: 10
-Info (21057): Implemented 511 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 473 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 107 output pins
-    Info (21061): Implemented 389 logic cells
+    Info (21061): Implemented 351 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 61 warnings
-    Info: Peak virtual memory: 4847 megabytes
-    Info: Processing ended: Thu Apr 03 19:39:18 2025
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 60 warnings
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Fri Apr 04 17:48:54 2025
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:08
 
