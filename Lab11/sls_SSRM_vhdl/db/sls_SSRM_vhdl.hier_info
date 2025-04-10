@@ -1,0 +1,22 @@
+|sls_SSRM_vhdl
+Md_val[0] => ~NO_FANOUT~
+Md_val[1] => ~NO_FANOUT~
+Md_val[2] => ~NO_FANOUT~
+Md_val[3] => ~NO_FANOUT~
+mr_val[0] => ~NO_FANOUT~
+mr_val[1] => ~NO_FANOUT~
+mr_val[2] => ~NO_FANOUT~
+mr_val[3] => ~NO_FANOUT~
+START => ~NO_FANOUT~
+Clock => ~NO_FANOUT~
+FP[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+FP[1] <= FP[1].DB_MAX_OUTPUT_PORT_TYPE
+FP[2] <= FP[2].DB_MAX_OUTPUT_PORT_TYPE
+FP[3] <= FP[3].DB_MAX_OUTPUT_PORT_TYPE
+FP[4] <= FP[4].DB_MAX_OUTPUT_PORT_TYPE
+FP[5] <= FP[5].DB_MAX_OUTPUT_PORT_TYPE
+FP[6] <= FP[6].DB_MAX_OUTPUT_PORT_TYPE
+FP[7] <= FP[7].DB_MAX_OUTPUT_PORT_TYPE
+DONE << <GND>
+
+

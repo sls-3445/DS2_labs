@@ -80,5 +80,25 @@ package sls_package is
 			LD_EN_L, LD_EN_M, WR_EN	: out	STD_LOGIC);
 	end component;
 	
+	component sls_nBitSFR_vhdl is
+	generic (n : integer := 4);
+	port (Din : in std_logic_vector (n-1 downto 0);
+			SDinL, SDinR : in std_logic;
+			Clock, Reset, Load, ShR, ShL : in std_logic;
+			SDoutR, SDoutL : buffer std_logic;
+			Dout : buffer std_logic_vector (n-1 downto 0));
+	end component;
+	
+	component sls_8bit_add_sub_vhdl is
+	generic (n: integer := 8);
+	port ( x, y 		: in  std_logic_vector(n-1 downto 0);
+				cin		: in  std_logic;
+				sum 		: out std_logic_vector(n-1 downto 0);
+				cout 		: out std_logic;
+				overflow : out std_logic);
+	end component;
+	
+	
+	
 -- End of component declarations;
 end sls_package ;
