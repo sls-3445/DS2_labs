@@ -1,22 +1,906 @@
 |sls_SSRM_vhdl
-Md_val[0] => ~NO_FANOUT~
-Md_val[1] => ~NO_FANOUT~
-Md_val[2] => ~NO_FANOUT~
-Md_val[3] => ~NO_FANOUT~
-mr_val[0] => ~NO_FANOUT~
-mr_val[1] => ~NO_FANOUT~
-mr_val[2] => ~NO_FANOUT~
-mr_val[3] => ~NO_FANOUT~
-START => ~NO_FANOUT~
-Clock => ~NO_FANOUT~
-FP[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-FP[1] <= FP[1].DB_MAX_OUTPUT_PORT_TYPE
-FP[2] <= FP[2].DB_MAX_OUTPUT_PORT_TYPE
-FP[3] <= FP[3].DB_MAX_OUTPUT_PORT_TYPE
-FP[4] <= FP[4].DB_MAX_OUTPUT_PORT_TYPE
-FP[5] <= FP[5].DB_MAX_OUTPUT_PORT_TYPE
-FP[6] <= FP[6].DB_MAX_OUTPUT_PORT_TYPE
-FP[7] <= FP[7].DB_MAX_OUTPUT_PORT_TYPE
-DONE << <GND>
+M_val[0] => sls_nbit_2sc_in_vhdl:M_2sc.Din[0]
+M_val[1] => sls_nbit_2sc_in_vhdl:M_2sc.Din[1]
+M_val[2] => sls_nbit_2sc_in_vhdl:M_2sc.Din[2]
+M_val[3] => sls_nbit_2sc_in_vhdl:M_2sc.Din[3]
+M_val[4] => sls_nbit_2sc_in_vhdl:M_2sc.Din[4]
+M_val[5] => sls_nbit_2sc_in_vhdl:M_2sc.Din[5]
+M_val[6] => sls_nbit_2sc_in_vhdl:M_2sc.Din[6]
+M_val[7] => sls_nbit_2sc_in_vhdl:M_2sc.Din[7]
+M_val[7] => sls_nbit_2sc_out_vhdl:FP_2sc.M_msb
+mp_val[0] => sls_nbit_2sc_in_vhdl:mp_2sc.Din[0]
+mp_val[1] => sls_nbit_2sc_in_vhdl:mp_2sc.Din[1]
+mp_val[2] => sls_nbit_2sc_in_vhdl:mp_2sc.Din[2]
+mp_val[3] => sls_nbit_2sc_in_vhdl:mp_2sc.Din[3]
+mp_val[4] => sls_nbit_2sc_in_vhdl:mp_2sc.Din[4]
+mp_val[5] => sls_nbit_2sc_in_vhdl:mp_2sc.Din[5]
+mp_val[6] => sls_nbit_2sc_in_vhdl:mp_2sc.Din[6]
+mp_val[7] => sls_nbit_2sc_in_vhdl:mp_2sc.Din[7]
+mp_val[7] => sls_nbit_2sc_out_vhdl:FP_2sc.mp_msb
+START => MC.OUTPUTSELECT
+START => MC.OUTPUTSELECT
+Clock => sls_nBitSFR_vhdl:M_Reg.Clock
+Clock => MC[0].CLK
+Clock => MC[1].CLK
+Clock => n[0].CLK
+Clock => n[1].CLK
+Clock => n[2].CLK
+Clock => ShR_mpl_ph.CLK
+Clock => LD_mpl.CLK
+Clock => LD_ph.CLK
+Clock => LD_C.CLK
+Clock => Rst_ph.CLK
+Clock => Rst_mpl.CLK
+Clock => Rst_C.CLK
+Clock => LD_M.CLK
+Clock => DONE~reg0.CLK
+Clock => sls_dff_vhdl:c_dff.Clock
+Clock => sls_nBitSFR_vhdl:ph_reg.Clock
+Clock => sls_nBitSFR_vhdl:mPL_Reg.Clock
+FP[0] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[0]
+FP[1] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[1]
+FP[2] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[2]
+FP[3] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[3]
+FP[4] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[4]
+FP[5] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[5]
+FP[6] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[6]
+FP[7] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[7]
+FP[8] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[8]
+FP[9] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[9]
+FP[10] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[10]
+FP[11] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[11]
+FP[12] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[12]
+FP[13] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[13]
+FP[14] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[14]
+FP[15] <= sls_nbit_2sc_out_vhdl:FP_2sc.Dout[15]
+DONE << DONE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc
+Din[0] => sls_not:twosc:0:stage0.x
+Din[0] => sls_nbit_mux2to1_vhdl:mux.d0[0]
+Din[1] => sls_not:twosc:1:stage0.x
+Din[1] => sls_nbit_mux2to1_vhdl:mux.d0[1]
+Din[2] => sls_not:twosc:2:stage0.x
+Din[2] => sls_nbit_mux2to1_vhdl:mux.d0[2]
+Din[3] => sls_not:twosc:3:stage0.x
+Din[3] => sls_nbit_mux2to1_vhdl:mux.d0[3]
+Din[4] => sls_not:twosc:4:stage0.x
+Din[4] => sls_nbit_mux2to1_vhdl:mux.d0[4]
+Din[5] => sls_not:twosc:5:stage0.x
+Din[5] => sls_nbit_mux2to1_vhdl:mux.d0[5]
+Din[6] => sls_not:twosc:6:stage0.x
+Din[6] => sls_nbit_mux2to1_vhdl:mux.d0[6]
+Din[7] => sls_not:twosc:7:stage0.x
+Din[7] => sls_nbit_mux2to1_vhdl:mux.d0[7]
+Din[7] => sls_nbit_mux2to1_vhdl:mux.s
+Dout[0] <= sls_nbit_mux2to1_vhdl:mux.f[0]
+Dout[1] <= sls_nbit_mux2to1_vhdl:mux.f[1]
+Dout[2] <= sls_nbit_mux2to1_vhdl:mux.f[2]
+Dout[3] <= sls_nbit_mux2to1_vhdl:mux.f[3]
+Dout[4] <= sls_nbit_mux2to1_vhdl:mux.f[4]
+Dout[5] <= sls_nbit_mux2to1_vhdl:mux.f[5]
+Dout[6] <= sls_nbit_mux2to1_vhdl:mux.f[6]
+Dout[7] <= sls_nbit_mux2to1_vhdl:mux.f[7]
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_not:\twosc:0:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:0:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:0:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_not:\twosc:1:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:1:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:1:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_not:\twosc:2:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:2:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:2:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_not:\twosc:3:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:3:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:3:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_not:\twosc:4:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:4:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:4:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_not:\twosc:5:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:5:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:5:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_not:\twosc:6:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:6:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:6:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_not:\twosc:7:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:7:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:7:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:M_2sc|sls_nbit_mux2to1_vhdl:mux
+d1[0] => f.IN0
+d1[1] => f.IN0
+d1[2] => f.IN0
+d1[3] => f.IN0
+d1[4] => f.IN0
+d1[5] => f.IN0
+d1[6] => f.IN0
+d1[7] => f.IN0
+d0[0] => f.IN0
+d0[1] => f.IN0
+d0[2] => f.IN0
+d0[3] => f.IN0
+d0[4] => f.IN0
+d0[5] => f.IN0
+d0[6] => f.IN0
+d0[7] => f.IN0
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[4] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc
+Din[0] => sls_not:twosc:0:stage0.x
+Din[0] => sls_nbit_mux2to1_vhdl:mux.d0[0]
+Din[1] => sls_not:twosc:1:stage0.x
+Din[1] => sls_nbit_mux2to1_vhdl:mux.d0[1]
+Din[2] => sls_not:twosc:2:stage0.x
+Din[2] => sls_nbit_mux2to1_vhdl:mux.d0[2]
+Din[3] => sls_not:twosc:3:stage0.x
+Din[3] => sls_nbit_mux2to1_vhdl:mux.d0[3]
+Din[4] => sls_not:twosc:4:stage0.x
+Din[4] => sls_nbit_mux2to1_vhdl:mux.d0[4]
+Din[5] => sls_not:twosc:5:stage0.x
+Din[5] => sls_nbit_mux2to1_vhdl:mux.d0[5]
+Din[6] => sls_not:twosc:6:stage0.x
+Din[6] => sls_nbit_mux2to1_vhdl:mux.d0[6]
+Din[7] => sls_not:twosc:7:stage0.x
+Din[7] => sls_nbit_mux2to1_vhdl:mux.d0[7]
+Din[7] => sls_nbit_mux2to1_vhdl:mux.s
+Dout[0] <= sls_nbit_mux2to1_vhdl:mux.f[0]
+Dout[1] <= sls_nbit_mux2to1_vhdl:mux.f[1]
+Dout[2] <= sls_nbit_mux2to1_vhdl:mux.f[2]
+Dout[3] <= sls_nbit_mux2to1_vhdl:mux.f[3]
+Dout[4] <= sls_nbit_mux2to1_vhdl:mux.f[4]
+Dout[5] <= sls_nbit_mux2to1_vhdl:mux.f[5]
+Dout[6] <= sls_nbit_mux2to1_vhdl:mux.f[6]
+Dout[7] <= sls_nbit_mux2to1_vhdl:mux.f[7]
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_not:\twosc:0:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_xor2:\twosc:0:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_and2:\twosc:0:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_not:\twosc:1:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_xor2:\twosc:1:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_and2:\twosc:1:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_not:\twosc:2:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_xor2:\twosc:2:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_and2:\twosc:2:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_not:\twosc:3:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_xor2:\twosc:3:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_and2:\twosc:3:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_not:\twosc:4:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_xor2:\twosc:4:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_and2:\twosc:4:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_not:\twosc:5:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_xor2:\twosc:5:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_and2:\twosc:5:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_not:\twosc:6:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_xor2:\twosc:6:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_and2:\twosc:6:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_not:\twosc:7:stage0
+x => f.DATAIN
+f <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_xor2:\twosc:7:stage1
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_and2:\twosc:7:stage2
+x1 => f.IN0
+x2 => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_in_vhdl:mp_2sc|sls_nbit_mux2to1_vhdl:mux
+d1[0] => f.IN0
+d1[1] => f.IN0
+d1[2] => f.IN0
+d1[3] => f.IN0
+d1[4] => f.IN0
+d1[5] => f.IN0
+d1[6] => f.IN0
+d1[7] => f.IN0
+d0[0] => f.IN0
+d0[1] => f.IN0
+d0[2] => f.IN0
+d0[3] => f.IN0
+d0[4] => f.IN0
+d0[5] => f.IN0
+d0[6] => f.IN0
+d0[7] => f.IN0
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[4] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nBitSFR_vhdl:M_Reg
+Din[0] => Dout.DATAB
+Din[0] => SDoutR.DATAB
+Din[1] => Dout.DATAB
+Din[2] => Dout.DATAB
+Din[3] => Dout.DATAB
+Din[4] => Dout.DATAB
+Din[5] => Dout.DATAB
+Din[6] => Dout.DATAB
+Din[7] => Dout.DATAB
+Din[7] => SDoutL.DATAB
+SDinL => Dout.DATAB
+SDinL => SDoutL.DATAB
+SDinR => Dout.DATAB
+SDinR => SDoutL.DATAB
+Clock => SDoutL~reg0.CLK
+Clock => SDoutR~reg0.CLK
+Clock => Dout[0]~reg0.CLK
+Clock => Dout[1]~reg0.CLK
+Clock => Dout[2]~reg0.CLK
+Clock => Dout[3]~reg0.CLK
+Clock => Dout[4]~reg0.CLK
+Clock => Dout[5]~reg0.CLK
+Clock => Dout[6]~reg0.CLK
+Clock => Dout[7]~reg0.CLK
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => SDoutR.OUTPUTSELECT
+Reset => SDoutL.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => SDoutR.OUTPUTSELECT
+Load => SDoutL.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => SDoutR.OUTPUTSELECT
+ShR => SDoutL.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => SDoutR.OUTPUTSELECT
+ShL => SDoutL.OUTPUTSELECT
+SDoutR <= SDoutR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SDoutL <= SDoutL~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[0] <= Dout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] <= Dout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] <= Dout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] <= Dout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[4] <= Dout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[5] <= Dout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[6] <= Dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[7] <= Dout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_mux2to1_vhdl:M_Mux
+d1[0] => f.IN0
+d1[1] => f.IN0
+d1[2] => f.IN0
+d1[3] => f.IN0
+d1[4] => f.IN0
+d1[5] => f.IN0
+d1[6] => f.IN0
+d1[7] => f.IN0
+d0[0] => f.IN0
+d0[1] => f.IN0
+d0[2] => f.IN0
+d0[3] => f.IN0
+d0[4] => f.IN0
+d0[5] => f.IN0
+d0[6] => f.IN0
+d0[7] => f.IN0
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+s => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[4] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[6] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[7] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_add_sub_vhdl:adder
+x[0] => sum.IN1
+x[0] => c.IN1
+x[0] => c.IN0
+x[1] => sum.IN1
+x[1] => c.IN1
+x[1] => c.IN1
+x[2] => sum.IN1
+x[2] => c.IN1
+x[2] => c.IN1
+x[3] => sum.IN1
+x[3] => c.IN1
+x[3] => c.IN1
+x[4] => sum.IN1
+x[4] => c.IN1
+x[4] => c.IN1
+x[5] => sum.IN1
+x[5] => c.IN1
+x[5] => c.IN1
+x[6] => sum.IN1
+x[6] => c.IN1
+x[6] => c.IN1
+x[7] => sum.IN1
+x[7] => c.IN1
+x[7] => c.IN1
+y[0] => c.IN0
+y[1] => c.IN0
+y[2] => c.IN0
+y[3] => c.IN0
+y[4] => c.IN0
+y[5] => c.IN0
+y[6] => c.IN0
+y[7] => sum.IN0
+cin => c.IN1
+cin => c.IN1
+cin => c.IN1
+cin => c.IN1
+cin => c.IN1
+cin => c.IN1
+cin => c.IN1
+cin => sum.IN1
+cin => sum.IN1
+cin => c.IN1
+cin => c.IN1
+sum[0] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[4] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[5] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[6] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[7] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_dff_vhdl:c_dff
+d => q.DATAB
+Clock => q~reg0.CLK
+Reset => q.OUTPUTSELECT
+LD => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nBitSFR_vhdl:ph_reg
+Din[0] => Dout.DATAB
+Din[0] => SDoutR.DATAB
+Din[1] => Dout.DATAB
+Din[2] => Dout.DATAB
+Din[3] => Dout.DATAB
+Din[4] => Dout.DATAB
+Din[5] => Dout.DATAB
+Din[6] => Dout.DATAB
+Din[7] => Dout.DATAB
+Din[7] => SDoutL.DATAB
+SDinL => Dout.DATAB
+SDinL => SDoutL.DATAB
+SDinR => Dout.DATAB
+SDinR => SDoutL.DATAB
+Clock => SDoutL~reg0.CLK
+Clock => SDoutR~reg0.CLK
+Clock => Dout[0]~reg0.CLK
+Clock => Dout[1]~reg0.CLK
+Clock => Dout[2]~reg0.CLK
+Clock => Dout[3]~reg0.CLK
+Clock => Dout[4]~reg0.CLK
+Clock => Dout[5]~reg0.CLK
+Clock => Dout[6]~reg0.CLK
+Clock => Dout[7]~reg0.CLK
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => SDoutR.OUTPUTSELECT
+Reset => SDoutL.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => SDoutR.OUTPUTSELECT
+Load => SDoutL.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => SDoutR.OUTPUTSELECT
+ShR => SDoutL.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => SDoutR.OUTPUTSELECT
+ShL => SDoutL.OUTPUTSELECT
+SDoutR <= SDoutR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SDoutL <= SDoutL~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[0] <= Dout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] <= Dout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] <= Dout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] <= Dout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[4] <= Dout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[5] <= Dout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[6] <= Dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[7] <= Dout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nBitSFR_vhdl:mPL_Reg
+Din[0] => Dout.DATAB
+Din[0] => SDoutR.DATAB
+Din[1] => Dout.DATAB
+Din[2] => Dout.DATAB
+Din[3] => Dout.DATAB
+Din[4] => Dout.DATAB
+Din[5] => Dout.DATAB
+Din[6] => Dout.DATAB
+Din[7] => Dout.DATAB
+Din[7] => SDoutL.DATAB
+SDinL => Dout.DATAB
+SDinL => SDoutL.DATAB
+SDinR => Dout.DATAB
+SDinR => SDoutL.DATAB
+Clock => SDoutL~reg0.CLK
+Clock => SDoutR~reg0.CLK
+Clock => Dout[0]~reg0.CLK
+Clock => Dout[1]~reg0.CLK
+Clock => Dout[2]~reg0.CLK
+Clock => Dout[3]~reg0.CLK
+Clock => Dout[4]~reg0.CLK
+Clock => Dout[5]~reg0.CLK
+Clock => Dout[6]~reg0.CLK
+Clock => Dout[7]~reg0.CLK
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => Dout.OUTPUTSELECT
+Reset => SDoutR.OUTPUTSELECT
+Reset => SDoutL.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => Dout.OUTPUTSELECT
+Load => SDoutR.OUTPUTSELECT
+Load => SDoutL.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => Dout.OUTPUTSELECT
+ShR => SDoutR.OUTPUTSELECT
+ShR => SDoutL.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => Dout.OUTPUTSELECT
+ShL => SDoutR.OUTPUTSELECT
+ShL => SDoutL.OUTPUTSELECT
+SDoutR <= SDoutR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SDoutL <= SDoutL~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[0] <= Dout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] <= Dout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] <= Dout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] <= Dout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[4] <= Dout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[5] <= Dout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[6] <= Dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[7] <= Dout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sls_SSRM_vhdl|sls_nbit_2sc_out_vhdl:FP_2sc
+M_msb => ~NO_FANOUT~
+mp_msb => ~NO_FANOUT~
+Din[0] => c[1].DATAIN
+Din[0] => Dout[0].DATAIN
+Din[1] => Dout[1].DATAB
+Din[1] => c[2].OUTPUTSELECT
+Din[1] => Dout[1].OUTPUTSELECT
+Din[2] => Dout[2].DATAB
+Din[2] => c[3].OUTPUTSELECT
+Din[2] => Dout[2].OUTPUTSELECT
+Din[3] => Dout[3].DATAB
+Din[3] => c[4].OUTPUTSELECT
+Din[3] => Dout[3].OUTPUTSELECT
+Din[4] => Dout[4].DATAB
+Din[4] => c[5].OUTPUTSELECT
+Din[4] => Dout[4].OUTPUTSELECT
+Din[5] => Dout[5].DATAB
+Din[5] => c[6].OUTPUTSELECT
+Din[5] => Dout[5].OUTPUTSELECT
+Din[6] => Dout[6].DATAB
+Din[6] => c[7].OUTPUTSELECT
+Din[6] => Dout[6].OUTPUTSELECT
+Din[7] => Dout[7].DATAB
+Din[7] => c[8].OUTPUTSELECT
+Din[7] => Dout[7].OUTPUTSELECT
+Din[8] => Dout[8].DATAB
+Din[8] => c[9].OUTPUTSELECT
+Din[8] => Dout[8].OUTPUTSELECT
+Din[9] => Dout[9].DATAB
+Din[9] => c[10].OUTPUTSELECT
+Din[9] => Dout[9].OUTPUTSELECT
+Din[10] => Dout[10].DATAB
+Din[10] => c[11].OUTPUTSELECT
+Din[10] => Dout[10].OUTPUTSELECT
+Din[11] => Dout[11].DATAB
+Din[11] => c[12].OUTPUTSELECT
+Din[11] => Dout[11].OUTPUTSELECT
+Din[12] => Dout[12].DATAB
+Din[12] => c[13].OUTPUTSELECT
+Din[12] => Dout[12].OUTPUTSELECT
+Din[13] => Dout[13].DATAB
+Din[13] => c[14].OUTPUTSELECT
+Din[13] => Dout[13].OUTPUTSELECT
+Din[14] => Dout[14].DATAB
+Din[14] => c[15].OUTPUTSELECT
+Din[14] => Dout[14].OUTPUTSELECT
+Din[15] => Dout[1].OUTPUTSELECT
+Din[15] => Dout[2].OUTPUTSELECT
+Din[15] => Dout[3].OUTPUTSELECT
+Din[15] => Dout[4].OUTPUTSELECT
+Din[15] => Dout[5].OUTPUTSELECT
+Din[15] => Dout[6].OUTPUTSELECT
+Din[15] => Dout[7].OUTPUTSELECT
+Din[15] => Dout[8].OUTPUTSELECT
+Din[15] => Dout[9].OUTPUTSELECT
+Din[15] => Dout[10].OUTPUTSELECT
+Din[15] => Dout[11].OUTPUTSELECT
+Din[15] => Dout[12].OUTPUTSELECT
+Din[15] => Dout[13].OUTPUTSELECT
+Din[15] => Dout[14].OUTPUTSELECT
+Din[15] => Dout[15].OUTPUTSELECT
+Din[15] => Dout[15].OUTPUTSELECT
+Din[15] => c[4].LATCH_ENABLE
+Din[15] => c[5].LATCH_ENABLE
+Din[15] => c[6].LATCH_ENABLE
+Din[15] => c[7].LATCH_ENABLE
+Din[15] => c[8].LATCH_ENABLE
+Din[15] => c[9].LATCH_ENABLE
+Din[15] => c[10].LATCH_ENABLE
+Din[15] => c[11].LATCH_ENABLE
+Din[15] => c[12].LATCH_ENABLE
+Din[15] => c[13].LATCH_ENABLE
+Din[15] => c[14].LATCH_ENABLE
+Din[15] => c[15].LATCH_ENABLE
+Din[15] => c[2].LATCH_ENABLE
+Din[15] => c[1].LATCH_ENABLE
+Din[15] => c[3].LATCH_ENABLE
+Dout[0] <= Din[0].DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] <= Dout[1].DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] <= Dout[2].DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] <= Dout[3].DB_MAX_OUTPUT_PORT_TYPE
+Dout[4] <= Dout[4].DB_MAX_OUTPUT_PORT_TYPE
+Dout[5] <= Dout[5].DB_MAX_OUTPUT_PORT_TYPE
+Dout[6] <= Dout[6].DB_MAX_OUTPUT_PORT_TYPE
+Dout[7] <= Dout[7].DB_MAX_OUTPUT_PORT_TYPE
+Dout[8] <= Dout[8].DB_MAX_OUTPUT_PORT_TYPE
+Dout[9] <= Dout[9].DB_MAX_OUTPUT_PORT_TYPE
+Dout[10] <= Dout[10].DB_MAX_OUTPUT_PORT_TYPE
+Dout[11] <= Dout[11].DB_MAX_OUTPUT_PORT_TYPE
+Dout[12] <= Dout[12].DB_MAX_OUTPUT_PORT_TYPE
+Dout[13] <= Dout[13].DB_MAX_OUTPUT_PORT_TYPE
+Dout[14] <= Dout[14].DB_MAX_OUTPUT_PORT_TYPE
+Dout[15] <= Dout[15].DB_MAX_OUTPUT_PORT_TYPE
 
 

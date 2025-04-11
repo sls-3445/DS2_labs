@@ -1,0 +1,15 @@
+do sls_SSRM_vhdl_run_msim_rtl_vhdl.do
+
+add wave -position insertpoint  \
+sim:/sls_ssrm_vhdl_tb/cuv/n \
+sim:/sls_ssrm_vhdl_tb/cuv/ph_out \
+sim:/sls_ssrm_vhdl_tb/cuv/mpl_out \
+sim:/sls_ssrm_vhdl_tb/cuv/usM_val \
+sim:/sls_ssrm_vhdl_tb/cuv/usmp_val \
+sim:/sls_ssrm_vhdl_tb/cuv/ph_out \
+sim:/sls_ssrm_vhdl_tb/cuv/mpl_out \
+sim:/sls_ssrm_vhdl_tb/cuv/adder_out \
+sim:/sls_ssrm_vhdl_tb/cuv/M_mux_out
+
+restart -f
+run -all

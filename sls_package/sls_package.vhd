@@ -4,6 +4,33 @@ use ieee.std_logic_1164.all;
 package sls_package is
 -- Component declarations:
 
+--***************** GATES *****************
+--	component sls_nbit_and is
+--	generic (n : integer := 2);
+--	port map (x : in 	std_logic_vector(n-1 downto 0);
+--				 f : out	std_logic);
+--	end component;
+--	
+--	component sls_nbit_or is
+--	generic (n : integer := 2);
+--	port map (x : in 	std_logic_vector(n-1 downto 0);
+--				 f : out	std_logic);
+--	end component;
+
+	component sls_xor2 is 
+	port (x1, x2 : in  std_logic;
+				 f 	  : out std_logic);
+	end component;
+
+	component sls_and2 is 
+	port (x1, x2 : in  std_logic;
+				 f 	  : out std_logic);
+	end component;
+
+	component sls_not is
+	port (x : in  std_logic;
+				 f : out std_logic);
+	end component;
 --***************** MUXES *****************
 	component sls_nbit_mux2to1_vhdl is 			
 	generic (n : integer := 8);
@@ -97,6 +124,19 @@ package sls_package is
 				cout 		: out std_logic;
 				overflow : out std_logic);
 	end component;
+	
+	component sls_nbit_2sc_struc_vhdl is
+	generic (n : integer := 8);
+	port(Din 	: in 	std_logic_vector(n-1 downto 0);
+		  Dout 	: out std_logic_vector(n-1 downto 0));
+	end component;
+	
+	component sls_nbit_2sc_beh_vhdl is
+	generic (n : integer := 8);
+	port(Din 	: in 	std_logic_vector(n-1 downto 0);
+		  Dout 	: out std_logic_vector(n-1 downto 0));
+	end component;
+
 	
 	
 	

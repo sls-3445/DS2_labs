@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity sls_dff_vhdl is 
+port (d, Clock, Reset, LD : in 	std_logic;
+			 q 				  : out std_logic);
+end sls_dff_vhdl;
+
+architecture beh of sls_dff_vhdl is
+begin
+	process (Clock)
+	begin
+		if Clock'event and Clock = '1' then
+			if Reset = '1' then q <= '0';
+			elsif LD = '1' then q <= d;
+			end if;
+		end if;
+	end process;
+end beh;

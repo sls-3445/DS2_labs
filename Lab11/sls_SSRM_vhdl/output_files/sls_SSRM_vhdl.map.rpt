@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sls_SSRM_vhdl
-Thu Apr 10 17:42:13 2025
+Fri Apr 11 04:14:46 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,10 +13,32 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:M_2sc
+ 14. Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:M_2sc|sls_nbit_mux2to1_vhdl:mux
+ 15. Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:mp_2sc
+ 16. Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:mp_2sc|sls_nbit_mux2to1_vhdl:mux
+ 17. Parameter Settings for User Entity Instance: sls_nBitSFR_vhdl:M_Reg
+ 18. Parameter Settings for User Entity Instance: sls_nbit_mux2to1_vhdl:M_Mux
+ 19. Parameter Settings for User Entity Instance: sls_nbit_add_sub_vhdl:adder
+ 20. Parameter Settings for User Entity Instance: sls_nBitSFR_vhdl:ph_reg
+ 21. Parameter Settings for User Entity Instance: sls_nBitSFR_vhdl:mPL_Reg
+ 22. Parameter Settings for User Entity Instance: sls_nbit_2sc_out_vhdl:FP_2sc
+ 23. Port Connectivity Checks: "sls_nBitSFR_vhdl:mPL_Reg"
+ 24. Port Connectivity Checks: "sls_nBitSFR_vhdl:ph_reg"
+ 25. Port Connectivity Checks: "sls_nbit_add_sub_vhdl:adder"
+ 26. Port Connectivity Checks: "sls_nbit_mux2to1_vhdl:M_Mux"
+ 27. Port Connectivity Checks: "sls_nBitSFR_vhdl:M_Reg"
+ 28. Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:7:stage2"
+ 29. Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:0:stage2"
+ 30. Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:0:stage1"
+ 31. Post-Synthesis Netlist Statistics for Top Partition
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +64,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 10 17:42:13 2025       ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 11 04:14:46 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; sls_SSRM_vhdl                               ;
 ; Top-level Entity Name              ; sls_SSRM_vhdl                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 19                                          ;
+; Total logic elements               ; 8                                           ;
+;     Total combinational functions  ; 8                                           ;
+;     Dedicated logic registers      ; 6                                           ;
+; Total registers                    ; 6                                           ;
+; Total pins                         ; 35                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -154,52 +176,63 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+-----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path  ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
-+-----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; ../../sls_package/sls_package.vhd ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/sls_package/sls_package.vhd           ;         ;
-; sls_SSRM_vhdl.vhd                 ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd ;         ;
-+-----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                             ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                      ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------+---------+
+; sls_xor2.vhd                     ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_xor2.vhd              ;         ;
+; sls_not.vhd                      ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_not.vhd               ;         ;
+; sls_nbitSFR_vhdl.vhd             ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbitSFR_vhdl.vhd      ;         ;
+; sls_nbit_mux2to1_vhdl.vhd        ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_mux2to1_vhdl.vhd ;         ;
+; sls_nbit_add_sub_vhdl.vhd        ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_add_sub_vhdl.vhd ;         ;
+; sls_dff_vhdl.vhd                 ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_dff_vhdl.vhd          ;         ;
+; sls_and2.vhd                     ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_and2.vhd              ;         ;
+; sls_nbit_2sc_out_vhdl.vhd        ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd ;         ;
+; sls_nbit_2sc_in_vhdl.vhd         ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd  ;         ;
+; sls_SSRM_vhdl.vhd                ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd         ;         ;
+; sls_SSRM_package.vhd             ; yes             ; User VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_package.vhd      ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-;                                             ;           ;
-; Total combinational functions               ; 0         ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 0         ;
-;     -- <=2 input functions                  ; 0         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 0         ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 0         ;
-;     -- Dedicated logic registers            ; 0         ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 19        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; Md_val[0] ;
-; Maximum fan-out                             ; 1         ;
-; Total fan-out                               ; 19        ;
-; Average fan-out                             ; 0.50      ;
-+---------------------------------------------+-----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 8     ;
+;                                             ;       ;
+; Total combinational functions               ; 8     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 3     ;
+;     -- 3 input functions                    ; 4     ;
+;     -- <=2 input functions                  ; 1     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 8     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 6     ;
+;     -- Dedicated logic registers            ; 6     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 35    ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; MC[0] ;
+; Maximum fan-out                             ; 10    ;
+; Total fan-out                               ; 77    ;
+; Average fan-out                             ; 0.92  ;
++---------------------------------------------+-------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -207,9 +240,44 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+---------------+--------------+
-; |sls_SSRM_vhdl             ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |sls_SSRM_vhdl      ; sls_SSRM_vhdl ; work         ;
+; |sls_SSRM_vhdl             ; 8 (8)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |sls_SSRM_vhdl      ; sls_SSRM_vhdl ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                  ;
++----------------------------------------+--------------------------------------------+
+; Register name                          ; Reason for Removal                         ;
++----------------------------------------+--------------------------------------------+
+; Rst_ph                                 ; Merged with LD_mpl                         ;
+; Rst_mpl                                ; Merged with LD_mpl                         ;
+; Rst_C                                  ; Merged with LD_mpl                         ;
+; LD_M                                   ; Merged with LD_mpl                         ;
+; LD_C                                   ; Merged with LD_ph                          ;
+; sls_nBitSFR_vhdl:ph_reg|Dout[0]        ; Merged with sls_nBitSFR_vhdl:ph_reg|SDoutR ;
+; sls_dff_vhdl:c_dff|q                   ; Stuck at GND due to stuck port data_in     ;
+; sls_nBitSFR_vhdl:ph_reg|Dout[1..7]     ; Stuck at GND due to stuck port data_in     ;
+; sls_nBitSFR_vhdl:ph_reg|SDoutR         ; Stuck at GND due to stuck port data_in     ;
+; sls_nBitSFR_vhdl:mPL_Reg|Dout[0..7]    ; Stuck at GND due to stuck port data_in     ;
+; Total Number of Removed Registers = 23 ;                                            ;
++----------------------------------------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                            ;
++----------------------+---------------------------+---------------------------------------------------------------------+
+; Register name        ; Reason for Removal        ; Registers Removed due to This Register                              ;
++----------------------+---------------------------+---------------------------------------------------------------------+
+; sls_dff_vhdl:c_dff|q ; Stuck at GND              ; sls_nBitSFR_vhdl:ph_reg|Dout[7], sls_nBitSFR_vhdl:ph_reg|Dout[6],   ;
+;                      ; due to stuck port data_in ; sls_nBitSFR_vhdl:ph_reg|Dout[5], sls_nBitSFR_vhdl:ph_reg|Dout[4],   ;
+;                      ;                           ; sls_nBitSFR_vhdl:ph_reg|Dout[3], sls_nBitSFR_vhdl:ph_reg|Dout[2],   ;
+;                      ;                           ; sls_nBitSFR_vhdl:ph_reg|Dout[1], sls_nBitSFR_vhdl:ph_reg|SDoutR,    ;
+;                      ;                           ; sls_nBitSFR_vhdl:mPL_Reg|Dout[7], sls_nBitSFR_vhdl:mPL_Reg|Dout[6], ;
+;                      ;                           ; sls_nBitSFR_vhdl:mPL_Reg|Dout[5], sls_nBitSFR_vhdl:mPL_Reg|Dout[4], ;
+;                      ;                           ; sls_nBitSFR_vhdl:mPL_Reg|Dout[3], sls_nBitSFR_vhdl:mPL_Reg|Dout[2], ;
+;                      ;                           ; sls_nBitSFR_vhdl:mPL_Reg|Dout[1], sls_nBitSFR_vhdl:mPL_Reg|Dout[0]  ;
++----------------------+---------------------------+---------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -217,14 +285,219 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 6     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 3     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; n[2]                                   ; 2       ;
+; n[0]                                   ; 4       ;
+; n[1]                                   ; 3       ;
+; Total number of inverted registers = 3 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |sls_SSRM_vhdl|n[0]        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:M_2sc ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:M_2sc|sls_nbit_mux2to1_vhdl:mux ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:mp_2sc ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:mp_2sc|sls_nbit_mux2to1_vhdl:mux ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_nBitSFR_vhdl:M_Reg ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 8     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_nbit_mux2to1_vhdl:M_Mux ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_nbit_add_sub_vhdl:adder ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_nBitSFR_vhdl:ph_reg ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; n              ; 8     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_nBitSFR_vhdl:mPL_Reg ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 8     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sls_nbit_2sc_out_vhdl:FP_2sc ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; n              ; 16    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_nBitSFR_vhdl:mPL_Reg"                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; sdinr  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; shl    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; sdoutr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; sdoutl ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_nBitSFR_vhdl:ph_reg"                                                              ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; sdinr  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; shl    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; sdoutl ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_nbit_add_sub_vhdl:adder"                                                            ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; cin      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "sls_nbit_mux2to1_vhdl:M_Mux" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; d0   ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_nBitSFR_vhdl:M_Reg"                                                               ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; sdinl  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; sdinr  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; reset  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; shr    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; shl    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; sdoutr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; sdoutl ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:7:stage2"                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; f    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:0:stage2" ;
++------+-------+----------+-------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                               ;
++------+-------+----------+-------------------------------------------------------+
+; x2   ; Input ; Info     ; Stuck at VCC                                          ;
++------+-------+----------+-------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:0:stage1" ;
++------+-------+----------+-------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                               ;
++------+-------+----------+-------------------------------------------------------+
+; x2   ; Input ; Info     ; Stuck at VCC                                          ;
++------+-------+----------+-------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -232,13 +505,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 19                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
+; boundary_port         ; 35                          ;
+; cycloneiii_ff         ; 6                           ;
+;     ENA               ; 3                           ;
+;     plain             ; 3                           ;
+; cycloneiii_lcell_comb ; 9                           ;
+;     normal            ; 9                           ;
 ;         0 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 3                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.35                        ;
 +-----------------------+-----------------------------+
 
 
@@ -257,18 +536,130 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr 10 17:42:04 2025
+    Info: Processing started: Fri Apr 11 04:14:38 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sls_SSRM_vhdl -c sls_SSRM_vhdl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Info (12021): Found 1 design units, including 0 entities, in source file /users/sls3445/documents/ds2_labs/sls_package/sls_package.vhd
-    Info (12022): Found design unit 1: sls_package File: C:/Users/sls3445/Documents/DS2_labs/sls_package/sls_package.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sls_xor2.vhd
+    Info (12022): Found design unit 1: sls_xor2-func File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_xor2.vhd Line: 9
+    Info (12023): Found entity 1: sls_xor2 File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_xor2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sls_not.vhd
+    Info (12022): Found design unit 1: sls_not-func File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_not.vhd Line: 9
+    Info (12023): Found entity 1: sls_not File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_not.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sls_nbitsfr_vhdl.vhd
+    Info (12022): Found design unit 1: sls_nBitSFR_vhdl-beh File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbitSFR_vhdl.vhd Line: 13
+    Info (12023): Found entity 1: sls_nBitSFR_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbitSFR_vhdl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sls_nbit_mux2to1_vhdl.vhd
+    Info (12022): Found design unit 1: sls_nbit_mux2to1_vhdl-mux2to1_func File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_mux2to1_vhdl.vhd Line: 11
+    Info (12023): Found entity 1: sls_nbit_mux2to1_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_mux2to1_vhdl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sls_nbit_add_sub_vhdl.vhd
+    Info (12022): Found design unit 1: sls_nbit_add_sub_vhdl-func File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_add_sub_vhdl.vhd Line: 13
+    Info (12023): Found entity 1: sls_nbit_add_sub_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_add_sub_vhdl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sls_dff_vhdl.vhd
+    Info (12022): Found design unit 1: sls_dff_vhdl-beh File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_dff_vhdl.vhd Line: 9
+    Info (12023): Found entity 1: sls_dff_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_dff_vhdl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sls_and2.vhd
+    Info (12022): Found design unit 1: sls_and2-func File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_and2.vhd Line: 9
+    Info (12023): Found entity 1: sls_and2 File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_and2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sls_nbit_2sc_out_vhdl.vhd
+    Info (12022): Found design unit 1: sls_nbit_2sc_out_vhdl-beh File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 11
+    Info (12023): Found entity 1: sls_nbit_2sc_out_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sls_nbit_2sc_in_vhdl.vhd
+    Info (12022): Found design unit 1: sls_nbit_2sc_in_vhdl-struc File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd Line: 11
+    Info (12023): Found entity 1: sls_nbit_2sc_in_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file sls_ssrm_vhdl.vhd
     Info (12022): Found design unit 1: sls_SSRM_vhdl-mixed File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 13
     Info (12023): Found entity 1: sls_SSRM_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 6
+Info (12021): Found 1 design units, including 0 entities, in source file sls_ssrm_package.vhd
+    Info (12022): Found design unit 1: sls_SSRM_package File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_package.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file sls_ssrm_vhdl_tb.vhd
+    Info (12022): Found design unit 1: sls_SSRM_vhdl_tb-behavior File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl_tb.vhd Line: 10
+    Info (12023): Found entity 1: sls_SSRM_vhdl_tb File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl_tb.vhd Line: 5
 Info (12127): Elaborating entity "sls_SSRM_vhdl" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at sls_SSRM_vhdl.vhd(9): used implicit default value for signal "FP" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
-Warning (10034): Output port "DONE" at sls_SSRM_vhdl.vhd(10) has no driver File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 10
+Warning (10036): Verilog HDL or VHDL warning at sls_SSRM_vhdl.vhd(14): object "M_outR" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 14
+Warning (10036): Verilog HDL or VHDL warning at sls_SSRM_vhdl.vhd(14): object "M_outL" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 14
+Warning (10541): VHDL Signal Declaration warning at sls_SSRM_vhdl.vhd(14): used implicit default value for signal "m_lsb" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 14
+Warning (10036): Verilog HDL or VHDL warning at sls_SSRM_vhdl.vhd(14): object "adder_v" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 14
+Warning (10036): Verilog HDL or VHDL warning at sls_SSRM_vhdl.vhd(15): object "shl_out_ph" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 15
+Warning (10036): Verilog HDL or VHDL warning at sls_SSRM_vhdl.vhd(15): object "shr_out_mpl" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 15
+Warning (10036): Verilog HDL or VHDL warning at sls_SSRM_vhdl.vhd(15): object "shl_out_mpl" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 15
+Info (12128): Elaborating entity "sls_nbit_2sc_in_vhdl" for hierarchy "sls_nbit_2sc_in_vhdl:M_2sc" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 23
+Info (12128): Elaborating entity "sls_not" for hierarchy "sls_nbit_2sc_in_vhdl:M_2sc|sls_not:\twosc:0:stage0" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd Line: 18
+Info (12128): Elaborating entity "sls_xor2" for hierarchy "sls_nbit_2sc_in_vhdl:M_2sc|sls_xor2:\twosc:0:stage1" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd Line: 19
+Info (12128): Elaborating entity "sls_and2" for hierarchy "sls_nbit_2sc_in_vhdl:M_2sc|sls_and2:\twosc:0:stage2" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd Line: 20
+Info (12128): Elaborating entity "sls_nbit_mux2to1_vhdl" for hierarchy "sls_nbit_2sc_in_vhdl:M_2sc|sls_nbit_mux2to1_vhdl:mux" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd Line: 22
+Info (12128): Elaborating entity "sls_nBitSFR_vhdl" for hierarchy "sls_nBitSFR_vhdl:M_Reg" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at sls_nbitSFR_vhdl.vhd(25): signal "Dout" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbitSFR_vhdl.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at sls_nbitSFR_vhdl.vhd(25): signal "SDoutR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbitSFR_vhdl.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at sls_nbitSFR_vhdl.vhd(25): signal "SDoutL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbitSFR_vhdl.vhd Line: 25
+Info (12128): Elaborating entity "sls_nbit_add_sub_vhdl" for hierarchy "sls_nbit_add_sub_vhdl:adder" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 30
+Info (12128): Elaborating entity "sls_dff_vhdl" for hierarchy "sls_dff_vhdl:c_dff" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 33
+Info (12128): Elaborating entity "sls_nbit_2sc_out_vhdl" for hierarchy "sls_nbit_2sc_out_vhdl:FP_2sc" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at sls_nbit_2sc_out_vhdl.vhd(21): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at sls_nbit_2sc_out_vhdl.vhd(22): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at sls_nbit_2sc_out_vhdl.vhd(26): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at sls_nbit_2sc_out_vhdl.vhd(27): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 27
+Warning (10631): VHDL Process Statement warning at sls_nbit_2sc_out_vhdl.vhd(14): inferring latch(es) for signal or variable "Dout", which holds its previous value in one or more paths through the process File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (10631): VHDL Process Statement warning at sls_nbit_2sc_out_vhdl.vhd(14): inferring latch(es) for signal or variable "c", which holds its previous value in one or more paths through the process File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[0]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[1]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[2]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[3]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[4]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[5]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[6]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[7]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[8]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[9]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[10]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[11]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[12]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[13]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[14]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "c[15]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[0]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[1]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[2]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[3]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[4]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[5]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[6]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[7]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[8]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[9]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[10]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[11]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[12]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[13]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[14]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Info (10041): Inferred latch for "Dout[15]" at sls_nbit_2sc_out_vhdl.vhd(14) File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[2]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[1]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[4]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[5]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[6]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[7]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[8]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[9]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[10]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[11]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[12]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[13]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[14]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[15]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[2]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[4]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[5]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[6]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[7]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[8]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[9]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[10]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[11]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[12]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[13]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[14]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
+Warning (14025): LATCH primitive "sls_nbit_2sc_out_vhdl:FP_2sc|c[15]" is permanently disabled File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd Line: 14
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "FP[0]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
     Warning (13410): Pin "FP[1]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
@@ -278,27 +669,42 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "FP[5]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
     Warning (13410): Pin "FP[6]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
     Warning (13410): Pin "FP[7]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
-    Warning (13410): Pin "DONE" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 10
+    Warning (13410): Pin "FP[8]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
+    Warning (13410): Pin "FP[9]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
+    Warning (13410): Pin "FP[10]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
+    Warning (13410): Pin "FP[11]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
+    Warning (13410): Pin "FP[12]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
+    Warning (13410): Pin "FP[13]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
+    Warning (13410): Pin "FP[14]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
+    Warning (13410): Pin "FP[15]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 9
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Md_val[0]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
-    Warning (15610): No output dependent on input pin "Md_val[1]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
-    Warning (15610): No output dependent on input pin "Md_val[2]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
-    Warning (15610): No output dependent on input pin "Md_val[3]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
-    Warning (15610): No output dependent on input pin "mr_val[0]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
-    Warning (15610): No output dependent on input pin "mr_val[1]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
-    Warning (15610): No output dependent on input pin "mr_val[2]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
-    Warning (15610): No output dependent on input pin "mr_val[3]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
-    Warning (15610): No output dependent on input pin "START" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 8
-    Warning (15610): No output dependent on input pin "Clock" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 8
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 9 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Thu Apr 10 17:42:13 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:07
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "M_val[0]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "M_val[1]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "M_val[2]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "M_val[3]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "M_val[4]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "M_val[5]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "M_val[6]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "M_val[7]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "mp_val[0]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "mp_val[1]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "mp_val[2]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "mp_val[3]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "mp_val[4]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "mp_val[5]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "mp_val[6]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+    Warning (15610): No output dependent on input pin "mp_val[7]" File: C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd Line: 7
+Info (21057): Implemented 43 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 78 warnings
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Fri Apr 11 04:14:46 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:06
 
 

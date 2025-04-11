@@ -56,10 +56,23 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE ../../sls_package/sls_package.vhd
+set_global_assignment -name SEARCH_PATH "c:\\users\\sls3445\\documents\\ds2_labs\\sls_package"
+set_global_assignment -name VHDL_FILE sls_xor2.vhd
+set_global_assignment -name VHDL_FILE sls_not.vhd
+set_global_assignment -name VHDL_FILE sls_nbitSFR_vhdl.vhd
+set_global_assignment -name VHDL_FILE sls_nbit_mux2to1_vhdl.vhd
+set_global_assignment -name VHDL_FILE sls_nbit_add_sub_vhdl.vhd
+set_global_assignment -name VHDL_FILE sls_dff_vhdl.vhd
+set_global_assignment -name VHDL_FILE sls_and2.vhd
+set_global_assignment -name VHDL_FILE sls_nbit_2sc_out_vhdl.vhd
+set_global_assignment -name VHDL_FILE sls_nbit_2sc_in_vhdl.vhd
 set_global_assignment -name VHDL_FILE sls_SSRM_vhdl.vhd
+set_global_assignment -name VHDL_FILE sls_SSRM_package.vhd
+set_global_assignment -name VHDL_FILE sls_SSRM_vhdl_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH sls_SSRM_vhdl_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME sls_SSRM_vhdl_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id sls_SSRM_vhdl_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME sls_SSRM_vhdl_tb -section_id sls_SSRM_vhdl_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE sls_SSRM_vhdl_tb.vhd -section_id sls_SSRM_vhdl_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VHDL_FILE ../../sls_package/sls_nbitSFR_vhdl.vhd
-set_global_assignment -name VHDL_FILE ../../sls_package/sls_2sc_vhdl.vhd
-set_global_assignment -name VHDL_FILE ../../sls_package/sls_nbit_add_sub_vhdl.vhd
-set_global_assignment -name VHDL_FILE ../../sls_package/sls_dff_vhdl.vhd
