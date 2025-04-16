@@ -1,0 +1,561 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/simulation/modelsim
+Edxp_8bit_4loc_stack_vhdl
+Z1 w1616370500
+Z2 DPx4 work 11 dxp_package 0 22 1_f<IET>P6;8KoT]hhnLV2
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z7 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd
+Z8 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd
+l0
+L13
+VelTzz]h[d;OZ^5i8GZogd3
+!s100 bVdzN9`9<Pi6A]f@iO9DB3
+Z9 OV;C;10.5b;63
+31
+Z10 !s110 1744745982
+!i10b 1
+Z11 !s108 1744745981.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd|
+Z13 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd|
+!i113 1
+Z14 o-93 -work work
+Z15 tExplicit 1 CvgOpt 0
+Adxp_stack
+R2
+R3
+R4
+R5
+R6
+DEx4 work 24 dxp_8bit_4loc_stack_vhdl 0 22 elTzz]h[d;OZ^5i8GZogd3
+l26
+L21
+VhHWz9EF>zSX]Ym9]QP`[M3
+!s100 CDiDALiC7PmDB91dC_RFc0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Edxp_8bit_alu_beh_vhdl
+Z16 w1616351356
+R3
+R4
+R5
+R6
+R0
+Z17 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd
+Z18 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd
+l0
+L15
+VMaPbMzBR4<ekmHiXR6DF;2
+!s100 OhhFPVzbEAc^76Od;CRI73
+R9
+31
+Z19 !s110 1744745980
+!i10b 1
+Z20 !s108 1744745980.000000
+Z21 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd|
+Z22 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd|
+!i113 1
+R14
+R15
+Adxp_beh
+R3
+R4
+R5
+R6
+DEx4 work 21 dxp_8bit_alu_beh_vhdl 0 22 MaPbMzBR4<ekmHiXR6DF;2
+l43
+L28
+V;L>O1AWF<Fj9bzb9dJWoH0
+!s100 ^]YOjlW@EOF7X?b3DBg840
+R9
+31
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R14
+R15
+Edxp_iw2ascii_vhdl
+Z23 w1634597110
+R2
+Z24 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R5
+R6
+R0
+Z25 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd
+Z26 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd
+l0
+L16
+V@^cG0]X8<^MHl;jI7KKXz0
+!s100 zVnd_IGlLLVE9_kl0L5VK1
+R9
+31
+R19
+!i10b 1
+R20
+Z27 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd|
+Z28 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd|
+!i113 1
+R14
+R15
+Adisassemble
+R2
+R24
+R3
+R4
+R5
+R6
+DEx4 work 17 dxp_iw2ascii_vhdl 0 22 @^cG0]X8<^MHl;jI7KKXz0
+l30
+L24
+V3_fLc0iDba>GVBJc1J7K@0
+!s100 <gf^N<:]X`IcBl<;`_1X?1
+R9
+31
+R19
+!i10b 1
+R20
+R27
+R28
+!i113 1
+R14
+R15
+Edxp_mm_vnmmiop_vhdl
+Z29 w1616373226
+Z30 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+R5
+R6
+R0
+Z31 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd
+Z32 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd
+l0
+L42
+VIGgC2jLd@o<KOG@kTik2^3
+!s100 h3CJ:Bm^QJ^REPPL>=X9W0
+R9
+31
+R19
+!i10b 1
+R20
+Z33 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd|
+Z34 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd|
+!i113 1
+R14
+R15
+Asyn
+R30
+R5
+R6
+DEx4 work 19 dxp_mm_vnmmiop_vhdl 0 22 IGgC2jLd@o<KOG@kTik2^3
+l58
+L54
+VbR[?8GMPGN^fF]WCoeiLE3
+!s100 N<GaVjOZ1]_GjhSQ>Z6]g0
+R9
+31
+R19
+!i10b 1
+R20
+R33
+R34
+!i113 1
+R14
+R15
+Edxp_nbit_cntup_vhdl
+Z35 w1616339720
+R2
+R3
+R4
+R5
+R6
+R0
+Z36 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd
+Z37 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd
+l0
+L6
+VfQCYJzcGU^GdnTH1H2Z5o3
+!s100 5_V?_V4J1i27UV`B6f>`A0
+R9
+31
+Z38 !s110 1744745981
+!i10b 1
+R11
+Z39 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd|
+Z40 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd|
+!i113 1
+R14
+R15
+Adxp_nbit_cntup_beh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 19 dxp_nbit_cntup_vhdl 0 22 fQCYJzcGU^GdnTH1H2Z5o3
+l15
+L13
+VgLMKhb=g;75<0zzM6?CPl0
+!s100 JY7`:GC^C8Ok5AnkbZ;^a1
+R9
+31
+R38
+!i10b 1
+R11
+R39
+R40
+!i113 1
+R14
+R15
+Edxp_nbit_mux2to1_vhdl
+Z41 w1616283448
+R2
+R3
+R4
+R5
+R6
+R0
+Z42 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd
+Z43 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd
+l0
+L6
+V1SG;jzZ40aQ0N8G_]df^a2
+!s100 ;3mQ3jjLh?[<e4M0N56<33
+R9
+31
+R38
+!i10b 1
+R11
+Z44 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd|
+Z45 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd|
+!i113 1
+R14
+R15
+Adxp_nbit_mux2to1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 21 dxp_nbit_mux2to1_vhdl 0 22 1SG;jzZ40aQ0N8G_]df^a2
+l14
+L13
+V0V0j<f7;HGkZjHo^0>kC13
+!s100 n;[]D<1cBLKXXkoJgn4<c0
+R9
+31
+R38
+!i10b 1
+R11
+R44
+R45
+!i113 1
+R14
+R15
+Edxp_nbit_mux4to1_vhdl
+Z46 w1616339800
+R2
+R3
+R4
+R5
+R6
+R0
+Z47 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd
+Z48 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd
+l0
+L6
+V^bhkg2B6>jL<C0=OcF@4[2
+!s100 UN=118nz8]J3@VTV64Uj?2
+R9
+31
+R38
+!i10b 1
+R11
+Z49 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd|
+Z50 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd|
+!i113 1
+R14
+R15
+Adxp_nbit_mux4to1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 21 dxp_nbit_mux4to1_vhdl 0 22 ^bhkg2B6>jL<C0=OcF@4[2
+l14
+L13
+VQ@dW6fSD2gnP8;aFFF=V;1
+!s100 iXhcZkjQPdY1fzN1AODUB2
+R9
+31
+R38
+!i10b 1
+R11
+R49
+R50
+!i113 1
+R14
+R15
+Edxp_nbit_reg_vhdl
+Z51 w1616339678
+R2
+R3
+R4
+R5
+R6
+R0
+Z52 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd
+Z53 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd
+l0
+L6
+VHBKH0bd>S_?T7AVDn=dVa0
+!s100 @M=RLB8:0a==;:?@2gB9?3
+R9
+31
+R38
+!i10b 1
+R11
+Z54 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd|
+Z55 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd|
+!i113 1
+R14
+R15
+Adxp_nbit_reg_beh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 17 dxp_nbit_reg_vhdl 0 22 HBKH0bd>S_?T7AVDn=dVa0
+l15
+L13
+VJTnJ0J=JT99n3_RAKn]3H3
+!s100 z[?F:1jfB^FIacBT6h[QU0
+R9
+31
+R38
+!i10b 1
+R11
+R54
+R55
+!i113 1
+R14
+R15
+Pdxp_package
+R5
+R6
+w1634597118
+R0
+8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_package.vhd
+FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_package.vhd
+l0
+L4
+V1_f<IET>P6;8KoT]hhnLV2
+!s100 V;41L@?ZkG4<ckf:eFDh_2
+R9
+31
+!s110 1744745979
+!i10b 1
+!s108 1744745979.000000
+!s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_package.vhd|
+!s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_package.vhd|
+!i113 1
+R14
+R15
+Edxprisc_vnmmiop_cu_vhdl
+Z56 w1743780213
+R2
+R3
+R4
+R5
+R6
+R0
+Z57 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd
+Z58 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd
+l0
+L13
+V0YH4RHPSnoRF6j5`GLn460
+!s100 @J@2AZlhPhl0:7O;0J_;R1
+R9
+31
+R38
+!i10b 1
+R11
+Z59 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd|
+Z60 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd|
+!i113 1
+R14
+R15
+Adxprisc_cu_beh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 23 dxprisc_vnmmiop_cu_vhdl 0 22 0YH4RHPSnoRF6j5`GLn460
+l75
+L28
+VViojfoBOQfY2f;^He:E;90
+!s100 kG_g;1bJ5o<T5GY:`0<Uf0
+R9
+31
+R38
+!i10b 1
+R11
+R59
+R60
+!i113 1
+R14
+R15
+Edxprisc_vnmmiop_dp_vhdl
+Z61 w1616374074
+R2
+R3
+R4
+R5
+R6
+R0
+Z62 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd
+Z63 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd
+l0
+L13
+VKD2NTz8k8kPAI8]_QbTik0
+!s100 Q@cUH:fCT:4fUb_:zYd?`2
+R9
+31
+R38
+!i10b 1
+R20
+Z64 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd|
+Z65 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd|
+!i113 1
+R14
+R15
+Adxprisc_dp_struc
+R2
+R3
+R4
+R5
+R6
+DEx4 work 23 dxprisc_vnmmiop_dp_vhdl 0 22 KD2NTz8k8kPAI8]_QbTik0
+l38
+L27
+VJc5hEP<O=QKoSa051N^i11
+!s100 CRd0ec@>_4RaIXI4=7AF02
+R9
+31
+R38
+!i10b 1
+R20
+R64
+R65
+!i113 1
+R14
+R15
+Edxprisc_vnmmiop_vhdl
+Z66 w1634597026
+R2
+R3
+R4
+R5
+R6
+R0
+Z67 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd
+Z68 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd
+l0
+L13
+V[e2m5@lK321]ROY8VLefS0
+!s100 nn@PV8C4?llEjI[zKhRf`3
+R9
+31
+R19
+!i10b 1
+R20
+Z69 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd|
+Z70 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd|
+!i113 1
+R14
+R15
+Adxprisc_struc
+R2
+R3
+R4
+R5
+R6
+DEx4 work 20 dxprisc_vnmmiop_vhdl 0 22 [e2m5@lK321]ROY8VLefS0
+l34
+L23
+VWPnbb8?=[QLDMCK7hNc9G1
+!s100 30h_HYbmHQ0T2ICMNj<6?2
+R9
+31
+R19
+!i10b 1
+R20
+R69
+R70
+!i113 1
+R14
+R15
+Edxprisc_vnmmiop_vhdl_tb
+Z71 w1616372976
+R5
+R6
+R0
+Z72 8Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl_tb.vhd
+Z73 FZ:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl_tb.vhd
+l0
+L4
+VKL;g=l@>]2V2eWN1WXM0F0
+!s100 29oT[;1EIJ<of`C`67k591
+R9
+31
+R10
+!i10b 1
+Z74 !s108 1744745982.000000
+Z75 !s90 -reportprogress|300|-93|-work|work|Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl_tb.vhd|
+Z76 !s107 Z:/Documents/School/Year_2.2/EEEE_220/Labs_from_desktop/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl_tb.vhd|
+!i113 1
+R14
+R15
+Arun_free
+R5
+R6
+DEx4 work 23 dxprisc_vnmmiop_vhdl_tb 0 22 KL;g=l@>]2V2eWN1WXM0F0
+l32
+L7
+VV:`0O?GCFV2?KWm[Y_D>?0
+!s100 fL3<ZWZeHe`1QhIFlBOi[3
+R9
+31
+R10
+!i10b 1
+R74
+R75
+R76
+!i113 1
+R14
+R15

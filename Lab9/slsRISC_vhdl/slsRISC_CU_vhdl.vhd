@@ -89,11 +89,11 @@ else
 		if (opCode = ADD_IC or opCode = SUB_IC or opCode = INC_IC or opCode = DEC_IC or opCode = XOR_IC or 
 				opCode = AND_IC or opCode = CPY_IC or opCode = SHRA_IC or opCode = SHRL_IC or opCode = RLC_IC) then
 				
-				if (opCode = CPY_IC) then
-					RF_SD_OS <= Rs2;
+				if (opCode = "0111") then
+					RF_SD_OS <= IW(1 downto 0);
 				else
-					RF_SD_OS <= Rsd;
-					RF_S_OS <= Rs2;
+					RF_SD_OS <= IW(3 downto 2);
+					RF_S_OS <= IW(1 downto 0);
 				end if;
 				
 				rf_select(IW(3 downto 2), LD_R0, LD_R1, LD_R2, LD_R3);
@@ -107,7 +107,7 @@ else
             crtMCis <= MC2; MC <= MC3;
 
         elsif (opCode = JUMP_IC) then
-            LD_MABR <= '1'; CNT_PC <= '1'; LD_MAXR <= '1'; 
+            LD_MABR <= '1'; CNT_PC <= '1'; LD_MAXR <= '1';
             crtMCis <= MC2; MC <= MC3;
 
         elsif (opCode = POP_IC) then

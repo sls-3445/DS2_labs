@@ -1,19 +1,25 @@
 do slsRISC_vhdl_run_msim_rtl_vhdl.do
+
 add wave -position insertpoint  \
-sim:/slsrisc_vhdl_tb/CUV/DP/LD_R0 \
-sim:/slsrisc_vhdl_tb/CUV/DP/LD_R1 \
-sim:/slsrisc_vhdl_tb/CUV/DP/LD_R2 \
-sim:/slsrisc_vhdl_tb/CUV/DP/LD_R3 \
-sim:/slsrisc_vhdl_tb/CUV/DP/IW \
-sim:/slsrisc_vhdl_tb/CUV/DP/wb_bus \
-sim:/slsrisc_vhdl_tb/CUV/DP/r0out \
-sim:/slsrisc_vhdl_tb/CUV/DP/r1out \
-sim:/slsrisc_vhdl_tb/CUV/DP/r2out \
-sim:/slsrisc_vhdl_tb/CUV/DP/r3out \
-sim:/slsrisc_vhdl_tb/CUV/DP/ALU_result \
-sim:/slsrisc_vhdl_tb/CUV/DP/ALU_FS \
-sim:/slsrisc_vhdl_tb/CUV/DP/PC_OUT \
-sim:/slsrisc_vhdl_tb/CUV/DP/RF_SD_OS \
-sim:/slsrisc_vhdl_tb/CUV/DP/RF_S_OS 
+-radix Hexadecimal sim:/slsrisc_vhdl_tb/CUV/DP/r0out \
+-radix Hexadecimal sim:/slsrisc_vhdl_tb/CUV/DP/r1out \
+-radix Hexadecimal sim:/slsrisc_vhdl_tb/CUV/DP/r2out \
+-radix Hexadecimal sim:/slsrisc_vhdl_tb/CUV/DP/r3out \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/ALU_FS \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/IW \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/s_bus \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/sd_bus \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/wb_bus \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/wb_sel \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/ALU_result \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_R0 \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_R1 \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_R2 \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_R3 \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/RF_S_OS \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/RF_SD_OS \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/Rsd \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/Rs2
+
 restart -f
 run -all
