@@ -89,7 +89,7 @@ else
 		if (opCode = ADD_IC or opCode = SUB_IC or opCode = INC_IC or opCode = DEC_IC or opCode = XOR_IC or 
 				opCode = AND_IC or opCode = CPY_IC or opCode = SHRA_IC or opCode = SHRL_IC or opCode = RLC_IC) then
 				
-				if (opCode = "0111") then
+				if (IW(7 downto 4) = "0111") then
 					RF_SD_OS <= IW(1 downto 0);
 				else
 					RF_SD_OS <= IW(3 downto 2);
