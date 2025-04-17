@@ -1,5 +1,5 @@
 Flow report for slsRISC_vhdl
-Wed Apr 16 23:37:56 2025
+Thu Apr 17 00:01:16 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Apr 16 23:37:56 2025       ;
+; Flow Status                        ; Successful - Thu Apr 17 00:01:16 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; slsRISC_vhdl                                ;
 ; Top-level Entity Name              ; slsRISC_vhdl                                ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 422                                         ;
-;     Total combinational functions  ; 384                                         ;
-;     Dedicated logic registers      ; 211                                         ;
-; Total registers                    ; 211                                         ;
+; Total logic elements               ; 454                                         ;
+;     Total combinational functions  ; 416                                         ;
+;     Dedicated logic registers      ; 217                                         ;
+; Total registers                    ; 217                                         ;
 ; Total pins                         ; 114                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192                                       ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/16/2025 23:37:47 ;
+; Start date & time ; 04/17/2025 00:01:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; slsRISC_vhdl        ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id      ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------+
-; COMPILER_SIGNATURE_ID                ; 53671034734897.174486106609760         ; --            ; --          ; --              ;
+; COMPILER_SIGNATURE_ID                ; 53671034734897.174486246720064         ; --            ; --          ; --              ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; slsRISC_vhdl_tb ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; slsRISC_vhdl_tb                        ; --            ; --          ; eda_simulation  ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --          ; eda_simulation  ;
@@ -102,8 +102,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4845 MB             ; 00:00:08                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:08                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4876 MB             ; 00:00:07                           ;
+; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -108,11 +108,7 @@ else
 				WB_SEL <= "01";
 				crtMCis <= MC2; MC <= MC0;
 
-        elsif (opCode = LD_IC or opCode = ST_IC) then
-            LD_MABR <= '1'; CNT_PC <= '1'; LD_MAXR <= '1';
-            crtMCis <= MC2; MC <= MC3;
-
-        elsif (opCode = JUMP_IC) then
+        elsif (opCode = LD_IC or opCode = ST_IC or opCode = JUMP_IC) then
             LD_MABR <= '1'; CNT_PC <= '1'; LD_MAXR <= '1';
             crtMCis <= MC2; MC <= MC3;
 
@@ -129,7 +125,7 @@ else
     elsif (MC = MC3) then
         -- Load Main Memory Address
         crtMCis <= MC3; MC <= MC4;
-		  LD_MAR <= '1'; RF_SD_OS <= Rsd;
+		  LD_MAR <= '1';
 
 --        if (opCode = LD_IC) then
 --				LD_MAR <= '1';
@@ -163,7 +159,12 @@ else
             end if;
 
         elsif (opCode = JUMP_IC) then
-            rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
+				if 	((IW(3 downto 0) = "0001" and SR_CNVZ(0) = '1') or
+						 (IW(3 downto 0) = "0010" and SR_CNVZ(1) = '1') or
+						 (IW(3 downto 0) = "0100" and SR_CNVZ(2) = '1') or
+						 (IW(3 downto 0) = "1000" and SR_CNVZ(3) = '1')) then LD_PC <= '1';
+				else LD_PC <= '0';
+				end if;
         end if;
 	end if;
 end if;

@@ -17,9 +17,8 @@ add wave -position insertpoint  \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_MABR \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/MM_out \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/TOS_out \
-sim:/slsrisc_vhdl_tb/CUV/DP/MM/address \
-sim:/slsrisc_vhdl_tb/CUV/DP/MM/data \
-sim:/slsrisc_vhdl_tb/CUV/DP/MM/q
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/MAR_out \
+sim:/slsrisc_vhdl_tb/CUV/DP/PC_out
 
 restart -f
 run -all
