@@ -114,7 +114,7 @@ else
 
         elsif (opCode = POP_IC) then
             rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
-            pop <= '1'; ipstksel <= '1'; WB_SEL <= "11";
+            pop <= '1'; ipstksel <= '1'; WB_SEL <= "11"; LD_IPDR <= '1';
             crtMCis <= MC2; MC <= MC0;
 
         elsif (opCode = PUSH_IC) then
@@ -126,13 +126,6 @@ else
         -- Load Main Memory Address
         crtMCis <= MC3; MC <= MC4;
 		  LD_MAR <= '1';
-
---        if (opCode = LD_IC) then
---				LD_MAR <= '1';
-        
-        if (opCode = ST_IC) then
-            LD_OPDR <= '1';
-		  end if;
 
     elsif (MC = MC4) then
         -- Reset
@@ -151,8 +144,7 @@ else
         
         elsif (opCode = ST_IC) then
             if (MARout > x"3FD") then
-               -- op[max[1:0]] <- OPDR
-					
+					LD_OPDR <= '1';
             else
                 RW <= '1';
 					 MMASel <= '1';

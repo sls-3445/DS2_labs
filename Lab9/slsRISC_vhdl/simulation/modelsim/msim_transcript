@@ -12,27 +12,27 @@
 # 
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_RISC_package.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:26 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_RISC_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package sls_RISC_package
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_package.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package sls_package
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_upcnt_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_upcnt_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -41,22 +41,22 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity sls_nbit_upcnt_vhdl
 # -- Compiling architecture Behavior of sls_nbit_upcnt_vhdl
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux2to1_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux2to1_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_nbit_mux2to1_vhdl
 # -- Compiling architecture mux2to1_func of sls_nbit_mux2to1_vhdl
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_MM_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_MM_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -64,32 +64,32 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity sls_MM_vhdl
 # -- Compiling architecture SYN of sls_MM_vhdl
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_alu_package.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_alu_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package sls_alu_package
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_add_sub_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_add_sub_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_8bit_add_sub_vhdl
 # -- Compiling architecture sls_8bit_add_sub_func of sls_8bit_add_sub_vhdl
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_4loc_stack_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_4loc_stack_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -98,11 +98,11 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity sls_8bit_4loc_stack_vhdl
 # -- Compiling architecture sls_stack of sls_8bit_4loc_stack_vhdl
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_sr_unit_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_sr_unit_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +113,11 @@
 # -- Loading package sls_alu_package
 # -- Compiling entity sls_8bit_sr_unit_vhdl
 # -- Compiling architecture sls_8bit_sr_struc of sls_8bit_sr_unit_vhdl
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_arith_unit_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_arith_unit_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -128,11 +128,11 @@
 # -- Loading package sls_alu_package
 # -- Compiling entity sls_8bit_arith_unit_vhdl
 # -- Compiling architecture sls_8bit_arith_struc of sls_8bit_arith_unit_vhdl
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:40 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -143,11 +143,11 @@
 # -- Compiling entity slsRISC_vhdl
 # -- Compiling architecture slsRISC_struc of slsRISC_vhdl
 # ** Warning: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd(39): Cannot associate port "LEDs" of mode OUT with port "LEDs" of mode BUFFER.
-# End time: 00:01:40 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_DP_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:41 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_DP_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -159,11 +159,11 @@
 # -- Loading package sls_alu_package
 # -- Compiling entity slsRISC_DP_vhdl
 # -- Compiling architecture slsRISC_DP_struc of slsRISC_DP_vhdl
-# End time: 00:01:41 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:27 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:41 on Apr 17,2025
+# Start time: 00:44:27 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -173,11 +173,11 @@
 # -- Loading package sls_RISC_package
 # -- Compiling entity slsRISC_CU_vhdl
 # -- Compiling architecture slsRISC_CU_beh of slsRISC_CU_vhdl
-# End time: 00:01:41 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:28 on Apr 17,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_reg_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:41 on Apr 17,2025
+# Start time: 00:44:28 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_reg_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -187,11 +187,11 @@
 # -- Loading package sls_package
 # -- Compiling entity sls_nbit_reg_vhdl
 # -- Compiling architecture sls_nbit_reg_beh of sls_nbit_reg_vhdl
-# End time: 00:01:41 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:28 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux4to1_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:41 on Apr 17,2025
+# Start time: 00:44:28 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux4to1_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -199,11 +199,11 @@
 # -- Loading package sls_package
 # -- Compiling entity sls_nbit_mux4to1_vhdl
 # -- Compiling architecture sls_nbit_mux4to1_struc of sls_nbit_mux4to1_vhdl
-# End time: 00:01:41 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:28 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_IW2ASCII_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:41 on Apr 17,2025
+# Start time: 00:44:28 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_IW2ASCII_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -214,11 +214,11 @@
 # -- Loading package sls_package
 # -- Compiling entity sls_IW2ASCII_vhdl
 # -- Compiling architecture disassemble of sls_IW2ASCII_vhdl
-# End time: 00:01:41 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:28 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_logic_unit_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:41 on Apr 17,2025
+# Start time: 00:44:28 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_logic_unit_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -229,11 +229,11 @@
 # -- Loading package sls_alu_package
 # -- Compiling entity sls_8bit_logic_unit_vhdl
 # -- Compiling architecture sls_8bit_logic_struc of sls_8bit_logic_unit_vhdl
-# End time: 00:01:41 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:28 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_const_unit_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:41 on Apr 17,2025
+# Start time: 00:44:28 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_const_unit_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -244,11 +244,11 @@
 # -- Loading package sls_alu_package
 # -- Compiling entity sls_8bit_const_unit_vhdl
 # -- Compiling architecture sls_8bit_const_struc of sls_8bit_const_unit_vhdl
-# End time: 00:01:41 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:28 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_alu_struc_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:41 on Apr 17,2025
+# Start time: 00:44:28 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_alu_struc_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -259,24 +259,24 @@
 # -- Loading package sls_alu_package
 # -- Compiling entity sls_8bit_alu_struc_vhdl
 # -- Compiling architecture sls_struc of sls_8bit_alu_struc_vhdl
-# End time: 00:01:41 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:28 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:01:41 on Apr 17,2025
+# Start time: 00:44:28 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity slsRISC_vhdl_tb
 # -- Compiling architecture run_free of slsRISC_vhdl_tb
-# End time: 00:01:41 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:44:28 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  slsRISC_vhdl_tb
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" slsRISC_vhdl_tb 
-# Start time: 00:01:41 on Apr 17,2025
+# Start time: 00:44:28 on Apr 17,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -408,27 +408,27 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # 
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_RISC_package.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:14 on Apr 17,2025
+# Start time: 00:45:07 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_RISC_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package sls_RISC_package
-# End time: 00:02:14 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:07 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_package.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:14 on Apr 17,2025
+# Start time: 00:45:07 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package sls_package
-# End time: 00:02:14 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:07 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_upcnt_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:14 on Apr 17,2025
+# Start time: 00:45:07 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_upcnt_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -437,22 +437,22 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity sls_nbit_upcnt_vhdl
 # -- Compiling architecture Behavior of sls_nbit_upcnt_vhdl
-# End time: 00:02:14 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:07 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux2to1_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:14 on Apr 17,2025
+# Start time: 00:45:07 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux2to1_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_nbit_mux2to1_vhdl
 # -- Compiling architecture mux2to1_func of sls_nbit_mux2to1_vhdl
-# End time: 00:02:14 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:07 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_MM_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:14 on Apr 17,2025
+# Start time: 00:45:07 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_MM_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -460,32 +460,32 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package altera_mf_components
 # -- Compiling entity sls_MM_vhdl
 # -- Compiling architecture SYN of sls_MM_vhdl
-# End time: 00:02:14 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:07 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_alu_package.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:14 on Apr 17,2025
+# Start time: 00:45:07 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_alu_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package sls_alu_package
-# End time: 00:02:14 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:07 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_add_sub_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:14 on Apr 17,2025
+# Start time: 00:45:07 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_add_sub_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_8bit_add_sub_vhdl
 # -- Compiling architecture sls_8bit_add_sub_func of sls_8bit_add_sub_vhdl
-# End time: 00:02:14 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_4loc_stack_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:14 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_4loc_stack_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -494,11 +494,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity sls_8bit_4loc_stack_vhdl
 # -- Compiling architecture sls_stack of sls_8bit_4loc_stack_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:01
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_sr_unit_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_sr_unit_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -509,11 +509,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package sls_alu_package
 # -- Compiling entity sls_8bit_sr_unit_vhdl
 # -- Compiling architecture sls_8bit_sr_struc of sls_8bit_sr_unit_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_arith_unit_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_arith_unit_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -524,11 +524,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package sls_alu_package
 # -- Compiling entity sls_8bit_arith_unit_vhdl
 # -- Compiling architecture sls_8bit_arith_struc of sls_8bit_arith_unit_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -539,11 +539,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Compiling entity slsRISC_vhdl
 # -- Compiling architecture slsRISC_struc of slsRISC_vhdl
 # ** Warning: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd(39): Cannot associate port "LEDs" of mode OUT with port "LEDs" of mode BUFFER.
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_DP_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_DP_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -555,11 +555,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package sls_alu_package
 # -- Compiling entity slsRISC_DP_vhdl
 # -- Compiling architecture slsRISC_DP_struc of slsRISC_DP_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -569,11 +569,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package sls_RISC_package
 # -- Compiling entity slsRISC_CU_vhdl
 # -- Compiling architecture slsRISC_CU_beh of slsRISC_CU_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_reg_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_reg_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -583,11 +583,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package sls_package
 # -- Compiling entity sls_nbit_reg_vhdl
 # -- Compiling architecture sls_nbit_reg_beh of sls_nbit_reg_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux4to1_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux4to1_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -595,11 +595,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package sls_package
 # -- Compiling entity sls_nbit_mux4to1_vhdl
 # -- Compiling architecture sls_nbit_mux4to1_struc of sls_nbit_mux4to1_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_IW2ASCII_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_IW2ASCII_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -610,11 +610,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package sls_package
 # -- Compiling entity sls_IW2ASCII_vhdl
 # -- Compiling architecture disassemble of sls_IW2ASCII_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_logic_unit_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_logic_unit_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -625,11 +625,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package sls_alu_package
 # -- Compiling entity sls_8bit_logic_unit_vhdl
 # -- Compiling architecture sls_8bit_logic_struc of sls_8bit_logic_unit_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_const_unit_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_const_unit_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -640,11 +640,11 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package sls_alu_package
 # -- Compiling entity sls_8bit_const_unit_vhdl
 # -- Compiling architecture sls_8bit_const_struc of sls_8bit_const_unit_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:08 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_alu_struc_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:08 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_alu_struc_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -655,620 +655,26 @@ do slsRISC_vhdl_run_msim_rtl_vhdl.do
 # -- Loading package sls_alu_package
 # -- Compiling entity sls_8bit_alu_struc_vhdl
 # -- Compiling architecture sls_struc of sls_8bit_alu_struc_vhdl
-# End time: 00:02:15 on Apr 17,2025, Elapsed time: 0:00:00
+# End time: 00:45:09 on Apr 17,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:02:15 on Apr 17,2025
+# Start time: 00:45:09 on Apr 17,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity slsRISC_vhdl_tb
 # -- Compiling architecture run_free of slsRISC_vhdl_tb
-# End time: 00:02:16 on Apr 17,2025, Elapsed time: 0:00:01
+# End time: 00:45:09 on Apr 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  slsRISC_vhdl_tb
-# End time: 00:02:16 on Apr 17,2025, Elapsed time: 0:00:35
+# End time: 00:45:09 on Apr 17,2025, Elapsed time: 0:00:41
 # Errors: 0, Warnings: 40
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" slsRISC_vhdl_tb 
-# Start time: 00:02:16 on Apr 17,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.slsrisc_vhdl_tb(run_free)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading work.sls_risc_package
-# Loading work.slsrisc_vhdl(slsrisc_struc)
-# Loading work.sls_package
-# Loading work.sls_alu_package
-# Loading work.slsrisc_dp_vhdl(slsrisc_dp_struc)
-# Loading work.sls_nbit_mux4to1_vhdl(sls_nbit_mux4to1_struc)
-# Loading work.sls_nbit_mux2to1_vhdl(mux2to1_func)
-# Loading work.sls_nbit_reg_vhdl(sls_nbit_reg_beh)
-# Loading work.sls_8bit_alu_struc_vhdl(sls_struc)
-# Loading work.sls_8bit_arith_unit_vhdl(sls_8bit_arith_struc)
-# Loading work.sls_8bit_add_sub_vhdl(sls_8bit_add_sub_func)
-# Loading work.sls_8bit_logic_unit_vhdl(sls_8bit_logic_struc)
-# Loading work.sls_8bit_sr_unit_vhdl(sls_8bit_sr_struc)
-# Loading work.sls_8bit_const_unit_vhdl(sls_8bit_const_struc)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.sls_nbit_upcnt_vhdl(behavior)
-# Loading altera_mf.altera_mf_components
-# Loading work.sls_mm_vhdl(syn)
-# Loading altera_mf.altera_common_conversion(body)
-# Loading altera_mf.altera_device_families(body)
-# Loading altera_mf.altsyncram(translated)
-# Loading work.sls_8bit_4loc_stack_vhdl(sls_stack)
-# Loading work.slsrisc_cu_vhdl(slsrisc_cu_beh)
-# Loading ieee.numeric_std(body)
-# Loading work.sls_iw2ascii_vhdl(disassemble)
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: (vsim-8683) Uninitialized out port /slsrisc_vhdl_tb/CUV/DP/MARout(9 downto 0) has no driver.
-# This port will contribute value (UUUUUUUUUU) to the signal network.
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1620 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1940 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2260 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2460 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3460 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3780 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 4100 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 4300 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5300 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5620 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5940 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 6140 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-
-add wave -position insertpoint  \
--radix Hexadecimal sim:/slsrisc_vhdl_tb/CUV/DP/r0out \
--radix Hexadecimal sim:/slsrisc_vhdl_tb/CUV/DP/r1out \
--radix Hexadecimal sim:/slsrisc_vhdl_tb/CUV/DP/r2out \
--radix Hexadecimal sim:/slsrisc_vhdl_tb/CUV/DP/r3out \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/ALU_FS \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/IW \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/s_bus \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/sd_bus \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/wb_bus \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/wb_sel \
--Hexadecimal Binary sim:/slsrisc_vhdl_tb/CUV/DP/PC_out \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/CNT_PC \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_PC \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_MABR \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/MM_out \
--radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/TOS_out \
-sim:/slsrisc_vhdl_tb/CUV/DP/MM/address \
-sim:/slsrisc_vhdl_tb/CUV/DP/MM/data \
-sim:/slsrisc_vhdl_tb/CUV/DP/MM/q
-# (vish-4014) No objects found matching 'Binary'.
-
-restart -f
-run -all
-# ** Warning: (vsim-8683) Uninitialized out port /slsrisc_vhdl_tb/CUV/DP/MARout(9 downto 0) has no driver.
-# This port will contribute value (UUUUUUUUUU) to the signal network.
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1620 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1940 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2260 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2460 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3460 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3780 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 4100 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 4300 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5300 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5620 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5940 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 6140 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-add wave -position insertpoint  \
-sim:/slsrisc_vhdl_tb/CUV/DP/PC_out
-restart -f
-# ** Warning: (vsim-8683) Uninitialized out port /slsrisc_vhdl_tb/CUV/DP/MARout(9 downto 0) has no driver.
-# This port will contribute value (UUUUUUUUUU) to the signal network.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /slsrisc_vhdl_tb/CUV/DP
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/ICdecode
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1620 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1940 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2260 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2460 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3460 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3780 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 4100 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 4300 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5300 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5620 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5940 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 6140 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-add wave -position insertpoint  \
-sim:/slsrisc_vhdl_tb/CUV/DP/LD_PC
-do slsRISC_vhdl_run_msim_rtl_vhdl.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_RISC_package.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:17 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_RISC_package.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package sls_RISC_package
-# End time: 00:07:17 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_package.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_package.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package sls_package
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_upcnt_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_upcnt_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sls_nbit_upcnt_vhdl
-# -- Compiling architecture Behavior of sls_nbit_upcnt_vhdl
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux2to1_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux2to1_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sls_nbit_mux2to1_vhdl
-# -- Compiling architecture mux2to1_func of sls_nbit_mux2to1_vhdl
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_MM_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_MM_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_mf_components
-# -- Compiling entity sls_MM_vhdl
-# -- Compiling architecture SYN of sls_MM_vhdl
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_alu_package.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_alu_package.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package sls_alu_package
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_add_sub_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_add_sub_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sls_8bit_add_sub_vhdl
-# -- Compiling architecture sls_8bit_add_sub_func of sls_8bit_add_sub_vhdl
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_4loc_stack_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_4loc_stack_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Compiling entity sls_8bit_4loc_stack_vhdl
-# -- Compiling architecture sls_stack of sls_8bit_4loc_stack_vhdl
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_sr_unit_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_sr_unit_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package sls_package
-# -- Loading package sls_alu_package
-# -- Compiling entity sls_8bit_sr_unit_vhdl
-# -- Compiling architecture sls_8bit_sr_struc of sls_8bit_sr_unit_vhdl
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_arith_unit_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_arith_unit_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package sls_package
-# -- Loading package sls_alu_package
-# -- Compiling entity sls_8bit_arith_unit_vhdl
-# -- Compiling architecture sls_8bit_arith_struc of sls_8bit_arith_unit_vhdl
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package sls_RISC_package
-# -- Compiling entity slsRISC_vhdl
-# -- Compiling architecture slsRISC_struc of slsRISC_vhdl
-# ** Warning: C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd(39): Cannot associate port "LEDs" of mode OUT with port "LEDs" of mode BUFFER.
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_DP_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_DP_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package sls_package
-# -- Loading package sls_RISC_package
-# -- Loading package sls_alu_package
-# -- Compiling entity slsRISC_DP_vhdl
-# -- Compiling architecture slsRISC_DP_struc of slsRISC_DP_vhdl
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package sls_RISC_package
-# -- Compiling entity slsRISC_CU_vhdl
-# -- Compiling architecture slsRISC_CU_beh of slsRISC_CU_vhdl
-# End time: 00:07:18 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_reg_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:18 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_reg_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package sls_package
-# -- Compiling entity sls_nbit_reg_vhdl
-# -- Compiling architecture sls_nbit_reg_beh of sls_nbit_reg_vhdl
-# End time: 00:07:19 on Apr 17,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux4to1_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:19 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux4to1_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package sls_package
-# -- Compiling entity sls_nbit_mux4to1_vhdl
-# -- Compiling architecture sls_nbit_mux4to1_struc of sls_nbit_mux4to1_vhdl
-# End time: 00:07:19 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_IW2ASCII_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:19 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_IW2ASCII_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package NUMERIC_STD
-# -- Loading package sls_package
-# -- Compiling entity sls_IW2ASCII_vhdl
-# -- Compiling architecture disassemble of sls_IW2ASCII_vhdl
-# End time: 00:07:19 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_logic_unit_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:19 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_logic_unit_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package sls_package
-# -- Loading package sls_alu_package
-# -- Compiling entity sls_8bit_logic_unit_vhdl
-# -- Compiling architecture sls_8bit_logic_struc of sls_8bit_logic_unit_vhdl
-# End time: 00:07:19 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_const_unit_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:19 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_const_unit_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package sls_package
-# -- Loading package sls_alu_package
-# -- Compiling entity sls_8bit_const_unit_vhdl
-# -- Compiling architecture sls_8bit_const_struc of sls_8bit_const_unit_vhdl
-# End time: 00:07:19 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_alu_struc_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:19 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_alu_struc_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package sls_package
-# -- Loading package sls_alu_package
-# -- Compiling entity sls_8bit_alu_struc_vhdl
-# -- Compiling architecture sls_struc of sls_8bit_alu_struc_vhdl
-# End time: 00:07:19 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl_tb.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:07:19 on Apr 17,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity slsRISC_vhdl_tb
-# -- Compiling architecture run_free of slsRISC_vhdl_tb
-# End time: 00:07:19 on Apr 17,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  slsRISC_vhdl_tb
-# End time: 00:07:20 on Apr 17,2025, Elapsed time: 0:05:04
-# Errors: 1, Warnings: 118
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" slsRISC_vhdl_tb 
-# Start time: 00:07:20 on Apr 17,2025
+# Start time: 00:45:09 on Apr 17,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -1493,25 +899,5 @@ run -all
 #    Time: 5940 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 6140 ns  Iteration: 1  Instance: /slsrisc_vhdl_tb/CUV/CU
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 00:47:31 on Apr 17,2025, Elapsed time: 0:02:22
+# Errors: 1, Warnings: 78
