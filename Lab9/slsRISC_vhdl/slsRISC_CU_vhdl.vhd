@@ -23,7 +23,7 @@ signal MC : std_logic_vector(2 downto 0);
 signal IW_CNVZ : std_logic_vector(3 downto 0);
 signal carry, negative, overflow, zero : std_logic;
 
-procedure rf_select (signal Rsd_in : in std_logic_vector(1 downto 0);
+procedure rf_select (variable Rsd_in : in std_logic_vector(1 downto 0);
 								signal R0, R1, R2, R3 : out std_logic) is
 begin
 	if      (Rsd_in = "00")    then R0 <= '1'; R1 <= '0'; R2 <= '0'; R3 <= '0';
@@ -60,10 +60,12 @@ constant PUSH_IC	: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1111";
 begin
 process
 variable opCode : std_logic_vector (3 downto 0);
+variable Rsd 	 : std_logic_vector (1 downto 0);
+variable Rs		 : std_logic_vector (1 downto 0);
 begin
 	WAIT UNTIL Clock'EVENT AND Clock ='1';
 ------------------------------------------------------------------------------
-opCode := IW(7 downto 4); Rsd  <= IW(3 downto 2); Rs2  <= IW(1 downto 0);
+opCode := IW(7 downto 4); Rsd := IW(3 downto 2); Rs := IW(1 downto 0);
 IW_CNVZ  <= IW(3 downto 0); carry  <= SR_CNVZ(3); negative  <= SR_CNVZ(2); 
 overflow  <= SR_CNVZ(1); zero  <= SR_CNVZ(0);
 	
@@ -73,7 +75,7 @@ overflow  <= SR_CNVZ(1); zero  <= SR_CNVZ(0);
 	LD_SR  <= '0'; ALU_FS  <= opCode;
 	LD_MABR  <= '0'; LD_MAXR  <= '0'; LD_MAR  <= '0'; RW  <= '0'; MMASel <= '0';
 	LD_IPDR  <= '0'; LD_OPDR  <= '0';
-	RF_SD_OS  <= Rsd; RF_S_OS <= Rs2; WB_SEL  <= "00";
+	WB_SEL  <= "00";
 	crtMCis  <= MC0;
 
 if (Reset = '1') then MC <= MC0; RST_PC <= '1';
@@ -100,7 +102,7 @@ else
 					RF_S_OS <= IW(1 downto 0);
 				end if;
 				
-				rf_select(IW(3 downto 2), LD_R0, LD_R1, LD_R2, LD_R3);
+				rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
 				ALU_FS  <= opCode;
             LD_SR <= '1';
 				WB_SEL <= "01";
@@ -133,7 +135,7 @@ else
 --				LD_MAR <= '1';
         
         if (opCode = ST_IC) then
-            RF_SD_OS <= Rsd; LD_OPDR <= '1';
+            LD_OPDR <= '1';
 		  end if;
 
     elsif (MC = MC4) then
@@ -148,6 +150,7 @@ else
             else
                 MMASel <= '1';
                 WB_SEL <= "10";
+					 rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
             end if;
         
         elsif (opCode = ST_IC) then

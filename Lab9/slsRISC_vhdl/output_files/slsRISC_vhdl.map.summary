@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed Apr 16 22:12:44 2025
+Analysis & Synthesis Status : Successful - Wed Apr 16 23:37:56 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : slsRISC_vhdl
 Top-level Entity Name : slsRISC_vhdl
 Family : Cyclone IV E
-Total logic elements : 383
-    Total combinational functions : 343
-    Dedicated logic registers : 181
-Total registers : 181
+Total logic elements : 422
+    Total combinational functions : 384
+    Dedicated logic registers : 211
+Total registers : 211
 Total pins : 114
 Total virtual pins : 0
 Total memory bits : 8,192
