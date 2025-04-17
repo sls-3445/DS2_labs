@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use work.sls_SSRM_package.all;
+use work.sls_PSRM_package.all;
 
 entity sls_nbit_2sc_in_vhdl is
 	generic (n : integer := 8);
@@ -19,5 +19,5 @@ begin
 		stage1 : sls_xor2 port map (x1 => inv(k), x2 => c(k), f => D_Temp(k));
 		stage2 : sls_and2 port map (x1 => inv(k), x2 => c(k), f => c(k+1));
 	end generate;
-	mux : sls_nbit_mux2to1_vhdl generic map (n => 8) port map (d1 => D_temp, d0 => Din, s => Din(n-1), f => Dout);
+	mux : sls_nbit_mux2to1_vhdl generic map (n => n) port map (d1 => D_temp, d0 => Din, s => Din(n-1), f => Dout);
 end struc;

@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "FP[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[3]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[4]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[5]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Md_val[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mr_val[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Md_val[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Md_val[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mr_val[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mr_val[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Md_val[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mr_val[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

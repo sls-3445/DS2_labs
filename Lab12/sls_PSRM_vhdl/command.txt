@@ -1,0 +1,20 @@
+do sls_PSRM_vhdl_run_msim_rtl_vhdl.do
+
+add wave -position insertpoint  \
+sim:/sls_psrm_vhdl_tb/cuv/Md_us \
+sim:/sls_psrm_vhdl_tb/cuv/mr_us \
+sim:/sls_psrm_vhdl_tb/cuv/Md_Dout0 \
+sim:/sls_psrm_vhdl_tb/cuv/PP_Dout0 \
+sim:/sls_psrm_vhdl_tb/cuv/mr_Dout0 \
+sim:/sls_psrm_vhdl_tb/cuv/Md_Dout1 \
+sim:/sls_psrm_vhdl_tb/cuv/PP_Dout1 \
+sim:/sls_psrm_vhdl_tb/cuv/mr_Dout1 \
+sim:/sls_psrm_vhdl_tb/cuv/Md_Dout2 \
+sim:/sls_psrm_vhdl_tb/cuv/PP_Dout2 \
+sim:/sls_psrm_vhdl_tb/cuv/mr_Dout2 \
+sim:/sls_psrm_vhdl_tb/cuv/Md_Dout3 \
+sim:/sls_psrm_vhdl_tb/cuv/PP_Dout3 \
+sim:/sls_psrm_vhdl_tb/cuv/mr_Dout3
+
+restart -f
+run -all

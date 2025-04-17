@@ -1,5 +1,5 @@
 Flow report for sls_SSRM_vhdl
-Fri Apr 11 04:14:46 2025
+Thu Apr 17 19:40:34 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Apr 11 04:14:46 2025       ;
+; Flow Status                        ; Successful - Thu Apr 17 19:40:34 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; sls_SSRM_vhdl                               ;
 ; Top-level Entity Name              ; sls_SSRM_vhdl                               ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 8                                           ;
-;     Total combinational functions  ; 8                                           ;
-;     Dedicated logic registers      ; 6                                           ;
-; Total registers                    ; 6                                           ;
+; Total logic elements               ; 86                                          ;
+;     Total combinational functions  ; 85                                          ;
+;     Dedicated logic registers      ; 36                                          ;
+; Total registers                    ; 36                                          ;
 ; Total pins                         ; 35                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/11/2025 04:14:39 ;
+; Start date & time ; 04/17/2025 19:40:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sls_SSRM_vhdl       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+-------------------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                      ; Value                                           ; Default Value ; Entity Name ; Section Id       ;
 +--------------------------------------+-------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 53671034734897.174435927804012                  ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 53671034734719.174493322508640                  ; --            ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                              ; --            ; --          ; sls_SSRM_vhdl_tb ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; sls_SSRM_vhdl_tb                                ; --            ; --          ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                            ; --            ; --          ; eda_simulation   ;
@@ -104,8 +104,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4835 MB             ; 00:00:06                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:06                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4839 MB             ; 00:00:07                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,7 +114,7 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; gle-3200-pc09    ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; gle-3200-pc08    ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
