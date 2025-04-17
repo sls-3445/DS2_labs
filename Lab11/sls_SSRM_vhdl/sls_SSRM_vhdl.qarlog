@@ -1,0 +1,26 @@
+Quartus Prime Archive log --	C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.qarlog
+
+Archive:	C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.qar
+Date:		Fri Apr 11 14:58:49 2025
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_package.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.qpf
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.qsf
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_SSRM_vhdl_tb.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_and2.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_dff_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbitSFR_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_add_sub_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_nbit_mux2to1_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_not.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab11/sls_SSRM_vhdl/sls_xor2.vhd
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 15 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
