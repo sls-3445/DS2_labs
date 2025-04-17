@@ -20,7 +20,7 @@ architecture slsRISC_CU_beh of slsRISC_CU_vhdl is
 
 signal Rsd, Rs2 : std_logic_vector(1 downto 0);
 signal MC : std_logic_vector(2 downto 0);
-signal opCode, IW_CNVZ : std_logic_vector(3 downto 0);
+signal IW_CNVZ : std_logic_vector(3 downto 0);
 signal carry, negative, overflow, zero : std_logic;
 
 procedure rf_select (signal Rsd_in : in std_logic_vector(1 downto 0);
@@ -58,11 +58,12 @@ constant POP_IC		: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1110";
 constant PUSH_IC	: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1111";
 
 begin
-process begin
-
+process
+variable opCode : std_logic_vector (3 downto 0);
+begin
 	WAIT UNTIL Clock'EVENT AND Clock ='1';
 ------------------------------------------------------------------------------
-opCode  <= IW(7 downto 4); Rsd  <= IW(3 downto 2); Rs2  <= IW(1 downto 0);
+opCode := IW(7 downto 4); Rsd  <= IW(3 downto 2); Rs2  <= IW(1 downto 0);
 IW_CNVZ  <= IW(3 downto 0); carry  <= SR_CNVZ(3); negative  <= SR_CNVZ(2); 
 overflow  <= SR_CNVZ(1); zero  <= SR_CNVZ(0);
 
@@ -86,10 +87,11 @@ else
 		crtMCis <= MC1; MC <= MC2;
 	
 	elsif (MC = MC2) then
-		if (opCode = ADD_IC or opCode = SUB_IC or opCode = INC_IC or opCode = DEC_IC or opCode = XOR_IC or 
+--		opCode := IW(7 downto 4);
+		if (opCode = ADD_IC or opCode = SUB_IC or opCode = INC_IC or opCode = DEC_IC or opCode = XOR_IC or opCode = OR_IC or
 				opCode = AND_IC or opCode = CPY_IC or opCode = SHRA_IC or opCode = SHRL_IC or opCode = RLC_IC) then
 				
-				if (opCode = CPY_IC) then
+				if (opCode = "0111") then
 					RF_SD_OS <= IW(1 downto 0);
 				else
 					RF_SD_OS <= IW(3 downto 2);
@@ -102,12 +104,17 @@ else
 				WB_SEL <= "01";
 				crtMCis <= MC2; MC <= MC0;
 
-        elsif (opCode = LD_IC or opCode = ST_IC) then
+        elsif (IW(7 downto 4) = LD_IC) then
             LD_MABR <= '1'; CNT_PC <= '1'; LD_MAXR <= '1';
+            crtMCis <= MC2; MC <= MC3;
+				
+		  elsif (IW(7 downto 4) = ST_IC) then
+            RF_S_OS <= IW(3 downto 2);
+				LD_MABR <= '1'; CNT_PC <= '1'; LD_MAXR <= '1';
             crtMCis <= MC2; MC <= MC3;
 
         elsif (opCode = JUMP_IC) then
-            LD_MABR <= '1'; CNT_PC <= '1'; LD_MAXR <= '1'; 
+            LD_MABR <= '1'; CNT_PC <= '1'; LD_MAXR <= '1';
             crtMCis <= MC2; MC <= MC3;
 
         elsif (opCode = POP_IC) then

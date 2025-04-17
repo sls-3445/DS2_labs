@@ -1,5 +1,5 @@
 Analysis & Synthesis report for dxpRISC_vNMMIOP_vhdl
-Thu Mar 27 16:28:42 2025
+Wed Apr 16 20:40:06 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -39,10 +39,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  31. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:OPDR
  32. Parameter Settings for User Entity Instance: dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux2to1_vhdl:ipstkmux
  33. altsyncram Parameter Settings by Entity Instance
- 34. Port Connectivity Checks: "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR"
- 35. Post-Synthesis Netlist Statistics for Top Partition
- 36. Elapsed Time Per Partition
- 37. Analysis & Synthesis Messages
+ 34. Port Connectivity Checks: "dxpRISC_vNMMIOP_CU_vhdl:CU"
+ 35. Port Connectivity Checks: "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR"
+ 36. Post-Synthesis Netlist Statistics for Top Partition
+ 37. Elapsed Time Per Partition
+ 38. Analysis & Synthesis Messages
 
 
 
@@ -68,7 +69,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 27 16:28:42 2025       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 16 20:40:06 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; dxpRISC_vNMMIOP_vhdl                        ;
 ; Top-level Entity Name              ; dxpRISC_vNMMIOP_vhdl                        ;
@@ -200,19 +201,19 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                        ; Library ;
 +----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------+---------+
-; dxp_IW2ASCII_vhdl.vhd            ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd        ;         ;
-; dxp_MM_vNMMIOP_P1.mif            ; yes             ; User Memory Initialization File  ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_P1.mif        ;         ;
-; dxpRISC_vNMMIOP_vhdl.vhd         ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd     ;         ;
-; dxpRISC_vNMMIOP_DP_vhdl.vhd      ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd  ;         ;
-; dxpRISC_vNMMIOP_CU_vhdl.vhd      ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd  ;         ;
-; dxp_package.vhd                  ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_package.vhd              ;         ;
-; dxp_nbit_reg_vhdl.vhd            ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd        ;         ;
-; dxp_nbit_mux4to1_vhdl.vhd        ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd    ;         ;
-; dxp_nbit_mux2to1_vhdl.vhd        ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd    ;         ;
-; dxp_nbit_cntup_vhdl.vhd          ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd      ;         ;
-; dxp_8bit_alu_beh_vhdl.vhd        ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd    ;         ;
-; dxp_8bit_4loc_stack_vhdl.vhd     ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd ;         ;
-; dxp_MM_vNMMIOP_vhdl.vhd          ; yes             ; User Wizard-Generated File       ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd      ;         ;
+; dxp_IW2ASCII_vhdl.vhd            ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd        ;         ;
+; dxp_MM_vNMMIOP_P1.mif            ; yes             ; User Memory Initialization File  ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_P1.mif        ;         ;
+; dxpRISC_vNMMIOP_vhdl.vhd         ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd     ;         ;
+; dxpRISC_vNMMIOP_DP_vhdl.vhd      ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd  ;         ;
+; dxpRISC_vNMMIOP_CU_vhdl.vhd      ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd  ;         ;
+; dxp_package.vhd                  ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_package.vhd              ;         ;
+; dxp_nbit_reg_vhdl.vhd            ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd        ;         ;
+; dxp_nbit_mux4to1_vhdl.vhd        ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd    ;         ;
+; dxp_nbit_mux2to1_vhdl.vhd        ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd    ;         ;
+; dxp_nbit_cntup_vhdl.vhd          ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd      ;         ;
+; dxp_8bit_alu_beh_vhdl.vhd        ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd    ;         ;
+; dxp_8bit_4loc_stack_vhdl.vhd     ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd ;         ;
+; dxp_MM_vNMMIOP_vhdl.vhd          ; yes             ; User Wizard-Generated File       ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd      ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                               ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                        ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                  ;         ;
@@ -222,7 +223,7 @@ refer to the applicable agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                   ;         ;
 ; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                   ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                 ;         ;
-; db/altsyncram_r6t3.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/db/altsyncram_r6t3.tdf       ;         ;
+; db/altsyncram_r6t3.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/db/altsyncram_r6t3.tdf       ;         ;
 +----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------+---------+
 
 
@@ -662,6 +663,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-----------------------------------------------------------------------------------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dxpRISC_vNMMIOP_CU_vhdl:CU"                                                                                                                    ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                      ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; mar_din ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:IPDR" ;
 +---------+-------+----------+--------------------------------------------------+
@@ -716,60 +726,60 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Mar 27 16:28:31 2025
+    Info: Processing started: Wed Apr 16 20:39:55 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dxpRISC_vNMMIOP_vhdl -c dxpRISC_vNMMIOP_vhdl
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file dxp_iw2ascii_vhdl.vhd
-    Info (12022): Found design unit 1: dxp_IW2ASCII_vhdl-disassemble File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd Line: 24
-    Info (12023): Found entity 1: dxp_IW2ASCII_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd Line: 16
+    Info (12022): Found design unit 1: dxp_IW2ASCII_vhdl-disassemble File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd Line: 24
+    Info (12023): Found entity 1: dxp_IW2ASCII_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_IW2ASCII_vhdl.vhd Line: 16
 Info (12021): Found 2 design units, including 1 entities, in source file dxprisc_vnmmiop_vhdl_tb.vhd
-    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_vhdl_tb-run_free File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl_tb.vhd Line: 7
-    Info (12023): Found entity 1: dxpRISC_vNMMIOP_vhdl_tb File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl_tb.vhd Line: 4
+    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_vhdl_tb-run_free File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl_tb.vhd Line: 7
+    Info (12023): Found entity 1: dxpRISC_vNMMIOP_vhdl_tb File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl_tb.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file dxprisc_vnmmiop_vhdl.vhd
-    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_vhdl-dxpRISC_struc File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 23
-    Info (12023): Found entity 1: dxpRISC_vNMMIOP_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 13
+    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_vhdl-dxpRISC_struc File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 23
+    Info (12023): Found entity 1: dxpRISC_vNMMIOP_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file dxprisc_vnmmiop_dp_vhdl.vhd
-    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_DP_vhdl-dxpRISC_DP_struc File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 27
-    Info (12023): Found entity 1: dxpRISC_vNMMIOP_DP_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 13
+    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_DP_vhdl-dxpRISC_DP_struc File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 27
+    Info (12023): Found entity 1: dxpRISC_vNMMIOP_DP_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file dxprisc_vnmmiop_cu_vhdl.vhd
-    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_CU_vhdl-dxpRISC_CU_beh File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd Line: 28
-    Info (12023): Found entity 1: dxpRISC_vNMMIOP_CU_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd Line: 13
+    Info (12022): Found design unit 1: dxpRISC_vNMMIOP_CU_vhdl-dxpRISC_CU_beh File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd Line: 28
+    Info (12023): Found entity 1: dxpRISC_vNMMIOP_CU_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_CU_vhdl.vhd Line: 13
 Info (12021): Found 1 design units, including 0 entities, in source file dxp_package.vhd
-    Info (12022): Found design unit 1: dxp_package File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_package.vhd Line: 4
+    Info (12022): Found design unit 1: dxp_package File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_package.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file dxp_nbit_reg_vhdl.vhd
-    Info (12022): Found design unit 1: dxp_nbit_reg_vhdl-dxp_nbit_reg_beh File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd Line: 13
-    Info (12023): Found entity 1: dxp_nbit_reg_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd Line: 6
+    Info (12022): Found design unit 1: dxp_nbit_reg_vhdl-dxp_nbit_reg_beh File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd Line: 13
+    Info (12023): Found entity 1: dxp_nbit_reg_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_reg_vhdl.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file dxp_nbit_mux4to1_vhdl.vhd
-    Info (12022): Found design unit 1: dxp_nbit_mux4to1_vhdl-dxp_nbit_mux4to1 File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd Line: 13
-    Info (12023): Found entity 1: dxp_nbit_mux4to1_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd Line: 6
+    Info (12022): Found design unit 1: dxp_nbit_mux4to1_vhdl-dxp_nbit_mux4to1 File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd Line: 13
+    Info (12023): Found entity 1: dxp_nbit_mux4to1_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux4to1_vhdl.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file dxp_nbit_mux2to1_vhdl.vhd
-    Info (12022): Found design unit 1: dxp_nbit_mux2to1_vhdl-dxp_nbit_mux2to1 File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd Line: 13
-    Info (12023): Found entity 1: dxp_nbit_mux2to1_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd Line: 6
+    Info (12022): Found design unit 1: dxp_nbit_mux2to1_vhdl-dxp_nbit_mux2to1 File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd Line: 13
+    Info (12023): Found entity 1: dxp_nbit_mux2to1_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_mux2to1_vhdl.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file dxp_nbit_cntup_vhdl.vhd
-    Info (12022): Found design unit 1: dxp_nbit_cntup_vhdl-dxp_nbit_cntup_beh File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd Line: 13
-    Info (12023): Found entity 1: dxp_nbit_cntup_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd Line: 6
+    Info (12022): Found design unit 1: dxp_nbit_cntup_vhdl-dxp_nbit_cntup_beh File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd Line: 13
+    Info (12023): Found entity 1: dxp_nbit_cntup_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_nbit_cntup_vhdl.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file dxp_8bit_alu_beh_vhdl.vhd
-    Info (12022): Found design unit 1: dxp_8bit_alu_beh_vhdl-dxp_beh File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd Line: 28
-    Info (12023): Found entity 1: dxp_8bit_alu_beh_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd Line: 15
+    Info (12022): Found design unit 1: dxp_8bit_alu_beh_vhdl-dxp_beh File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd Line: 28
+    Info (12023): Found entity 1: dxp_8bit_alu_beh_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_alu_beh_vhdl.vhd Line: 15
 Info (12021): Found 2 design units, including 1 entities, in source file dxp_8bit_4loc_stack_vhdl.vhd
-    Info (12022): Found design unit 1: dxp_8bit_4loc_stack_vhdl-dxp_stack File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd Line: 21
-    Info (12023): Found entity 1: dxp_8bit_4loc_stack_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd Line: 13
+    Info (12022): Found design unit 1: dxp_8bit_4loc_stack_vhdl-dxp_stack File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd Line: 21
+    Info (12023): Found entity 1: dxp_8bit_4loc_stack_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_8bit_4loc_stack_vhdl.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file dxp_mm_vnmmiop_vhdl.vhd
-    Info (12022): Found design unit 1: dxp_mm_vnmmiop_vhdl-SYN File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 54
-    Info (12023): Found entity 1: dxp_MM_vNMMIOP_vhdl File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 42
+    Info (12022): Found design unit 1: dxp_mm_vnmmiop_vhdl-SYN File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 54
+    Info (12023): Found entity 1: dxp_MM_vNMMIOP_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 42
 Info (12127): Elaborating entity "dxpRISC_vNMMIOP_vhdl" for the top level hierarchy
-Info (12128): Elaborating entity "dxpRISC_vNMMIOP_DP_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 38
-Info (12128): Elaborating entity "dxp_nbit_mux4to1_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux4to1_vhdl:IntBusMUX" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 41
-Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R0" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 46
-Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TKR" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 63
-Info (12128): Elaborating entity "dxp_8bit_alu_beh_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_alu_beh_vhdl:ALU" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 65
-Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:SR" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 67
-Info (12128): Elaborating entity "dxp_nbit_cntup_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_cntup_vhdl:PC" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 74
-Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MABR" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 81
-Info (12128): Elaborating entity "dxp_MM_vNMMIOP_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 90
-Info (12128): Elaborating entity "altsyncram" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 61
-Info (12130): Elaborated megafunction instantiation "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 61
-Info (12133): Instantiated megafunction "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 61
+Info (12128): Elaborating entity "dxpRISC_vNMMIOP_DP_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 38
+Info (12128): Elaborating entity "dxp_nbit_mux4to1_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux4to1_vhdl:IntBusMUX" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 41
+Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:R0" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 46
+Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:TKR" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 63
+Info (12128): Elaborating entity "dxp_8bit_alu_beh_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_alu_beh_vhdl:ALU" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 65
+Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:SR" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 67
+Info (12128): Elaborating entity "dxp_nbit_cntup_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_cntup_vhdl:PC" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 74
+Info (12128): Elaborating entity "dxp_nbit_reg_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_reg_vhdl:MABR" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 81
+Info (12128): Elaborating entity "dxp_MM_vNMMIOP_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 90
+Info (12128): Elaborating entity "altsyncram" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 61
+Info (12130): Elaborated megafunction instantiation "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 61
+Info (12133): Instantiated megafunction "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxp_MM_vNMMIOP_vhdl.vhd Line: 61
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -821,46 +831,47 @@ Info (12133): Instantiated megafunction "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMI
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_r6t3.tdf
-    Info (12023): Found entity 1: altsyncram_r6t3 File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/db/altsyncram_r6t3.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_r6t3 File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/db/altsyncram_r6t3.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_r6t3" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_MM_vNMMIOP_vhdl:MM|altsyncram:altsyncram_component|altsyncram_r6t3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "dxp_8bit_4loc_stack_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_4loc_stack_vhdl:hwstack" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 104
-Info (12128): Elaborating entity "dxp_nbit_mux2to1_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux2to1_vhdl:ipstkmux" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 105
-Info (12128): Elaborating entity "dxpRISC_vNMMIOP_CU_vhdl" for hierarchy "dxpRISC_vNMMIOP_CU_vhdl:CU" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 46
-Info (12128): Elaborating entity "dxp_IW2ASCII_vhdl" for hierarchy "dxp_IW2ASCII_vhdl:ICdecode" File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 57
+Info (12128): Elaborating entity "dxp_8bit_4loc_stack_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_8bit_4loc_stack_vhdl:hwstack" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 104
+Info (12128): Elaborating entity "dxp_nbit_mux2to1_vhdl" for hierarchy "dxpRISC_vNMMIOP_DP_vhdl:DP|dxp_nbit_mux2to1_vhdl:ipstkmux" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_DP_vhdl.vhd Line: 105
+Info (12128): Elaborating entity "dxpRISC_vNMMIOP_CU_vhdl" for hierarchy "dxpRISC_vNMMIOP_CU_vhdl:CU" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 46
+Info (12128): Elaborating entity "dxp_IW2ASCII_vhdl" for hierarchy "dxp_IW2ASCII_vhdl:ICdecode" File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 57
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ICis[2]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[5]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[6]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[7]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[10]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[11]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[15]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[23]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[31]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[32]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[33]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[36]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[37]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[38]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[39]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[43]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[45]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[47]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[50]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[55]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[56]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[58]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[59]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[63]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[65]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[66]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[71]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[79]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[86]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[87]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[93]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[94]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
-    Warning (13410): Pin "ICis[95]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_Labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[2]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[5]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[6]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[7]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[10]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[11]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[15]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[23]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[31]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[32]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[33]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[36]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[37]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[38]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[39]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[43]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[45]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[47]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[50]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[55]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[56]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[58]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[59]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[63]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[65]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[66]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[71]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[79]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[86]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[87]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[93]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[94]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
+    Warning (13410): Pin "ICis[95]" is stuck at GND File: C:/Users/sls3445/Documents/DS2_labs/Lab9/dxpRISC_vNMMIOP_vhdl_restored/dxpRISC_vNMMIOP_vhdl.vhd Line: 17
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -869,10 +880,10 @@ Info (21057): Implemented 724 device resources after synthesis - the final resou
     Info (21059): Implemented 107 output pins
     Info (21061): Implemented 602 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 4852 megabytes
-    Info: Processing ended: Thu Mar 27 16:28:42 2025
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Wed Apr 16 20:40:06 2025
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 

@@ -1,5 +1,5 @@
 Flow report for dxpRISC_vNMMIOP_vhdl
-Thu Mar 27 16:28:42 2025
+Wed Apr 16 20:40:06 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 27 16:28:42 2025       ;
+; Flow Status                        ; Successful - Wed Apr 16 20:40:06 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; dxpRISC_vNMMIOP_vhdl                        ;
 ; Top-level Entity Name              ; dxpRISC_vNMMIOP_vhdl                        ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 03/27/2025 16:28:31  ;
+; Start date & time ; 04/16/2025 20:39:56  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; dxpRISC_vNMMIOP_vhdl ;
 +-------------------+----------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+-------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id              ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-------------------------+
-; COMPILER_SIGNATURE_ID                ; 53671034734897.174310731105268         ; --            ; --          ; --                      ;
+; COMPILER_SIGNATURE_ID                ; 53671034734897.174485039618724         ; --            ; --          ; --                      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; dxpRISC_vNMMIOP_vhdl_tb ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; dxpRISC_vNMMIOP_vhdl_tb                ; --            ; --          ; eda_simulation          ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --          ; eda_simulation          ;
@@ -105,8 +105,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4852 MB             ; 00:00:08                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:08                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4875 MB             ; 00:00:07                           ;
+; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

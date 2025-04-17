@@ -20,7 +20,7 @@ architecture slsRISC_CU_beh of slsRISC_CU_vhdl is
 
 signal Rsd, Rs2 : std_logic_vector(1 downto 0);
 signal MC : std_logic_vector(2 downto 0);
-signal opCode, IW_CNVZ : std_logic_vector(3 downto 0);
+signal IW_CNVZ : std_logic_vector(3 downto 0);
 signal carry, negative, overflow, zero : std_logic;
 
 procedure rf_select (signal Rsd_in : in std_logic_vector(1 downto 0);
@@ -54,18 +54,20 @@ constant RLC_IC	: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1010";
 constant LD_IC		: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1011"; 
 constant ST_IC		: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1100"; 
 constant JUMP_IC	: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1101"; 
-constant POP_IC		: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1110"; 
+constant POP_IC		: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1110";
 constant PUSH_IC	: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1111";
 
 begin
-process begin
-
+process
+variable opCode : std_logic_vector (3 downto 0);
+begin
 	WAIT UNTIL Clock'EVENT AND Clock ='1';
 ------------------------------------------------------------------------------
-opCode  <= IW(7 downto 4); Rsd  <= IW(3 downto 2); Rs2  <= IW(1 downto 0);
+opCode := IW(7 downto 4); Rsd  <= IW(3 downto 2); Rs2  <= IW(1 downto 0);
 IW_CNVZ  <= IW(3 downto 0); carry  <= SR_CNVZ(3); negative  <= SR_CNVZ(2); 
 overflow  <= SR_CNVZ(1); zero  <= SR_CNVZ(0);
-
+	
+	push <= '0'; pop <= '0';
 	RST_PC  <= '0'; LD_PC  <= '0'; CNT_PC  <= '0'; LD_IR  <= '0';
 	LD_R0  <= '0'; LD_R1  <= '0'; LD_R2  <= '0'; LD_R3  <= '0';
 	LD_SR  <= '0'; ALU_FS  <= opCode;
@@ -76,7 +78,8 @@ overflow  <= SR_CNVZ(1); zero  <= SR_CNVZ(0);
 
 if (Reset = '1') then MC <= MC0; RST_PC <= '1';
 else 
-
+	RF_SD_OS <= IW(3 downto 2);
+	RF_S_OS <= IW(1 downto 0);
 	if 	(MC = MC0) then
 		CNT_PC <= '1'; LD_IR <= '1';
 		crtMCis <= MC0; MC <= MC1;
@@ -86,10 +89,11 @@ else
 		crtMCis <= MC1; MC <= MC2;
 	
 	elsif (MC = MC2) then
-		if (opCode = ADD_IC or opCode = SUB_IC or opCode = INC_IC or opCode = DEC_IC or opCode = XOR_IC or 
+--		opCode := IW(7 downto 4);
+		if (opCode = ADD_IC or opCode = SUB_IC or opCode = INC_IC or opCode = DEC_IC or opCode = XOR_IC or opCode = OR_IC or
 				opCode = AND_IC or opCode = CPY_IC or opCode = SHRA_IC or opCode = SHRL_IC or opCode = RLC_IC) then
 				
-				if (IW(7 downto 4) = "0111") then
+				if (opCode = CPY_IC) then
 					RF_SD_OS <= IW(1 downto 0);
 				else
 					RF_SD_OS <= IW(3 downto 2);
@@ -97,7 +101,7 @@ else
 				end if;
 				
 				rf_select(IW(3 downto 2), LD_R0, LD_R1, LD_R2, LD_R3);
-				ALU_FS  <= IW(7 downto 4);
+				ALU_FS  <= opCode;
             LD_SR <= '1';
 				WB_SEL <= "01";
 				crtMCis <= MC2; MC <= MC0;
@@ -112,29 +116,30 @@ else
 
         elsif (opCode = POP_IC) then
             rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
-            push <= '1'; ipstksel <= '1'; WB_SEL <= "11";
+            pop <= '1'; ipstksel <= '1'; WB_SEL <= "11";
             crtMCis <= MC2; MC <= MC0;
 
         elsif (opCode = PUSH_IC) then
-            --LD_IPDR <= '1';
-            pop <= '1'; RF_SD_OS <= Rsd;
+            push <= '1'; RF_SD_OS <= Rsd;
             crtMCis <= MC2; MC <= MC0;
         end if;
 
     elsif (MC = MC3) then
         -- Load Main Memory Address
-        LD_MAR <= '1';
         crtMCis <= MC3; MC <= MC4;
+		  LD_MAR <= '1'; RF_SD_OS <= Rsd;
 
-        if (opCode = LD_IC) then
-            LD_MAR <= '1';
+--        if (opCode = LD_IC) then
+--				LD_MAR <= '1';
         
-        elsif (opCode = ST_IC) then
+        if (opCode = ST_IC) then
             RF_SD_OS <= Rsd; LD_OPDR <= '1';
+		  end if;
 
     elsif (MC = MC4) then
         -- Reset
-        rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
+		  crtMCis <= MC4; MC <= MC0;
+--        rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
 
         if (opCode = LD_IC) then
             if (MARout > x"3FD") then 
@@ -148,15 +153,15 @@ else
         elsif (opCode = ST_IC) then
             if (MARout > x"3FD") then
                -- op[max[1:0]] <- OPDR
+					
             else
                 RW <= '1';
+					 MMASel <= '1';
             end if;
 
         elsif (opCode = JUMP_IC) then
             rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
         end if;
-        crtMCis <= MC4; MC <= MC0;
-		end if;
 	end if;
 end if;
 end process;

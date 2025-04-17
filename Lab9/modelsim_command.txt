@@ -11,6 +11,17 @@ add wave -position insertpoint  \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/sd_bus \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/wb_bus \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/wb_sel \
+-Hexadecimal Binary sim:/slsrisc_vhdl_tb/CUV/DP/PC_out \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/CNT_PC \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_PC \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_MABR \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/MM_out \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/TOS_out
+
+restart -f
+run -all
+
+
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/ALU_result \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_R0 \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_R1 \
@@ -20,6 +31,3 @@ add wave -position insertpoint  \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/RF_SD_OS \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/Rsd \
 -radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/Rs2
-
-restart -f
-run -all

@@ -15,7 +15,7 @@ entity slsRISC_DP_vhdl is
 	IW	 												: out std_logic_vector(7 downto 0);
 	LEDs 												: out std_logic_vector(7 downto 0);
 	SR_CNVZ 											: out std_logic_vector(3 downto 0);
-    MAR_din, MARout 											: out std_logic_vector(9 downto 0));
+   MAR_din, MARout 								: out std_logic_vector(9 downto 0));
 end slsRISC_DP_vhdl;
 
 architecture slsRISC_DP_struc of slsRISC_DP_vhdl is
@@ -62,15 +62,15 @@ begin
 				port map (d => MM_out, ld => LD_IR, reset => Reset, clock => Clock, q => IR_out);
 	IW <= IR_out;
 
-    MABR_in <= (MM_out(7) & MM_out(7) & MM_out) when (IR_out(7 downto 4) = "1101") else (MM_out & "00");
+   MABR_in <= (MM_out(7) & MM_out(7) & MM_out) when (IR_out(7 downto 4) = "1101") else (MM_out & "00");
 	
-    MAXR_in <= PC_out when (IR_out(7 downto 4) = "1101") else ("00" & sd_bus);
+   MAXR_in <= PC_out when (IR_out(7 downto 4) = "1101") else (s_bus(7) & s_bus(7) & s_bus);
 	MABR	: sls_nbit_reg_vhdl generic map (10)
 				port map (d => MABR_in, ld => LD_MABR, reset => Reset, clock => Clock, q => MABR_out);
 	MAXR 	: sls_nbit_reg_vhdl generic map (10)
 				port map (d => MAXR_in, ld => LD_MAXR, reset => Reset, clock => Clock, q => MAXR_out);
 	MAR_in <= MABR_out + MAXR_out;
-    MAR_din <= MAR_in;
+   MAR_din <= MAR_in;
 	MAR	: sls_nbit_reg_vhdl generic map (10)
 				port map (d => MAR_in, ld => LD_MAR, reset => Reset, clock => Clock, q => MAR_out);
 	MMA_in <= MAR_out when (MMASel = '1') else PC_out;
