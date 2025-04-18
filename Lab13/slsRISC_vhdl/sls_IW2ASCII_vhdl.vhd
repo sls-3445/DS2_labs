@@ -1,0 +1,81 @@
+--=============================================================================
+-- This module is converting the IW information into a string of ASCII 
+-- characters. This is ONLY needed for debugging purposes. It should be 
+-- commented out or eliminated when compiling/ synthesizing for FPGA 
+-- implementation. It is described behaviorally. In the ModelSim wavform & 
+-- select the display radix for this output signal to be ASCII.
+--=============================================================================	
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+use ieee.numeric_std.all;
+use work.sls_package.all;
+--=============================================================================
+-- Entity & and input and output ports declarations
+--=============================================================================
+entity sls_IW2ASCII_vhdl is 
+	port(IW : in std_logic_vector(7 downto 0) := "00000000";
+	Reset, Clock : in std_logic;
+	ICis : out std_logic_vector(95 downto 0));
+end sls_IW2ASCII_vhdl;
+--=============================================================================
+-- Architecture
+--=============================================================================
+architecture disassemble of sls_IW2ASCII_vhdl is
+--=============================================================================
+-- Internal signals declarations
+--=============================================================================
+signal iw32, iw10, sbit : std_logic_vector(7 downto 0);
+--=============================================================================
+begin
+process (IW, Reset, Clock) begin
+--=============================================================================
+-- Converting register numbers to ASCII digit character numbers
+--=============================================================================
+iw32 <= 48 + ("000000" & IW(3 downto 2));
+iw10 <= 48 + ("000000" & IW(1 downto 0));
+--=============================================================================
+-- Similarly for the status bit used in the (conditional) JUMP
+--=============================================================================
+if (IW(3 downto 0) = "0000") then sbit <= std_logic_vector(to_unsigned(85, 8));
+elsif (IW(3 downto 0) = "1000") then sbit <= std_logic_vector(to_unsigned(67, 8));
+elsif (IW(3 downto 0) = "0100") then sbit <= std_logic_vector(to_unsigned(78, 8));
+elsif (IW(3 downto 0) = "0010") then sbit <= std_logic_vector(to_unsigned(86, 8));
+elsif (IW(3 downto 0) = "0001") then sbit <= std_logic_vector(to_unsigned(90, 8));
+else sbit <= std_logic_vector(to_unsigned(63, 8));
+end if;
+end process;
+--=============================================================================
+process begin
+------------------------------------------------------------------------------
+-- The WAIT UNTIL statement excludes/replaces the sensitivity list.  The 
+-- 	process is not entered until a clock rising edge is detected.
+------------------------------------------------------------------------------
+	WAIT UNTIL Clock'EVENT AND Clock ='1';
+-- After the IW is passed on to the CU in MC1 & the current IC can be 
+-- idenitified and the corresponding assembly instruction displayed.
+--=============================================================================
+if (Reset = '1') then ICis <= x"525354202020202020202020"; --RST;
+else 
+	case (IW(7 downto 4)) is  
+		when "0000" => ICis <= (x"414444202052" & iw32 & x"2c2052" & iw10 & x"3B"); --ADD
+		when "0001" => ICis <= (x"535542202052" & iw32 & x"2c2052" & iw10 & x"3B"); --SUB
+		when "0010" => ICis <= (x"494E43202052" & iw32 & x"2c2023" & iw10 & x"3B"); --INC
+		when "0011" => ICis <= (x"444543202052" & iw32 & x"2c2023" & iw10 & x"3B"); --DEC
+		when "0100" => ICis <= (x"584F52202052" & iw32 & x"2c2052" & iw10 & x"3B"); --XOR
+		when "0101" => ICis <= (x"414E44202052" & iw32 & x"2c2052" & iw10 & x"3B"); --AND
+		when "0110" => ICis <= (x"4F5220202052" & iw32 & x"2c2052" & iw10 & x"3B"); --OR
+		when "0111" => ICis <= (x"435059202052" & iw32 & x"2c2052" & iw10 & x"3B"); --CPY
+		when "1000" => ICis <= (x"534852412052" & iw32 & x"2c2023" & iw10 & x"3B"); --SHRA
+		when "1001" => ICis <= (x"534878202052" & iw32 & x"2c2023" & iw10 & x"3B"); --SHxL
+		when "1010" => ICis <= (x"527843202052" & iw32 & x"2c2023" & iw10 & x"3B"); --RxC
+		when "1011" => ICis <= (x"4C4420202052" & iw32 & x"2c204D413B"); --LD
+		when "1100" => ICis <= (x"535420202052" & iw32 & x"2c204D413B"); --ST
+		when "1101" => ICis <= (x"4A554D5020696620" & sbit & x"3D313B"); --JUMP
+		when "1110" => ICis <= (x"504F502052" & iw32 & x"202020202020"); --POP
+		when "1111" => ICis <= (x"505553482052" & iw32 & x"2020202020"); --PUSH
+		when others => ICis <= (x"4E4445462020202020202020"); --NDEF
+	end case;
+end if;
+end process;
+end disassemble;

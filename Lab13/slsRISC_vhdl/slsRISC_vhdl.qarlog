@@ -1,0 +1,35 @@
+Quartus Prime Archive log --	C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.qarlog
+
+Archive:	C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.qar
+Date:		Fri Apr 18 14:02:51 2025
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_CU_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_DP_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.qpf
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.qsf
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl_assignment_defaults.qdf
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl_tb.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_4loc_stack_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_add_sub_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_alu_struc_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_arith_unit_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_const_unit_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_logic_unit_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_8bit_sr_unit_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_IW2ASCII_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_MM.mif
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_MM_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_RISC_package.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_alu_package.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux2to1_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_mux4to1_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_reg_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_nbit_upcnt_vhdl.vhd
+C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/sls_package.vhd
+	======= Total: 24 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,48 @@
+-- Memory File
+-- This is Test Program 1 for von Neumann with
+-- memory mapped I/O-Ps
+
+WIDTH = 8;
+DEPTH = 1024;
+
+ADDRESS_RADIX = HEX;	% Can be HEX, BIN or DEC %
+DATA_RADIX = BIN;	% Can be HEX, BIN or DEC %
+
+CONTENT BEGIN
+%		|Op|R|R|	%
+%		|Co|s|s|	%
+%		|de|d| |	%
+0	:	00011010; % SUB R2, R2; R2 = 0x0 %
+1	:	00101001; % INC R2, #1; R2 = 0x1 %
+2	:	01110110; % CPY R1, R2; R1 = 0x1 %
+3	:	00101010; % INC R2, #2; R2 = 0x3 %
+4	:	00000110; % ADD R1, R2; R1 = 0x4 %
+5	:	01111101; % CPY R3, R1; R3 = 0x4 %
+6	:	01101110; % OR  R3, R2; R3 = 0x7 %
+7	:	01001101; % XOR R3, R1; R3 = 0x3 %
+8	:	00111101; % DEC R3, #1; R3 = 0x2 %
+9	:	01010111; % AND R1, R3; R1 = 0x0 %
+A	:	10011001; % SHRL 2%
+B	:	10101001; % RLC 2%
+C	:	11001110; % ST  R3, R2; DM[R2] = 0x2 %
+D	:	01010101; % ST MAoffset %
+E	:	11111100; % PUSH R3; TOS = 0x2 % 
+F	:	11001010; % ST  R2, R2; OP[R2] = 0x3%
+10	:	11111111; % ST MAoffset %
+11	:	00101110; % INC R3, #2; R3 = 0x4 %
+12	:	10110010; % LD R0, R2; %
+13	:	01010101; % LD MAoffset; %
+14	:	10110010; % LD R0, R2; %
+15	:	11111111; % LD MAoffset %
+16	:	11101100; % POP R3; % 
+17	:	01001111; % XOR R3, R3; R3 = 0x0; Z=1 %
+18	:	11010001; % JUMP if Z=1 %
+19	:	11110000; % JUMP JAoffset %
+1A	:	0; %  %
+1B	:	0; %  %
+1C	:	0; %  %
+1D	:	0; %  %
+1E	:	0; %  %
+1F	:	0; %  %
+[020..3FF]  :   00000000; %Fill the rest of the locations with 0%
+END;
