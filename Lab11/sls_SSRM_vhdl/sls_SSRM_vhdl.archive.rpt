@@ -1,5 +1,5 @@
 Archive Project report for sls_SSRM_vhdl
-Fri Apr 11 14:58:49 2025
+Fri Apr 18 14:23:58 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Fri Apr 11 14:58:49 2025 ;
+; Archive Project Status ; Successful - Fri Apr 18 14:23:58 2025 ;
 ; Revision Name          ; sls_SSRM_vhdl                         ;
 ; Top-level Entity Name  ; sls_SSRM_vhdl                         ;
 ; Family                 ; Cyclone IV E                          ;
@@ -59,8 +59,8 @@ Info: ----------------------------------------------------------
 Info: Generated report 'sls_SSRM_vhdl.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Fri Apr 11 14:58:49 2025
+    Info: Peak virtual memory: 4833 megabytes
+    Info: Processing ended: Fri Apr 18 14:23:58 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

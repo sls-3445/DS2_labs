@@ -1,0 +1,91 @@
+Archive Project report for sls_PSRM_vhdl
+Fri Apr 18 14:41:32 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Fri Apr 18 14:41:32 2025 ;
+; Revision Name          ; sls_PSRM_vhdl                         ;
+; Top-level Entity Name  ; sls_PSRM_vhdl                         ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'sls_PSRM_vhdl.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4833 megabytes
+    Info: Processing ended: Fri Apr 18 14:41:32 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++--------------------------------------------------------------+
+; Files Archived                                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf ;
+; sls_and2.vhd                                                 ;
+; sls_nbit_2sc_in_vhdl.vhd                                     ;
+; sls_nbit_2sc_out_vhdl.vhd                                    ;
+; sls_nbit_add_sub_vhdl.vhd                                    ;
+; sls_nbit_mux2to1_vhdl.vhd                                    ;
+; sls_nbit_reg_vhdl.vhd                                        ;
+; sls_nBitSFR_vhdl.vhd                                         ;
+; sls_not.vhd                                                  ;
+; sls_PSRM_package.vhd                                         ;
+; sls_PSRM_stage_vhdl.vhd                                      ;
+; sls_PSRM_vhdl.qpf                                            ;
+; sls_PSRM_vhdl.qsf                                            ;
+; sls_PSRM_vhdl.vhd                                            ;
+; sls_PSRM_vhdl_tb.vhd                                         ;
+; sls_xor2.vhd                                                 ;
++--------------------------------------------------------------+
+
+

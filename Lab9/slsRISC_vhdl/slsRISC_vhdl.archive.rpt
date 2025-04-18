@@ -1,5 +1,5 @@
 Archive Project report for slsRISC_vhdl
-Thu Mar 27 19:01:25 2025
+Fri Apr 18 14:02:51 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Thu Mar 27 19:01:25 2025 ;
+; Archive Project Status ; Successful - Fri Apr 18 14:02:51 2025 ;
 ; Revision Name          ; slsRISC_vhdl                          ;
 ; Top-level Entity Name  ; slsRISC_vhdl                          ;
 ; Family                 ; Cyclone IV E                          ;
@@ -49,40 +49,51 @@ Info: File Set 'Source control' contains:
     Info: Project source and settings files
     Info: Automatically detected source files
 Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
-Warning: Excluding 'Automatically detected source files' The Quartus Prime software may not be able to automatically locate all project files.
 Info: Archive will store files relative to the closest common parent directory
-Info (13213): Using common directory C:/Users/sls3445/Documents/DS2_Labs/
+Info (13213): Using common directory C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/sls3445/Documents/DS2_Labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.qar'
+Info: Generated archive 'C:/Users/sls3445/Documents/DS2_labs/Lab9/slsRISC_vhdl/slsRISC_vhdl.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'slsRISC_vhdl.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
-Info: Quartus Prime Shell was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4833 megabytes
-    Info: Processing ended: Thu Mar 27 19:01:25 2025
-    Info: Elapsed time: 00:00:01
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4836 megabytes
+    Info: Processing ended: Fri Apr 18 14:02:51 2025
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
-+-----------------------------------------------------------------------------------------+
-; Files Archived                                                                          ;
-+-----------------------------------------------------------------------------------------+
-; File Name                                                                               ;
-+-----------------------------------------------------------------------------------------+
-; ../../Lab6/sls_8bit_alu_struc_vhdl_restored/sls_8bit_alu_struc_vhdl/sls_alu_package.vhd ;
-; ../../sls_package/sls_package.vhd                                                       ;
-; c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf                            ;
-; sls_8bit_4loc_stack_vhdl.vhd                                                            ;
-; sls_IW2ASCII_vhdl.vhd                                                                   ;
-; sls_MM_vhdl.vhd                                                                         ;
-; sls_RISC_package.vhd                                                                    ;
-; slsRISC_CU_vhdl.vhd                                                                     ;
-; slsRISC_DP_vhdl.vhd                                                                     ;
-; slsRISC_vhdl.qpf                                                                        ;
-; slsRISC_vhdl.qsf                                                                        ;
-; slsRISC_vhdl.vhd                                                                        ;
-+-----------------------------------------------------------------------------------------+
++--------------------------------------+
+; Files Archived                       ;
++--------------------------------------+
+; File Name                            ;
++--------------------------------------+
+; sls_8bit_4loc_stack_vhdl.vhd         ;
+; sls_8bit_add_sub_vhdl.vhd            ;
+; sls_8bit_alu_struc_vhdl.vhd          ;
+; sls_8bit_arith_unit_vhdl.vhd         ;
+; sls_8bit_const_unit_vhdl.vhd         ;
+; sls_8bit_logic_unit_vhdl.vhd         ;
+; sls_8bit_sr_unit_vhdl.vhd            ;
+; sls_alu_package.vhd                  ;
+; sls_IW2ASCII_vhdl.vhd                ;
+; sls_MM.mif                           ;
+; sls_MM_vhdl.vhd                      ;
+; sls_nbit_mux2to1_vhdl.vhd            ;
+; sls_nbit_mux4to1_vhdl.vhd            ;
+; sls_nbit_reg_vhdl.vhd                ;
+; sls_nbit_upcnt_vhdl.vhd              ;
+; sls_package.vhd                      ;
+; sls_RISC_package.vhd                 ;
+; slsRISC_CU_vhdl.vhd                  ;
+; slsRISC_DP_vhdl.vhd                  ;
+; slsRISC_vhdl.qpf                     ;
+; slsRISC_vhdl.qsf                     ;
+; slsRISC_vhdl.vhd                     ;
+; slsRISC_vhdl_assignment_defaults.qdf ;
+; slsRISC_vhdl_tb.vhd                  ;
++--------------------------------------+
 
 
