@@ -75,13 +75,14 @@ begin
 				port map (d => MAR_in, ld => LD_MAR, reset => Reset, clock => Clock, q => MAR_out);
 	MMA_in <= MAR_out when (MMASel = '1') else PC_out;
 	MM		: sls_MM_vhdl port map (address => MMA_in, data => sd_bus, clock => notClock, wren => RW, q => MM_out);
+	MARout <= MAR_out;
 	
 	-- Peripherals
 	IPDR_in <= ("000" & PB1 & SW);
 	IPDR 	: sls_nbit_reg_vhdl generic map (8)
 				port map (d => IPDR_in, ld => LD_IPDR, reset => Reset, clock => Clock, q => IPDR_out);
 	OPDR 	: sls_nbit_reg_vhdl generic map (8)
-				port map (d => OPDR_in, ld => LD_OPDR, reset => Reset, clock => Clock, q => intLEDs);
+				port map (d => sd_bus, ld => LD_OPDR, reset => Reset, clock => Clock, q => intLEDs);
 	LEDs <= intLEDs;
 	
 	-- Stack 

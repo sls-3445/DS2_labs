@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_signed.all;
+use ieee.std_logic_unsigned.all;
 use work.sls_RISC_package.all;
 
 entity slsRISC_CU_vhdl is
@@ -54,7 +54,7 @@ constant RLC_IC	: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1010";
 constant LD_IC		: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1011"; 
 constant ST_IC		: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1100"; 
 constant JUMP_IC	: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1101"; 
-constant POP_IC		: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1110";
+constant POP_IC	: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1110";
 constant PUSH_IC	: STD_LOGIC_VECTOR(3 DOWNTO 0) := "1111";
 
 begin
@@ -123,27 +123,32 @@ else
         end if;
 
     elsif (MC = MC3) then
-        -- Load Main Memory Address
-        crtMCis <= MC3; MC <= MC4;
-		  LD_MAR <= '1';
-
+         -- Load Main Memory Address
+			crtMCis <= MC3; MC <= MC4;
+			LD_MAR <= '1';
+			
+			if (opCode = LD_IC) then
+				LD_IPDR <= '1';
+			
+			end if;
+			
     elsif (MC = MC4) then
         -- Reset
 		  crtMCis <= MC4; MC <= MC0;
 --        rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
 
         if (opCode = LD_IC) then
-            if (MARout > x"3FD") then 
+				rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
+            if (MAR_din	> x"3FB") then
                 ipstksel <= '0';
                 WB_SEL <= "11";
             else
                 MMASel <= '1';
                 WB_SEL <= "10";
-					 rf_select(Rsd, LD_R0, LD_R1, LD_R2, LD_R3);
             end if;
         
         elsif (opCode = ST_IC) then
-            if (MARout > x"3FD") then
+            if (MAR_din > x"3FB") then
 					LD_OPDR <= '1';
             else
                 RW <= '1';
@@ -154,7 +159,8 @@ else
 				if 	((IW(3 downto 0) = "0001" and SR_CNVZ(0) = '1') or
 						 (IW(3 downto 0) = "0010" and SR_CNVZ(1) = '1') or
 						 (IW(3 downto 0) = "0100" and SR_CNVZ(2) = '1') or
-						 (IW(3 downto 0) = "1000" and SR_CNVZ(3) = '1')) then LD_PC <= '1';
+						 (IW(3 downto 0) = "1000" and SR_CNVZ(3) = '1') or
+						 (IW(3 downto 0) = "0000")) then LD_PC <= '1';
 				else LD_PC <= '0';
 				end if;
         end if;

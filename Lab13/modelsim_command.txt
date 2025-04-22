@@ -1,0 +1,36 @@
+do slsRISC_vhdl_run_msim_rtl_vhdl.do
+
+delete wave /slsrisc_vhdl_tb/ICis_tb /slsrisc_vhdl_tb/crtMCis_tb
+
+add wave -position insertpoint  \
+-radix ASCII sim:/slsrisc_vhdl_tb/ICis_tb \
+-radix Hexadecimal sim:/slsrisc_vhdl_tb/crtMCis_tb \
+-radix Decimal sim:/slsrisc_vhdl_tb/CUV/DP/r0out \
+-radix Decimal sim:/slsrisc_vhdl_tb/CUV/DP/r1out \
+-radix Decimal sim:/slsrisc_vhdl_tb/CUV/DP/r2out \
+-radix Decimal sim:/slsrisc_vhdl_tb/CUV/DP/r3out \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/IW \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/s_bus \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/sd_bus \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/wb_bus \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/wb_sel \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/MM_out \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/CU/MAR_din \
+-radix Hexadecimal sim:/slsrisc_vhdl_tb/CUV/DP/PC_out \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/SR_CNVZ \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_PC
+
+
+restart -f
+run -all
+
+
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/ALU_result \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_R0 \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_R1 \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_R2 \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/LD_R3 \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/RF_S_OS \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/RF_SD_OS \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/Rsd \
+-radix Binary sim:/slsrisc_vhdl_tb/CUV/DP/Rs2

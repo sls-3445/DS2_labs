@@ -1,5 +1,5 @@
 Flow report for slsRISC_vhdl
-Fri Apr 18 15:16:40 2025
+Tue Apr 22 02:19:03 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Apr 18 15:16:40 2025       ;
+; Flow Status                        ; Successful - Tue Apr 22 02:19:03 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; slsRISC_vhdl                                ;
 ; Top-level Entity Name              ; slsRISC_vhdl                                ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 459                                         ;
-;     Total combinational functions  ; 421                                         ;
-;     Dedicated logic registers      ; 219                                         ;
-; Total registers                    ; 219                                         ;
+; Total logic elements               ; 500                                         ;
+;     Total combinational functions  ; 462                                         ;
+;     Dedicated logic registers      ; 233                                         ;
+; Total registers                    ; 233                                         ;
 ; Total pins                         ; 114                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192                                       ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/18/2025 15:16:30 ;
+; Start date & time ; 04/22/2025 02:18:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; slsRISC_vhdl        ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id      ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------+
-; COMPILER_SIGNATURE_ID                ; 53671034734719.174500379017976         ; --            ; --          ; --              ;
+; COMPILER_SIGNATURE_ID                ; 53671034734719.174530273415116         ; --            ; --          ; --              ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; slsRISC_vhdl_tb ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; slsRISC_vhdl_tb                        ; --            ; --          ; eda_simulation  ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --          ; eda_simulation  ;

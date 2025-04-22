@@ -1,0 +1,21 @@
+WIDTH = 8; 	
+DEPTH = 1024; 	
+ADDRESS_RADIX = HEX;	% Can be HEX, BIN or DEC % 	
+DATA_RADIX = BIN;	% Can be HEX, BIN or DEC % 	
+
+CONTENT BEGIN
+
+0000 : 00010000; % SUB R0, R0; % 
+0001 : 00010101; % SUB R1, R1; % 
+0002 : 00011010; % SUB R2, R2; % 
+0003 : 00101110; % INC R3, 2; % 
+0004 : 11001100; % ST R3, M[R0, % 
+0005 : 01010011; % 0x53]; % 
+0006 : 00100110; % INC R1, 2; % 
+0007 : 00000101; % ADD R1, R1; % 
+0008 : 00000101; % ADD R1, R1; % 
+0009 : 11000100; % ST R1, M[R0, % 
+000a : 11111111; % 0x50]; %
+
+[000b..3FF]  :   00000000; %Fill the rest of the locations with 0%
+END;

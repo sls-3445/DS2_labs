@@ -38,3 +38,15 @@ Trace back: invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top
     (command bound to event)
   <2:C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't set "vsimPriv(dragging_cursor)": can't set "::vsimPriv(acttime)": invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree"}
   <1:proc:38: ::tk::dialog::error::bgerror {can't set "vsimPriv(dragging_cursor)": can't set "::vsimPriv(acttime)": invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree"}
+Tue Apr 22 02:03:41 EDT 2025
+Trace back: can't read "::vsimPriv(tbarBtnIgnore)": no such element in array
+    while executing
+"if { ! $::vsimPriv(tbarBtnIgnore) } {
+            ButtonInvoke $b $m
+         }"
+    (procedure "Tbar::BMenu::Action" line 51)
+    invoked from within
+"Tbar::BMenu::Action release .dockbar.tbf14.wave.tb.button_85 .dockbar.tbf14.wave.tb.button_85.menu 20 3 1"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't read "::vsimPriv(tbarBtnIgnore)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "::vsimPriv(tbarBtnIgnore)": no such element in array}
