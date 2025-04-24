@@ -1,0 +1,16 @@
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DinA \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DinB \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/biasin \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/neuronout \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/DinA \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/DinB \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/biasin \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/neuronout \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/DinA \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/DinB \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/biasin \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/neuronout \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/DinA \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/DinB \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/biasin \
+-radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/neuronout

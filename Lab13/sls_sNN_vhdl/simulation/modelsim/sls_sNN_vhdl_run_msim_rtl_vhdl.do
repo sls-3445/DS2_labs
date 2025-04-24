@@ -5,15 +5,10 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_xor2.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_package.vhd}
-vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_not.vhd}
-vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_add_sub_vhdl.vhd}
-vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_2sc_out_vhdl.vhd}
-vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nBitSFR_vhdl.vhd}
-vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_and2.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_16bit_signed_add_vhdl.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_signed_comparator.vhd}
+vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_16bit_signed_mult_vhdl.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/pixData_rom_vhdl.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/olw_rom_vhdl.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/oldatain_ram_vhdl.vhd}
@@ -23,9 +18,6 @@ vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/hl
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_reg_vhdl.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_package.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_mux2to1_vhdl.vhd}
-vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_vhdl.vhd}
-vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_stage_vhdl.vhd}
-vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_2sc_in_vhdl.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_simpleneuron_vhdl.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_signis_vhdl.vhd}
 vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_mux4to1_vhdl.vhd}

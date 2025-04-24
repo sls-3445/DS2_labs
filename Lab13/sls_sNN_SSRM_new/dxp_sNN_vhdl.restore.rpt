@@ -1,0 +1,140 @@
+Restore Archived Project report for dxp_sNN_vhdl
+Wed Apr 23 22:20:29 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Apr 23 22:20:29 2025 ;
+; Revision Name                   ; dxp_sNN_vhdl                          ;
+; Top-level Entity Name           ; dxp_sNN_vhdl                          ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/sls3445/Documents/DS2_labs/Lab13/dxp_sNN_vhdl_new.qar' into the 'C:/Users/sls3445/Documents/DS2_labs/Lab13/dxp_sNN_vhdl_new_restored/' directory
+Info: Generated report 'dxp_sNN_vhdl.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Wed Apr 23 22:20:29 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++----------------------------------+
+; Files Restored                   ;
++----------------------------------+
+; File Name                        ;
++----------------------------------+
+; qar_info.json                    ;
+; assignment_defaults.qdf          ;
+; dxp_16bit_signed_add_vhdl.bsf    ;
+; dxp_16bit_signed_add_vhdl.cmp    ;
+; dxp_16bit_signed_add_vhdl.qip    ;
+; dxp_16bit_signed_add_vhdl.vhd    ;
+; dxp_16bit_signed_add_vhdl_syn.v  ;
+; dxp_16bit_signed_mult_vhdl.bsf   ;
+; dxp_16bit_signed_mult_vhdl.cmp   ;
+; dxp_16bit_signed_mult_vhdl.qip   ;
+; dxp_16bit_signed_mult_vhdl.vhd   ;
+; dxp_16bit_signed_mult_vhdl_syn.v ;
+; dxp_nbit_mux2to1_vhdl.vhd        ;
+; dxp_nbit_mux4to1_vhdl.vhd        ;
+; dxp_nbit_reg_vhdl.vhd            ;
+; dxp_package.vhd                  ;
+; dxp_sNN_CU_vhdl.vhd              ;
+; dxp_sNN_DP_vhdl.vhd              ;
+; dxp_sNN_testimages.mif           ;
+; dxp_sNN_vhdl.qpf                 ;
+; dxp_sNN_vhdl.qsf                 ;
+; dxp_sNN_vhdl.vhd                 ;
+; dxp_sNN_vhdl_tb.vhd              ;
+; dxp_signed_comparator.bsf        ;
+; dxp_signed_comparator.cmp        ;
+; dxp_signed_comparator.qip        ;
+; dxp_signed_comparator.vhd        ;
+; dxp_signed_comparator_syn.v      ;
+; dxp_signis_vhdl.vhd              ;
+; dxp_simpleneuron_vhdl.vhd        ;
+; hlAddrsCnt_vhdl.bsf              ;
+; hlAddrsCnt_vhdl.cmp              ;
+; hlAddrsCnt_vhdl.qip              ;
+; hlAddrsCnt_vhdl.vhd              ;
+; hlAddrsCnt_vhdl_syn.v            ;
+; hlw_rom_vhdl.cmp                 ;
+; hlw_rom_vhdl.qip                 ;
+; hlw_rom_vhdl.vhd                 ;
+; hlw_rom_vhdl_syn.v               ;
+; olAddrsCnt_vhdl.bsf              ;
+; olAddrsCnt_vhdl.cmp              ;
+; olAddrsCnt_vhdl.qip              ;
+; olAddrsCnt_vhdl.vhd              ;
+; olAddrsCnt_vhdl_syn.v            ;
+; oldatain_ram_vhdl.bsf            ;
+; oldatain_ram_vhdl.cmp            ;
+; oldatain_ram_vhdl.qip            ;
+; oldatain_ram_vhdl.vhd            ;
+; oldatain_ram_vhdl_syn.v          ;
+; olw_rom_vhdl.bsf                 ;
+; olw_rom_vhdl.cmp                 ;
+; olw_rom_vhdl.qip                 ;
+; olw_rom_vhdl.vhd                 ;
+; olw_rom_vhdl_syn.v               ;
+; pixData_rom_vhdl.bsf             ;
+; pixData_rom_vhdl.cmp             ;
+; pixData_rom_vhdl.qip             ;
+; pixData_rom_vhdl.vhd             ;
+; pixData_rom_vhdl_syn.v           ;
+; w4_1.mif                         ;
+; w4_2.mif                         ;
+; w4_3.mif                         ;
+; w4_4.mif                         ;
+; w9_1.mif                         ;
+; w9_2.mif                         ;
+; w9_3.mif                         ;
+; w9_4.mif                         ;
++----------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

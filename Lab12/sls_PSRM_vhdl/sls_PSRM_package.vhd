@@ -57,18 +57,18 @@ package sls_PSRM_package is
 				Dout : buffer std_logic_vector (n-1 downto 0)); -- This is the output parallel data bus
 	end component;
 
---	component sls_nbit_reg_vhdl is
---		generic (n : integer := 4);
---		port (Din 					: in  std_logic_vector(n-1 downto 0);
---				Ld, Clock, Reset 	: in  std_logic;
---				Dout 					: out std_logic_vector(n-1 downto 0));
---	end component;
+	component sls_nbit_reg_vhdl is
+		generic (n : integer := 4);
+		port (Din 					: in  std_logic_vector(n-1 downto 0);
+				Ld, Clock, Reset 	: in  std_logic;
+				Dout 					: out std_logic_vector(n-1 downto 0));
+	end component;
 
 	component sls_PSRM_stage_vhdl is
-		port (Md_Din, mr_Din, PR_Din 			   :	in		std_logic_vector(3 downto 0);
+		port (Md_Din, mr_Din, PR_Din 			   :	in		std_logic_vector(7 downto 0);
 				Clock, Reset, LD_All				  	:	in 	std_logic;
-				Md_Dout, mr_Dout						:	out	std_logic_vector(3 downto 0);
-				PP_Dout									: 	out 	std_logic_vector(4 downto 0));
+				Md_Dout, mr_Dout						:	out	std_logic_vector(7 downto 0);
+				PP_Dout									: 	out 	std_logic_vector(8 downto 0));
 	end component;
 
 	component sls_PSRM_vhdl is

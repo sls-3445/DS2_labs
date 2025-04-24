@@ -36,6 +36,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "FP[8]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[9]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[10]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[11]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[12]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[13]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[14]",
+					"strict" : false
+				},
+				{
+					"name" : "FP[15]",
+					"strict" : false
+				},
+				{
 					"name" : "Reset",
 					"strict" : false
 				},
@@ -44,15 +76,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "Md_val[0]",
+					"name" : "mr_val[4]",
 					"strict" : false
 				},
 				{
-					"name" : "mr_val[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Md_val[3]",
+					"name" : "mr_val[7]",
 					"strict" : false
 				},
 				{
@@ -60,7 +88,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "Md_val[1]",
+					"name" : "mr_val[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mr_val[0]",
 					"strict" : false
 				},
 				{
@@ -68,11 +100,43 @@
 					"strict" : false
 				},
 				{
+					"name" : "mr_val[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mr_val[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Md_val[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Md_val[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Md_val[7]",
+					"strict" : false
+				},
+				{
 					"name" : "Md_val[2]",
 					"strict" : false
 				},
 				{
-					"name" : "mr_val[2]",
+					"name" : "Md_val[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Md_val[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Md_val[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Md_val[6]",
 					"strict" : false
 				}
 			]

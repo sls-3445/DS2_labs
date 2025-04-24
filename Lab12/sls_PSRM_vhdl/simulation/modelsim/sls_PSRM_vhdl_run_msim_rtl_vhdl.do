@@ -8,7 +8,6 @@ vmap work rtl_work
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_reg_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_package.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nBitSFR_vhdl.vhd}
-vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_add_sub_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_not.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_xor2.vhd}

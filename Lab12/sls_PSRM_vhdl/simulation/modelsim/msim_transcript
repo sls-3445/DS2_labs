@@ -12,96 +12,83 @@
 # 
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_reg_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_reg_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_nbit_reg_vhdl
 # -- Compiling architecture beh of sls_nbit_reg_vhdl
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:47 on Apr 24,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_package.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package sls_PSRM_package
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:47 on Apr 24,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nBitSFR_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nBitSFR_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_nBitSFR_vhdl
 # -- Compiling architecture sls_Behavior of sls_nBitSFR_vhdl
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_out_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sls_nbit_2sc_out_vhdl
-# -- Compiling architecture beh of sls_nbit_2sc_out_vhdl
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:47 on Apr 24,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_add_sub_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_add_sub_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_nbit_add_sub_vhdl
 # -- Compiling architecture func of sls_nbit_add_sub_vhdl
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:47 on Apr 24,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_not.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_not.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_not
 # -- Compiling architecture func of sls_not
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:47 on Apr 24,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_xor2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_xor2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_xor2
 # -- Compiling architecture func of sls_xor2
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:47 on Apr 24,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_and2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_and2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_and2
 # -- Compiling architecture func of sls_and2
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:47 on Apr 24,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_stage_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_stage_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -111,11 +98,11 @@
 # -- Loading package sls_PSRM_package
 # -- Compiling entity sls_PSRM_stage_vhdl
 # -- Compiling architecture structural of sls_PSRM_stage_vhdl
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:47 on Apr 24,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,11 +112,11 @@
 # -- Loading package sls_PSRM_package
 # -- Compiling entity sls_PSRM_vhdl
 # -- Compiling architecture pipe of sls_PSRM_vhdl
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:47 on Apr 24,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -137,12 +124,12 @@
 # -- Loading package sls_PSRM_package
 # -- Compiling entity sls_nbit_2sc_in_vhdl
 # -- Compiling architecture struc of sls_nbit_2sc_in_vhdl
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:47 on Apr 24,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:47 on Apr 24,2025
 # vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -150,12 +137,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity sls_PSRM_vhdl_tb
 # -- Compiling architecture behavior of sls_PSRM_vhdl_tb
-# End time: 23:47:24 on Apr 23,2025, Elapsed time: 0:00:00
+# End time: 05:08:48 on Apr 24,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  sls_PSRM_vhdl_tb
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" sls_PSRM_vhdl_tb 
-# Start time: 23:47:24 on Apr 23,2025
+# Start time: 05:08:48 on Apr 24,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -173,7 +160,6 @@
 # Loading work.sls_nbit_reg_vhdl(beh)
 # Loading work.sls_nbit_add_sub_vhdl(func)
 # Loading work.sls_nbitsfr_vhdl(sls_behavior)
-# Loading work.sls_nbit_2sc_out_vhdl(beh)
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
@@ -184,9 +170,374 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_psrm_vhdl_tb/cuv/f_2sc
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_psrm_vhdl_tb/cuv/f_2sc
-# End time: 23:54:46 on Apr 23,2025, Elapsed time: 0:07:22
+step -out -current
+# ** Error: (vsim-12081) The specified scope, sim:/sls_psrm_vhdl_tb, is not a process or thread.
+# 
+do sls_PSRM_vhdl_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_reg_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_reg_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_nbit_reg_vhdl
+# -- Compiling architecture beh of sls_nbit_reg_vhdl
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package sls_PSRM_package
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nBitSFR_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nBitSFR_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_nBitSFR_vhdl
+# -- Compiling architecture sls_Behavior of sls_nBitSFR_vhdl
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_add_sub_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_add_sub_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_nbit_add_sub_vhdl
+# -- Compiling architecture func of sls_nbit_add_sub_vhdl
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_not.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_not.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_not
+# -- Compiling architecture func of sls_not
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_xor2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_xor2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_xor2
+# -- Compiling architecture func of sls_xor2
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_and2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_and2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_and2
+# -- Compiling architecture func of sls_and2
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_stage_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_stage_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package sls_PSRM_package
+# -- Compiling entity sls_PSRM_stage_vhdl
+# -- Compiling architecture structural of sls_PSRM_stage_vhdl
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package sls_PSRM_package
+# -- Compiling entity sls_PSRM_vhdl
+# -- Compiling architecture pipe of sls_PSRM_vhdl
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package sls_PSRM_package
+# -- Compiling entity sls_nbit_2sc_in_vhdl
+# -- Compiling architecture struc of sls_nbit_2sc_in_vhdl
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:10:50 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sls_PSRM_vhdl_tb
+# -- Compiling architecture behavior of sls_PSRM_vhdl_tb
+# End time: 05:10:50 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  sls_PSRM_vhdl_tb
+# End time: 05:10:51 on Apr 24,2025, Elapsed time: 0:02:03
+# Errors: 1, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" sls_PSRM_vhdl_tb 
+# Start time: 05:10:51 on Apr 24,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sls_psrm_vhdl_tb(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.sls_psrm_package
+# Loading work.sls_psrm_vhdl(pipe)
+# Loading work.sls_nbit_2sc_in_vhdl(struc)
+# Loading work.sls_not(func)
+# Loading work.sls_xor2(func)
+# Loading work.sls_and2(func)
+# Loading work.sls_psrm_stage_vhdl(structural)
+# Loading work.sls_nbit_reg_vhdl(beh)
+# Loading work.sls_nbit_add_sub_vhdl(func)
+# Loading work.sls_nbitsfr_vhdl(sls_behavior)
+# ** Warning: (vsim-3473) Component instance "f_2sc : sls_nbit_2sc_out_vhdl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /sls_psrm_vhdl_tb/cuv File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /sls_psrm_vhdl_tb/cuv/FP, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sls_psrm_vhdl_tb/FP_tb.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+do sls_PSRM_vhdl_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_reg_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_reg_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_nbit_reg_vhdl
+# -- Compiling architecture beh of sls_nbit_reg_vhdl
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package sls_PSRM_package
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nBitSFR_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nBitSFR_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_nBitSFR_vhdl
+# -- Compiling architecture sls_Behavior of sls_nBitSFR_vhdl
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_add_sub_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_add_sub_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_nbit_add_sub_vhdl
+# -- Compiling architecture func of sls_nbit_add_sub_vhdl
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_not.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_not.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_not
+# -- Compiling architecture func of sls_not
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_xor2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_xor2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_xor2
+# -- Compiling architecture func of sls_xor2
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_and2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_and2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_and2
+# -- Compiling architecture func of sls_and2
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_stage_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_stage_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package sls_PSRM_package
+# -- Compiling entity sls_PSRM_stage_vhdl
+# -- Compiling architecture structural of sls_PSRM_stage_vhdl
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package sls_PSRM_package
+# -- Compiling entity sls_PSRM_vhdl
+# -- Compiling architecture pipe of sls_PSRM_vhdl
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package sls_PSRM_package
+# -- Compiling entity sls_nbit_2sc_in_vhdl
+# -- Compiling architecture struc of sls_nbit_2sc_in_vhdl
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:11:29 on Apr 24,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sls_PSRM_vhdl_tb
+# -- Compiling architecture behavior of sls_PSRM_vhdl_tb
+# End time: 05:11:29 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  sls_PSRM_vhdl_tb
+# End time: 05:11:30 on Apr 24,2025, Elapsed time: 0:00:39
 # Errors: 0, Warnings: 2
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" sls_PSRM_vhdl_tb 
+# Start time: 05:11:30 on Apr 24,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sls_psrm_vhdl_tb(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.sls_psrm_package
+# Loading work.sls_psrm_vhdl(pipe)
+# Loading work.sls_nbit_2sc_in_vhdl(struc)
+# Loading work.sls_not(func)
+# Loading work.sls_xor2(func)
+# Loading work.sls_and2(func)
+# Loading work.sls_psrm_stage_vhdl(structural)
+# Loading work.sls_nbit_reg_vhdl(beh)
+# Loading work.sls_nbit_add_sub_vhdl(func)
+# Loading work.sls_nbitsfr_vhdl(sls_behavior)
+# ** Warning: (vsim-3473) Component instance "f_2sc : sls_nbit_2sc_out_vhdl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /sls_psrm_vhdl_tb/cuv File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /sls_psrm_vhdl_tb/cuv/FP, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sls_psrm_vhdl_tb/FP_tb.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint  \
+sim:/sls_psrm_vhdl_tb/cuv/FP_us
+restart -f
+# ** Warning: (vsim-3473) Component instance "f_2sc : sls_nbit_2sc_out_vhdl" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /sls_psrm_vhdl_tb/cuv File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /sls_psrm_vhdl_tb/cuv/FP, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sls_psrm_vhdl_tb/FP_tb.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 05:12:03 on Apr 24,2025, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 4

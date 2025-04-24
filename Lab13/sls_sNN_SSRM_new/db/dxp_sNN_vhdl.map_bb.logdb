@@ -1,0 +1,9 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|dxp_16bit_signed_mult_vhdl:mul|lpm_mult:lpm_mult_component|mult_p5n:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_16bit_signed_mult_vhdl:mul|lpm_mult:lpm_mult_component|mult_p5n:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_16bit_signed_mult_vhdl:mul|lpm_mult:lpm_mult_component|mult_p5n:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_16bit_signed_mult_vhdl:mul|lpm_mult:lpm_mult_component|mult_p5n:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_16bit_signed_mult_vhdl:mul|lpm_mult:lpm_mult_component|mult_p5n:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_16bit_signed_mult_vhdl:mul|lpm_mult:lpm_mult_component|mult_p5n:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|dxp_16bit_signed_mult_vhdl:mul|lpm_mult:lpm_mult_component|mult_p5n:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_16bit_signed_mult_vhdl:mul|lpm_mult:lpm_mult_component|mult_p5n:auto_generated|mac_out2,
