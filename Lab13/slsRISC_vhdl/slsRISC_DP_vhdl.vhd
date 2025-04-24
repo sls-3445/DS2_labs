@@ -50,7 +50,7 @@ begin
 	-- ALU
 	ALU : sls_8bit_alu_struc_vhdl
 				port map (Operand_X => sd_bus, Operand_Y => s_bus, Const_K => IR_OUT(1 downto 0), Func_Sel => ALU_FS,
-						Cin => '0', ALU_Result => ALU_result, ALU_CNVZ => ALU_CNVZ);
+						Cin => ALU_CNVZ(3), ALU_Result => ALU_result, ALU_CNVZ => ALU_CNVZ);
 	SR  : sls_nbit_reg_vhdl generic map (4)
 				port map (d => ALU_CNVZ, ld => LD_SR, reset => Reset, clock => Clock, q => SR_out);
 	SR_CNVZ <= SR_out;

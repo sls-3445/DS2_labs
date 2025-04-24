@@ -36,19 +36,21 @@ FP[7] <= sls_nbit_2sc_out_vhdl:f_2sc.Dout[7]
 
 
 |sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:Md_2sc
+Din[0] => Dout.DATAA
 Din[0] => sls_not:twosc:0:stage0.x
-Din[0] => sls_nbit_mux2to1_vhdl:mux.d0[0]
+Din[1] => Dout.DATAA
 Din[1] => sls_not:twosc:1:stage0.x
-Din[1] => sls_nbit_mux2to1_vhdl:mux.d0[1]
+Din[2] => Dout.DATAA
 Din[2] => sls_not:twosc:2:stage0.x
-Din[2] => sls_nbit_mux2to1_vhdl:mux.d0[2]
+Din[3] => Dout.OUTPUTSELECT
+Din[3] => Dout.OUTPUTSELECT
+Din[3] => Dout.OUTPUTSELECT
+Din[3] => Dout.OUTPUTSELECT
 Din[3] => sls_not:twosc:3:stage0.x
-Din[3] => sls_nbit_mux2to1_vhdl:mux.d0[3]
-Din[3] => sls_nbit_mux2to1_vhdl:mux.s
-Dout[0] <= sls_nbit_mux2to1_vhdl:mux.f[0]
-Dout[1] <= sls_nbit_mux2to1_vhdl:mux.f[1]
-Dout[2] <= sls_nbit_mux2to1_vhdl:mux.f[2]
-Dout[3] <= sls_nbit_mux2to1_vhdl:mux.f[3]
+Dout[0] <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] <= Dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:Md_2sc|sls_not:\twosc:0:stage0
@@ -119,43 +121,22 @@ x2 => f.IN1
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:Md_2sc|sls_nbit_mux2to1_vhdl:mux
-d1[0] => f.IN0
-d1[1] => f.IN0
-d1[2] => f.IN0
-d1[3] => f.IN0
-d0[0] => f.IN0
-d0[1] => f.IN0
-d0[2] => f.IN0
-d0[3] => f.IN0
-s => f.IN1
-s => f.IN1
-s => f.IN1
-s => f.IN1
-s => f.IN1
-s => f.IN1
-s => f.IN1
-s => f.IN1
-f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
-f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
-f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
-f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:mr_2sc
+Din[0] => Dout.DATAA
 Din[0] => sls_not:twosc:0:stage0.x
-Din[0] => sls_nbit_mux2to1_vhdl:mux.d0[0]
+Din[1] => Dout.DATAA
 Din[1] => sls_not:twosc:1:stage0.x
-Din[1] => sls_nbit_mux2to1_vhdl:mux.d0[1]
+Din[2] => Dout.DATAA
 Din[2] => sls_not:twosc:2:stage0.x
-Din[2] => sls_nbit_mux2to1_vhdl:mux.d0[2]
+Din[3] => Dout.OUTPUTSELECT
+Din[3] => Dout.OUTPUTSELECT
+Din[3] => Dout.OUTPUTSELECT
+Din[3] => Dout.OUTPUTSELECT
 Din[3] => sls_not:twosc:3:stage0.x
-Din[3] => sls_nbit_mux2to1_vhdl:mux.d0[3]
-Din[3] => sls_nbit_mux2to1_vhdl:mux.s
-Dout[0] <= sls_nbit_mux2to1_vhdl:mux.f[0]
-Dout[1] <= sls_nbit_mux2to1_vhdl:mux.f[1]
-Dout[2] <= sls_nbit_mux2to1_vhdl:mux.f[2]
-Dout[3] <= sls_nbit_mux2to1_vhdl:mux.f[3]
+Dout[0] <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] <= Dout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:mr_2sc|sls_not:\twosc:0:stage0
@@ -224,29 +205,6 @@ f <= f.DB_MAX_OUTPUT_PORT_TYPE
 x1 => f.IN0
 x2 => f.IN1
 f <= f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:mr_2sc|sls_nbit_mux2to1_vhdl:mux
-d1[0] => f.IN0
-d1[1] => f.IN0
-d1[2] => f.IN0
-d1[3] => f.IN0
-d0[0] => f.IN0
-d0[1] => f.IN0
-d0[2] => f.IN0
-d0[3] => f.IN0
-s => f.IN1
-s => f.IN1
-s => f.IN1
-s => f.IN1
-s => f.IN1
-s => f.IN1
-s => f.IN1
-s => f.IN1
-f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
-f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
-f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
-f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |sls_PSRM_vhdl|sls_PSRM_stage_vhdl:stage0

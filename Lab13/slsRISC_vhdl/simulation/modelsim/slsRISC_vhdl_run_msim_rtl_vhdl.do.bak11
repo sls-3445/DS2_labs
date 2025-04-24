@@ -20,7 +20,6 @@ vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/slsR
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/slsRISC_CU_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/sls_nbit_reg_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/sls_nbit_mux4to1_vhdl.vhd}
-vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/sls_IW2ASCII_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/sls_8bit_logic_unit_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/sls_8bit_const_unit_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/sls_8bit_alu_struc_vhdl.vhd}

@@ -13,7 +13,6 @@ vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_not.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_xor2.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_and2.vhd}
-vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_mux2to1_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_stage_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd}
 vcom -93 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd}

@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 
 entity sls_nbit_reg_vhdl is
 	generic (n : integer := 4);
-	port (Din 					: in  std_logic_vector(n-1 downto 0);
-			Ld, Clock, Reset 	: in  std_logic;
+	port (Reset, Clock, Ld 	: in  std_logic;
+			Din 					: in  std_logic_vector(n-1 downto 0);
 			Dout 					: out std_logic_vector(n-1 downto 0));
 end sls_nbit_reg_vhdl;
 

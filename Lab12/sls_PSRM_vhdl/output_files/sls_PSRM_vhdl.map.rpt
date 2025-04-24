@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sls_PSRM_vhdl
-Fri Apr 18 14:37:13 2025
+Wed Apr 23 23:47:13 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -18,45 +18,43 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
  12. Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:Md_2sc
- 13. Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:Md_2sc|sls_nbit_mux2to1_vhdl:mux
- 14. Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:mr_2sc
- 15. Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:mr_2sc|sls_nbit_mux2to1_vhdl:mux
- 16. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:Md_reg
- 17. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:P_reg
- 18. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:mr_reg
- 19. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage0|sls_nbit_add_sub_vhdl:adder
- 20. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage1|sls_nbit_reg_vhdl:Md_reg
- 21. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage1|sls_nbit_reg_vhdl:P_reg
- 22. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage1|sls_nbit_reg_vhdl:mr_reg
- 23. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage1|sls_nbit_add_sub_vhdl:adder
- 24. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage2|sls_nbit_reg_vhdl:Md_reg
- 25. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage2|sls_nbit_reg_vhdl:P_reg
- 26. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage2|sls_nbit_reg_vhdl:mr_reg
- 27. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage2|sls_nbit_add_sub_vhdl:adder
- 28. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage3|sls_nbit_reg_vhdl:Md_reg
- 29. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage3|sls_nbit_reg_vhdl:P_reg
- 30. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage3|sls_nbit_reg_vhdl:mr_reg
- 31. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage3|sls_nbit_add_sub_vhdl:adder
- 32. Parameter Settings for User Entity Instance: sls_nbit_reg_vhdl:MD_Reg
- 33. Parameter Settings for User Entity Instance: sls_nbit_reg_vhdl:PP_Reg
- 34. Parameter Settings for User Entity Instance: sls_nbit_reg_vhdl:mr_Reg
- 35. Parameter Settings for User Entity Instance: sls_nBitSFR_vhdl:twosc_Reg
- 36. Parameter Settings for User Entity Instance: sls_nbit_2sc_out_vhdl:f_2sc
- 37. Port Connectivity Checks: "sls_nBitSFR_vhdl:twosc_Reg"
- 38. Port Connectivity Checks: "sls_nbit_reg_vhdl:mr_Reg"
- 39. Port Connectivity Checks: "sls_nbit_reg_vhdl:PP_Reg"
- 40. Port Connectivity Checks: "sls_nbit_reg_vhdl:MD_Reg"
- 41. Port Connectivity Checks: "sls_PSRM_stage_vhdl:stage3"
- 42. Port Connectivity Checks: "sls_PSRM_stage_vhdl:stage2"
- 43. Port Connectivity Checks: "sls_PSRM_stage_vhdl:stage1"
- 44. Port Connectivity Checks: "sls_PSRM_stage_vhdl:stage0|sls_nbit_add_sub_vhdl:adder"
- 45. Port Connectivity Checks: "sls_PSRM_stage_vhdl:stage0"
- 46. Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:Md_2sc|sls_and2:\twosc:3:stage2"
- 47. Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:Md_2sc|sls_and2:\twosc:0:stage2"
- 48. Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:Md_2sc|sls_xor2:\twosc:0:stage1"
- 49. Post-Synthesis Netlist Statistics for Top Partition
- 50. Elapsed Time Per Partition
- 51. Analysis & Synthesis Messages
+ 13. Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:mr_2sc
+ 14. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:Md_reg
+ 15. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:P_reg
+ 16. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:mr_reg
+ 17. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage0|sls_nbit_add_sub_vhdl:adder
+ 18. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage1|sls_nbit_reg_vhdl:Md_reg
+ 19. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage1|sls_nbit_reg_vhdl:P_reg
+ 20. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage1|sls_nbit_reg_vhdl:mr_reg
+ 21. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage1|sls_nbit_add_sub_vhdl:adder
+ 22. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage2|sls_nbit_reg_vhdl:Md_reg
+ 23. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage2|sls_nbit_reg_vhdl:P_reg
+ 24. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage2|sls_nbit_reg_vhdl:mr_reg
+ 25. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage2|sls_nbit_add_sub_vhdl:adder
+ 26. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage3|sls_nbit_reg_vhdl:Md_reg
+ 27. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage3|sls_nbit_reg_vhdl:P_reg
+ 28. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage3|sls_nbit_reg_vhdl:mr_reg
+ 29. Parameter Settings for User Entity Instance: sls_PSRM_stage_vhdl:stage3|sls_nbit_add_sub_vhdl:adder
+ 30. Parameter Settings for User Entity Instance: sls_nbit_reg_vhdl:MD_Reg
+ 31. Parameter Settings for User Entity Instance: sls_nbit_reg_vhdl:PP_Reg
+ 32. Parameter Settings for User Entity Instance: sls_nbit_reg_vhdl:mr_Reg
+ 33. Parameter Settings for User Entity Instance: sls_nBitSFR_vhdl:twosc_Reg
+ 34. Parameter Settings for User Entity Instance: sls_nbit_2sc_out_vhdl:f_2sc
+ 35. Port Connectivity Checks: "sls_nBitSFR_vhdl:twosc_Reg"
+ 36. Port Connectivity Checks: "sls_nbit_reg_vhdl:mr_Reg"
+ 37. Port Connectivity Checks: "sls_nbit_reg_vhdl:PP_Reg"
+ 38. Port Connectivity Checks: "sls_nbit_reg_vhdl:MD_Reg"
+ 39. Port Connectivity Checks: "sls_PSRM_stage_vhdl:stage3"
+ 40. Port Connectivity Checks: "sls_PSRM_stage_vhdl:stage2"
+ 41. Port Connectivity Checks: "sls_PSRM_stage_vhdl:stage1"
+ 42. Port Connectivity Checks: "sls_PSRM_stage_vhdl:stage0|sls_nbit_add_sub_vhdl:adder"
+ 43. Port Connectivity Checks: "sls_PSRM_stage_vhdl:stage0"
+ 44. Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:Md_2sc|sls_and2:\twosc:3:stage2"
+ 45. Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:Md_2sc|sls_and2:\twosc:0:stage2"
+ 46. Port Connectivity Checks: "sls_nbit_2sc_in_vhdl:Md_2sc|sls_xor2:\twosc:0:stage1"
+ 47. Post-Synthesis Netlist Statistics for Top Partition
+ 48. Elapsed Time Per Partition
+ 49. Analysis & Synthesis Messages
 
 
 
@@ -82,7 +80,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 18 14:37:13 2025       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 23 23:47:13 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; sls_PSRM_vhdl                               ;
 ; Top-level Entity Name              ; sls_PSRM_vhdl                               ;
@@ -218,7 +216,6 @@ refer to the applicable agreement for further details.
 ; sls_not.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_not.vhd               ;         ;
 ; sls_xor2.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_xor2.vhd              ;         ;
 ; sls_and2.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_and2.vhd              ;         ;
-; sls_nbit_mux2to1_vhdl.vhd        ; yes             ; Auto-Found VHDL File  ; C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_mux2to1_vhdl.vhd ;         ;
 +----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------+---------+
 
 
@@ -279,10 +276,8 @@ refer to the applicable agreement for further details.
 ;       |sls_nbit_reg_vhdl:P_reg|     ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_PSRM_stage_vhdl:stage3|sls_nbit_reg_vhdl:P_reg     ; sls_nbit_reg_vhdl     ; work         ;
 ;       |sls_nbit_reg_vhdl:mr_reg|    ; 3 (3)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_PSRM_stage_vhdl:stage3|sls_nbit_reg_vhdl:mr_reg    ; sls_nbit_reg_vhdl     ; work         ;
 ;    |sls_nBitSFR_vhdl:twosc_Reg|     ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_nBitSFR_vhdl:twosc_Reg                             ; sls_nBitSFR_vhdl      ; work         ;
-;    |sls_nbit_2sc_in_vhdl:Md_2sc|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:Md_2sc                            ; sls_nbit_2sc_in_vhdl  ; work         ;
-;       |sls_nbit_mux2to1_vhdl:mux|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:Md_2sc|sls_nbit_mux2to1_vhdl:mux  ; sls_nbit_mux2to1_vhdl ; work         ;
-;    |sls_nbit_2sc_in_vhdl:mr_2sc|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:mr_2sc                            ; sls_nbit_2sc_in_vhdl  ; work         ;
-;       |sls_nbit_mux2to1_vhdl:mux|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:mr_2sc|sls_nbit_mux2to1_vhdl:mux  ; sls_nbit_mux2to1_vhdl ; work         ;
+;    |sls_nbit_2sc_in_vhdl:Md_2sc|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:Md_2sc                            ; sls_nbit_2sc_in_vhdl  ; work         ;
+;    |sls_nbit_2sc_in_vhdl:mr_2sc|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_nbit_2sc_in_vhdl:mr_2sc                            ; sls_nbit_2sc_in_vhdl  ; work         ;
 ;    |sls_nbit_2sc_out_vhdl:f_2sc|    ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_nbit_2sc_out_vhdl:f_2sc                            ; sls_nbit_2sc_out_vhdl ; work         ;
 ;    |sls_nbit_reg_vhdl:PP_Reg|       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_nbit_reg_vhdl:PP_Reg                               ; sls_nbit_reg_vhdl     ; work         ;
 ;    |sls_nbit_reg_vhdl:mr_Reg|       ; 3 (3)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sls_PSRM_vhdl|sls_nbit_reg_vhdl:mr_Reg                               ; sls_nbit_reg_vhdl     ; work         ;
@@ -332,8 +327,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |sls_PSRM_vhdl|sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:mr_reg|Dout[2] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |sls_PSRM_vhdl|sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:Md_reg|Dout[1] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |sls_PSRM_vhdl|sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:mr_reg|Dout[1] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |sls_PSRM_vhdl|sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:Md_reg|Dout[2] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 
 
@@ -347,16 +342,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:Md_2sc|sls_nbit_mux2to1_vhdl:mux ;
-+----------------+-------+---------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                      ;
-+----------------+-------+---------------------------------------------------------------------------+
-; n              ; 4     ; Signed Integer                                                            ;
-+----------------+-------+---------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +--------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:mr_2sc ;
 +----------------+-------+-------------------------------------------------+
@@ -364,16 +349,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------+
 ; n              ; 4     ; Signed Integer                                  ;
 +----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sls_nbit_2sc_in_vhdl:mr_2sc|sls_nbit_mux2to1_vhdl:mux ;
-+----------------+-------+---------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                      ;
-+----------------+-------+---------------------------------------------------------------------------+
-; n              ; 4     ; Signed Integer                                                            ;
-+----------------+-------+---------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -745,7 +720,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Apr 18 14:37:04 2025
+    Info: Processing started: Wed Apr 23 23:47:04 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sls_PSRM_vhdl -c sls_PSRM_vhdl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -792,10 +767,6 @@ Warning (12125): Using design file sls_and2.vhd, which is not specified as a des
     Info (12022): Found design unit 1: sls_and2-func File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_and2.vhd Line: 9
     Info (12023): Found entity 1: sls_and2 File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_and2.vhd Line: 4
 Info (12128): Elaborating entity "sls_and2" for hierarchy "sls_nbit_2sc_in_vhdl:Md_2sc|sls_and2:\twosc:0:stage2" File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd Line: 20
-Warning (12125): Using design file sls_nbit_mux2to1_vhdl.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: sls_nbit_mux2to1_vhdl-mux2to1_func File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_mux2to1_vhdl.vhd Line: 11
-    Info (12023): Found entity 1: sls_nbit_mux2to1_vhdl File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_mux2to1_vhdl.vhd Line: 4
-Info (12128): Elaborating entity "sls_nbit_mux2to1_vhdl" for hierarchy "sls_nbit_2sc_in_vhdl:Md_2sc|sls_nbit_mux2to1_vhdl:mux" File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_nbit_2sc_in_vhdl.vhd Line: 22
 Info (12128): Elaborating entity "sls_PSRM_stage_vhdl" for hierarchy "sls_PSRM_stage_vhdl:stage0" File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_vhdl.vhd Line: 41
 Warning (10036): Verilog HDL or VHDL warning at sls_PSRM_stage_vhdl.vhd(16): object "adder_v" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_stage_vhdl.vhd Line: 16
 Info (12128): Elaborating entity "sls_nbit_reg_vhdl" for hierarchy "sls_PSRM_stage_vhdl:stage0|sls_nbit_reg_vhdl:Md_reg" File: C:/Users/sls3445/Documents/DS2_labs/Lab12/sls_PSRM_vhdl/sls_PSRM_stage_vhdl.vhd Line: 19
@@ -813,10 +784,10 @@ Info (21057): Implemented 92 device resources after synthesis - the final resour
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 74 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
     Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Fri Apr 18 14:37:13 2025
+    Info: Processing ended: Wed Apr 23 23:47:13 2025
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Total CPU time (on all processors): 00:00:07
 
 

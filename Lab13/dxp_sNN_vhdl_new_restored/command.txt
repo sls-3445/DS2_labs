@@ -1,0 +1,17 @@
+do sls_sNN_vhdl_run_msim_rtl_vhdl.do
+
+delete wave /sls_snn_vhdl_tb/signis_tb
+
+add wave -position insertpoint  \
+-radix ASCII sim:/sls_snn_vhdl_tb/signis_tb \
+-radix Unsigned sim:/sls_snn_vhdl_tb/cuv/control_unit/mstate \
+-radix Unsigned sim:/sls_snn_vhdl_tb/cuv/data_path/hlAddrs \
+-radix Unsigned sim:/sls_snn_vhdl_tb/cuv/data_path/hlAddrs \
+-radix Unsigned sim:/sls_snn_vhdl_tb/cuv/data_path/olAddrs \
+sim:/sls_snn_vhdl_tb/cuv/data_path/hlac_clk_en \
+sim:/sls_snn_vhdl_tb/cuv/data_path/hlLDmacin \
+sim:/sls_snn_vhdl_tb/cuv/data_path/hlLDz \
+sim:/sls_snn_vhdl_tb/cuv/control_unit/delayCnt
+
+restart -f
+run -all

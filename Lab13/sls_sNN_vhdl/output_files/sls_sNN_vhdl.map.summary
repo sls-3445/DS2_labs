@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Apr 24 02:29:55 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : sls_sNN_vhdl
+Top-level Entity Name : sls_sNN_vhdl
+Family : Cyclone IV E
+Total logic elements : 691
+    Total combinational functions : 691
+    Dedicated logic registers : 532
+Total registers : 532
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 1,360
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
