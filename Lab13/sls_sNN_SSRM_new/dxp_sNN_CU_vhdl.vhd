@@ -9,12 +9,12 @@ USE ieee.std_logic_unsigned.all;
 USE work.dxp_package.all;
 ------------------------------------------------------------------------------
 entity dxp_sNN_CU_vhdl is
- 	port (Reset, Clock, mul_done : in 		std_logic;
+ 	port (Reset, Clock, mul_done	: in 		std_logic;
 			hlAddrs : in std_logic_vector(7 downto 0);
 			olAddrs : in std_logic_vector(3 downto 0);
 			hlac_clk_en, hlsclr, hlReset, hlLDmulin, hlLDmacin, hlLDz, 
 			oldwren, olac_clk_en, olsclr, olReset, olLDmulin, olLDmacin, 
-			olLDz, mul_start: out std_logic;
+			olLDz, mul_start : out std_logic;
 			mstate : buffer std_logic_vector(3 downto 0));
 end dxp_sNN_CU_vhdl;
 ------------------------------------------------------------------------------
@@ -25,7 +25,6 @@ begin
 -- Procedural/Behavioral CU
 --============================================================================
 CU: process begin WAIT UNTIL Clock'EVENT AND Clock = '1';
-		mul_start <= '0';
 ------------------------------------------------------------------------------
 -- Initialize control signals and counters to 0
 ------------------------------------------------------------------------------
@@ -38,7 +37,7 @@ CU: process begin WAIT UNTIL Clock'EVENT AND Clock = '1';
 ------------------------------------------------------------------------------
 		elsif (mstate = "0000") then hlac_clk_en <= '0'; hlsclr <= '0'; 
 			hlReset <= '0'; hlLDmulin <= '0'; hlLDmacin <= '0'; hlLDz <= '0'; 
-			oldwren <= '0'; olac_clk_en <= '0'; olsclr <= '0'; olReset <= '0'; 
+			oldwren <= '0'; olac_clk_en <= '0'; olsclr <= '0'; olReset <= '0'; mul_start <= '1';
 			olLDmulin <= '0'; olLDmacin <= '0'; olLDz <= '0'; mstate <= "0001";
 ------------------------------------------------------------------------------
 -- Read and multiply accumulate all 9 weight-pixel pairs
@@ -85,7 +84,7 @@ CU: process begin WAIT UNTIL Clock'EVENT AND Clock = '1';
 ------------------------------------------------------------------------------
 		elsif (mstate = "0110") then hlac_clk_en <= '0'; hlsclr <= '0'; 
 			hlReset <= '0'; hlLDmulin <= '0'; hlLDmacin <= '0'; hlLDz <= '0';
-			oldwren <= '0'; olac_clk_en <= '1'; olsclr <= '0'; olReset <= '0'; 
+			oldwren <= '0'; olac_clk_en <= '1'; olsclr <= '0'; olReset <= '0'; mul_start <= '1';
 			olLDmulin <= '1'; olLDmacin <= '1'; olLDz <= '0'; mstate <= "0111";
 ------------------------------------------------------------------------------
 -- Read and multiply accumulate all remaining output layer weight - input pairs
@@ -93,7 +92,7 @@ CU: process begin WAIT UNTIL Clock'EVENT AND Clock = '1';
 		elsif (mstate = "0111") then hlac_clk_en <= '0'; hlsclr <= '0'; 
 			hlReset <= '0'; hlLDmulin <= '0'; hlLDmacin <= '0'; hlLDz <= '0';
 			oldwren <= '0'; olac_clk_en <= '1'; olsclr <= '0'; olReset <= '0'; 
-			olLDmulin <= '1'; olLDmacin <= '1'; olLDz <= '0'; mul_start <= '1';
+			olLDmulin <= '1'; olLDmacin <= '1'; olLDz <= '0';
 		if (olAddrs = 10#4#) then mstate <= "1000"; else mstate <= "0111"; end if;
 ------------------------------------------------------------------------------
 -- Last MAC value of the output layer

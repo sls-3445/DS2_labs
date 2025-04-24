@@ -1,22 +1,17 @@
-do sls_sNN_vhdl_run_msim_rtl_vhdl.do
+do dxp_sNN_vhdl_run_msim_rtl_vhdl.do
 
-delete wave /sls_snn_vhdl_tb/signis_tb
+delete wave /dxp_snn_vhdl_tb/signis_tb
 
 add wave -position insertpoint  \
--radix ASCII sim:/sls_snn_vhdl_tb/signis_tb \
--radix Unsigned sim:/sls_snn_vhdl_tb/cuv/control_unit/mstate \
--radix Unsigned sim:/sls_snn_vhdl_tb/cuv/data_path/hlAddrs \
--radix Unsigned sim:/sls_snn_vhdl_tb/cuv/data_path/olAddrs \
-sim:/sls_snn_vhdl_tb/cuv/data_path/hlac_clk_en \
-sim:/sls_snn_vhdl_tb/cuv/data_path/hlLDmacin \
-sim:/sls_snn_vhdl_tb/cuv/data_path/hlLDz \
-sim:/sls_snn_vhdl_tb/cuv/control_unit/delayCnt \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DmulinA \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DmulinB \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/product \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DaddinA \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DaddinB \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mac
+-radix ASCII sim:/dxp_snn_vhdl_tb/signis_tb \
+-radix Unsigned sim:/dxp_snn_vhdl_tb/cuv/control_unit/mstate \
+sim:/dxp_snn_vhdl_tb/cuv/slow_clk/Slow_Clock \
+-radix Decimal sim:/dxp_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DmulinA \
+sim:/dxp_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DmulinB \
+sim:/dxp_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/product \
+sim:/dxp_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DaddinA \
+sim:/dxp_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DaddinB \
+sim:/dxp_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mac
 
 restart -f
 run -all

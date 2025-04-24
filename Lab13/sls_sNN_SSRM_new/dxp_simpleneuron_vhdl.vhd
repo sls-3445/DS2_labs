@@ -15,7 +15,7 @@ entity dxp_simpleneuron_vhdl is
 	port (Reset, Clock, Fast_Clock, LDmulin, LDmacin, LDz, mul_start : in std_logic;
 			DinA, DinB, biasin : in std_logic_vector(7 downto 0);
 			neuronout : out std_logic_vector(7 downto 0);
-			mul_done  : out std_logic);
+			mul_done  : buffer std_logic);
 end dxp_simpleneuron_vhdl;
 ------------------------------------------------------------------------------
 architecture structural of dxp_simpleneuron_vhdl is
@@ -23,7 +23,7 @@ architecture structural of dxp_simpleneuron_vhdl is
 -- Internal signals declarations;
 ------------------------------------------------------------------------------
 	signal DmulinA, DmulinB : std_logic_vector(7 downto 0);
-	signal DaddinA, DaddinB, mac, Dmacout, zin, zout : std_logic_vector(15 downto 0);
+	signal DaddinA, DaddinB, mac, Dmacout, zin, zout, product_reg_din: std_logic_vector(15 downto 0);
 	signal product : std_logic_vector(15 downto 0);
 	signal cout1, vout1, cout2, vout2 : std_logic;
 ------------------------------------------------------------------------------
@@ -44,8 +44,12 @@ begin
 -- 16-bit product, sign extend your signed product.
 ------------------------------------------------------------------------------
 --	mul : dxp_16bit_signed_mult_vhdl port map (DmulinA, DmulinB, product);
-	mul : sls_SSRM_vhdl port map (M_val => DmulinA, mp_val => DmulinB, FP => product, 
-											DONE => mul_done, Clock => Fast_Clock, START => '1');
+	mul : sls_SSRM_vhdl port map (M_val => DmulinA, mp_val => DmulinB, FP => product_reg_din, 
+											DONE => mul_done, Clock => Fast_Clock, START => mul_start);
+	
+	prod_reg : dxp_nbit_reg_vhdl generic map (n => 16)
+						port map (Reset => Reset, Clock => Fast_Clock, LD_EN => mul_done, 
+						D => product_reg_din, Q => product);
 	
 ------------------------------------------------------------------------------
 -- The MAC accumulator and output register

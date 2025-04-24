@@ -126,7 +126,7 @@ PACKAGE dxp_package IS
 	port (Reset, Clock, Fast_Clock, LDmulin, LDmacin, LDz, mul_start : in std_logic;
 			DinA, DinB, biasin : in std_logic_vector(7 downto 0);
 			neuronout : out std_logic_vector(7 downto 0);
-			mul_done  : out std_logic);
+			mul_done  : buffer std_logic);
 	end component;
 -- ----------------------------------------------------------------------------
 	component dxp_signis_vhdl is
