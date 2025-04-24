@@ -93,7 +93,7 @@ CU: process begin WAIT UNTIL Clock'EVENT AND Clock = '1';
 		elsif (mstate = "0111") then hlac_clk_en <= '0'; hlsclr <= '0'; 
 			hlReset <= '0'; hlLDmulin <= '0'; hlLDmacin <= '0'; hlLDz <= '0';
 			oldwren <= '0'; olac_clk_en <= '1'; olsclr <= '0'; olReset <= '0'; 
-			olLDmulin <= '1'; olLDmacin <= '1'; olLDz <= '0';
+			olLDmulin <= '1'; olLDmacin <= '1'; olLDz <= '0'; mul_start <= '1';
 		if (olAddrs = 10#4#) then mstate <= "1000"; else mstate <= "0111"; end if;
 ------------------------------------------------------------------------------
 -- Last MAC value of the output layer

@@ -43,9 +43,9 @@ begin
 -- DmulinA and DmulinB by discarding the most significant bits. To output a 
 -- 16-bit product, sign extend your signed product.
 ------------------------------------------------------------------------------
-	mul : dxp_16bit_signed_mult_vhdl port map (DmulinA, DmulinB, product);
---	mul : sls_SSRM_vhdl port map (M_val => DmulinA, mp_val => DmulinB, FP => product, 
---											DONE => mul_done, Clock => Fast_Clock, START => '1');
+--	mul : dxp_16bit_signed_mult_vhdl port map (DmulinA, DmulinB, product);
+	mul : sls_SSRM_vhdl port map (M_val => DmulinA, mp_val => DmulinB, FP => product, 
+											DONE => mul_done, Clock => Fast_Clock, START => '1');
 	
 ------------------------------------------------------------------------------
 -- The MAC accumulator and output register
