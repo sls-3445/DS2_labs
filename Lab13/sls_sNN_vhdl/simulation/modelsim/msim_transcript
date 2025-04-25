@@ -10,52 +10,109 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_xor2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:00:12 on Apr 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_xor2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_xor2
+# -- Compiling architecture func of sls_xor2
+# End time: 15:00:12 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_package.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:21:59 on Apr 24,2025
+# Start time: 15:00:12 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package sls_PSRM_package
-# End time: 04:21:59 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:12 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_not.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:00:12 on Apr 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_not.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_not
+# -- Compiling architecture func of sls_not
+# End time: 15:00:12 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_add_sub_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:00:12 on Apr 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_add_sub_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_nbit_add_sub_vhdl
+# -- Compiling architecture func of sls_nbit_add_sub_vhdl
+# End time: 15:00:12 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_2sc_out_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:00:13 on Apr 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_2sc_out_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sls_nbit_2sc_out_vhdl
+# -- Compiling architecture beh of sls_nbit_2sc_out_vhdl
+# End time: 15:00:13 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nBitSFR_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:00:13 on Apr 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nBitSFR_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_nBitSFR_vhdl
+# -- Compiling architecture sls_Behavior of sls_nBitSFR_vhdl
+# End time: 15:00:13 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_and2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:00:13 on Apr 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_and2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sls_and2
+# -- Compiling architecture func of sls_and2
+# End time: 15:00:13 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_16bit_signed_add_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:21:59 on Apr 24,2025
+# Start time: 15:00:13 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_16bit_signed_add_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_16bit_signed_add_vhdl
 # -- Compiling architecture SYN of sls_16bit_signed_add_vhdl
-# End time: 04:21:59 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:13 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_signed_comparator.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:21:59 on Apr 24,2025
+# Start time: 15:00:13 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_signed_comparator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_signed_comparator
 # -- Compiling architecture SYN of sls_signed_comparator
-# End time: 04:21:59 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_16bit_signed_mult_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:21:59 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_16bit_signed_mult_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sls_16bit_signed_mult_vhdl
-# -- Compiling architecture SYN of sls_16bit_signed_mult_vhdl
-# End time: 04:21:59 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:13 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/pixData_rom_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:21:59 on Apr 24,2025
+# Start time: 15:00:13 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/pixData_rom_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -63,11 +120,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity pixData_rom_vhdl
 # -- Compiling architecture SYN of pixdata_rom_vhdl
-# End time: 04:21:59 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:13 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/olw_rom_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:21:59 on Apr 24,2025
+# Start time: 15:00:13 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/olw_rom_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -75,11 +132,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity olw_rom_vhdl
 # -- Compiling architecture SYN of olw_rom_vhdl
-# End time: 04:21:59 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:13 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/oldatain_ram_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:21:59 on Apr 24,2025
+# Start time: 15:00:13 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/oldatain_ram_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -87,22 +144,22 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity oldatain_ram_vhdl
 # -- Compiling architecture SYN of oldatain_ram_vhdl
-# End time: 04:21:59 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:13 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/olAddrsCnt_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:13 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/olAddrsCnt_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity olAddrsCnt_vhdl
 # -- Compiling architecture SYN of oladdrscnt_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:13 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/hlw_rom_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:13 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/hlw_rom_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -110,54 +167,96 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity hlw_rom_vhdl
 # -- Compiling architecture SYN of hlw_rom_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:13 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/hlAddrsCnt_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:14 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/hlAddrsCnt_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity hlAddrsCnt_vhdl
 # -- Compiling architecture SYN of hladdrscnt_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_reg_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:14 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_reg_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_nbit_reg_vhdl
 # -- Compiling architecture beh of sls_nbit_reg_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_package.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:14 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package sls_package
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_mux2to1_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:14 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_mux2to1_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sls_nbit_mux2to1_vhdl
 # -- Compiling architecture mux2to1_func of sls_nbit_mux2to1_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:00:14 on Apr 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package sls_package
+# -- Loading package sls_PSRM_package
+# -- Compiling entity sls_PSRM_vhdl
+# -- Compiling architecture pipe of sls_PSRM_vhdl
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_stage_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:00:14 on Apr 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_stage_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package sls_package
+# -- Loading package sls_PSRM_package
+# -- Compiling entity sls_PSRM_stage_vhdl
+# -- Compiling architecture structural of sls_PSRM_stage_vhdl
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_2sc_in_vhdl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:00:14 on Apr 25,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_2sc_in_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package sls_PSRM_package
+# -- Compiling entity sls_nbit_2sc_in_vhdl
+# -- Compiling architecture struc of sls_nbit_2sc_in_vhdl
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_simpleneuron_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:14 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_simpleneuron_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -168,11 +267,11 @@
 # -- Loading package sls_PSRM_package
 # -- Compiling entity sls_simpleneuron_vhdl
 # -- Compiling architecture structural of sls_simpleneuron_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_signis_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:14 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_signis_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -182,11 +281,11 @@
 # -- Loading package sls_package
 # -- Compiling entity sls_signis_vhdl
 # -- Compiling architecture mixed of sls_signis_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_mux4to1_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:14 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_mux4to1_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -196,11 +295,11 @@
 # -- Loading package sls_package
 # -- Compiling entity sls_nbit_mux4to1_vhdl
 # -- Compiling architecture sls_nbit_mux4to1 of sls_nbit_mux4to1_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:14 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -210,11 +309,11 @@
 # -- Loading package sls_package
 # -- Compiling entity sls_sNN_vhdl
 # -- Compiling architecture mixed of sls_sNN_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:14 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_DP_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:15 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_DP_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -224,11 +323,11 @@
 # -- Loading package sls_package
 # -- Compiling entity sls_sNN_DP_vhdl
 # -- Compiling architecture structural of sls_sNN_DP_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:15 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_CU_vhdl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:15 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_CU_vhdl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -238,12 +337,12 @@
 # -- Loading package sls_package
 # -- Compiling entity sls_sNN_CU_vhdl
 # -- Compiling architecture behavioral of sls_sNN_CU_vhdl
-# End time: 04:22:00 on Apr 24,2025, Elapsed time: 0:00:00
+# End time: 15:00:15 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_vhdl_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:00 on Apr 24,2025
+# Start time: 15:00:15 on Apr 25,2025
 # vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_vhdl_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -253,12 +352,12 @@
 # -- Loading package sls_package
 # -- Compiling entity sls_sNN_vhdl_tb
 # -- Compiling architecture testbench of sls_sNN_vhdl_tb
-# End time: 04:22:01 on Apr 24,2025, Elapsed time: 0:00:01
+# End time: 15:00:15 on Apr 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  sls_sNN_vhdl_tb
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" sls_sNN_vhdl_tb 
-# Start time: 04:22:01 on Apr 24,2025
+# Start time: 15:00:15 on Apr 25,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -281,9 +380,15 @@
 # Loading work.sls_psrm_package
 # Loading work.sls_simpleneuron_vhdl(structural)
 # Loading work.sls_nbit_reg_vhdl(beh)
-# Loading work.sls_16bit_signed_mult_vhdl(syn)
-# Loading lpm.lpm_hint_evaluation(body)
-# Loading lpm.lpm_mult(lpm_syn)
+# Loading work.sls_psrm_vhdl(pipe)
+# Loading work.sls_nbit_2sc_in_vhdl(struc)
+# Loading work.sls_not(func)
+# Loading work.sls_xor2(func)
+# Loading work.sls_and2(func)
+# Loading work.sls_psrm_stage_vhdl(structural)
+# Loading work.sls_nbit_add_sub_vhdl(func)
+# Loading work.sls_nbitsfr_vhdl(sls_behavior)
+# Loading work.sls_nbit_2sc_out_vhdl(beh)
 # Loading work.sls_16bit_signed_add_vhdl(syn)
 # Loading ieee.std_logic_signed(body)
 # Loading lpm.lpm_add_sub(lpm_syn)
@@ -301,7 +406,7 @@
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# ** Warning: Design size of 12679 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 20656 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # 
 # add wave *
@@ -347,11 +452,9 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add1/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -365,11 +468,9 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add1/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -383,11 +484,9 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add1/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -401,11 +500,9 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add1/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -419,11 +516,9 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add1/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -437,11 +532,9 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add1/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -455,11 +548,9 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add1/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -473,11 +564,9 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add1/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/lpm_mult_component
+#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/f_2sc
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -512,746 +601,5 @@
 #    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 20 ns  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize
-do sls_sNN_vhdl_run_msim_rtl_vhdl.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_package.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:11 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_PSRM_package.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package sls_PSRM_package
-# End time: 04:22:11 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_16bit_signed_add_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:11 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_16bit_signed_add_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sls_16bit_signed_add_vhdl
-# -- Compiling architecture SYN of sls_16bit_signed_add_vhdl
-# End time: 04:22:11 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_signed_comparator.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:11 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_signed_comparator.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sls_signed_comparator
-# -- Compiling architecture SYN of sls_signed_comparator
-# End time: 04:22:11 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_16bit_signed_mult_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_16bit_signed_mult_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sls_16bit_signed_mult_vhdl
-# -- Compiling architecture SYN of sls_16bit_signed_mult_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/pixData_rom_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/pixData_rom_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_mf_components
-# -- Compiling entity pixData_rom_vhdl
-# -- Compiling architecture SYN of pixdata_rom_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/olw_rom_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/olw_rom_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_mf_components
-# -- Compiling entity olw_rom_vhdl
-# -- Compiling architecture SYN of olw_rom_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/oldatain_ram_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/oldatain_ram_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_mf_components
-# -- Compiling entity oldatain_ram_vhdl
-# -- Compiling architecture SYN of oldatain_ram_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/olAddrsCnt_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/olAddrsCnt_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity olAddrsCnt_vhdl
-# -- Compiling architecture SYN of oladdrscnt_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/hlw_rom_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/hlw_rom_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_mf_components
-# -- Compiling entity hlw_rom_vhdl
-# -- Compiling architecture SYN of hlw_rom_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/hlAddrsCnt_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/hlAddrsCnt_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity hlAddrsCnt_vhdl
-# -- Compiling architecture SYN of hladdrscnt_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_reg_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_reg_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sls_nbit_reg_vhdl
-# -- Compiling architecture beh of sls_nbit_reg_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_package.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_package.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package sls_package
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_mux2to1_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_mux2to1_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sls_nbit_mux2to1_vhdl
-# -- Compiling architecture mux2to1_func of sls_nbit_mux2to1_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_simpleneuron_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_simpleneuron_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package sls_package
-# -- Loading package sls_PSRM_package
-# -- Compiling entity sls_simpleneuron_vhdl
-# -- Compiling architecture structural of sls_simpleneuron_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_signis_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_signis_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package sls_package
-# -- Compiling entity sls_signis_vhdl
-# -- Compiling architecture mixed of sls_signis_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_mux4to1_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:12 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_nbit_mux4to1_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package sls_package
-# -- Compiling entity sls_nbit_mux4to1_vhdl
-# -- Compiling architecture sls_nbit_mux4to1 of sls_nbit_mux4to1_vhdl
-# End time: 04:22:12 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:13 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package sls_package
-# -- Compiling entity sls_sNN_vhdl
-# -- Compiling architecture mixed of sls_sNN_vhdl
-# End time: 04:22:13 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_DP_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:13 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_DP_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package sls_package
-# -- Compiling entity sls_sNN_DP_vhdl
-# -- Compiling architecture structural of sls_sNN_DP_vhdl
-# End time: 04:22:13 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_CU_vhdl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:13 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_CU_vhdl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package sls_package
-# -- Compiling entity sls_sNN_CU_vhdl
-# -- Compiling architecture behavioral of sls_sNN_CU_vhdl
-# End time: 04:22:13 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vcom -2008 -work work {C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_vhdl_tb.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:22:13 on Apr 24,2025
-# vcom -reportprogress 300 -2008 -work work C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_vhdl/sls_sNN_vhdl_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package sls_package
-# -- Compiling entity sls_sNN_vhdl_tb
-# -- Compiling architecture testbench of sls_sNN_vhdl_tb
-# End time: 04:22:13 on Apr 24,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  sls_sNN_vhdl_tb
-# End time: 04:22:14 on Apr 24,2025, Elapsed time: 0:00:13
-# Errors: 0, Warnings: 102
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" sls_sNN_vhdl_tb 
-# Start time: 04:22:14 on Apr 24,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.sls_package
-# Loading work.sls_snn_vhdl_tb(testbench)
-# Loading work.sls_snn_vhdl(mixed)
-# Loading work.sls_snn_dp_vhdl(structural)
-# Loading work.hladdrscnt_vhdl(syn)
-# Loading lpm.lpm_components
-# Loading lpm.lpm_common_conversion(body)
-# Loading lpm.lpm_counter(lpm_syn)
-# Loading altera_mf.altera_mf_components
-# Loading work.pixdata_rom_vhdl(syn)
-# Loading altera_mf.altera_common_conversion(body)
-# Loading altera_mf.altera_device_families(body)
-# Loading altera_mf.altsyncram(translated)
-# Loading work.hlw_rom_vhdl(syn)
-# Loading work.sls_psrm_package
-# Loading work.sls_simpleneuron_vhdl(structural)
-# Loading work.sls_nbit_reg_vhdl(beh)
-# Loading work.sls_16bit_signed_mult_vhdl(syn)
-# Loading lpm.lpm_hint_evaluation(body)
-# Loading lpm.lpm_mult(lpm_syn)
-# Loading work.sls_16bit_signed_add_vhdl(syn)
-# Loading ieee.std_logic_signed(body)
-# Loading lpm.lpm_add_sub(lpm_syn)
-# Loading lpm.lpm_add_sub_signed(lpm_syn)
-# Loading work.sls_nbit_mux4to1_vhdl(sls_nbit_mux4to1)
-# Loading work.oladdrscnt_vhdl(syn)
-# Loading work.oldatain_ram_vhdl(syn)
-# Loading work.olw_rom_vhdl(syn)
-# Loading work.sls_signis_vhdl(mixed)
-# Loading work.sls_signed_comparator(syn)
-# Loading lpm.lpm_compare(lpm_syn)
-# Loading lpm.lpm_compare_signed(lpm_syn)
-# Loading work.sls_nbit_mux2to1_vhdl(mux2to1_func)
-# Loading work.sls_snn_cu_vhdl(behavioral)
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: Design size of 12679 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp1234/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp1234/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp1234/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp1234/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp34/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp34/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp34/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp34/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp12/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp12/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp12/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp12/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize
-
-delete wave /sls_snn_vhdl_tb/signis_tb
-
-add wave -position insertpoint  \
--radix ASCII sim:/sls_snn_vhdl_tb/signis_tb \
--radix Unsigned sim:/sls_snn_vhdl_tb/cuv/control_unit/mstate \
--radix Unsigned sim:/sls_snn_vhdl_tb/cuv/data_path/hlAddrs \
--radix Unsigned sim:/sls_snn_vhdl_tb/cuv/data_path/olAddrs \
-sim:/sls_snn_vhdl_tb/cuv/data_path/hlac_clk_en \
-sim:/sls_snn_vhdl_tb/cuv/data_path/hlLDmacin \
-sim:/sls_snn_vhdl_tb/cuv/data_path/hlLDz \
-sim:/sls_snn_vhdl_tb/cuv/control_unit/delayCnt \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DmulinA \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DmulinB \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/product \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DaddinA \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/DaddinB \
--radix Decimal sim:/sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mac
-
-restart -f
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp1234/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp1234/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp1234/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp1234/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp34/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp34/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp34/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp34/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp12/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp12/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp12/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize/comp12/LPM_COMPARE_component/L2/U2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add1/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/mul/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(4)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(3)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(2)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/olg1(1)/oln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(4)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(3)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(2)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/hlg1(1)/hln/add2/LPM_ADD_SUB_component/L2/V
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 20 ns  Iteration: 1  Instance: /sls_snn_vhdl_tb/cuv/data_path/recognize
-
-# End time: 04:25:38 on Apr 24,2025, Elapsed time: 0:03:24
-# Errors: 0, Warnings: 203
+# End time: 15:02:23 on Apr 25,2025, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 94

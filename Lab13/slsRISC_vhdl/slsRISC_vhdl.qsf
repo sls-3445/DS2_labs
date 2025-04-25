@@ -61,6 +61,22 @@ set_global_assignment -name EDA_TEST_BENCH_NAME slsRISC_vhdl_tb -section_id eda_
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id slsRISC_vhdl_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME slsRISC_vhdl_tb -section_id slsRISC_vhdl_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE slsRISC_vhdl_tb.vhd -section_id slsRISC_vhdl_tb
+set_location_assignment PIN_R8 -to Clock
+set_location_assignment PIN_L3 -to LEDs[7]
+set_location_assignment PIN_B1 -to LEDs[6]
+set_location_assignment PIN_F3 -to LEDs[5]
+set_location_assignment PIN_D1 -to LEDs[4]
+set_location_assignment PIN_A11 -to LEDs[3]
+set_location_assignment PIN_B13 -to LEDs[2]
+set_location_assignment PIN_A13 -to LEDs[1]
+set_location_assignment PIN_A15 -to LEDs[0]
+set_location_assignment PIN_E1 -to PB1
+set_location_assignment PIN_J15 -to Reset
+set_location_assignment PIN_M15 -to SW[3]
+set_location_assignment PIN_B9 -to SW[2]
+set_location_assignment PIN_T8 -to SW[1]
+set_location_assignment PIN_M1 -to SW[0]
+set_global_assignment -name MIF_FILE sls_MUL_plus.mif
 set_global_assignment -name MIF_FILE test.mif
 set_global_assignment -name MIF_FILE sls_MUL_mmiop.mif
 set_global_assignment -name VHDL_FILE sls_8bit_sr_unit_vhdl.vhd

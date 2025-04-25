@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Apr 24 18:46:32 2025
+Analysis & Synthesis Status : Successful - Fri Apr 25 14:49:48 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : dxp_sNN_vhdl
 Top-level Entity Name : dxp_sNN_vhdl
 Family : Cyclone IV E
-Total logic elements : 760
-    Total combinational functions : 758
-    Dedicated logic registers : 539
-Total registers : 539
+Total logic elements : 752
+    Total combinational functions : 750
+    Dedicated logic registers : 537
+Total registers : 537
 Total pins : 10
 Total virtual pins : 0
 Total memory bits : 2,720

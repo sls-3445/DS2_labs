@@ -1,5 +1,5 @@
 Analysis & Synthesis report for dxp_sNN_vhdl
-Thu Apr 24 18:46:32 2025
+Fri Apr 25 14:49:48 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -262,15 +262,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 24 18:46:32 2025       ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 25 14:49:48 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; dxp_sNN_vhdl                                ;
 ; Top-level Entity Name              ; dxp_sNN_vhdl                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 760                                         ;
-;     Total combinational functions  ; 758                                         ;
-;     Dedicated logic registers      ; 539                                         ;
-; Total registers                    ; 539                                         ;
+; Total logic elements               ; 752                                         ;
+;     Total combinational functions  ; 750                                         ;
+;     Dedicated logic registers      ; 537                                         ;
+; Total registers                    ; 537                                         ;
 ; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,720                                       ;
@@ -384,8 +384,7 @@ refer to the applicable agreement for further details.
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processor 8            ;   0.0%      ;
+;     Processors 7-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -479,20 +478,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------------------------------+
 ; Resource                                    ; Usage                                    ;
 +---------------------------------------------+------------------------------------------+
-; Estimated Total logic elements              ; 760                                      ;
+; Estimated Total logic elements              ; 752                                      ;
 ;                                             ;                                          ;
-; Total combinational functions               ; 758                                      ;
+; Total combinational functions               ; 750                                      ;
 ; Logic element usage by number of LUT inputs ;                                          ;
-;     -- 4 input functions                    ; 226                                      ;
-;     -- 3 input functions                    ; 239                                      ;
-;     -- <=2 input functions                  ; 293                                      ;
+;     -- 4 input functions                    ; 231                                      ;
+;     -- 3 input functions                    ; 232                                      ;
+;     -- <=2 input functions                  ; 287                                      ;
 ;                                             ;                                          ;
 ; Logic elements by mode                      ;                                          ;
-;     -- normal mode                          ; 611                                      ;
-;     -- arithmetic mode                      ; 147                                      ;
+;     -- normal mode                          ; 607                                      ;
+;     -- arithmetic mode                      ; 143                                      ;
 ;                                             ;                                          ;
-; Total registers                             ; 539                                      ;
-;     -- Dedicated logic registers            ; 539                                      ;
+; Total registers                             ; 537                                      ;
+;     -- Dedicated logic registers            ; 537                                      ;
 ;     -- I/O registers                        ; 0                                        ;
 ;                                             ;                                          ;
 ; I/O pins                                    ; 10                                       ;
@@ -501,9 +500,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                                        ;
 ;                                             ;                                          ;
 ; Maximum fan-out node                        ; slow_clock_generator:slow_clk|Slow_Clock ;
-; Maximum fan-out                             ; 387                                      ;
-; Total fan-out                               ; 4735                                     ;
-; Average fan-out                             ; 3.39                                     ;
+; Maximum fan-out                             ; 385                                      ;
+; Total fan-out                               ; 4655                                     ;
+; Average fan-out                             ; 3.36                                     ;
 +---------------------------------------------+------------------------------------------+
 
 
@@ -512,9 +511,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                        ; Entity Name           ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |dxp_sNN_vhdl                                   ; 758 (1)             ; 539 (0)                   ; 2720        ; 0            ; 0       ; 0         ; 10   ; 0            ; |dxp_sNN_vhdl                                                                                                                                              ; dxp_sNN_vhdl          ; work         ;
+; |dxp_sNN_vhdl                                   ; 750 (1)             ; 537 (0)                   ; 2720        ; 0            ; 0       ; 0         ; 10   ; 0            ; |dxp_sNN_vhdl                                                                                                                                              ; dxp_sNN_vhdl          ; work         ;
 ;    |dxp_sNN_CU_vhdl:control_unit|               ; 31 (31)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_CU_vhdl:control_unit                                                                                                                 ; dxp_sNN_CU_vhdl       ; work         ;
-;    |dxp_sNN_DP_vhdl:data_path|                  ; 712 (0)             ; 516 (0)                   ; 2720        ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path                                                                                                                    ; dxp_sNN_DP_vhdl       ; work         ;
+;    |dxp_sNN_DP_vhdl:data_path|                  ; 711 (0)             ; 515 (0)                   ; 2720        ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path                                                                                                                    ; dxp_sNN_DP_vhdl       ; work         ;
 ;       |dxp_nbit_mux4to1_vhdl:olmuxin|           ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_nbit_mux4to1_vhdl:olmuxin                                                                                      ; dxp_nbit_mux4to1_vhdl ; work         ;
 ;       |dxp_signis_vhdl:recognize|               ; 65 (7)              ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize                                                                                          ; dxp_signis_vhdl       ; work         ;
 ;          |dxp_nbit_mux2to1_vhdl:mux12|          ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|dxp_nbit_mux2to1_vhdl:mux12                                                              ; dxp_nbit_mux2to1_vhdl ; work         ;
@@ -528,7 +527,7 @@ refer to the applicable agreement for further details.
 ;          |dxp_signed_comparator:comp34|         ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|dxp_signed_comparator:comp34                                                             ; dxp_signed_comparator ; work         ;
 ;             |lpm_compare:LPM_COMPARE_component| ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|dxp_signed_comparator:comp34|lpm_compare:LPM_COMPARE_component                           ; lpm_compare           ; work         ;
 ;                |cmpr_3ig:auto_generated|        ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|dxp_signed_comparator:comp34|lpm_compare:LPM_COMPARE_component|cmpr_3ig:auto_generated   ; cmpr_3ig              ; work         ;
-;       |dxp_simpleneuron_vhdl:\hlg1:1:hln|       ; 97 (0)              ; 76 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln                                                                                  ; dxp_simpleneuron_vhdl ; work         ;
+;       |dxp_simpleneuron_vhdl:\hlg1:1:hln|       ; 96 (0)              ; 75 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln                                                                                  ; dxp_simpleneuron_vhdl ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinA|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinA                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinB|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinB                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinC|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinC                                                         ; dxp_nbit_reg_vhdl     ; work         ;
@@ -536,7 +535,7 @@ refer to the applicable agreement for further details.
 ;          |dxp_nbit_reg_vhdl:mulinB|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:mulinB                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:prod_reg|           ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:prod_reg                                                       ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:zreg|               ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:zreg                                                           ; dxp_nbit_reg_vhdl     ; work         ;
-;          |sls_SSRM_vhdl:mul|                    ; 54 (13)             ; 36 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul                                                                ; sls_SSRM_vhdl         ; work         ;
+;          |sls_SSRM_vhdl:mul|                    ; 53 (12)             ; 35 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul                                                                ; sls_SSRM_vhdl         ; work         ;
 ;             |sls_dff_vhdl:c_dff|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|sls_dff_vhdl:c_dff                                             ; sls_dff_vhdl          ; work         ;
 ;             |sls_nBitSFR_vhdl:M_Reg|            ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:M_Reg                                         ; sls_nBitSFR_vhdl      ; work         ;
 ;             |sls_nBitSFR_vhdl:mPL_Reg|          ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg                                       ; sls_nBitSFR_vhdl      ; work         ;
@@ -554,12 +553,12 @@ refer to the applicable agreement for further details.
 ;             |sls_nbit_2sc_out_vhdl:FP_2sc|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|sls_nbit_2sc_out_vhdl:FP_2sc                                   ; sls_nbit_2sc_out_vhdl ; work         ;
 ;             |sls_nbit_add_sub_vhdl:adder|       ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|sls_nbit_add_sub_vhdl:adder                                    ; sls_nbit_add_sub_vhdl ; work         ;
 ;             |sls_nbit_mux2to1_vhdl:M_Mux|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|sls_nbit_mux2to1_vhdl:M_Mux                                    ; sls_nbit_mux2to1_vhdl ; work         ;
-;       |dxp_simpleneuron_vhdl:\hlg1:2:hln|       ; 71 (0)              ; 57 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln                                                                                  ; dxp_simpleneuron_vhdl ; work         ;
+;       |dxp_simpleneuron_vhdl:\hlg1:2:hln|       ; 70 (0)              ; 57 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln                                                                                  ; dxp_simpleneuron_vhdl ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinA|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_nbit_reg_vhdl:macinA                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinC|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_nbit_reg_vhdl:macinC                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:mulinB|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_nbit_reg_vhdl:mulinB                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:prod_reg|           ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_nbit_reg_vhdl:prod_reg                                                       ; dxp_nbit_reg_vhdl     ; work         ;
-;          |dxp_nbit_reg_vhdl:zreg|               ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_nbit_reg_vhdl:zreg                                                           ; dxp_nbit_reg_vhdl     ; work         ;
+;          |dxp_nbit_reg_vhdl:zreg|               ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_nbit_reg_vhdl:zreg                                                           ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |sls_SSRM_vhdl:mul|                    ; 30 (0)              ; 17 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|sls_SSRM_vhdl:mul                                                                ; sls_SSRM_vhdl         ; work         ;
 ;             |sls_dff_vhdl:c_dff|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|sls_SSRM_vhdl:mul|sls_dff_vhdl:c_dff                                             ; sls_dff_vhdl          ; work         ;
 ;             |sls_nBitSFR_vhdl:mPL_Reg|          ; 7 (7)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg                                       ; sls_nBitSFR_vhdl      ; work         ;
@@ -591,13 +590,13 @@ refer to the applicable agreement for further details.
 ;             |sls_nbit_2sc_out_vhdl:FP_2sc|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|sls_SSRM_vhdl:mul|sls_nbit_2sc_out_vhdl:FP_2sc                                   ; sls_nbit_2sc_out_vhdl ; work         ;
 ;             |sls_nbit_add_sub_vhdl:adder|       ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|sls_SSRM_vhdl:mul|sls_nbit_add_sub_vhdl:adder                                    ; sls_nbit_add_sub_vhdl ; work         ;
 ;             |sls_nbit_mux2to1_vhdl:M_Mux|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|sls_SSRM_vhdl:mul|sls_nbit_mux2to1_vhdl:M_Mux                                    ; sls_nbit_mux2to1_vhdl ; work         ;
-;       |dxp_simpleneuron_vhdl:\hlg1:4:hln|       ; 72 (0)              ; 65 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln                                                                                  ; dxp_simpleneuron_vhdl ; work         ;
+;       |dxp_simpleneuron_vhdl:\hlg1:4:hln|       ; 73 (0)              ; 65 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln                                                                                  ; dxp_simpleneuron_vhdl ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinA|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_nbit_reg_vhdl:macinA                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinC|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_nbit_reg_vhdl:macinC                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:mulinA|             ; 2 (2)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_nbit_reg_vhdl:mulinA                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:mulinB|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_nbit_reg_vhdl:mulinB                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:prod_reg|           ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_nbit_reg_vhdl:prod_reg                                                       ; dxp_nbit_reg_vhdl     ; work         ;
-;          |dxp_nbit_reg_vhdl:zreg|               ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_nbit_reg_vhdl:zreg                                                           ; dxp_nbit_reg_vhdl     ; work         ;
+;          |dxp_nbit_reg_vhdl:zreg|               ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_nbit_reg_vhdl:zreg                                                           ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |sls_SSRM_vhdl:mul|                    ; 30 (0)              ; 17 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|sls_SSRM_vhdl:mul                                                                ; sls_SSRM_vhdl         ; work         ;
 ;             |sls_dff_vhdl:c_dff|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|sls_SSRM_vhdl:mul|sls_dff_vhdl:c_dff                                             ; sls_dff_vhdl          ; work         ;
 ;             |sls_nBitSFR_vhdl:mPL_Reg|          ; 7 (7)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg                                       ; sls_nBitSFR_vhdl      ; work         ;
@@ -635,13 +634,13 @@ refer to the applicable agreement for further details.
 ;             |sls_nbit_2sc_out_vhdl:FP_2sc|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|sls_SSRM_vhdl:mul|sls_nbit_2sc_out_vhdl:FP_2sc                                   ; sls_nbit_2sc_out_vhdl ; work         ;
 ;             |sls_nbit_add_sub_vhdl:adder|       ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|sls_SSRM_vhdl:mul|sls_nbit_add_sub_vhdl:adder                                    ; sls_nbit_add_sub_vhdl ; work         ;
 ;             |sls_nbit_mux2to1_vhdl:M_Mux|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|sls_SSRM_vhdl:mul|sls_nbit_mux2to1_vhdl:M_Mux                                    ; sls_nbit_mux2to1_vhdl ; work         ;
-;       |dxp_simpleneuron_vhdl:\olg1:2:oln|       ; 72 (0)              ; 57 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln                                                                                  ; dxp_simpleneuron_vhdl ; work         ;
+;       |dxp_simpleneuron_vhdl:\olg1:2:oln|       ; 74 (0)              ; 57 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln                                                                                  ; dxp_simpleneuron_vhdl ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinA|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:macinA                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinC|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:macinC                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:mulinA|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:mulinA                                                         ; dxp_nbit_reg_vhdl     ; work         ;
-;          |dxp_nbit_reg_vhdl:mulinB|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:mulinB                                                         ; dxp_nbit_reg_vhdl     ; work         ;
+;          |dxp_nbit_reg_vhdl:mulinB|             ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:mulinB                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:prod_reg|           ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:prod_reg                                                       ; dxp_nbit_reg_vhdl     ; work         ;
-;          |dxp_nbit_reg_vhdl:zreg|               ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:zreg                                                           ; dxp_nbit_reg_vhdl     ; work         ;
+;          |dxp_nbit_reg_vhdl:zreg|               ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:zreg                                                           ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |sls_SSRM_vhdl:mul|                    ; 30 (0)              ; 17 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|sls_SSRM_vhdl:mul                                                                ; sls_SSRM_vhdl         ; work         ;
 ;             |sls_dff_vhdl:c_dff|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|sls_SSRM_vhdl:mul|sls_dff_vhdl:c_dff                                             ; sls_dff_vhdl          ; work         ;
 ;             |sls_nBitSFR_vhdl:mPL_Reg|          ; 7 (7)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg                                       ; sls_nBitSFR_vhdl      ; work         ;
@@ -672,13 +671,13 @@ refer to the applicable agreement for further details.
 ;             |sls_nbit_2sc_out_vhdl:FP_2sc|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|sls_SSRM_vhdl:mul|sls_nbit_2sc_out_vhdl:FP_2sc                                   ; sls_nbit_2sc_out_vhdl ; work         ;
 ;             |sls_nbit_add_sub_vhdl:adder|       ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|sls_SSRM_vhdl:mul|sls_nbit_add_sub_vhdl:adder                                    ; sls_nbit_add_sub_vhdl ; work         ;
 ;             |sls_nbit_mux2to1_vhdl:M_Mux|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|sls_SSRM_vhdl:mul|sls_nbit_mux2to1_vhdl:M_Mux                                    ; sls_nbit_mux2to1_vhdl ; work         ;
-;       |dxp_simpleneuron_vhdl:\olg1:4:oln|       ; 73 (0)              ; 65 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln                                                                                  ; dxp_simpleneuron_vhdl ; work         ;
+;       |dxp_simpleneuron_vhdl:\olg1:4:oln|       ; 71 (0)              ; 65 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln                                                                                  ; dxp_simpleneuron_vhdl ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinA|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinA                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:macinC|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinC                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:mulinA|             ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:mulinA                                                         ; dxp_nbit_reg_vhdl     ; work         ;
-;          |dxp_nbit_reg_vhdl:mulinB|             ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:mulinB                                                         ; dxp_nbit_reg_vhdl     ; work         ;
+;          |dxp_nbit_reg_vhdl:mulinB|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:mulinB                                                         ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |dxp_nbit_reg_vhdl:prod_reg|           ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:prod_reg                                                       ; dxp_nbit_reg_vhdl     ; work         ;
-;          |dxp_nbit_reg_vhdl:zreg|               ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:zreg                                                           ; dxp_nbit_reg_vhdl     ; work         ;
+;          |dxp_nbit_reg_vhdl:zreg|               ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:zreg                                                           ; dxp_nbit_reg_vhdl     ; work         ;
 ;          |sls_SSRM_vhdl:mul|                    ; 30 (0)              ; 17 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|sls_SSRM_vhdl:mul                                                                ; sls_SSRM_vhdl         ; work         ;
 ;             |sls_dff_vhdl:c_dff|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|sls_SSRM_vhdl:mul|sls_dff_vhdl:c_dff                                             ; sls_dff_vhdl          ; work         ;
 ;             |sls_nBitSFR_vhdl:mPL_Reg|          ; 7 (7)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg                                       ; sls_nBitSFR_vhdl      ; work         ;
@@ -727,7 +726,7 @@ refer to the applicable agreement for further details.
 ;       |pixData_rom_vhdl:testimages|             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|pixData_rom_vhdl:testimages                                                                                        ; pixData_rom_vhdl      ; work         ;
 ;          |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|pixData_rom_vhdl:testimages|altsyncram:altsyncram_component                                                        ; altsyncram            ; work         ;
 ;             |altsyncram_n5t3:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|pixData_rom_vhdl:testimages|altsyncram:altsyncram_component|altsyncram_n5t3:auto_generated                         ; altsyncram_n5t3       ; work         ;
-;    |slow_clock_generator:slow_clk|              ; 14 (14)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|slow_clock_generator:slow_clk                                                                                                                ; slow_clock_generator  ; work         ;
+;    |slow_clock_generator:slow_clk|              ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dxp_sNN_vhdl|slow_clock_generator:slow_clk                                                                                                                ; slow_clock_generator  ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1102,6 +1101,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|SDoutR ; Merged with dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[0] ;
 ; dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|signis[7]                                                 ; Stuck at GND due to stuck port data_in                                                                                     ;
 ; dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|signis[3]                                                 ; Stuck at VCC due to stuck port data_in                                                                                     ;
+; dxp_sNN_CU_vhdl:control_unit|mul_start                                                                        ; Stuck at VCC due to stuck port data_in                                                                                     ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|Rst_mpl                         ; Stuck at GND due to stuck port data_in                                                                                     ;
 ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|dxp_nbit_reg_vhdl:macinA|Count[8..15]             ; Lost fanout                                                                                                                ;
 ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinA|Count[8..15]             ; Lost fanout                                                                                                                ;
 ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:macinA|Count[8..15]             ; Lost fanout                                                                                                                ;
@@ -1134,30 +1135,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_nbit_reg_vhdl:macinC|Count[8..15]             ; Lost fanout                                                                                                                ;
 ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|dxp_nbit_reg_vhdl:macinC|Count[8..15]             ; Lost fanout                                                                                                                ;
 ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_nbit_reg_vhdl:macinC|Count[8..15]             ; Lost fanout                                                                                                                ;
-; Total Number of Removed Registers = 473                                                                       ;                                                                                                                            ;
+; Total Number of Removed Registers = 475                                                                       ;                                                                                                                            ;
 +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                                          ;
-+------------------------------------------------------------------------------------------------+--------------------+------------------------------------------------------------------------------------------------+
-; Register name                                                                                  ; Reason for Removal ; Registers Removed due to This Register                                                         ;
-+------------------------------------------------------------------------------------------------+--------------------+------------------------------------------------------------------------------------------------+
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinC|Count[14] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinB|Count[14] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinC|Count[13] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinB|Count[13] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinC|Count[11] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinB|Count[11] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinC|Count[9]  ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinB|Count[9]  ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinC|Count[12] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinB|Count[12] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinC|Count[15] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinB|Count[15] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinC|Count[14] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinB|Count[14] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinC|Count[13] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinB|Count[13] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinC|Count[14] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinB|Count[14] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinC|Count[11] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinB|Count[11] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinC|Count[8]  ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinB|Count[8]  ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|dxp_nbit_reg_vhdl:macinC|Count[11] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|dxp_nbit_reg_vhdl:macinB|Count[11] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|dxp_nbit_reg_vhdl:macinC|Count[14] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|dxp_nbit_reg_vhdl:macinB|Count[14] ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinC|Count[13] ; Lost Fanouts       ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinB|Count[13] ;
-+------------------------------------------------------------------------------------------------+--------------------+------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                 ;
++------------------------------------------------------------------------------------------------+---------------------------+------------------------------------------------------------------------------------------------+
+; Register name                                                                                  ; Reason for Removal        ; Registers Removed due to This Register                                                         ;
++------------------------------------------------------------------------------------------------+---------------------------+------------------------------------------------------------------------------------------------+
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinC|Count[14] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinB|Count[14] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinC|Count[13] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinB|Count[13] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinC|Count[11] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinB|Count[11] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinC|Count[9]  ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:macinB|Count[9]  ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinC|Count[12] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinB|Count[12] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinC|Count[15] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinB|Count[15] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinC|Count[14] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinB|Count[14] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinC|Count[13] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinB|Count[13] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinC|Count[14] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinB|Count[14] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinC|Count[11] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinB|Count[11] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinC|Count[8]  ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinB|Count[8]  ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|dxp_nbit_reg_vhdl:macinC|Count[11] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|dxp_nbit_reg_vhdl:macinB|Count[11] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|dxp_nbit_reg_vhdl:macinC|Count[14] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|dxp_nbit_reg_vhdl:macinB|Count[14] ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinC|Count[13] ; Lost Fanouts              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinB|Count[13] ;
+; dxp_sNN_CU_vhdl:control_unit|mul_start                                                         ; Stuck at VCC              ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|Rst_mpl          ;
+;                                                                                                ; due to stuck port data_in ;                                                                                                ;
++------------------------------------------------------------------------------------------------+---------------------------+------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1165,8 +1168,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 539   ;
-; Number of registers using Synchronous Clear  ; 275   ;
+; Total registers                              ; 537   ;
+; Number of registers using Synchronous Clear  ; 211   ;
 ; Number of registers using Synchronous Load   ; 143   ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -1180,9 +1183,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                  ; Fan out ;
 +------------------------------------------------------------------------------------+---------+
-; slow_clock_generator:slow_clk|cnt[3]                                               ; 2       ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|n[0] ; 4       ;
-; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|n[1] ; 3       ;
+; slow_clock_generator:slow_clk|cnt[3]                                               ; 5       ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|n[0] ; 5       ;
+; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|n[1] ; 4       ;
 ; dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|n[2] ; 3       ;
 ; Total number of inverted registers = 4                                             ;         ;
 +------------------------------------------------------------------------------------+---------+
@@ -1194,11 +1197,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|signis[6]                                                  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:zreg|Count[7]                    ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinC|Count[11]                 ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|sls_SSRM_vhdl:mul|sls_dff_vhdl:c_dff|q             ;
-; 3:1                ; 40 bits   ; 80 LEs        ; 40 LEs               ; 40 LEs                 ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|dxp_nbit_reg_vhdl:mulinB|Count[1]                  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_nbit_reg_vhdl:zreg|Count[5]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:zreg|Count[0]                    ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:macinC|Count[10]                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|sls_SSRM_vhdl:mul|sls_dff_vhdl:c_dff|q             ;
+; 3:1                ; 40 bits   ; 80 LEs        ; 40 LEs               ; 40 LEs                 ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:mulinB|Count[6]                  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_nbit_reg_vhdl:zreg|Count[4]                    ;
 ; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:macinB|Count[11]                 ;
 ; 3:1                ; 40 bits   ; 80 LEs        ; 40 LEs               ; 40 LEs                 ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|dxp_nbit_reg_vhdl:mulinB|Count[7]                  ;
 ; 4:1                ; 64 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:ph_reg|Dout[4]  ;
@@ -1208,20 +1211,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|dxp_nbit_reg_vhdl:prod_reg|Count[2]                ;
 ; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|dxp_nbit_reg_vhdl:prod_reg|Count[6]                ;
 ; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|dxp_nbit_reg_vhdl:prod_reg|Count[13]               ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_nbit_reg_vhdl:prod_reg|Count[3]                ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|dxp_nbit_reg_vhdl:prod_reg|Count[4]                ;
 ; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|dxp_nbit_reg_vhdl:prod_reg|Count[14]               ;
 ; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|dxp_nbit_reg_vhdl:prod_reg|Count[0]                ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[5] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[1] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:3:oln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[2] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:4:oln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[5] ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:2:oln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[5] ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\olg1:1:oln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[6] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[5] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[6] ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:2:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[6] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[6] ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[1] ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|signis[1]                                                  ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:3:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[1] ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:4:hln|sls_SSRM_vhdl:mul|sls_nBitSFR_vhdl:mPL_Reg|Dout[6] ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|signis[2]                                                  ;
 ; 17:1               ; 4 bits    ; 44 LEs        ; 28 LEs               ; 16 LEs                 ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_CU_vhdl:control_unit|olsclr                                                                            ;
-; 17:1               ; 6 bits    ; 66 LEs        ; 42 LEs               ; 24 LEs                 ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_CU_vhdl:control_unit|oldwren                                                                           ;
+; 17:1               ; 6 bits    ; 66 LEs        ; 42 LEs               ; 24 LEs                 ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_CU_vhdl:control_unit|hlLDmulin                                                                         ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |dxp_sNN_vhdl|dxp_sNN_DP_vhdl:data_path|dxp_simpleneuron_vhdl:\hlg1:1:hln|sls_SSRM_vhdl:mul|n[2]                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------+
 
@@ -4347,24 +4350,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 539                         ;
-;     ENA               ; 234                         ;
-;     ENA SCLR          ; 144                         ;
-;     ENA SCLR SLD      ; 126                         ;
-;     ENA SLD           ; 16                          ;
+; cycloneiii_ff         ; 537                         ;
+;     ENA               ; 242                         ;
+;     ENA SCLR          ; 136                         ;
+;     ENA SCLR SLD      ; 70                          ;
+;     ENA SLD           ; 72                          ;
 ;     SCLR              ; 5                           ;
 ;     SLD               ; 1                           ;
-;     plain             ; 13                          ;
-; cycloneiii_lcell_comb ; 759                         ;
-;     arith             ; 147                         ;
-;         2 data inputs ; 14                          ;
+;     plain             ; 11                          ;
+; cycloneiii_lcell_comb ; 751                         ;
+;     arith             ; 143                         ;
+;         2 data inputs ; 10                          ;
 ;         3 data inputs ; 133                         ;
-;     normal            ; 612                         ;
+;     normal            ; 608                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 271                         ;
-;         3 data inputs ; 106                         ;
-;         4 data inputs ; 226                         ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 270                         ;
+;         3 data inputs ; 99                          ;
+;         4 data inputs ; 231                         ;
 ; cycloneiii_ram_block  ; 80                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
@@ -4387,7 +4390,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr 24 18:46:16 2025
+    Info: Processing started: Fri Apr 25 14:49:31 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dxp_sNN_vhdl -c dxp_sNN_vhdl
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file pixdata_rom_vhdl.vhd
@@ -5133,7 +5136,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
 Info (12128): Elaborating entity "cmpr_3ig" for hierarchy "dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|dxp_signed_comparator:comp12|lpm_compare:LPM_COMPARE_component|cmpr_3ig:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
 Info (12128): Elaborating entity "dxp_nbit_mux2to1_vhdl" for hierarchy "dxp_sNN_DP_vhdl:data_path|dxp_signis_vhdl:recognize|dxp_nbit_mux2to1_vhdl:mux12" File: C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_SSRM_new/dxp_signis_vhdl.vhd Line: 27
 Info (12128): Elaborating entity "dxp_sNN_CU_vhdl" for hierarchy "dxp_sNN_CU_vhdl:control_unit" File: C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_SSRM_new/dxp_sNN_vhdl.vhd Line: 48
-Warning (10541): VHDL Signal Declaration warning at dxp_sNN_CU_vhdl.vhd(15): used implicit default value for signal "mul_start" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_SSRM_new/dxp_sNN_CU_vhdl.vhd Line: 15
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "signis[3]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_SSRM_new/dxp_sNN_vhdl.vhd Line: 18
     Warning (13410): Pin "signis[5]" is stuck at VCC File: C:/Users/sls3445/Documents/DS2_labs/Lab13/sls_sNN_SSRM_new/dxp_sNN_vhdl.vhd Line: 18
@@ -5142,15 +5144,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 142 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 852 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 845 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 762 logic cells
+    Info (21061): Implemented 755 logic cells
     Info (21064): Implemented 80 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
     Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Thu Apr 24 18:46:32 2025
-    Info: Elapsed time: 00:00:16
+    Info: Processing ended: Fri Apr 25 14:49:48 2025
+    Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:13
 
 

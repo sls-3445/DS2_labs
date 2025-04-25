@@ -8,17 +8,17 @@ entity slow_clock_generator is
 end slow_clock_generator;
 
 architecture beh of slow_clock_generator is
-signal cnt : std_logic_vector(3 downto 0) := "1000";
+signal cnt : std_logic_vector(3 downto 0) := "0111";
 signal clk_out : std_logic := '0';
 begin
 	process begin wait until Fast_Clock'event and Fast_Clock = '1';
 		if (Reset = '1') then
-			cnt <= "1000";
+			cnt <= "0111";
 			clk_out <= '0';
 		elsif (cnt = "000") then
 			clk_out <= not clk_out;
 			Slow_Clock <= not clk_out;
-			cnt <= "1000";
+			cnt <= "0111";
 		else
 			cnt <= cnt - 1;
 		end if;
