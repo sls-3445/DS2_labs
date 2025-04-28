@@ -1,5 +1,5 @@
 Analysis & Synthesis report for slsRISC_vhdl
-Fri Apr 25 15:23:50 2025
+Mon Apr 28 14:34:57 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_jos3:auto_generated
+ 13. Source assignments for slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_hrs3:auto_generated
  14. Parameter Settings for User Entity Instance: slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:wbBusMux
  15. Parameter Settings for User Entity Instance: slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:wbBusMux|sls_nbit_mux2to1_vhdl:upper_bits
  16. Parameter Settings for User Entity Instance: slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:wbBusMux|sls_nbit_mux2to1_vhdl:lower_bits
@@ -100,7 +100,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 25 15:23:50 2025       ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 28 14:34:57 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; slsRISC_vhdl                                ;
 ; Top-level Entity Name              ; slsRISC_vhdl                                ;
@@ -225,7 +225,7 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                        ; Library ;
 +----------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------------------+---------+
-; sls_MUL_plus.mif                 ; yes             ; User Memory Initialization File  ; C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/sls_MUL_plus.mif             ;         ;
+; sls_MUL_mmiop.mif                ; yes             ; User Memory Initialization File  ; C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/sls_MUL_mmiop.mif            ;         ;
 ; sls_8bit_sr_unit_vhdl.vhd        ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/sls_8bit_sr_unit_vhdl.vhd    ;         ;
 ; sls_8bit_arith_unit_vhdl.vhd     ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/sls_8bit_arith_unit_vhdl.vhd ;         ;
 ; slsRISC_vhdl.vhd                 ; yes             ; User VHDL File                   ; C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/slsRISC_vhdl.vhd             ;         ;
@@ -254,7 +254,7 @@ refer to the applicable agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                   ;         ;
 ; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                   ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
-; db/altsyncram_jos3.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/db/altsyncram_jos3.tdf       ;         ;
+; db/altsyncram_hrs3.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/db/altsyncram_hrs3.tdf       ;         ;
 +----------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
@@ -316,7 +316,7 @@ refer to the applicable agreement for further details.
 ;             |sls_nbit_mux2to1_vhdl:combined|    ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_8bit_alu_struc_vhdl:ALU|sls_nbit_mux4to1_vhdl:result_mux|sls_nbit_mux2to1_vhdl:combined                                    ; sls_nbit_mux2to1_vhdl    ; work         ;
 ;       |sls_MM_vhdl:MM|                          ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM                                                                                                                 ; sls_MM_vhdl              ; work         ;
 ;          |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component                                                                                 ; altsyncram               ; work         ;
-;             |altsyncram_jos3:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_jos3:auto_generated                                                  ; altsyncram_jos3          ; work         ;
+;             |altsyncram_hrs3:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_hrs3:auto_generated                                                  ; altsyncram_hrs3          ; work         ;
 ;       |sls_nbit_mux4to1_vhdl:rfout_s_mux|       ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_s_mux                                                                                              ; sls_nbit_mux4to1_vhdl    ; work         ;
 ;          |sls_nbit_mux2to1_vhdl:combined|       ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_s_mux|sls_nbit_mux2to1_vhdl:combined                                                               ; sls_nbit_mux2to1_vhdl    ; work         ;
 ;       |sls_nbit_mux4to1_vhdl:rfout_sd_mux|      ; 28 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |slsRISC_vhdl|slsRISC_DP_vhdl:DP|sls_nbit_mux4to1_vhdl:rfout_sd_mux                                                                                             ; sls_nbit_mux4to1_vhdl    ; work         ;
@@ -343,13 +343,13 @@ refer to the applicable agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                       ;
-+-------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------------------+
-; Name                                                                                                        ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF              ;
-+-------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------------------+
-; slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_jos3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 1024         ; 8            ; --           ; --           ; 8192 ; sls_MUL_plus.mif ;
-+-------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                        ;
++-------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------------+
+; Name                                                                                                        ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF               ;
++-------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------------+
+; slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_hrs3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 1024         ; 8            ; --           ; --           ; 8192 ; sls_MUL_mmiop.mif ;
++-------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+-------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -438,7 +438,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_jos3:auto_generated ;
+; Source assignments for slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_hrs3:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                        ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------+
@@ -929,7 +929,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                            ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                            ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                            ;
-; INIT_FILE                          ; sls_MUL_plus.mif     ; Untyped                                            ;
+; INIT_FILE                          ; sls_MUL_mmiop.mif    ; Untyped                                            ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                            ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                                     ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                            ;
@@ -942,7 +942,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                            ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                                     ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                            ;
-; CBXI_PARAMETER                     ; altsyncram_jos3      ; Untyped                                            ;
+; CBXI_PARAMETER                     ; altsyncram_hrs3      ; Untyped                                            ;
 +------------------------------------+----------------------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1095,7 +1095,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Apr 25 15:23:39 2025
+    Info: Processing started: Mon Apr 28 14:34:46 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off slsRISC_vhdl -c slsRISC_vhdl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -1199,7 +1199,7 @@ Info (12133): Instantiated megafunction "slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsy
     Info (12134): Parameter "indata_aclr_a" = "UNUSED"
     Info (12134): Parameter "indata_aclr_b" = "NONE"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "sls_MUL_plus.mif"
+    Info (12134): Parameter "init_file" = "sls_MUL_mmiop.mif"
     Info (12134): Parameter "init_file_layout" = "PORT_A"
     Info (12134): Parameter "maximum_depth" = "0"
     Info (12134): Parameter "numwords_a" = "1024"
@@ -1229,9 +1229,9 @@ Info (12133): Instantiated megafunction "slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsy
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_jos3.tdf
-    Info (12023): Found entity 1: altsyncram_jos3 File: C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/db/altsyncram_jos3.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_jos3" for hierarchy "slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_jos3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hrs3.tdf
+    Info (12023): Found entity 1: altsyncram_hrs3 File: C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/db/altsyncram_hrs3.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_hrs3" for hierarchy "slsRISC_DP_vhdl:DP|sls_MM_vhdl:MM|altsyncram:altsyncram_component|altsyncram_hrs3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "sls_8bit_4loc_stack_vhdl" for hierarchy "slsRISC_DP_vhdl:DP|sls_8bit_4loc_stack_vhdl:stack" File: C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/slsRISC_DP_vhdl.vhd Line: 89
 Info (12128): Elaborating entity "slsRISC_CU_vhdl" for hierarchy "slsRISC_CU_vhdl:CU" File: C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/slsRISC_vhdl.vhd Line: 43
 Warning (10036): Verilog HDL or VHDL warning at slsRISC_CU_vhdl.vhd(23): object "IW_CNVZ" assigned a value but never read File: C:/Users/sls3445/Documents/DS2_labs/Lab13/slsRISC_vhdl/slsRISC_CU_vhdl.vhd Line: 23
@@ -1284,8 +1284,8 @@ Info (21057): Implemented 652 device resources after synthesis - the final resou
     Info (21061): Implemented 530 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
-    Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Fri Apr 25 15:23:50 2025
+    Info: Peak virtual memory: 4848 megabytes
+    Info: Processing ended: Mon Apr 28 14:34:57 2025
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:08
 

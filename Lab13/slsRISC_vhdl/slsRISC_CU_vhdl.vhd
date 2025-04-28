@@ -91,7 +91,6 @@ else
 		crtMCis <= MC1; MC <= MC2;
 	
 	elsif (MC = MC2) then
---		opCode := IW(7 downto 4);
 		if (opCode = ADD_IC or opCode = SUB_IC or opCode = INC_IC or opCode = DEC_IC or opCode = XOR_IC or opCode = OR_IC or
 				opCode = AND_IC or opCode = CPY_IC or opCode = SHRA_IC or opCode = SHRL_IC or opCode = RLC_IC) then
 				

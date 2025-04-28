@@ -51,9 +51,9 @@ BEGIN
 ------------------------------------------------------------------------------
 -- All other cycles.  Their number depends on how long the program is.
 ------------------------------------------------------------------------------	
-		FOR i	IN 0 TO 820 LOOP
-	Reset_tb <= '0'; Clock_tb <= '0'; PB1_tb <= '1'; SW_tb <= "0000";
-	WAIT FOR period; Clock_tb <= '1'; WAIT FOR period; END LOOP;
+--		FOR i	IN 0 TO 820 LOOP
+--	Reset_tb <= '0'; Clock_tb <= '0'; PB1_tb <= '1'; SW_tb <= "0000";
+--	WAIT FOR period; Clock_tb <= '1'; WAIT FOR period; END LOOP;
 ------------------------------------------------------------------------------	
 		FOR i	IN 0 TO 820 LOOP
 	Reset_tb <= '0'; Clock_tb <= '0'; PB1_tb <= '1'; SW_tb <= "0101";
